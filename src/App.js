@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-
+import React from 'react';
 import Main from "./Pages/MainPage/Main"
 import Quran from "./Pages/Quran/Quran"
 import Sura from "./Pages/Sura/Sura"
@@ -11,6 +10,8 @@ import Juza from "./Pages/juza/Juza.jsx"
 import NamesOFAllah from "./Pages/theNameOfAllah/NamesOFAllah.jsx"
 import Rosary from "./Pages/Rosary/Rosary.jsx"
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
+
+
 
 function App() {
 

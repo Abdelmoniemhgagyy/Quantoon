@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import NavItem from "./NavItem"
-import { NavLink  } from 'react-router-dom'
+import {Link } from 'react-router-dom'
 import "./RightNavbar.css"
 import Logo from "../../assest/logo.jpg"
 
@@ -22,14 +22,14 @@ function RightNavbar() {
 
     <div className={`constentRightNav   `} style={{width:openNav ?"280px":"60px"}}>
       {/* logo */}
-      <NavLink to="/" className='logo-container'  style={{gap:openNav?"18px":"0px"}} >
+      <Link to="/" className='logo-container'  style={{gap:openNav?"18px":"0px"}} >
 
           {
             openNav  ?  <h3 className='titleNavEle'>قانتون</h3>
                      : <img src={Logo} alt="logo" />
           }
            
-      </NavLink>
+      </Link>
 
     {/* Sart Nav items  */}
 

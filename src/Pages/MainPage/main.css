@@ -1,5 +1,26 @@
-.main-page-container{
-   
+.main-page-item,
+.main-page-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+   color: white;
 
+}
+.main-page-content{
+    margin-top: 140px;
+    flex-direction: row;
+    gap: 30px;
+    height: 100%;
+    align-items: center;
 
+}
+.img-container{
+    width: 150px;
+    padding: 5px;
+
+}
+.img-container>img{
+    width:100%
 }
