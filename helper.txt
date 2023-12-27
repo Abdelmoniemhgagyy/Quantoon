@@ -1,0 +1,3 @@
+font-family: Rakkas;
+
+font-family: Tajawal;

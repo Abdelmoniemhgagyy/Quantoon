@@ -1,0 +1,156 @@
+
+.header h1 {
+    margin: 20px auto 50px;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.header h1::after{
+    content: "";
+    width: 200px;
+    height: 2px;
+    background-color: greenyellow;
+    
+    position: absolute;
+    left:50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+}
+.container {
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+font-family: ui-monospace;
+
+
+
+}
+.none {
+    display: none;
+}
+.container .box {
+    font-family:  Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:200px;
+    height:100px; 
+    border: 1px solid greenyellow;
+    margin: 10px;
+    border-radius: 5px;
+    cursor:pointer;
+    color: white;
+  
+}
+.container .box:hover{
+    transform: scale(1.15);
+    border-color: rgb(64, 210, 255);
+}
+.container .box > a {
+    margin-bottom: 5px;
+    color: white;
+    font-size: 22px;
+}
+.container .box > p {
+  
+    font-size: 14px;
+}
+
+
+/*  sura */
+.sura{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    padding:0 60px ;
+    width: 100%;   
+    height: 100%;
+    z-index: 2;
+    transition: .4s;
+
+}
+.sura{
+    transition: .4s;
+    transform: translateX(0);
+}
+.sura button {
+    position: fixed;
+    right:10px;
+    top:4px;
+    padding: 10px;
+    background-color: #777;
+    transition: .3s;
+    border: none;
+    outline: none;
+   
+}
+
+
+/* -------TOP BUTTOM  */
+
+  .show{
+    bottom:6px;
+  }
+  /* -----END------- */
+.sura p {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin: 10px auto;
+    width:70%;
+    line-height:1.6;
+     font-size: 25px; 
+     border-bottom: 1px solid greenyellow;
+    
+}
+
+.sura p:first-of-type{
+    padding-top: 50px;
+}
+
+
+
+body::-webkit-scrollbar{
+    background-color: #ffffff;
+    width:7px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #000000;
+    border-radius: 4px;
+}
+
+.sura>a {
+    position: fixed;
+}
+
+.bi-backspace{
+    position: fixed;
+    top:-40px;
+    right:69px;
+    font-size: 30px;
+    &:hover{
+        color:red;
+        cursor: pointer;
+        
+    }
+}
+
+@media(max-width:590px){
+    .sura p {
+        padding-top: 20px;
+        padding-bottom: 4px;
+        margin: 0px auto;
+        width: 100%;
+        line-height: 1.7;
+        font-size: 12px;
+    }
+    .bi-backspace {
+        top:-30px;
+        font-size: 20px;
+    }
+}
+/* end  */

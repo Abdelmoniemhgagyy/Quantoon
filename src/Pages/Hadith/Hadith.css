@@ -1,0 +1,35 @@
+.ahadith-container{
+    min-height: 100vh;
+    margin: 40px 60px 40px 0;
+}
+
+.hadith{
+    margin-top: 40px;
+    text-align: center;
+    background-color: transparent;
+    font-family: 'Marhey', sans-serif;
+
+}
+
+.hadith-content{
+    padding: 10px;
+    border: 2px solid blueviolet;
+    border-radius: 15px;
+    width: 80%;
+    margin: 10px auto;
+    background-color: #fff;
+    font-weight: 500;
+}
+.hadith-content>p{
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+@media(max-width:560px){
+
+    .hadith-content>p{
+        font-size: 16px;
+    }
+    
+
+}

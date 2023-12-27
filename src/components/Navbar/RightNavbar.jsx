@@ -1,0 +1,69 @@
+import { useState } from 'react'
+import NavItem from "./NavItem"
+import { NavLink  } from 'react-router-dom'
+import "./RightNavbar.css"
+import Logo from "../../assest/logo.jpg"
+
+import Quran from "../../assest/listImg/koran.png"
+import Hadith from "../../assest/listImg/ramadan.png"
+import Adkar from "../../assest/listImg/prayer.png"
+import NamesOfAllah from "../../assest/listImg/allah.png"
+import Rosary from "../../assest/listImg/beads.png"
+
+
+
+function RightNavbar() {
+
+    const [openNav,setOpenNav] =useState(false)
+
+  return (
+<div style={{}}>
+ <div className='containerRightNav'>
+
+    <div className={`constentRightNav   `} style={{width:openNav ?"280px":"60px"}}>
+      {/* logo */}
+      <NavLink to="/" className='logo-container'  style={{gap:openNav?"18px":"0px"}} >
+
+          {
+            openNav  ?  <h3 className='titleNavEle'>قانتون</h3>
+                     : <img src={Logo} alt="logo" />
+          }
+           
+      </NavLink>
+
+    {/* Sart Nav items  */}
+
+    {/* List icon  */}
+        <div className={`RightNavEle `}
+              style={{padding:openNav ?"8px 10px":"20px 20px 0 0"}}
+                dir='rtl'
+                onClick={()=>setOpenNav(!openNav)} >
+                  
+                  <div>
+                      <i className= "bi bi-list "></i>
+                  </div>
+
+                  <div className='flex-grow-1'>
+                      <p style={{fontSize:openNav?"18px":"0px"}} className='titleNavEle'>القائمة</p>
+                  </div>
+        </div>
+    {/* End List icon  */}
+
+        <NavItem ImgSrc={NamesOfAllah} openNav={openNav} setOpenNav={setOpenNav} path="/namesofallah" title="أسماء الله الحسني"/>
+        <NavItem ImgSrc={Quran} openNav={openNav} setOpenNav={setOpenNav} path="/quran" title="القران الكريم"/>
+        <NavItem ImgSrc={Hadith} openNav={openNav} setOpenNav={setOpenNav} path="/hadith" title=" الأحاديث النبوية"/>
+        <NavItem ImgSrc={Adkar} openNav={openNav} setOpenNav={setOpenNav} path="/adkar" title="الأذكار"/>
+
+        <NavItem ImgSrc={ Rosary} openNav={openNav} setOpenNav={setOpenNav} path="/rosary" title="السبحة"/>
+
+    {/* End Nav items  */}
+    </div>
+
+
+  </div>
+</div>
+    
+  )
+}
+
+export default RightNavbar

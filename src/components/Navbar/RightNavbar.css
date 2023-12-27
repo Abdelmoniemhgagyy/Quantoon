@@ -1,0 +1,62 @@
+.containerRightNav{
+     right: 0;
+      top:0;
+      position: fixed;
+      z-index:9999;
+      background-color: #2e2e38;
+   
+}
+
+.containerRightNav .constentRightNav {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 60px;
+    border-left: 1px solid rgb(197, 197, 197);
+    transition-duration: .5s
+    
+}
+.logo-container{
+    font-family: 'Marhey', sans-serif;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    &>img{
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        margin: 5px auto 0;
+    }
+}
+.RightNavEle{
+    line-height: 2;
+
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    gap: 20px;
+    cursor: pointer;
+    align-items: baseline;
+    padding: 2px 0;
+    &:hover{
+                       background-color: rgb(197, 197, 197);
+    }
+  
+}
+.active{
+    background-color: rgb(197, 197, 197);
+}
+.RightNavEle i{
+       font-size: 28px;
+}
+
+.titleNavEle{
+    transition-duration: .5s;
+    height: 30px;
+    margin: auto;
+    
+}
