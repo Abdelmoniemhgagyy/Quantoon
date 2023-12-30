@@ -43,7 +43,7 @@ function Quran() {
 
   const [data, setData] = useState([]);
   const handelNameSura = async () => {
-    const d = await axios.get("http://api.alquran.cloud/v1/meta");
+    const d = await axios.get("https://api.alquran.cloud/v1/meta");
     if(typeShow==="sura"){
       setData(d.data.data.surahs.references);
     }

@@ -10,7 +10,7 @@ function Quran() {
   const {id} = useParams()
 
   const handelSura = async () => {
-    const d = await axios.get(`http://api.alquran.cloud/v1/surah/${id}`);
+    const d = await axios.get(`https://api.alquran.cloud/v1/surah/${id}`);
     setData(d.data.data.ayahs);
     setLoading(false)
   };

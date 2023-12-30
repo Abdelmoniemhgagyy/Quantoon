@@ -14,7 +14,7 @@ function Player1() {
 
 
   const handelAudio = async () => {
-        const D = await axios.get(`http://api.alquran.cloud/v1/meta`);
+        const D = await axios.get(`https://api.alquran.cloud/v1/meta`);
         setData(D.data.data.surahs.references)
   }
 
@@ -24,18 +24,13 @@ function Player1() {
 
   return (
     <div style={{marginTop:"500px"}}>
-{/*    
- {data.map((item)=>(
- 
- <div onClick={()=>setNum(`${item.number}`)}> {item.name}</div>
- ))} */}
 
-   <AudioPlayer
-   style={{direction:"ltr"}}
-    autoPlay
-    src={`https://download.quranicaudio.com/qdc/abdul_baset/murattal/1.mp3`}
-    onPlay={e => console.log("onPlay")}
-  />
+        <AudioPlayer
+        style={{direction:"ltr"}}
+          autoPlay
+          src={`https://download.quranicaudio.com/qdc/abdul_baset/murattal/1.mp3`}
+          onPlay={e => console.log("onPlay")}
+        />
 
 
     </div>
