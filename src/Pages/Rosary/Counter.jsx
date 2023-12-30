@@ -6,7 +6,7 @@ function Counter({daker,img}) {
   return (
     <div>
 
-<div className={styles.rossary} style={{width:"350px",maxWidth:"350px"}} >
+<div className={styles.rossary}  >
 
     <img src={Img} alt="rossary"  style={{width:"240px",maxWidth:"240px"}}/>
 

@@ -2,6 +2,8 @@
 
 
 .rossary{
+    max-width:350px;
+    width: 350px;
     position: relative;
     padding: 20px 30px 20px ;
     margin: 20px auto; 
@@ -44,20 +46,24 @@
     left:218px;
 }
 
-
 @media (max-width:590px){
     .rossary{
-        padding: 20px 20px 20px 0 ;
-        width: 80%;
+        padding: 20px 10px 20px 0 ;
+        width: 240px;
+        max-width: 240px;
     }
     .counterBtn{
-        left:125px; 
+        left:73px; 
     }
     
     .resetBtn{
-        left:210px;
+        left:153px;
     }
     .rossary>p{
-        width: 80%;
+        width: 100%;
+    }
+    .countShow{
+        left:19px; 
+        top:90px
     }
 }
