@@ -23,7 +23,6 @@ function RightNavbar() {
     <div className={`constentRightNav   `} style={{width:openNav ?"280px":"60px"}}>
       {/* logo */}
       <Link to="/" className='logo-container'  style={{gap:openNav?"18px":"0px"}} >
-
           {
             openNav  ?  <h3 className='titleNavEle'>قانتون</h3>
                      : <img src={Logo} alt="logo" />
@@ -34,7 +33,7 @@ function RightNavbar() {
     {/* Sart Nav items  */}
 
     {/* List icon  */}
-        <div className={`RightNavEle `}
+        <div className={`RightNavEle Navlist`}
               style={{padding:openNav ?"8px 10px":"20px 20px 0 0"}}
                 dir='rtl'
                 onClick={()=>setOpenNav(!openNav)} >
@@ -53,7 +52,6 @@ function RightNavbar() {
         <NavItem ImgSrc={Quran} openNav={openNav} setOpenNav={setOpenNav} path="/quran" title="القران الكريم"/>
         <NavItem ImgSrc={Hadith} openNav={openNav} setOpenNav={setOpenNav} path="/hadith" title=" الأحاديث النبوية"/>
         <NavItem ImgSrc={Adkar} openNav={openNav} setOpenNav={setOpenNav} path="/adkar" title="الأذكار"/>
-
         <NavItem ImgSrc={ Rosary} openNav={openNav} setOpenNav={setOpenNav} path="/rosary" title="السبحة"/>
 
     {/* End Nav items  */}

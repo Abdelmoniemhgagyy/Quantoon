@@ -32,7 +32,6 @@
 }
 .RightNavEle{
     line-height: 2;
-
     width: 100%;
     color: white;
     display: flex;
@@ -43,9 +42,11 @@
     align-items: baseline;
     padding: 2px 0;
     &:hover{
-                       background-color: rgb(197, 197, 197);
+             background-color: rgb(197, 197, 197);
     }
-  
+}
+.Navlist:hover{
+    background-color: transparent;
 }
 .active{
     background-color: rgb(197, 197, 197);

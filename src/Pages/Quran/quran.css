@@ -153,7 +153,7 @@ body::-webkit-scrollbar-thumb{
         font-size: 12px;
     }
     .sura p:first-of-type{
-        padding-top: 10px;
+        padding-top: 20px;
     }
     .bi-backspace {
         top:-30px;

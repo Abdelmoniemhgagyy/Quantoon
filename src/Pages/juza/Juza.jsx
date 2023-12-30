@@ -23,7 +23,7 @@ function Juza() {
     <div>
       {loading ? <Loading mT="250px"/> 
       :
-      <div className="sura active ">
+      <div className="sura ">
         {data.map((item) => (
           <div  >
             <p>{item.text} (<span>{item.number}</span>)</p>

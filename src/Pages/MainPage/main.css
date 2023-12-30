@@ -16,6 +16,17 @@
     align-items: center;
 
 }
+.container .title {
+    font-family: 'Marhey', sans-serif;
+    color: white;
+    margin-top: 50px;
+
+}
+@media(max-width:590px){
+    .container .title {
+        font-size: 12px;
+    }
+}
 .img-container{
     width: 150px;
     padding: 5px;
