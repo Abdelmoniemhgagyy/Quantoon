@@ -140,13 +140,20 @@ body::-webkit-scrollbar-thumb{
 }
 
 @media(max-width:590px){
+    .sura{
+        margin-top: 60px;
+    }
     .sura p {
-        padding-top: 20px;
+      
         padding-bottom: 4px;
         margin: 0px auto;
-        width: 100%;
+        margin-right:30px ;
+        width: 90%;
         line-height: 1.7;
         font-size: 12px;
+    }
+    .sura p:first-of-type{
+        padding-top: 10px;
     }
     .bi-backspace {
         top:-30px;

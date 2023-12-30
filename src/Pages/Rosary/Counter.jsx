@@ -6,8 +6,9 @@ function Counter({daker,img}) {
   return (
     <div>
 
-<div className={` pt-4 pb-3 px-5 mx-1 text-center  position-relative mt-3 rounded `} style={{width:"350px",maxWidth:"350px"}} >
-    <img src={Img} alt=""  style={{width:"240px",maxWidth:"240px"}}/>
+<div className={styles.rossary} style={{width:"350px",maxWidth:"350px"}} >
+
+    <img src={Img} alt="rossary"  style={{width:"240px",maxWidth:"240px"}}/>
 
     <h3 className={styles.countShow}>{count}</h3>
           
@@ -15,10 +16,9 @@ function Counter({daker,img}) {
                    onClick={()=>setCount(count+1)}></button>
            
               <button className={styles.resetBtn}
-              onClick={()=>setCount(0)}
-              ></button>
+               onClick={()=>setCount(0)}></button>
 
-              <p className='p-2 bg-primary mt-3 text-white text-center mx-auto rounded '>{daker}</p>
+              <p className='p-2 bg-primary mt-3 text-white text-center mx-auto rounded ' >{daker}</p>
 
         </div>
 
