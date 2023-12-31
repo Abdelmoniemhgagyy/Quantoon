@@ -1,6 +1,7 @@
 import React, { useEffect, useState,useCallback } from 'react'
 import "./Hadith.css"
 import  Paginations  from "../../components/Pagination/Pagination"
+import  ScrollTopTop from "../../components/ScroolToTop/ScroolToTop"
 import Loading  from '../../components/Loading/Loading'
 
 import axios from 'axios'
@@ -53,9 +54,7 @@ useEffect(() => {
   {loading
 
   ?      
-   //loading
-     <Loading mT="40px"/>
-   // end Loading   
+     <Loading mT="40px"/>  
   :
     //show data
     <div>
@@ -74,6 +73,10 @@ useEffect(() => {
     setNumberOfPage={setNumberOfPage} 
     numberOfPagination={numberOfPagination}
     numberOfPage={numberOfPage} />
+
+     {/* scroll to top  */}
+     <ScrollTopTop bottom="30px"/>
+    
 
     </div>
   )

@@ -1,0 +1,14 @@
+.scroll-to-top{
+      position: fixed;
+      right: 54px;
+      border-radius: 50%;
+      padding: 10px;
+      transition: all .5s;
+      z-index: 999;
+}
+
+.scroll-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}

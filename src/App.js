@@ -9,6 +9,7 @@ import Hadith from "./Pages/Hadith/Hadith.jsx"
 import Juza from "./Pages/juza/Juza.jsx"
 import NamesOFAllah from "./Pages/theNameOfAllah/NamesOFAllah.jsx"
 import Rosary from "./Pages/Rosary/Rosary.jsx"
+import ScrollTopTop from "./components/ScroolToTop/ScroolToTop.jsx"
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 
@@ -19,8 +20,8 @@ function App() {
 <BrowserRouter>
 
 
-<RightNavbar/>
-
+ <RightNavbar/>
+ <ScrollTopTop/>
    <Routes>    
       <Route path='/' element={<Main/>}/>
     <Route path='/quran' element={<Quran/>} exact >
