@@ -1,4 +1,3 @@
-
 .header h1 {
     margin: 20px auto 50px;
     font-size: 36px;
@@ -12,27 +11,22 @@
     width: 200px;
     height: 2px;
     background-color: greenyellow;
-    
     position: absolute;
     left:50%;
     bottom: -20px;
     transform: translateX(-50%);
 }
-.container {
-
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-font-family: ui-monospace;
-
-
-
+.containerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: ui-monospace;
 }
 .none {
     display: none;
 }
-.container .box {
+.containerr .box {
     font-family:  Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -47,17 +41,16 @@ font-family: ui-monospace;
     color: white;
   
 }
-.container .box:hover{
+.containerr .box:hover{
     transform: scale(1.15);
     border-color: rgb(64, 210, 255);
 }
-.container .box > a {
+.containerr .box > a {
     margin-bottom: 5px;
     color: white;
     font-size: 22px;
 }
-.container .box > p {
-  
+.containerr .box > p {
     font-size: 14px;
 }
 

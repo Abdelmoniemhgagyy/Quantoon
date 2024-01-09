@@ -4,14 +4,13 @@ import axios from "axios";
 import { useState } from "react";
 import { useParams , Link } from "react-router-dom";
 import Loading from "../../components/Loading/Loading"
-function Juza() {
+function Quran() {
   const[loading,setLoading] = useState(true)
   const [data, setData] = useState([]);
   const {id} = useParams()
 
   const handelSura = async () => {
-    const d = await axios.get(`https://api.alquran.cloud/v1/juz/${id}`);
-    console.log(d.data.data.ayahs);
+    const d = await axios.get(`https://api.alquran.cloud/v1/surah/${id}`);
     setData(d.data.data.ayahs);
     setLoading(false)
   };
@@ -21,12 +20,12 @@ function Juza() {
 
   return (
     <div>
-      {loading ? <Loading mT="250px"/> 
+      {loading ? <Loading mT="300px"/> 
       :
-      <div className="sura ">
+      <div className="sura">
         {data.map((item) => (
-          <div  >
-            <p>{item.text} (<span>{item.number}</span>)</p>
+          <div>
+            <p>{item.text} (<span>{item.numberInSurah}</span>)</p>
           </div>
         ))}
 
@@ -35,9 +34,9 @@ function Juza() {
         </Link>
       </div>    
           }
-          <br />
+            <br />
     </div>
   );
 }
 
-export default Juza;
+export default Quran;

@@ -57,10 +57,7 @@
 }
 @media(max-width:590px){
     .adkar-container .dakr>div{
-        font-size: 10px;
-      
+        font-size: 10px;      
     }
-    .adkar-container .dakr>div>p{
-        
-    }
+
 }

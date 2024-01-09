@@ -1,12 +1,17 @@
 import React from 'react';
-import Main from "./Pages/MainPage/Main"
+import Main from "./Pages/MainPage/Main.jsx"
 import Quran from "./Pages/Quran/Quran"
-import Sura from "./Pages/Sura/Sura"
+import QuranAudio from "./Pages/quran-audio/QuranAudio.jsx"
+import Download from "./Pages/quran-audio/Download.jsx"
+import PlayerQuran from "./Pages/quran-audio/PlayerQuran.jsx"
+import Sura from "./Pages/Quran/Sura"
+import SuraContainer from "./Pages/Quran/SuraContainer.jsx"
 import  Adkar from "./Pages/Adkar/Adkar.jsx"
 import Books from "./Pages/Books/Books.jsx"
 import RightNavbar from "./components/Navbar/RightNavbar.jsx"
 import Hadith from "./Pages/Hadith/Hadith.jsx"
-import Juza from "./Pages/juza/Juza.jsx"
+import Juza from "./Pages/Quran/Juza.jsx"
+import JuzaContainer from "./Pages/Quran/JuzaContainer.jsx"
 import NamesOFAllah from "./Pages/theNameOfAllah/NamesOFAllah.jsx"
 import Rosary from "./Pages/Rosary/Rosary.jsx"
 import ScrollTopTop from "./components/ScroolToTop/ScroolToTop.jsx"
@@ -22,13 +27,22 @@ function App() {
 
  <RightNavbar/>
  <ScrollTopTop/>
-   <Routes>    
-      <Route path='/' element={<Main/>}/>
+
+   <Routes> 
+    {/* Start Quran Routes */}
     <Route path='/quran' element={<Quran/>} exact >
+
+            <Route  index element={<SuraContainer/>}/>
+            <Route path=':id' element={<Sura/>}/>
+            <Route path='juza' element={<JuzaContainer/>}/>
+            <Route path='juza/:id' element={<Juza/>}/>
+            <Route path='audio' element={<QuranAudio/>}/>
+            <Route  path="download" element={<Download/>}/>
+            <Route  path="player" element={<PlayerQuran/>}/>
     </Route>
-      <Route path='quran/sura/:id' element={<Sura/>}/>
-      <Route path='quran/juza/:id' element={<Juza/>}/>
-    <Route path='/sura' element={<Sura/>}/>
+    {/* End Quran Routes */}
+
+
     <Route path='/adkar' element={<Adkar/>}/>
     <Route path='/hadith' element={<Hadith/>}/>
     <Route path='/namesofallah' element={<NamesOFAllah/>}/>
@@ -41,24 +55,3 @@ function App() {
 
 export default App;
 
-
-// import Axios from "./FetchData"
-// import "./i18n"
-// import { useTranslation } from 'react-i18next';
- // const [t,i18n]=useTranslation('')
-  //  {/* <Axios/>
-  //   <div style={{textAlign:i18n.language ==="ar"&&"right"}}>
-  //     <h1>{t('title')}
-  //    </h1>
-  //    <h3>{t("logo")}</h3>
-  //    </div>
-  //    <div style={{textAlign:"center",margin:"20px auto",width:"100%"}}>
-  //         {i18n.language === "ar"&&<button onClick={()=>i18n.changeLanguage("en")}>
-  //           En
-  //         </button>}
-          
-  //         {i18n.language === "en"&&<button onClick={()=>i18n.changeLanguage("ar")}>
-  //           Ar
-  //         </button>}
-  //    </div>
-  //   */}

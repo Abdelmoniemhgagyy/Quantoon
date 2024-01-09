@@ -10,7 +10,7 @@ function NavItem({openNav,setOpenNav,title,path,ImgSrc}) {
           <div >
               <img src={ImgSrc} alt="listIcon" style={{width:"30px"}} />
           </div>
-          <div className='flex-grow-1'>
+          <div className='grow'>
                <p style={{fontSize:openNav?"18px":"0px"}} className='titleNavEle'>{title}</p>
           </div>
 

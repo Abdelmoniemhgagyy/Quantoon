@@ -4,11 +4,11 @@ import styles from "./Rosary.module.css"
 function Counter({daker,img}) {
     const [count, setCount] = useState(0);
   return (
-    <div>
+    <div className='flex justify-center items-center flex-col'>
 
-<div className={styles.rossary}  >
+<div className={`${styles.rossary}  `}  >
 
-    <img src={Img} alt="rossary"  style={{width:"240px",maxWidth:"240px"}}/>
+    <img src={Img} alt="rossary" className=' md:mx-auto  w-[240px] max-w-[240px]' />
 
     <h3 className={styles.countShow}>{count}</h3>
           
@@ -17,10 +17,9 @@ function Counter({daker,img}) {
            
               <button className={styles.resetBtn}
                onClick={()=>setCount(0)}></button>
-
-              <p className='p-2 bg-primary mt-3 text-white text-center mx-auto rounded ' >{daker}</p>
-
         </div>
+
+              <p className='p-2  text-white text-center w-[90%] mr-[27px] md:mx-auto ' >{daker}</p>
 
     </div>
   )

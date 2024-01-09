@@ -1,14 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import "../node_modules/bootstrap/dist/css/bootstrap.css"
-import "../node_modules/bootstrap/dist/js/bootstrap.js"
 import "./index.css"
+import store from "./store/GloableContext.jsx"
+import ContextProvider from "./store/ContextProvider.jsx"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <ContextProvider >
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+  </ContextProvider>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

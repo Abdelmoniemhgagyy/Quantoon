@@ -1,9 +1,7 @@
 import { useEffect , useState } from "react";
-import "./ScrollTopTop.css"
 
-function ScroolToTop({bottom,zIndex}) {
+function ScroolToTop({bottom}) {
   const [appear ,setAppear] =useState(false)
-console.log(typeof(zIndex))
  
   useEffect(() => {
     const handleScroll = () => {
@@ -31,12 +29,12 @@ const scrollToTop =()=>{
     setAppear("false")
   }
   return (
- <div onClick={()=> scrollToTop()} 
- style={{transform:`translateX(${appear ? "0px" : "150%"} ) `, bottom:bottom || " -5px ",zIndex: zIndex===0 ? 0 : 999}}
-      className='scroll-to-top '>
-    <i className="bi bi-arrow-up scroll-icon "></i>
+ <div onClick={()=> scrollToTop()} style={{transform:`translateX(${appear ? "0px" : "150%"} )`,bottom:bottom}} className='fixed bottom-[5px]
+    right-1  md:right-2 bg-[#16408b] rounded-full p-2 transition duration-500 '>
+    <i className="bi bi-arrow-up cursor-pointer text-xl text-white "></i>
 </div>
 
   )
 }
+
 export default ScroolToTop

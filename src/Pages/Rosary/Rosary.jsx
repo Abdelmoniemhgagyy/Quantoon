@@ -6,7 +6,7 @@ function Rosary() {
    
  
   return (
-    <div className=' d-flex justify-content-around align-items-center flex-wrap gap-1 ' 
+    <div className=' flex justify-around items-center flex-wrap ' 
     style={{margin:"20px 20px 0px 0px",minHeight:"100vh"}}>
 
 {dataRosary.map((item) =>  (

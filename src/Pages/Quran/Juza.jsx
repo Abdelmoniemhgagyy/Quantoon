@@ -4,39 +4,42 @@ import axios from "axios";
 import { useState } from "react";
 import { useParams , Link } from "react-router-dom";
 import Loading from "../../components/Loading/Loading"
-function Quran() {
+function Juza() {
   const[loading,setLoading] = useState(true)
   const [data, setData] = useState([]);
   const {id} = useParams()
-
+ console.log(id)
   const handelSura = async () => {
-    const d = await axios.get(`https://api.alquran.cloud/v1/surah/${id}`);
+    const d = await axios.get(`https://api.alquran.cloud/v1/juz/${id}`);
+    console.log(d.data.data.ayahs);
     setData(d.data.data.ayahs);
     setLoading(false)
   };
+
+
   useEffect(() => {
     handelSura();
-  }, [data]);
+  }, []);
+
 
   return (
     <div>
-      {loading ? <Loading mT="300px"/> 
+      {loading ? <Loading mT="250px"/> 
       :
-      <div className="sura ">
+      <div className="sura">
         {data.map((item) => (
           <div  >
-            <p>{item.text} (<span>{item.numberInSurah}</span>)</p>
+            <p>{item.text} (<span>{item.number}</span>)</p>
           </div>
         ))}
-
-        <Link to="/quran">
+        <Link to="/quran/juza">
               <i class="bi bi-backspace"></i>
         </Link>
       </div>    
           }
-            <br />
+          <br />
     </div>
   );
 }
 
-export default Quran;
+export default Juza;

@@ -20,7 +20,7 @@ function RightNavbar() {
 <div style={{}}>
  <div className='containerRightNav'>
 
-    <div className={`constentRightNav   `} style={{width:openNav ?"280px":"60px"}}>
+    <div className={`constentRightNav`} style={{width:openNav ?"280px":"60px"}}>
       {/* logo */}
       <Link to="/" className='logo-container'  style={{gap:openNav?"18px":"0px"}} >
           {
@@ -42,7 +42,7 @@ function RightNavbar() {
                       <i className= "bi bi-list "></i>
                   </div>
 
-                  <div className='flex-grow-1'>
+                  <div className='grow'>
                       <p style={{fontSize:openNav?"18px":"0px"}} className='titleNavEle'>القائمة</p>
                   </div>
         </div>

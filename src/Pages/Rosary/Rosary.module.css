@@ -15,8 +15,8 @@
     color: rgb(139, 7, 84);
     position: absolute;
     width: 170px;
-    top:92px;
-    left:87px;
+    top:86px;
+    left:86px;
     text-align: right;
     font-size: 40px;
     font-family: 'Saira', sans-serif;
@@ -33,19 +33,19 @@
 .counterBtn{
     width: 80px;
     height: 80px;
-    top:51%;
-    left:134px;
+    top:60%;
+    left:135px;
     
 }
 
 .resetBtn{
     width: 32px;
     height: 32px;
-    top:43%;
-    left:218px;
+    top:50%;
+    left:220px;
 }
 
-@media (max-width:590px){
+@media (max-width:767px){
     .rossary{
         padding: 20px 10px 20px 0 ;
         width: 240px;

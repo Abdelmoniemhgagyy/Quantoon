@@ -3,7 +3,6 @@ import "./Hadith.css"
 import  Paginations  from "../../components/Pagination/Pagination"
 import  ScrollTopTop from "../../components/ScroolToTop/ScroolToTop"
 import Loading  from '../../components/Loading/Loading'
-
 import axios from 'axios'
 
 function Hadith() {
