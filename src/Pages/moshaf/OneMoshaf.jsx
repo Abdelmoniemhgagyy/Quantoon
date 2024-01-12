@@ -100,7 +100,8 @@ return (
      <div className='text-center pb-[40px]'>
      <input type="number" min={1} placeholder='رقم الصفحة' className=' p-2 w-[60%] md:w-auto rounded-lg border-none outline-none '
           value={numberOfPage}
-          onChange={changeInputValue} />
+          onChange={changeInputValue}
+          onClick={(e)=>e.stopPropagation()} />
      </div>
         
       </div>}
