@@ -42,14 +42,14 @@ const nextPage = ()=>{
   return (
     <>
     <div  className='mt-[15px] mr-[60px] flex items-center justify-center flex-col'>
-      <div className='my-4 md:my-2  md:mr-[42px]'>
-        <input type="number" min={1} placeholder='رقم الصفحة' className='p-2 rounded-lg border-none outline-none '
+      <div className='my-4 md:my-2  md:mr-[42px] flex justify-center'>
+        <input type="number" min={1} placeholder='رقم الصفحة' className='p-2 w-[60%] md:w-auto rounded-lg border-none outline-none '
         value={numberOfPage}
         onChange={changeInputValue} />
 
-         <button className='mr-2 p-2 bg-blue-800 rounded-lg text-white' onClick={()=>setNumberOfPage(fahrs)}>الفهرس</button>
+         <button className='md:mr-2 p-2 bg-blue-800 rounded-lg sm:rounded-l-lg text-white' onClick={()=>setNumberOfPage(fahrs)}>الفهرس</button>
      </div>
-      <div className='md:h-[600px] md:w-[400px] flex gap-[3px] md:gap-[8px] items-center text-white'>
+      <div className='md:h-[600px] sm:w-[400px] flex gap-[3px] md:gap-[8px] items-center text-white'>
       <i class="bi bi-arrow-right-circle sm:text-3xl text-xl cursor-pointer"  onClick={prevPage} ></i>
 
         <img className='w-[80%] sm:w-[70%] md:w-full md:h-[600px] rounded-[2px]'
