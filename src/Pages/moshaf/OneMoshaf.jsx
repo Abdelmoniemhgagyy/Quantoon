@@ -73,13 +73,13 @@ return (
     {openModel&&<div className='absolute top-0 left-0 min-w-full min-h-full bg-[#777] z-[99999999]' onClick={()=>setOpenModel(false)}>
        
        
-          <div className='relative mt-[120px] mt-[100px] flex gap-[2px] md:gap-[10px] items-center 
+          <div className='relative mt-[120px] mt-[55px] flex gap-[2px] md:gap-[10px] items-center 
           justify-center text-white pb-[3px]'
           >
 
              <i onClick={()=>setOpenModel(!openModel)}
              class="bi bi-x-circle text-2xl md:text-3xl text-[white] hover:text-red-500 
-             absolute top-[-35px] left-[0x] md:left-[49%] md:top-[-50px] cursor-pointer"></i>
+             absolute top-[-35px] left-[0x] md:left-[49%] md:top-[-50px] text-2xl cursor-pointer"></i>
 
              
 
@@ -98,7 +98,7 @@ return (
                nextPage()}}></i>
           </div>
      <div className='text-center pb-[40px]'>
-     <input type="number" min={1} placeholder='رقم الصفحة' className=' p-2 w-[60%] md:w-auto rounded-lg border-none outline-none '
+     <input type="number" min={1} placeholder='رقم الصفحة' className=' p-2 w-[60%] md:w-auto rounded-lg border-none outline-none'
           value={numberOfPage}
           onChange={changeInputValue}
           onClick={(e)=>e.stopPropagation()} />
