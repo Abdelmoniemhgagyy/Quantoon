@@ -9,6 +9,7 @@ import Hadith from "../../assest/listImg/ramadan.png"
 import Adkar from "../../assest/listImg/prayer.png"
 import NamesOfAllah from "../../assest/listImg/allah.png"
 import Rosary from "../../assest/listImg/beads.png"
+import moshaf from "../../assest/listImg/quran.png"
 
 
 
@@ -17,7 +18,7 @@ function RightNavbar() {
     const [openNav,setOpenNav] =useState(false)
 
   return (
-<div style={{}}>
+<div >
  <div className='containerRightNav'>
 
     <div className={`constentRightNav`} style={{width:openNav ?"280px":"60px"}}>
@@ -47,13 +48,14 @@ function RightNavbar() {
                   </div>
         </div>
     {/* End List icon  */}
-
+        
         <NavItem ImgSrc={NamesOfAllah} openNav={openNav} setOpenNav={setOpenNav} path="/namesofallah" title="أسماء الله الحسني"/>
         <NavItem ImgSrc={Quran} openNav={openNav} setOpenNav={setOpenNav} path="/quran" title="القران الكريم"/>
+        <NavItem ImgSrc={ moshaf} openNav={openNav} setOpenNav={setOpenNav} path="/moshaf" title="المصاحف"/>
         <NavItem ImgSrc={Hadith} openNav={openNav} setOpenNav={setOpenNav} path="/hadith" title=" الأحاديث النبوية"/>
         <NavItem ImgSrc={Adkar} openNav={openNav} setOpenNav={setOpenNav} path="/adkar" title="الأذكار"/>
         <NavItem ImgSrc={ Rosary} openNav={openNav} setOpenNav={setOpenNav} path="/rosary" title="السبحة"/>
-
+       
     {/* End Nav items  */}
     </div>
 

@@ -1,3 +1,4 @@
+
 .containerRightNav{
      right: 0;
       top:0;
@@ -36,10 +37,10 @@
     color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-weight: 400;
     gap: 20px;
     cursor: pointer;
-    align-items: baseline;
     padding: 2px 0;
     &:hover{
              background-color: rgb(197, 197, 197);
@@ -59,5 +60,8 @@
     transition-duration: .5s;
     height: 30px;
     margin: auto;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
     
 }

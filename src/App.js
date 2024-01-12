@@ -6,7 +6,8 @@ import Download from "./Pages/quran-audio/Download.jsx"
 import PlayerQuran from "./Pages/quran-audio/PlayerQuran.jsx"
 import Sura from "./Pages/Quran/Sura"
 import SuraContainer from "./Pages/Quran/SuraContainer.jsx"
-import  Adkar from "./Pages/Adkar/Adkar.jsx"
+import Adkar from "./Pages/Adkar/Adkar.jsx"
+import Moshaf from "./Pages/moshaf/Moshaf.jsx"
 import Books from "./Pages/Books/Books.jsx"
 import RightNavbar from "./components/Navbar/RightNavbar.jsx"
 import Hadith from "./Pages/Hadith/Hadith.jsx"
@@ -47,6 +48,7 @@ function App() {
     <Route path='/hadith' element={<Hadith/>}/>
     <Route path='/namesofallah' element={<NamesOFAllah/>}/>
     <Route path='/rosary' element={<Rosary/>}/>
+    <Route path='/moshaf' element={<Moshaf/>}/>
     
     </Routes>
 </BrowserRouter>

@@ -12,7 +12,7 @@ function Adkar() {
 
        
       <div className='m-2 btn '>
-        <h1 className='text-info title-adkar '>{dataa[0].category}</h1>
+        <h1 className='text-[30px] text-[white] title-adkar '>{dataa[0].category}</h1>
       </div>
       <div className='btn-conntainer'>
         <button onClick={()=>setDataa(data["أذكار الصباح"])}>أذكار الصباح</button>
@@ -35,7 +35,6 @@ function Adkar() {
             </div> 
         </div>
       )}
-      { console.log(window.innerWidth)}
     </div>
   )
 }
