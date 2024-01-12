@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import  { useState } from "react" 
 
-function OneMoshaf({Src,typeImg,fahrs}) {
+function OneMoshaf({Src,typeImg,name,fahrs}) {
 
   const [numberOfPage, setNumberOfPage] = useState(1);
 
@@ -49,6 +49,7 @@ const nextPage = ()=>{
 
          <button className='md:mr-2 p-2 bg-blue-800 rounded-lg sm:rounded-l-lg text-white' onClick={()=>setNumberOfPage(fahrs)}>الفهرس</button>
      </div>
+     
       <div className='md:h-[600px] sm:w-[400px] flex gap-[3px] md:gap-[8px] items-center text-white'>
       <i class="bi bi-arrow-right-circle sm:text-3xl text-xl cursor-pointer"  onClick={prevPage} ></i>
 
@@ -57,6 +58,8 @@ const nextPage = ()=>{
       
         <i class="bi bi-arrow-left-circle sm:text-3xl text-xl cursor-pointer"  onClick={nextPage}></i>
       </div>
+      <p className='md:text-xl text-white text-center md:mr-8'>{name}</p>
+
     </div>
 
 

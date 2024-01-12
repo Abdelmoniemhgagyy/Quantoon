@@ -30,7 +30,7 @@ function Moshaf() {
      />
 
     <OneMoshaf Src={`https://app.quranflash.com/book/Medina2/epub/EPUB/imgs/`} 
-    name=""
+    name="مصحف المدينة"
     typeImg={`.png`}
     fahrs={622}
      />
@@ -39,6 +39,11 @@ function Moshaf() {
     name="مصحف المدينة القديم"
     typeImg={`.png`}
     fahrs={622}
+     />
+    <OneMoshaf Src={`https://app.quranflash.com/book/Warsh1/epub/EPUB/imgs/`} 
+    name="مصحف ورش"
+    typeImg={`.png`}
+    fahrs={574}
      />
     <OneMoshaf Src={`https://app.quranflash.com/book/Shubah/epub/EPUB/imgs/`} 
     name="رواية شعبة"
@@ -51,9 +56,19 @@ function Moshaf() {
     fahrs={542}
      />
     <OneMoshaf Src={`https://app.quranflash.com/book/Qaloon/epub/EPUB/imgs/`} 
-    name=""
+    name="مصحف قالون"
     typeImg={`.png`}
     fahrs={574}
+     />
+    <OneMoshaf Src={`https://app.quranflash.com/book/Shamarly/epub/EPUB/imgs/`} 
+    name="مصحف الشمرلي"
+    typeImg={`.png`}
+    fahrs={522}
+     />
+    <OneMoshaf Src={`https://app.quranflash.com/book/NaskhTaleek/epub/EPUB/imgs/`} 
+    name="مصحف خط نسخ تعليق"
+    typeImg={`.png`}
+    fahrs={618}
      />
 
 
