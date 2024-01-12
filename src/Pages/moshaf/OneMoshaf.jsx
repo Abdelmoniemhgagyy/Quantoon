@@ -73,7 +73,7 @@ return (
     {openModel&&<div className='absolute top-0 left-0 min-w-full min-h-full bg-[#777] z-[99999999]' onClick={()=>setOpenModel(false)}>
        
        
-          <div className='relative mt-[140px] mt-[100px] flex gap-[2px] md:gap-[10px] items-center 
+          <div className='relative mt-[120px] mt-[100px] flex gap-[2px] md:gap-[10px] items-center 
           justify-center text-white pb-[3px]'
           >
 
