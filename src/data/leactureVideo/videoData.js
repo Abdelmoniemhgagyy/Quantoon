@@ -21,6 +21,29 @@ export const NamesOfSheikhs =[
     },
 ]
 
+export const mohmedSharaye =[
+    {
+        id:1,
+        title:" خواطر الشيخ الشعراوي جزء عم الحلقة الأولي ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/01_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
+    {
+        id:2,
+        title:"خواطر الشيخ الشعراوي جزء عم الحلقة الثانية ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/02_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
+    {
+        id:3,
+        title:"خواطر الشيخ الشعراوي جزء عم الحلقة الثالثة ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/03_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
+]
 
 export const sameerMostfa = [
     {
@@ -201,7 +224,6 @@ export const sameerMostfa = [
       poster:"",
     },
   ];
-  
 
   export const aboEshak = [
     {
@@ -341,8 +363,14 @@ export const eyadElqenaby =[
       url:"https://media.islamway.net/videos/1426/922_Qnebe_Elamn.mp4",
       poster:"//static.media.islamway.net//videos/1426/922_Qnebe_Elamn-l.jpg"
     },
-
+    {
+      id:6,
+      title:"سؤال أين الله؟",
+      url:"https://media.islamway.net/videos/1426/922_Elqnebe_Allh.mp4",
+      poster:"//static.media.islamway.net//videos/1426/922_Elqnebe_Allh-l.jpg"
+    },
 ]
+
 //   export const nameSheik = [
 //     {
 //       id: 1,

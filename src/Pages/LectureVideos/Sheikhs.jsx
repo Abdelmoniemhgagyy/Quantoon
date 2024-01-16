@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Card from "./Card"
 import GloableContext from '../../store/GloableContext'
-import { sameerMostfa,aboEshak,ahmedAbdelmoniem,saeedElkamly,eyadElqenaby} from "../../data/leactureVideo/videoData.js"
+import { sameerMostfa,aboEshak,ahmedAbdelmoniem,saeedElkamly,eyadElqenaby,mohmedSharaye} from "../../data/leactureVideo/videoData.js"
 
 function Sheikhs() {
     const {leactureVideoes } =useContext(GloableContext)
@@ -27,6 +27,10 @@ function Sheikhs() {
                 SrcImg="https://i1.sndcdn.com/artworks-000318203850-wvduss-t500x500.jpg"
                 name="أبو إسحاق الحويني"
                 data={aboEshak}/>
+            <Card 
+                SrcImg="https://1.bp.blogspot.com/-hEp5l8EuxTU/YQlHtsBBrEI/AAAAAAACNwc/KtslO1Yc44gNavEkC6dRCWsemL0fyigrwCLcBGAsYHQ/s450/%25D8%25A7%25D8%25AD%25D8%25A7%25D8%25AF%25D9%258A%25D8%25AB-%25D8%25A7%25D9%2584%25D8%25B4%25D9%258A%25D8%25AE-%25D8%25A7%25D9%2584%25D8%25B4%25D8%25B9%25D8%25B1%25D8%25A7%25D9%2588%25D9%258A.jpg"
+                name="الشيخ محمد متولي الشعراوي"
+                data={mohmedSharaye}/>
             <Card 
                 SrcImg="https://liveislam.info/wp-content/uploads/2021/01/dr-eyad.jpg"
                 name="إياد قنيبي"

@@ -10,8 +10,7 @@
 }
 .video-react .video-react-loading-spinner {
      border: 6px solid rgba(255, 255, 255, 0) ;
-     left: 60%
-
+     left:55%;
 }
 .video-react .video-react-loading-spinner:before {
     content: "";
@@ -46,6 +45,10 @@ flex-wrap: wrap;
           display: flex;
           flex-wrap: wrap;
     }
+    .video-react .video-react-loading-spinner {
+        border: 6px solid rgba(255, 255, 255, 0) ;
+        left: 60%
+   }
 }
 @media(max-width:480px){
     .video-react{
