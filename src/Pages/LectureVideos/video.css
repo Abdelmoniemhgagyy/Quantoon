@@ -1,0 +1,71 @@
+.video-react .video-react-big-play-button{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.video-react{
+    width: 900px !important ;
+    height: 440px !important;
+    border-radius: 10px;
+}
+.video-react .video-react-loading-spinner {
+     border: 6px solid rgba(255, 255, 255, 0) ;
+     left: 60%
+
+}
+.video-react .video-react-loading-spinner:before {
+    content: "";
+    border: 6px solid rgba(75, 75, 75, 0.7) !important;
+}
+@media (max-width: 1065px){
+    .video-react{
+        width: 600px !important ;
+        height:auto
+    }
+}
+@media (max-width: 710px){
+    .video-react{
+        width:500px !important ;
+    }
+}
+.video-react .video-react-poster {
+    border-radius: 10px;
+}
+.video-react-has-started.video-react-user-inactive.video-react-playing 
+.video-react-control-bar.video-react-control-bar-auto-hide,
+.video-react .video-react-control-bar{
+flex-wrap: wrap;
+}
+@media(max-width:576px){
+    .video-react{
+        width: 400px  !important;
+        height: 300px  !important;
+        
+    }
+   .video-react-control-bar .video-react-control-bar-auto-hide{
+          display: flex;
+          flex-wrap: wrap;
+    }
+}
+@media(max-width:480px){
+    .video-react{
+        width: 100% !important;
+        height: 200px  !important;
+        margin:0 auto ;
+        
+    }
+    .video-react-has-started.video-react-user-inactive.video-react-playing .video-react-control-bar.video-react-control-bar-auto-hide,
+.video-react .video-react-control-bar{ 
+   height: 56px !important;
+}
+.video-react .video-react-control{
+    height:31px !important;
+}
+.video-react .video-react-time-control {
+   padding-left: .2rem !important;
+   padding-right: .2rem !important;
+}
+
+
+
+}

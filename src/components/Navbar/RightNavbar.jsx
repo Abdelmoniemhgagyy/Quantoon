@@ -10,6 +10,7 @@ import Adkar from "../../assest/listImg/prayer.png"
 import NamesOfAllah from "../../assest/listImg/allah.png"
 import Rosary from "../../assest/listImg/beads.png"
 import moshaf from "../../assest/listImg/quran.png"
+import Video from "../../assest/listImg/video.png"
 
 
 
@@ -54,6 +55,7 @@ function RightNavbar() {
         <NavItem ImgSrc={ moshaf} openNav={openNav} setOpenNav={setOpenNav} path="/moshaf" title="المصاحف"/>
         <NavItem ImgSrc={Hadith} openNav={openNav} setOpenNav={setOpenNav} path="/hadith" title=" الأحاديث النبوية"/>
         <NavItem ImgSrc={Adkar} openNav={openNav} setOpenNav={setOpenNav} path="/adkar" title="الأذكار"/>
+        <NavItem ImgSrc={Video} openNav={openNav} setOpenNav={setOpenNav} path="/videos" title="مرئيات"/>
         <NavItem ImgSrc={ Rosary} openNav={openNav} setOpenNav={setOpenNav} path="/rosary" title="السبحة"/>
        
     {/* End Nav items  */}

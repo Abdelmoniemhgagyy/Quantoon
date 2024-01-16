@@ -14,6 +14,8 @@ import Hadith from "./Pages/Hadith/Hadith.jsx"
 import Juza from "./Pages/Quran/Juza.jsx"
 import JuzaContainer from "./Pages/Quran/JuzaContainer.jsx"
 import NamesOFAllah from "./Pages/theNameOfAllah/NamesOFAllah.jsx"
+import Videos from "./Pages/LectureVideos/Videos.jsx"
+import Sheikhs from "./Pages/LectureVideos/Sheikhs.jsx"
 import Rosary from "./Pages/Rosary/Rosary.jsx"
 import ScrollTopTop from "./components/ScroolToTop/ScroolToTop.jsx"
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
@@ -49,6 +51,8 @@ function App() {
     <Route path='/namesofallah' element={<NamesOFAllah/>}/>
     <Route path='/rosary' element={<Rosary/>}/>
     <Route path='/moshaf' element={<Moshaf/>}/>
+    <Route path='/videos' element={<Sheikhs/>}/>
+    <Route path='/video' element={<Videos/>}/>
     
     </Routes>
 </BrowserRouter>
