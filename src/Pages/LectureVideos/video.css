@@ -36,6 +36,7 @@
 flex-wrap: wrap;
 }
 @media(max-width:576px){
+    
     .video-react{
         width: 400px  !important;
         height: 300px  !important;
@@ -49,10 +50,14 @@ flex-wrap: wrap;
         border: 6px solid rgba(255, 255, 255, 0) ;
         left: 60%
    }
+
 }
 @media(max-width:480px){
+    .custom-width {
+        width: calc(100% - 31px);
+      }
     .video-react{
-        width: 275px !important;
+        width: 100% !important;
         height: 200px  !important;
         margin:0 auto ;
         

@@ -14,7 +14,7 @@ function Videos() {
 
      {leactureVideoes.map((video,i)=> {
          return (
-        <div className='border border-white rounded-lg p-1 md:p-2 pt-3 lg:mt-5  sm:bg-transparent ]' key={video.id}>
+        <div className='custom-width  border border-white rounded-lg p-1 md:p-2 pt-3 lg:mt-5  sm:bg-transparent ]' key={video.id}>
            {/* name sheah  */}
                <div className='flex gap-[10px] items-center mb-3 md:mb-5 '>
                     <img src={logoSheuhk}
