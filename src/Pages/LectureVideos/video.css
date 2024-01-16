@@ -52,7 +52,7 @@ flex-wrap: wrap;
 }
 @media(max-width:480px){
     .video-react{
-        width: 100% !important;
+        width: 275px !important;
         height: 200px  !important;
         margin:0 auto ;
         
