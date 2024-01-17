@@ -516,8 +516,6 @@ export const eyadElqenaby =[
     },
 ]
 
-
-
   export const mohamedKhirey = [
     {
         id: 1,
@@ -549,40 +547,429 @@ export const eyadElqenaby =[
         url: "https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/gnaeaz_alghd_ttnfs_alewm3-sh_mhmd_khere-tratel_rmdan_med.mp4",
         poster:"https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/Media-way2Allah_5165.thumbs/gnaeaz_alghd_ttnfs_alewm3-sh_mhmd_khere-tratel_rmdan_med_000001.jpg"
       },
+      {
+        id: 6,
+        title: "لا تغلق الباب",
+        url:"https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/la_tghlk_albab_1_-_alshekh_mhmd_khere_-_tratel_rmdan_med.mp4",
+        poster:"https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/Media-way2Allah_5165.thumbs/la_tghlk_albab_1_-_alshekh_mhmd_khere_-_tratel_rmdan_med_000001.jpg"
+      },
+      {
+        id:8,
+        title:"أعظم مؤتمر شوري في التاريخ الإسلامي ❤❤ سلسلة حكاية المجد - الشيخ محمد خيري",
+        url:"https://ia904709.us.archive.org/2/items/Media-way2Allah_5174/%D9%A1_-_a3zm_motmr_shwre_fe_altarekh_aleslame_%E2%9D%A4%E2%9D%A4_slsla_hkaea_almgd_-_alshekh_mhmd_khere_med.mp4",
+        poster:"https://archive.org/download/Media-way2Allah_5174/Media-way2Allah_5174.thumbs/%D9%A1_-_a3zm_motmr_shwre_fe_altarekh_aleslame_%E2%9D%A4%E2%9D%A4_slsla_hkaea_almgd_-_alshekh_mhmd_khere_med_000260.jpg"
+      },
+      {
+        id:9,
+        title: "لبنة من ذهب",
+        url:"https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/lbna_mn_zhb16-alshekh_mhmd_khere-tratel_rmdan_med.mp4",
+        poster:"https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/Media-way2Allah_5165.thumbs/lbna_mn_zhb16-alshekh_mhmd_khere-tratel_rmdan_med_000001.jpg"
+      },
+      {
+        id:10,
+        title: "مشتاق لرؤيته",
+        url:"https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/mshtak_lroeth12-alshekh_mhmd_khere-tratel_rmdan_med.mp4",
+        poster:"https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/Media-way2Allah_5165.thumbs/mshtak_lroeth12-alshekh_mhmd_khere-tratel_rmdan_med_000001.jpg"
+      },
+      {
+        id:11,
+        title: "متعة الوصول",
+        url:"https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/mt3a_alwswl4-alshekh_mhmd_khere-tratel_rmdan_med.mp4",
+        poster:"https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/Media-way2Allah_5165.thumbs/mt3a_alwswl4-alshekh_mhmd_khere-tratel_rmdan_med_000001.jpg"
+      },
+      {
+        id:12,
+        title: "ثقل ميزانك",
+        url:"https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/skl_mezank11-alshekh_mhmd_khere-tratel_rmdan_med.mp4",
+        poster:"https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/Media-way2Allah_5165.thumbs/skl_mezank11-alshekh_mhmd_khere-tratel_rmdan_med_001875.jpg"
+      },
+      {
+        id:13,
+        title: "الخليفة المثمن",
+        url:"https://archive.org/download/Media-way2Allah_5174/%D9%A1%D9%A0_-_drdsha_%E2%9D%A4_hkaea_almgd_-_alshekh_mhmd_khere_med.mp4",
+        poster:"https://archive.org/download/Media-way2Allah_5174/Media-way2Allah_5174.thumbs/%D9%A1%D9%A1_-_alkhlefa_almsmn_%E2%9D%A4_hkaea_almgd_-_alshekh_mhmd_khere_med_000001.jpg"
+      },
+    //   {
+    //     id:11,
+    //     title: "",
+    //     url:"",
+    //     poster:""
+    //   },
+]
+
+  export const ahmedSayed = [
+    {
+      id: 1,
+      title: "نصرة الدين",
+      url:"https://media.islamway.net/videos/4215/922_Elsed_Elnosra.MP4",
+      poster:"//static.media.islamway.net//lessons/4215/19608/922_Elhkeba_9-l.jpg"
+    },
+    {
+      id: 2,
+      title: "نصرة قضايا المسلمين",
+      url: "https://media.islamway.net/videos/4215/922_Elsed_Eloma.MP4",
+      poster:"//static.media.islamway.net//lessons/4215/19608/922_Elhkeba_8-l.jpg"
+    },
+    {
+      id: 3,
+      title:"مقاصد سورة الشرح",
+      url:"https://media.islamway.net/lessons/4215/922_Elsed_Elshrh.mp4",
+      poster:"//static.media.islamway.net//lessons/4215/922_Elsed_Elshrh-l.jpg"
+    },
+    {
+      id: 4,
+      title:"انتصر على نفسك",
+      url: "https://media.islamway.net/videos/4215/922_Elsed_Elnfs.mp4",
+      poster:"//static.media.islamway.net//videos/4215/922_Elsed_Elnfs-l.jpg"
+    },
+    {
+      id: 5,
+      title:"أحداث غزة عبادة لا تغفل عنها",
+      url:"https://media.islamway.net/videos/4215/922_Elsed_Gaza.mp4",
+      poster:"//static.media.islamway.net//videos/4215/922_Elsed_Gaza-l.jpg"
+    },
+    {
+      id: 6,
+      title:"سنة النصر والتمكين",
+      url:"https://media.islamway.net/lessons/4215/19651/922_Elsed_Elsnn 7.mp4",
+      poster:"//static.media.islamway.net//lessons/4215/19651/922_Elsed_Elsnn 7-l.jpg"
+    },
+    {
+      id: 7,
+      title: "سنة الابتلاء",
+      url: "https://media.islamway.net/lessons/4215/19651/922_Elsed_Elsnn 6.mp4",
+      poster:"//static.media.islamway.net//lessons/4215/19651/922_Elsed_Elsnn 6-l.jpg"
+    },
+    {
+      id: 8,
+      title: "سنة التدافع بين الحق والباطل",
+      url: "https://media.islamway.net/lessons/4215/19651/922_Elsed_Elsnn 5.mp4",
+      poster:"//static.media.islamway.net//lessons/4215/19651/922_Elsed_Elsnn 5-l.jpg"
+    },
+    {
+      id: 9,
+      title: "مقاصد سنة الإهلاك",
+      url: "https://media.islamway.net/lessons/4215/19651/922_Elsed_Elsnn 4.mp4",
+      poster:"//static.media.islamway.net//lessons/4215/19651/922_Elsed_Elsnn 4-l.jpg"
+    },
+    {
+      id: 10,
+      title: "فما وهنوا لما أصابهم في سبيل الله",
+      url:"https://media.islamway.net/lessons/4215/922_Elsed_Elmoslem.mp4",
+      poster:"//static.media.islamway.net//lessons/4215/922_Elsed_Elmoslem-l.jpg"
+    },
+    // {
+    //   id: 11,
+    //   title: "",
+    //   url: "",
+    //   poster:""
+    // },
+]
+
+  export const osmanElhames = [
+    {
+      id: 1,
+      title: "ما الواجب على المرأه تغطيته امام محارمها",
+      url:"https://media.islamway.net/videos/140/922_Elkhmees_Elmraa.mp4",
+      poster:"https://baheth.ieasybooks.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTA3NywicHVyIjoiYmxvYl9pZCJ9fQ==--2ea9055a23bc3b0498539416ca69bf133c9c18b2/%D8%B9%D8%AB%D9%85%D8%A7%D9%86%20%D8%A7%D9%84%D8%AE%D9%85%D9%8A%D8%B3.jpg?locale=ar"
+    },
+    {
+      id: 2,
+      title: "حكم الشراء من الأسواق التي تدعم إسرائيل",
+      url:"https://media.islamway.net/videos/140/922_Elhkamees_Elmokata.mp4",
+      poster:"//static.media.islamway.net//videos/140/922_Elhkamees_Elmokata-l.jpg"
+    },
+    {
+      id: 3,
+      title:"الإيمان بالقضاء والقدر",
+      url:"https://media.islamway.net/videos/140/922_Elkhmees_Elqdr.mp4",
+      poster:"//static.media.islamway.net//videos/140/922_Elkhmees_Elqdr-l.jpg"
+    },
+    {
+      id: 4,
+      title:"شروط الأضحية",
+      url:"https://media.islamway.net/videos/140/922_Elkhmees_Elodhya.mp4",
+      poster:"//static.media.islamway.net//videos/140/922_Elkhmees_Elodhya-l.jpg"
+    },
+    {
+      id: 5,
+      title:"هل يجوز جمع صلاتي الجمعة والعصر؟",
+      url:"https://media.islamway.net/videos/140/922_Elgomaa.mp4",
+      poster:"//static.media.islamway.net//videos/140/922_Elgomaa-l.jpg"
+    },
+]
+
+  export const khaledElrashed = [
+    {
+      id: 1,
+      title:"موعظة مؤثرة : الله قريب ومجيب",
+      url:"https://media.islamway.net/videos/179/452_Rashed_AllahQareeb.mp4",
+      poster:"//static.media.islamway.net//videos/179/452_Rashed_AllahQareeb-l.jpg"
+    },
+    {
+      id: 2,
+      title:"كيف يرزقك الله ؟",
+      url:"https://media.islamway.net/videos/179/452_Rashed_YarzokAllah.mp4",
+      poster:"//static.media.islamway.net//videos/179/452_Rashed_YarzokAllah-l.jpg"
+    },
+    {
+      id: 3,
+      title:"موعظة مؤثرة : خانتهم الأغاني !",
+      url:"https://media.islamway.net/videos/179/452_Rashed_SongsKyana.mp4",
+      poster:"//static.media.islamway.net//videos/179/452_Rashed_SongsKyana-l.jpg"
+    },
+    {
+      id: 4,
+      title:"مقطع مؤثر : يا الله .. هل تقبلني‬",
+      url:"https://media.islamway.net/videos/179/452_Rashed_HalTaqbalny.mp4",
+      poster:"//static.media.islamway.net//videos/179/452_Rashed_HalTaqbalny-l.jpg"
+    },
+    {
+      id: 5,
+      title:"بداية ونهاية الإنسان",
+      url:"https://media.islamway.net/videos/179/452_Rashed_StartEndEnsan.mp4",
+      poster:"//static.media.islamway.net//videos/179/452_Rashed_StartEndEnsan-l.jpg"
+    },
 ]
 
 
-
+  export const abdelazezEltrafy = [
+    {
+      id: 1,
+      title:"نصر الله للحق لا للأفراد",
+      url:"https://media.islamway.net/videos/1223/922_Eltorefe_Elnsr.MP4",
+      poster:"https://pbs.twimg.com/media/E3J_SceXIAM0H8r.jpg"
+    },
+    {
+      id: 2,
+      title:"الانتقاء من الحق وتغييب الأحق منه",
+      url:"https://media.islamway.net/videos/1223/922_Eltorefe_Elantqaa.MP4",
+      poster:"https://islam.assawsana.com/image/imgid3290.jpg?"
+    },
+    {
+      id: 3,
+      title:"طلب العلم بين الأخذ عن الشيوخ والجهد الذاتي",
+      url:"https://media.islamway.net/videos/1223/922_Eltorefe_Elelm.MP4",
+      poster:"https://media.alalam.ir/uploads/855x495/2023/01/14/167369280761282400.jpg"
+    },
+    {
+      id: 4,
+      title:"أعظم ما يدرأ النفاق",
+      url:"https://media.islamway.net/videos/1223/922_Eltorefe_Elnfaq.MP4",
+      poster:"https://i0.wp.com/jnyhnews.com/wp-content/uploads/2022/10/sSELM8jn_400x400.jpg"
+    },
+    {
+      id: 5,
+      title:"النوم عن صلاة الفجر",
+      url:"https://media.islamway.net/videos/1223/922_Eltorefe_Elfagr.mp4",
+      poster:"//static.media.islamway.net//videos/1223/922_Eltorefe_Elfagr-l.jpg"
+    },
+    {
+      id: 6,
+      title:"هل يصح أن تتصدر المرأة للفتوى؟",
+      url:"https://media.islamway.net/videos/1223/922_Eltorefe_Elftwa.MP4",
+      poster:"https://cnn-arabic-images.cnn.io/cloudinary/image/upload/w_780,h_439,c_fill,q_auto:eco/cnnarabic/2015/08/24/images/72903.jpg"
+    },
+    {
+      id: 7,
+      title:"مراتب صيام عاشوراء",
+      url:"https://media.islamway.net/videos/1223/922_Eltorefe_Ashora.MP4",
+      poster:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM6b0aYCaxSfTuCZJtbLt7rfUOdFQNWR7c3g&usqp=CAU"
+    },
+    {
+      id: 8,
+      title:"حكم التهنئة ببداية العام الهجري",
+      url:"https://media.islamway.net/videos/1223/922_Eltorefe_Elthnaa.mp4",
+      poster:"//static.media.islamway.net//videos/1223/922_Eltorefe_Elthnaa-l.jpg"
+    },
+    {
+      id: 9,
+      title:"حكم الأضحية",
+      url:"https://media.islamway.net/videos/1223/Eltorefe_Elawdhea.MP4",
+      poster:"https://i0.wp.com/jnyhnews.com/wp-content/uploads/2022/10/sSELM8jn_400x400.jpg"
+    },
+    {
+      id:10,
+      title:"قضاء رمضان في عشر ذي الحجة",
+      url:"https://media.islamway.net/videos/1223/Eltorefe_Elkdaa.MP4",
+      poster:"https://static1.s123-cdn-static-a.com/uploads/145174/800_58448c3c420ac.jpg"
+    },
+]
 
 //   export const nameSheik = [
 //     {
 //       id: 1,
-//       title: "",
-//       url: "",
+//       title:"",
+//       url:"",
 //       poster:""
 //     },
 //     {
 //       id: 2,
-//       title: "",
-//       url: "",
+//       title:"",
+//       url:"",
 //       poster:""
 //     },
 //     {
 //       id: 3,
-//       title: "",
-//       url: "",
+//       title:"",
+//       url:"",
 //       poster:""
 //     },
 //     {
 //       id: 4,
-//       title: "",
-//       url: "",
+//       title:"",
+//       url:"",
 //       poster:""
 //     },
 //     {
 //       id: 5,
-//       title: "",
-//       url: "",
+//       title:"",
+//       url:"",
 //       poster:""
 //     },
 // ]
+//   export const nameSheik = [
+ //     {
+// //       id: 1,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// //     {
+// //       id: 2,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// //     {
+// //       id: 3,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// //     {
+// //       id: 4,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// //     {
+// //       id: 5,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// // ]
+// //   export const abdelazezEltrafy = [
+// //     {
+// //       id: 1,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// //     {
+// //       id: 2,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// //     {
+// //       id: 3,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// //     {
+// //       id: 4,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// //     {
+// //       id: 5,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// // ]
+// //   export const nameSheik = [
+// //     {
+// //       id: 1,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// //     {
+// //       id: 2,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// //     {
+// //       id: 3,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// //     {
+// //       id: 4,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// //     {
+// //       id: 5,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// // ]
+// //   export const nameSheik = [
+// //     {
+// //       id: 1,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// //     {
+// //       id: 2,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// //     {
+// //       id: 3,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// //     {
+// //       id: 4,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+// //     {
+// //       id: 5,
+// //       title:"",
+// //       url:"",
+// //       poster:""
+// //     },
+ // ]
+
+ const namesOfSheikes ={
+    mohmedSharaye,
+    abdelazezEltrafy,
+    khaledElrashed,
+    osmanElhames,
+    ahmedSayed,
+    mohamedKhirey,
+    aymanAbdelrheem ,
+    eyadElqenaby,
+    sameerMostfa,
+    aboEshak,
+    ahmedAbdelmoniem,
+    saeedElkamly,
+ }
+
+ export default namesOfSheikes
