@@ -57,6 +57,10 @@ function Sheikhs() {
                 SrcImg="https://pbs.twimg.com/media/E3J_SceXIAM0H8r.jpg" 
                 name="عبدالعزيز الطريفي"
                 data={namesOfSheikes.abdelazezEltrafy}/>
+            <Card 
+                SrcImg="https://images.gr-assets.com/authors/1514098245p8/3353597.jpg" 
+                name="أيمن السويد"
+                data={namesOfSheikes.aymanElsweed}/>
             {/* <Card 
                 SrcImg="" 
                 name=""

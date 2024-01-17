@@ -23,7 +23,7 @@ function Card({ SrcImg, name, data }) {
     <>
       {/* Card  */}
       <div
-        className="border-white flex flex-col border-[2px]  shadow-sm rounded-xl w-[80%] md:w-[250px] md:h-[250px] bg-[#000] cursor-pointer"
+        className="border-white flex flex-col border-[2px]  shadow-sm rounded-xl w-[80%] md:w-[250px] md:h-[250px] bg-[#000] cursor-pointer transition duration-300 transform hover:scale-105"
         onClick={handelData}
       >
         <img

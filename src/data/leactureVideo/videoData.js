@@ -369,6 +369,37 @@ export const sameerMostfa = [
       url:"https://media.islamway.net/videos/32/Elhwene_Elshwat.mp4",
       poster:"https://modo3.com/thumbs/fit630x300/10558/1591833258/%D8%A7%D8%A8%D9%88_%D8%A7%D8%B3%D8%AD%D8%A7%D9%82_%D8%A7%D9%84%D8%AD%D9%88%D9%8A%D9%86%D9%8A.jpg"
     },
+    {
+      id: 6,
+      title:"لا يأمن المؤمن أن يفتتن",
+      url:"https://media.islamway.net/videos/32/922_Elhwene_Elmnzl~1.mp4",
+      poster:"//static.media.islamway.net//videos/32/922_Elhwene_Elmnzl~1-l.jpg"
+    },
+    {
+      id: 7,
+      title:"لا تتمنَ مشهدًا غيّبه الله عنك",
+      url:"https://media.islamway.net/videos/32/922_Elhwene_1.mp4",
+      poster:"//static.media.islamway.net//videos/32/922_Elhwene_1-l.jpg"
+    },
+    {
+      id: 8,
+      title:"وصف الدنيا",
+      url:"https://media.islamway.net/videos/32/Elhwene_Eldonya.mp4",
+      poster:"//static.media.islamway.net//videos/32/Elhwene_Eldonya-l.jpg"
+    },
+    {
+      id: 9,
+      title:"منزلة أبي عبيدة بن الجراح",
+      url:"https://media.islamway.net/videos/32/922_Elhwene_AboAbeda.mp4",
+      poster:"//static.media.islamway.net//videos/32/922_Elhwene_AboAbeda-l.jpg"
+    },
+    {
+      id: 10,
+      title:"كفيتم البلاء بغيركم",
+      url:"https://media.islamway.net/videos/32/922_Elhwene_Elblaa.mp4",
+      poster:"//static.media.islamway.net//videos/32/922_Elhwene_Elblaa-l.jpg"
+    },
+
 ]
   export const ahmedAbdelmoniem = [
     {
@@ -796,6 +827,130 @@ export const eyadElqenaby =[
     },
 ]
 
+  export const aymanElsweed = [
+     {
+      id: 1,
+      title:"من صاحب القرآن سيرى الخير في الدنيا قبل الآخرة",
+      url:"https://media.islamway.net/videos/539/452_Ayman_SahbQuranKher.mp4",
+      poster:"https://pbs.twimg.com/profile_images/1288460490830761986/eu2TejDx_400x400.jpg"
+    },
+    {
+      id: 2,
+      title:"مع المربي",
+      url:"https://media.islamway.net/lessons/539/452_Ayman_M3aMoraby.mp4",
+      poster:"https://www.okaz.com.sa/uploads/images/2022/12/11/2056858.jpeg"
+    },
+    {
+      id: 3,
+      title:"حكم كلمة { مجرىٰها } برواية حفص _ سورة هود ( آية ٤١ )‬",
+      url:"https://media.islamway.net/videos/539/452_Swed_Magreha.mp4",
+      poster:"//static.media.islamway.net//videos/539/452_Swed_Magreha-l.jpg"
+    },
+    {
+      id: 4,
+      title:"الوقف والابتداء",
+      url:"https://media.islamway.net/lessons/539/13422/Swed_Wartlnaho_10.mp4",
+      poster:"//static.media.islamway.net//lessons/539/13422/Swed_Wartlnaho_10-l.jpg"
+    },
+    {
+      id: 5,
+      title:"تيسير علم التجويد : (الجوف) مخرج حروف المدّ الألف والواو والياء المدية",
+      url:"https://media.islamway.net/videos/539/13009/452_Sweed_GoofHorofMad.mp4",
+      poster:"//static.media.islamway.net//videos/539/13009/452_Sweed_GoofHorofMad-l.jpg"
+    },
+    {
+      id: 6,
+      title:"تيسير علم التجويد : صور لأعضاء النطق ( الأسنان )",
+      url:"https://media.islamway.net/videos/539/13009/452_Sweed_PicNotqLesan.mp4",
+      poster:"//static.media.islamway.net//videos/539/13009/452_Sweed_PicNotqLesan-l.jpg"
+    },
+    {
+      id: 7,
+      title:"تيسير أحكام التجويد والتلاوة : المكان الصحيح لمخرج اللام (ل) المفخمة والمرققة‬",
+      url:"https://media.islamway.net/videos/539/452_Ayman_LamExit.mp4",
+      poster:"//static.media.islamway.net//videos/539/452_Ayman_LamExit-l.jpg"
+    },
+    {
+      id: 8,
+      title:"قصة مؤثرة : محبة الله لأهل القرآن",
+      url:"https://media.islamway.net/videos/539/452_Swed_MahbtAllahQuran.mp4",
+      poster:"//static.media.islamway.net//videos/539/452_Swed_MahbtAllahQuran-l.jpg"
+    },
+    {
+      id: 9,
+      title:"نصيحة غالية : تمكين وتثبيت حفظ القرآن الكريم",
+      url:"https://media.islamway.net/videos/539/452_Swed_NasehaHafzQuran.mp4",
+      poster:"//static.media.islamway.net//videos/539/452_Swed_NasehaHafzQuran-l.jpg"
+    },
+    {
+      id: 10,
+      title:"بشائر النصر في سوريا‬",
+      url:"https://media.islamway.net/videos/539/452_Swed_BasherSyria.mp4",
+      poster:"//static.media.islamway.net//videos/539/452_Swed_BasherSyria-l.jpg"
+    },
+    {
+      id: 11,
+      title:"لماذا يعارض د. سويد تلاوة القرآن بالمقامات الصوتية ؟",
+      url:"https://media.islamway.net/videos/539/452_Swed_ReadMaqamatMo3rda.mp4",
+      poster:"//static.media.islamway.net//videos/539/452_Swed_ReadMaqamatMo3rda-l.jpg"
+    },
+    {
+      id: 12,
+      title:"تعليق الشيخ أيمن سويد على نسخة المصحف الشريف المكتشفة في جامعة بيرمنجهام‬",
+      url:"https://media.islamway.net/videos/539/452_Swed_MoshafFoundEngland.mp4",
+      poster:"//static.media.islamway.net//videos/539/452_Swed_MoshafFoundEngland-l.jpg"
+    },
+    {
+      id: 13,
+      title:" تأثير اختلاف اللهجات واللغات على صحة قراءة القرآن‬",
+      url:"https://media.islamway.net/videos/539/452_Swed_LahgatQuran.mp4",
+      poster:"//static.media.islamway.net//videos/539/452_Swed_LahgatQuran-l.jpg"
+    },
+    {
+      id: 14,
+      title:"تيسير أحكام التجويد والتلاوة : شرح الشده (أجد قط بكت ) والرخاوه (فحثه شخص سكت ) والبينيه ( لن عمر )‬",
+      url:"https://media.islamway.net/videos/539/452_Swed_Ragawa.mp4",
+      poster:"//static.media.islamway.net//videos/539/452_Swed_Ragawa-l.jpg"
+    },
+    {
+      id: 15,
+      title:"تيسير أحكام التجويد والتلاوة : شرح المقارنه بين ( المطبق والمنفتح ) و ( مستعل ومستفل )‬",
+      url:"https://media.islamway.net/videos/539/452_Swed_Motbaq.mp4",
+      poster:"//static.media.islamway.net//videos/539/452_Swed_Motbaq-l.jpg"
+    },
+    {
+      id: 16,
+      title:"تيسير أحكام التجويد والتلاوة : شرح القلقله والفرق بين الحروف الساكنه والمقلقله والمتحركه‬",
+      url:"https://media.islamway.net/videos/539/452_Swed_Qalqalaa.mp4",
+      poster:"//static.media.islamway.net//videos/539/452_Swed_Qalqalaa-l.jpg"
+    },
+    {
+      id: 17,
+      title:"تيسير أحكام التجويد والتلاوة : شرح الصفير حروفها ( السين الصاد الزاي )‬",
+      url:"https://media.islamway.net/videos/539/452_Swed_SharhSafer.mp4",
+      poster:"//static.media.islamway.net//videos/539/452_Swed_SharhSafer-l.jpg"
+    },
+    {
+      id: 18,
+      title:"تيسير أحكام التجويد والتلاوة : شرح الشده (أجد قط بكت ) والرخاوه (فحثه شخص سكت ) والبينيه ( لن عمر )‬ ",
+      url:"https://media.islamway.net/videos/539/452_Swed_Ragawa.mp4",
+      poster:"//static.media.islamway.net//videos/539/452_Swed_Ragawa-l.jpg"
+    },
+    {
+      id: 19,
+      title:"تيسير أحكام التجويد والتلاوة : المكان الصحيح لمخرج حروف الواو ( و ) و الباء ( ب ) و الميم ( م )‬",
+      url:"https://media.islamway.net/videos/539/452_Ayman_WawoEXIT.mp4",
+      poster:"//static.media.islamway.net//videos/539/452_Ayman_WawoEXIT-l.jpg"
+    },
+    {
+      id: 20,
+      title:"تيسير أحكام التجويد والتلاوة : باب صفات الحروف ( جهر ورخو مستفل ومنفتح ومصمته )‬",
+      url:"https://media.islamway.net/videos/539/452_Ayman_SefatGahr.mp4",
+      poster:"//static.media.islamway.net//videos/539/452_Ayman_SefatGahr-l.jpg"
+    },
+ ]
+
+
 //   export const nameSheik = [
 //     {
 //       id: 1,
@@ -827,135 +982,98 @@ export const eyadElqenaby =[
 //       url:"",
 //       poster:""
 //     },
+//     {
+//       id: 6,
+//       title:"",
+//       url:"",
+//       poster:""
+//     },
+// {
+//     id: 7,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 8,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 9,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 10,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 11,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 12,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 13,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 14,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 15,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 16,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 17,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 18,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 19,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 20,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
 // ]
-//   export const nameSheik = [
- //     {
-// //       id: 1,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// //     {
-// //       id: 2,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// //     {
-// //       id: 3,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// //     {
-// //       id: 4,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// //     {
-// //       id: 5,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// // ]
-// //   export const abdelazezEltrafy = [
-// //     {
-// //       id: 1,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// //     {
-// //       id: 2,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// //     {
-// //       id: 3,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// //     {
-// //       id: 4,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// //     {
-// //       id: 5,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// // ]
-// //   export const nameSheik = [
-// //     {
-// //       id: 1,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// //     {
-// //       id: 2,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// //     {
-// //       id: 3,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// //     {
-// //       id: 4,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// //     {
-// //       id: 5,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// // ]
-// //   export const nameSheik = [
-// //     {
-// //       id: 1,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// //     {
-// //       id: 2,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// //     {
-// //       id: 3,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// //     {
-// //       id: 4,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
-// //     {
-// //       id: 5,
-// //       title:"",
-// //       url:"",
-// //       poster:""
-// //     },
- // ]
+
 
  const namesOfSheikes ={
     mohmedSharaye,
@@ -970,6 +1088,7 @@ export const eyadElqenaby =[
     aboEshak,
     ahmedAbdelmoniem,
     saeedElkamly,
+    aymanElsweed,
  }
 
  export default namesOfSheikes
