@@ -43,6 +43,118 @@ export const mohmedSharaye =[
         poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
 
     },
+    {
+        id:4,
+        title:"خواطر الشيخ الشعراوي جزء عم الحلقة الرابعة ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/04_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
+    {
+        id:5,
+        title:"خواطر الشيخ الشعراوي جزء عم الحلقة الخامسة ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/05_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
+    {
+        id:6,
+        title:"خواطر الشيخ الشعراوي جزء عم الحلقة السادسة ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/06_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
+    {
+        id:7,
+        title:"خواطر الشيخ الشعراوي جزء عم الحلقة السابعة ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/07_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
+    {
+        id:8,
+        title:"خواطر الشيخ الشعراوي جزء عم الحلقة الثامنة ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/08_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
+    {
+        id:9,
+        title:"خواطر الشيخ الشعراوي جزء عم الحلقة التاسعة ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/09_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
+    {
+        id:10,
+        title:"خواطر الشيخ الشعراوي جزء عم الحلقة العاشرة ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/10_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
+    {
+        id:11,
+        title:"خواطر الشيخ الشعراوي جزء عم الحلقة 11  ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/11_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
+    {
+        id:12,
+        title:"خواطر الشيخ الشعراوي جزء عم الحلقة 12  ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/12_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
+    {
+        id:13,
+        title:"خواطر الشيخ الشعراوي جزء عم الحلقة 13  ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/18_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
+    {
+        id:14,
+        title:"خواطر الشيخ الشعراوي جزء عم الحلقة 14  ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/14_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
+    {
+        id:15,
+        title:"خواطر الشيخ الشعراوي جزء عم الحلقة 15  ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/15_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
+    {
+        id:16,
+        title:"خواطر الشيخ الشعراوي جزء عم الحلقة 16  ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/16_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
+    {
+        id:17,
+        title:"خواطر الشيخ الشعراوي جزء عم الحلقة 17  ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/17_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
+    {
+        id:18,
+        title:"خواطر الشيخ الشعراوي جزء عم الحلقة 18  ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/18_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
+    {
+        id:19,
+        title:"خواطر الشيخ الشعراوي جزء عم الحلقة 19  ",
+        url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/19_up_by_muslem.mp4",
+        poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+
+    },
 ]
 
 export const sameerMostfa = [
@@ -371,9 +483,104 @@ export const eyadElqenaby =[
     },
 ]
 
+  export const aymanAbdelrheem = [
+    {
+      id: 1,
+      title:"أصوات لا يسمعها الأنسان العربي",
+      url:"https://archive.org/download/20210624_20210624_0619/أصوات لا يسمعها الأنسان العربي  م. ايمن عبد الرحيم.mp4",
+      poster:"https://archive.org/download/20210624_20210624_0619/20210624_20210624_0619.thumbs/%D8%A3%D8%B5%D9%88%D8%A7%D8%AA%20%D9%84%D8%A7%20%D9%8A%D8%B3%D9%85%D8%B9%D9%87%D8%A7%20%D8%A7%D9%84%D8%A3%D9%86%D8%B3%D8%A7%D9%86%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%20%20%D9%85.%20%D8%A7%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85_000010.jpg"
+    },
+    {
+      id: 2,
+      title: "إتزان الفطرة البشرية والهدي النبوي ⚖️  م. ايمن عبد الرحيم",
+      url: "https://ia903104.us.archive.org/19/items/20210624_20210624_0619/%D8%A5%D8%AA%D8%B2%D8%A7%D9%86%20%D8%A7%D9%84%D9%81%D8%B7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A8%D8%B4%D8%B1%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D9%87%D8%AF%D9%8A%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%20%E2%9A%96%EF%B8%8F%20%20%D9%85.%20%D8%A7%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85.mp4",
+      poster:"https://archive.org/download/20210624_20210624_0619/20210624_20210624_0619.thumbs/%D8%A3%D8%B5%D9%88%D8%A7%D8%AA%20%D9%84%D8%A7%20%D9%8A%D8%B3%D9%85%D8%B9%D9%87%D8%A7%20%D8%A7%D9%84%D8%A3%D9%86%D8%B3%D8%A7%D9%86%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%20%20%D9%85.%20%D8%A7%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85_000101.jpg"
+    },
+    {
+      id: 3,
+      title: "إضـاعة الفرائض وأداء النوافـل  م. ايمن عبد الرحيم",
+      url: "https://ia803104.us.archive.org/19/items/20210624_20210624_0619/%D8%A5%D8%B6%D9%80%D8%A7%D8%B9%D8%A9%20%D8%A7%D9%84%D9%81%D8%B1%D8%A7%D8%A6%D8%B6%20%D9%88%D8%A3%D8%AF%D8%A7%D8%A1%20%D8%A7%D9%84%D9%86%D9%88%D8%A7%D9%81%D9%80%D9%84%20%20%D9%85.%20%D8%A7%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85.mp4",
+      poster:"https://archive.org/download/20210624_20210624_0619/20210624_20210624_0619.thumbs/%D8%A5%D8%BA%D9%80%D9%84%D8%A7%D9%82%20%D8%B1%D9%88%D8%A7%D9%81%D9%80%D8%AF%20%D8%A7%D9%84%D9%85%D8%B9%D9%80%D8%A7%D8%B5%D9%8A%20%D9%81%D9%8A%20%D8%B1%D9%85%D8%B6%D8%A7%D9%86%20%D8%A3%D9%88%D9%84%D9%89%20%D9%85%D9%86%20%D8%A7%D9%84%D8%A5%D8%AC%D8%AA%D9%87%D8%A7%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D9%80%D8%A7%D8%B9%D8%A7%D8%AA%20%20%D9%85.%20%D8%A7%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85_000138.jpg"
+    },
+    {
+      id: 4,
+      title: "إغـلاق روافـد المعـاصي في رمضان أولى من الإجتهاد في الطـاعات  م. ايمن عبد الرحيم",
+      url: "https://ia803104.us.archive.org/19/items/20210624_20210624_0619/%D8%A5%D8%BA%D9%80%D9%84%D8%A7%D9%82%20%D8%B1%D9%88%D8%A7%D9%81%D9%80%D8%AF%20%D8%A7%D9%84%D9%85%D8%B9%D9%80%D8%A7%D8%B5%D9%8A%20%D9%81%D9%8A%20%D8%B1%D9%85%D8%B6%D8%A7%D9%86%20%D8%A3%D9%88%D9%84%D9%89%20%D9%85%D9%86%20%D8%A7%D9%84%D8%A5%D8%AC%D8%AA%D9%87%D8%A7%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D9%80%D8%A7%D8%B9%D8%A7%D8%AA%20%20%D9%85.%20%D8%A7%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85.mp4",
+      poster:"https://archive.org/download/20210624_20210624_0619/20210624_20210624_0619.thumbs/%D8%A5%D8%BA%D9%80%D9%84%D8%A7%D9%82%20%D8%B1%D9%88%D8%A7%D9%81%D9%80%D8%AF%20%D8%A7%D9%84%D9%85%D8%B9%D9%80%D8%A7%D8%B5%D9%8A%20%D9%81%D9%8A%20%D8%B1%D9%85%D8%B6%D8%A7%D9%86%20%D8%A3%D9%88%D9%84%D9%89%20%D9%85%D9%86%20%D8%A7%D9%84%D8%A5%D8%AC%D8%AA%D9%87%D8%A7%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D9%80%D8%A7%D8%B9%D8%A7%D8%AA%20%20%D9%85.%20%D8%A7%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85_000069.jpg"
+    },
+    {
+      id: 5,
+      title: "التمـارين الرياضيـة في السـنة النبويـة  م. ايمن عبد الرحيم",
+      url: "https://ia803104.us.archive.org/19/items/20210624_20210624_0619/%D8%A7%D9%84%D8%AA%D9%85%D9%80%D8%A7%D8%B1%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D9%80%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B3%D9%80%D9%86%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D9%80%D8%A9%20%20%D9%85.%20%D8%A7%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85.mp4",
+      poster:"https://www.stjegypt.com/uploads/189673790785.jpg"
+    },
+]
+
+
+
+  export const mohamedKhirey = [
+    {
+        id: 1,
+        title: "أنا لها..أنا لها",
+        url: "https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/ana_lha.ana_lha13-alshekh_mhmd_khere-tratel_rmdan_med.mp4",
+        poster:"https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/Media-way2Allah_5165.thumbs/ana_lha.ana_lha13-alshekh_mhmd_khere-tratel_rmdan_med_000001.jpg"
+      },
+      {
+        id: 2,
+        title: "بداية القرب ",
+        url: "https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/bdaea_alkrb2-alshekh_mhmd_khere-tratel_rmdan_med.mp4",
+        poster:"https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/Media-way2Allah_5165.thumbs/bdaea_alkrb2-alshekh_mhmd_khere-tratel_rmdan_med_000001.jpg"
+      },
+      {
+        id: 3,
+        title: "العبور الخطير",
+        url: "https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/al3bwr_alkhter10-alshekh_mhmd_khere-tratel_rmdan_med.mp4",
+        poster:"https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/Media-way2Allah_5165.thumbs/al3bwr_alkhter10-alshekh_mhmd_khere-tratel_rmdan_med_000001.jpg"
+      },
+      {
+        id: 4,
+        title: "الزحف العظيم إلى دار النعيم",
+        url: "https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/alzhf_al3zem_ele_dar_aln3em14-sh_mhmd_khere-tratel_rmdan_med.mp4",
+        poster:"https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/Media-way2Allah_5165.thumbs/alzhf_al3zem_ele_dar_aln3em14-sh_mhmd_khere-tratel_rmdan_med_000001.jpg"
+      },
+      {
+        id: 5,
+        title: "جنائز الغد تتنفس اليوم",
+        url: "https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/gnaeaz_alghd_ttnfs_alewm3-sh_mhmd_khere-tratel_rmdan_med.mp4",
+        poster:"https://ia804708.us.archive.org/21/items/Media-way2Allah_5165/Media-way2Allah_5165.thumbs/gnaeaz_alghd_ttnfs_alewm3-sh_mhmd_khere-tratel_rmdan_med_000001.jpg"
+      },
+]
+
+
+
+
 //   export const nameSheik = [
 //     {
 //       id: 1,
+//       title: "",
+//       url: "",
+//       poster:""
+//     },
+//     {
+//       id: 2,
+//       title: "",
+//       url: "",
+//       poster:""
+//     },
+//     {
+//       id: 3,
+//       title: "",
+//       url: "",
+//       poster:""
+//     },
+//     {
+//       id: 4,
+//       title: "",
+//       url: "",
+//       poster:""
+//     },
+//     {
+//       id: 5,
 //       title: "",
 //       url: "",
 //       poster:""

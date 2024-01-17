@@ -8,6 +8,11 @@
     height: 440px !important;
     border-radius: 10px;
 }
+.video-react-has-started.video-react-user-inactive.video-react-playing
+ .video-react-control-bar.video-react-control-bar-auto-hide,
+  .video-react .video-react-control-bar{
+    direction: ltr !important; 
+}
 .video-react .video-react-loading-spinner {
      border: 6px solid rgba(255, 255, 255, 0) ;
      left:55%;
