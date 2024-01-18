@@ -71,8 +71,6 @@ function Moshaf() {
     fahrs={618}
      />
 
-
-
     </>
   )
 }

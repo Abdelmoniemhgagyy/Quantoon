@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "/node_modules/video-react/dist/video-react.css";
 import { Player } from "video-react";
 import "./video.css";
@@ -7,7 +7,9 @@ import GloableContext from "../../store/GloableContext";
 function Videos() {
   const { leactureVideoes, logoSheuhk, nameSheihk } =
     useContext(GloableContext);
-
+ useEffect(()=>{
+    window.scrollTo(0, 0);
+ },[])
   return (
     <div>
       <div className="flex justify-center flex-col items-center gap-[40px] mr-[60px] mt-5 ">

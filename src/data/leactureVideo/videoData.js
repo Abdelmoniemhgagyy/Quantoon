@@ -950,7 +950,230 @@ export const eyadElqenaby =[
     },
  ]
 
+// ذاكر نايك 
+  export const zakerNike = [
+    {
+      id: 1,
+      title:"أسرار نجاح د. ذاكر نايك",
+      url:"https://media.islamway.net/lessons/1924/922_ZakrNaek.mp4",
+      poster:"//static.media.islamway.net//lessons/1924/922_ZakrNaek-l.jpg"
+    },
+    {
+      id: 2,
+      title:"الغرب وعين العدالة",
+      url:"https://media.islamway.net/videos/1924/ZNaek_El3dala.mp4",
+      poster:"//static.media.islamway.net//videos/1924/ZNaek_El3dala-l.jpg"
+    },
+    {
+      id: 3,
+      title:"قدم القرآن ونظرية دارون",
+      url:"https://media.islamway.net/videos/1924/ZNaek_Hewar2.mp4",
+      poster:"//static.media.islamway.net//videos/1924/ZNaek_Hewar2-l.jpg"
+    },
+    {
+      id: 4,
+      title:"حوار مع ملحد",
+      url:"https://media.islamway.net/videos/1924/ZNaek_Hewar.mp4",
+      poster:"//static.media.islamway.net//videos/1924/ZNaek_Hewar-l.jpg"
+    },
+    {
+      id: 5,
+      title:"مقطع مترجم : قصة لقاء د. ذاكر نايك مع الممثل الهندي شاروخان",
+      url:"https://media.islamway.net/videos/1924/452_ZakerMeetSharoukan.mp4",
+      poster:"//static.media.islamway.net//videos/1924/452_ZakerMeetSharoukan-l.jpg"
+    },
+    {
+      id: 6,
+      title:"لماذا نقول كفار على غير المسلمين؟",
+      url:"https://media.islamway.net/videos/1924/15046/505_Zaker_20QQuestions(21).mp4",
+      poster:"//static.media.islamway.net//videos/1924/15046/505_Zaker_20QQuestions(21)-l.jpg"
+    },
+{
+    id: 7,
+    title:"مقطع مترجم : حكم التهنئة بالكريسماس",
+    url:"https://media.islamway.net/videos/1924/452_Zaker_TahnaKresmas.mp4",
+    poster:"//static.media.islamway.net//videos/1924/452_Zaker_TahnaKresmas-l.jpg"
+  },
+  {
+    id: 8,
+    title:"لقاء خاص مع الداعية الدكتور ذاكر نايك",
+    url:"https://media.islamway.net/lessons/1924/452_Zaker_LeqaaQanatZad37.mp4",
+    poster:"//static.media.islamway.net//lessons/1924/452_Zaker_LeqaaQanatZad37-l.jpg"
+  },
+  {
+    id: 9,
+    title:"لماذا المسلمين أسوأ الناس إن كان دينهم الأفضل ؟",
+    url:"https://media.islamway.net/videos/Mfahem_5at2a_20.mp4",
+    poster:"//static.media.islamway.net//videos/Mfahem_5at2a_20-l.jpg"
+  },
+  {
+    id: 10,
+    title:"هل المسلمون إرهابيون ؟",
+    url:"https://media.islamway.net/videos/Mfahem_5at2a_03.mp4",
+    poster:"//static.media.islamway.net//videos/Mfahem_5at2a_03-l.jpg"
+  },
+  {
+    id: 11,
+    title:"هل يسمح الإسلام بتناول الحيوانات المفترسة ؟",
+    url:"https://media.islamway.net/videos/Mfahem_5at2a_10.mp4",
+    poster:"//static.media.islamway.net//videos/Mfahem_5at2a_10-l.jpg"
+  },
+  {
+    id: 12,
+    title:"لماذا لا تتزوج المرأة أكثر من رجل في الإسلام ؟",
+    url:"https://media.islamway.net/videos/Mfahem_5at2a_06.mp4",
+    poster:"//static.media.islamway.net//videos/Mfahem_5at2a_06-l.jpg"
+  },
+  {
+    id: 13,
+    title:"هل انتشر الإسلام بالسيف ؟",
+    url:"https://media.islamway.net/videos/Mfahem_5at2a_04.mp4",
+    poster:"//static.media.islamway.net//videos/Mfahem_5at2a_04-l.jpg"
+  },
+  {
+    id: 14,
+    title:"لماذا يسمح الإسلام للرجل بالزواج من أربع؟",
+    url:"https://media.islamway.net/videos/Mfahem_5at2a_05.mp4",
+    poster:"//static.media.islamway.net//videos/Mfahem_5at2a_05-l.jpg"
+  },
+  
+  {
+    id: 15,
+    title:"هل ظلم الاسلام المرأة بالحجاب؟",
+    url:"https://media.islamway.net/videos/Mfahem_5at2a_07.mp4",
+    poster:"//static.media.islamway.net//videos/Mfahem_5at2a_07-l.jpg"
+  },
+  {
+    id: 16,
+    title:"أهم عشرين سؤالا حول الإسلام - الجهاد",
+    url:"https://media.islamway.net/videos/1924/15046/505_Zaker_20QQuestions(01).mp4",
+    poster:"https://onstorage.s3.eu-west-1.amazonaws.com/uploads/public/5d7/b84/9eb/thumb_260911_1200_1200_0_0_auto.jpg"
+  },
 
+]
+// علي القرني 
+  export const aliElqurny = [
+    {
+      id: 1,
+      title:"مقطع مؤثر : صبر النبي صلى الله عليه وسلم",
+      url:"https://media.islamway.net/videos/8/452_Qarany_SabrNaby.mp4",
+      poster:"//static.media.islamway.net//videos/8/452_Qarany_SabrNaby-l.jpg"
+    },
+    {
+      id: 2,
+      title:" المجاهد قيس الفلسطيني",
+      url:"https://media.islamway.net/videos/8/452_Qarny_QaysMogahed.mp4",
+      poster:"//static.media.islamway.net//videos/8/452_Qarny_QaysMogahed-l.jpg"
+    },
+    {
+      id: 3,
+      title:"اللهم عليك باليهود",
+      url:"https://media.islamway.net/videos/8/452_Qarny_3lekYahood.mp4",
+      poster:"//static.media.islamway.net//videos/8/452_Qarny_3lekYahood-l.jpg"
+    },
+    {
+      id: 4,
+      title:"قطوف من سير السلف : القاضي منذر بن سعيد",
+      url:"https://media.islamway.net/videos/8/452_Qarany_QadyMonzer.mp4",
+      poster:"//static.media.islamway.net//videos/8/452_Qarany_QadyMonzer-l.jpg"
+    },
+//     {
+//       id: 5,
+//       title:"",
+//       url:"",
+//       poster:""
+//     },
+//     {
+//       id: 6,
+//       title:"",
+//       url:"",
+//       poster:""
+//     },
+// {
+//     id: 7,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 8,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 9,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 10,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 11,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 12,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 13,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 14,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 15,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 16,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 17,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 18,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 19,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 20,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+]
 //   export const nameSheik = [
 //     {
 //       id: 1,
@@ -1089,6 +1312,8 @@ export const eyadElqenaby =[
     ahmedAbdelmoniem,
     saeedElkamly,
     aymanElsweed,
+    zakerNike,
+    aliElqurny
  }
 
  export default namesOfSheikes

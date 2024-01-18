@@ -7,7 +7,6 @@ function Sheikhs() {
   return (
     <div>
         <div className='mr-[60px] mt-[40px] flex flex-wrap justify-center gap-[40px]'>
-             
             <Card  
                 SrcImg="https://pbs.twimg.com/media/FveL68HXwAUV3Yc.jpg" 
                 name="سمير مصطفي"
@@ -61,6 +60,14 @@ function Sheikhs() {
                 SrcImg="https://images.gr-assets.com/authors/1514098245p8/3353597.jpg" 
                 name="أيمن السويد"
                 data={namesOfSheikes.aymanElsweed}/>
+            <Card 
+                SrcImg="https://palsawa.com/uploads/images/2022/11/USUMd.jpg" 
+                name="ذاكر نايك"
+                data={namesOfSheikes.zakerNike}/>
+            <Card 
+                SrcImg="https://i.ytimg.com/vi/0AtKYp8SB7s/hqdefault.jpg" 
+                name="علي القرني"
+                data={namesOfSheikes.aliElqurny}/>
             {/* <Card 
                 SrcImg="" 
                 name=""
