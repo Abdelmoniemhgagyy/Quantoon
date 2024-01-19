@@ -6,24 +6,13 @@ function Quran() {
   return (
     <>
       <div>
-      <a className="back q">
-        <i className="fa-solid fa-arrow-left"></i>
-      </a>
-      <div className="header">
-        <h1>القران الكريم</h1>
-
-           
-        <div className='btn-conntainer'>
+      <div className="header ">
+        <h1 className="mr-[60px]">القران الكريم</h1>
+        <div className='btn-conntainer mr-[50px]'>
           <button><Link to="/quran">السور</Link></button>
           <button><Link to="juza">الأجزاء</Link></button>
-          <button 
-          onClick={()=> 
-             {  
-              
-            }}><Link to="audio">القران صوتي</Link>
-          </button>
+          <button><Link to="audio">القران صوتي</Link></button>
         </div>
-
       </div>
       <Outlet/>
     </div>

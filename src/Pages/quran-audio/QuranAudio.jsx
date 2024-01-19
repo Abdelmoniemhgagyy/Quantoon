@@ -34,7 +34,7 @@ const dataSearch = Qurai.filter((item)=> item.name.includes(searchVal))
        {/* End Search  */}
      
         {/* download icon */}
-         <Link to="/quran/download" className="block mt-3 w-[70%] md:w-[500px] mx-auto text-[12px] md:text-[18px]  bg-blue-400 rounded-full p-3 hover:scale-[1.05]">
+         <Link to="/quran/download" className="block  mt-3 w-[70%] md:w-[500px] mx-auto text-[12px] md:text-[18px]  bg-blue-400 rounded-full p-3 hover:scale-[1.05] ">
            <div > 
               <i className="bi bi-download  hover:text-green-300"></i>
               <span className=" mx-2"> تحميل القران</span>
@@ -42,12 +42,12 @@ const dataSearch = Qurai.filter((item)=> item.name.includes(searchVal))
          </Link>
       {/* End download icon */}
      {/* show Data  */}
-      <div className=" pt-6 px-2 mx-auto grid grid-cols-2 md:grid-cols-3
+      <div className=" pt-6 px-2 mx-auto grid grid-cols-1 sm:grid-cols-2 mr-[4px] md:grid-cols-3
        lg:grid-cols-4  xl:grid-cols-4 gap-[10px]
         items-center" dir="rtl">
        {dataSearch.map((item)=>{
         return(
-         <div key={item.id} className="max-w-[307px] "> 
+         <div key={item.id} className=" "> 
      
          <Link to="/quran/player" onClick={()=> handelLinkQuari(item.url_audio,item.name,item.rewaya)} 
      
