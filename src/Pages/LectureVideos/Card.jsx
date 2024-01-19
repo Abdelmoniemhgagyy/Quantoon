@@ -1,7 +1,7 @@
 import React, { useContext} from "react";
 import GloableContext from "../../store/GloableContext";
 import { useNavigate } from "react-router-dom";
-function Card({ SrcImg, name, data }) {
+function Card({ ImgSrc, name, data }) {
 
   const navigate = useNavigate();
   const { setLeactureVideoes, setNameSheihk, setLogoSheihk } = useContext(GloableContext);
@@ -10,7 +10,7 @@ function Card({ SrcImg, name, data }) {
   const handelData = () => {
     localStorage.setItem("leactureVideoes", JSON.stringify(data));
     localStorage.setItem("nameSheihk", name);
-    localStorage.setItem("logoSheihk", SrcImg);
+    localStorage.setItem("logoSheihk", ImgSrc);
 
     setNameSheihk(localStorage.getItem("nameSheihk"));
     setLogoSheihk(localStorage.getItem("logoSheihk"));
@@ -28,7 +28,7 @@ function Card({ SrcImg, name, data }) {
       >
         <img
           className="w-full h-[80%] rounded-t-[8px] border-b-white border-b-[2px]"
-          src={SrcImg}
+          src={ImgSrc}
           alt="sheikhsphoto"
         />
         <h3 className="text-xl font-[900] pb-1 text-white mt-2 text-center dark:text-white md:w-full whitespace-nowrap">
