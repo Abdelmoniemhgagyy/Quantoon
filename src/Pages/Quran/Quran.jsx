@@ -8,7 +8,7 @@ function Quran() {
       <div>
       <div className="header ">
         <h1 className="mr-[60px]">القران الكريم</h1>
-        <div className='btn-conntainer mr-[50px]'>
+        <div className='btn-conntainer mr-[50px] sm:mr-[0]'>
           <button><Link to="/quran">السور</Link></button>
           <button><Link to="juza">الأجزاء</Link></button>
           <button><Link to="audio">القران صوتي</Link></button>

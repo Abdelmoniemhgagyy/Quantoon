@@ -1,9 +1,16 @@
 .header h1 {
-    margin: 20px 60px 50px auto;
+    margin: 20px auto 50px auto;
     font-size: 36px;
     color: white;
     text-align: center;
     position: relative;
+}
+
+@media(max-width:640px){ 
+    .header h1 {
+        margin: 20px 60px 50px auto;
+    }
+    
 }
 
 .header h1::after{
