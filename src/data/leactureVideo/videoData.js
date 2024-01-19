@@ -1,27 +1,5 @@
-export const NamesOfSheikhs =[
-    {
-        id:1,
-        name:"الشيخ سمير مصطفي",
-        ImgSrc:"https://pbs.twimg.com/media/FveL68HXwAUV3Yc.jpg"
-    },
-    {
-        id:2,
-        name:"الشيخ سعيد الكملي",
-        ImgSrc:"https://i1.sndcdn.com/artworks-2OihbfmCHJ2YqVhl-nuF70g-t500x500.jpg"
-    },
-    {
-        id:3,
-        name:"الشيخ أحمد عبدالمنعم ",
-        ImgSrc:"https://i.ytimg.com/vi/xxesTJixwOM/maxresdefault.jpg"
-    },
-    {
-        id:4,
-        name:"أبو إسحاق الحويني",
-        ImgSrc:"https://i1.sndcdn.com/artworks-000318203850-wvduss-t500x500.jpg"
-    },
-]
 
-export const mohmedSharaye =[
+  export const mohmedSharaye =[
     {
         id:1,
         title:" خواطر الشيخ الشعراوي جزء عم الحلقة الأولي ",
@@ -157,7 +135,7 @@ export const mohmedSharaye =[
     },
 ]
 
-export const sameerMostfa = [
+  export const sameerMostfa = [
     {
       id: 1,
       title: "كيف تحفظ القرآن",
@@ -475,7 +453,7 @@ export const sameerMostfa = [
     // },
 ]
 
-export const eyadElqenaby =[
+  export const eyadElqenaby =[
     {
       id: 1,
       title:"حلِّل لهم يا دويري، لا لنا !",
@@ -1077,102 +1055,225 @@ export const eyadElqenaby =[
       url:"https://media.islamway.net/videos/8/452_Qarany_QadyMonzer.mp4",
       poster:"//static.media.islamway.net//videos/8/452_Qarany_QadyMonzer-l.jpg"
     },
-//     {
-//       id: 5,
-//       title:"",
-//       url:"",
-//       poster:""
-//     },
-//     {
-//       id: 6,
-//       title:"",
-//       url:"",
-//       poster:""
-//     },
-// {
-//     id: 7,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 8,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 9,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 10,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 11,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 12,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 13,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 14,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 15,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 16,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 17,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 18,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 19,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 20,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
+    {
+      id: 5,
+      title:"الشام في دوامة الخطب الشديد",
+      url:"https://media.islamway.net/videos/8/452_ShamKatbShaded.mp4",
+      poster:"//static.media.islamway.net//videos/8/452_ShamKatbShaded-l.jpg"
+    },
+    {
+      id: 6,
+      title:"قطوف من السيرة : فتح مكة",
+      url:"https://media.islamway.net/videos/8/452_Qarany_FathMakka.mp4",
+      poster:"//static.media.islamway.net//videos/8/452_Qarany_FathMakka-l.jpg"
+    },
+{
+    id: 7,
+    title:"دعوة للتأمل",
+    url:"https://media.islamway.net/videos/8/452_Qarny_D3waTamol.mp4",
+    poster:"//static.media.islamway.net//videos/8/452_Qarny_D3waTamol-l.jpg"
+  },
+  {
+    id: 8,
+    title:"قطوف من السيرة : جفاء الأعرابي مع النبي صلى الله عليه وسلم",
+    url:"https://media.islamway.net/videos/8/452_Qarany_Gafaa3raby.mp4",
+    poster:"//static.media.islamway.net//videos/8/452_Qarany_Gafaa3raby-l.jpg"
+  },
+  {
+    id: 9,
+    title:"قطوف من سير الصحابة : أسد الله سيدنا حمزة رضى الله عنه",
+    url:"https://media.islamway.net/videos/8/452_Qarany-AsdAllah.mp4",
+    poster:"//static.media.islamway.net//videos/8/452_Qarany-AsdAllah-l.jpg"
+  },
+  {
+    id: 10,
+    title:"قطوف من سير الصحابة : حلم ابن مسعود مع من أخذ ماله",
+    url:"https://media.islamway.net/videos/8/452_Qarany_Mas3odMal.mp4",
+    poster:"//static.media.islamway.net//videos/8/452_Qarany_Mas3odMal-l.jpg"
+  },
+  {
+    id: 11,
+    title:"إن تنصرو الله ينصركم",
+    url:"https://media.islamway.net/videos/8/452_Qarany_TansroAllah.mp4",
+    poster:"//static.media.islamway.net//videos/8/452_Qarany_TansroAllah-l.jpg"
+  },
+  {
+    id: 12,
+    title:"معشر المربين",
+    url:"https://media.islamway.net/videos/8/452_Ali_MasherMoraben.mp4",
+    poster:"//static.media.islamway.net//videos/8/452_Ali_MasherMoraben-l.jpg"
+  },
+  {
+    id: 13,
+    title:"أحسن الناس تعاملاً",
+    url:"https://media.islamway.net/videos/8/452_Qarany_NasT3mol.mp4",
+    poster:"//static.media.islamway.net//videos/8/452_Qarany_NasT3mol-l.jpg"
+  },
+  {
+    id: 14,
+    title:"أيها الجبل",
+    url:"https://media.islamway.net/videos/8/452_Qarany_AyhoGabl.mp4",
+    poster:"//static.media.islamway.net//videos/8/452_Qarany_AyhoGabl-l.jpg"
+  },
+  {
+    id: 15,
+    title:"رُبَّ كلمة !",
+    url:"https://media.islamway.net/videos/8/452_Qarany_RobKalema.mp4",
+    poster:"//static.media.islamway.net//videos/8/452_Qarany_RobKalema-l.jpg"
+  },
+  {
+    id: 16,
+    title:"دعاء مؤثر : اللهم عليك باليهود",
+    url:"https://media.islamway.net/videos/8/452_Qarany_Yahood.mp4",
+    poster:"//static.media.islamway.net//videos/8/452_Qarany_Yahood-l.jpg"
+  },
+  {
+    id: 17,
+    title:"قطوف من السيرة : حلم النبي صلى الله عليه وسلم",
+    url:"https://media.islamway.net/videos/8/452_Qarany_HalmNaby.mp4",
+    poster:"//static.media.islamway.net//videos/8/452_Qarany_HalmNaby-l.jpg"
+  },
+  {
+    id: 18,
+    title:"رسالة إلى أهلنا في غزة",
+    url:"https://media.islamway.net/videos/8/452_Ali_ReasalaGaza.mp4",
+    poster:"//static.media.islamway.net//videos/8/452_Ali_ReasalaGaza-l.jpg"
+  },
+  {
+    id: 19,
+    title:"أعمال تؤجر عليها وأنت لا تدري فأكثر منها",
+    url:"https://media.islamway.net/videos/8/506_Alqarne_A3mal_Toagar.mp4",
+    poster:"//static.media.islamway.net//videos/8/506_Alqarne_A3mal_Toagar-l.jpg"
+  },
+  {
+    id: 20,
+    title:"قطوف من السيرة : حادثة الإفك",
+    url:"https://media.islamway.net/videos/8/452_Qarany_Efk.mp4",
+    poster:"//static.media.islamway.net//videos/8/452_Qarany_Efk-l.jpg"
+  },
+]
+// محمد العريفي 
+  export const mohamedElarefy = [
+    {
+      id: 1,
+      title:" مناظرة إبراهيم عليه السلام للنمرود",
+      url:"https://media.islamway.net/videos/125/18044/Eltorefee_21.mp4",
+      poster:"https://saudileaks.org/wp-content/uploads/2021/02/maxresdefault-2.jpg"
+    },
+    {
+      id: 2,
+      title:"طلبات الأنبياء من الله عز وجل",
+      url:"https://media.islamway.net/videos/125/18044/AboElanbeaa_22.mp4",
+      poster:"https://s.france24.com/media/display/70322fa0-f3be-11e8-abee-005056bff430/w:980/p:16x9/%40MohamadAlarefe%202.jpg"
+    },
+    {
+      id: 3,
+      title:"طلبات الأنبياء (2)",
+      url:"https://media.islamway.net/videos/125/18044/AboElanpeaa_23.mp4",
+      poster:"https://s.france24.com/media/display/70322fa0-f3be-11e8-abee-005056bff430/w:980/p:16x9/%40MohamadAlarefe%202.jpg"
+    },
+    {
+      id: 4,
+      title:"سورة القدر",
+      url:"https://media.islamway.net/videos/125/16020/452_Orafy_ForqanTafser_44.mp4",
+      poster:"//static.media.islamway.net//videos/125/16020/452_Orafy_ForqanTafser_44-l.jpg"
+    },
+    {
+      id: 5,
+      title:"سورة العلق",
+      url:"https://media.islamway.net/videos/125/16020/452_Orafy_ForqanTafser_42.mp4",
+      poster:"//static.media.islamway.net//videos/125/16020/452_Orafy_ForqanTafser_44-l.jpg"
+    },
+    {
+      id: 6,
+      title:" تتمة سورة العلق",
+      url:"https://media.islamway.net/videos/125/16020/452_Orafy_ForqanTafser_43.mp4",
+      poster:"//static.media.islamway.net//videos/125/16020/452_Orafy_ForqanTafser_44-l.jpg"
+    },
+{
+    id: 7,
+    title:" اللهم اجعلنا من أهل الجنة",
+    url:"https://media.islamway.net/videos/125/452_Orafy_AhlGana.mp4",
+    poster:"//static.media.islamway.net//videos/125/452_Orafy_AhlGana-l.jpg"
+  },
+  {
+    id: 8,
+    title:"ويدخلهم الجنة عرفها لهم",
+    url:"https://media.islamway.net/videos/125/452_Orafy_EnterGanaKnown.mp4",
+    poster:"//static.media.islamway.net//videos/125/452_Orafy_EnterGanaKnown-l.jpg"
+  },
+  {
+    id: 9,
+    title:"كلمة غيرت حياته !!",
+    url:"https://media.islamway.net/videos/125/452_Orafy_KalemaChangeHyat.mp4",
+    poster:"//static.media.islamway.net//videos/125/452_Orafy_KalemaChangeHyat-l.jpg"
+  },
+  {
+    id: 10,
+    title:"بشرى لكل محب للنبي صلى الله عليه وسلم",
+    url:"https://media.islamway.net/videos/125/452_Orafy_BoshraMohbNaby.mp4",
+    poster:"//static.media.islamway.net//videos/125/452_Orafy_BoshraMohbNaby-l.jpg"
+  },
+  {
+    id: 11,
+    title:"قصة الثلاثة الذين حُبِسوا في الغار",
+    url:"https://media.islamway.net/videos/125/452_Orafy_ThreeGar.mp4",
+    poster:"//static.media.islamway.net//videos/125/452_Orafy_ThreeGar-l.jpg"
+  },
+  {
+    id: 12,
+    title:"نصائح في التربية : ‫أثر الأجهزة الإلكترونية على سلوك الأبناء",
+    url:"https://media.islamway.net/videos/125/452_Orafy_ElectronsAtfalSelok.mp4",
+    poster:"//static.media.islamway.net//videos/125/452_Orafy_ElectronsAtfalSelok-l.jpg"
+  },
+  {
+    id: 13,
+    title:"لن تنالوا البر حتى تنفقوا مما تحبون",
+    url:"https://media.islamway.net/videos/125/452_Orafy_TanaloBer.mp4",
+    poster:"//static.media.islamway.net//videos/125/452_Orafy_TanaloBer-l.jpg"
+  },
+  {
+    id: 14,
+    title:"‫التوبة إلى الله من أسباب حسن الخاتمة",
+    url:"https://media.islamway.net/videos/125/452_Orafy_TawbaHosnKatema.mp4",
+    poster:"//static.media.islamway.net//videos/125/452_Orafy_TawbaHosnKatema-l.jpg"
+  },
+  {
+    id: 15,
+    title:"قطوف من السيرة : ‫ما الذي حصل لنبينا الكريم وهو ساجد عند الكعبة ؟",
+    url:"https://media.islamway.net/videos/125/452_Orafy_NabySegodKa3ba.mp4",
+    poster:"//static.media.islamway.net//videos/125/452_Orafy_NabySegodKa3ba-l.jpg"
+  },
+  {
+    id: 16,
+    title:"سورة لم يُنزل في التوراة ولا في الإنجيل ولا في الزبور مثلها",
+    url:"https://media.islamway.net/videos/125/452_Orafy_SoraNoZober.mp4",
+    poster:"//static.media.islamway.net//videos/125/452_Orafy_SoraNoZober-l.jpg"
+  },
+  {
+    id: 17,
+    title:" ‫الغيبة نوع من أنواع الظلم لمن تغتابه",
+    url:"https://media.islamway.net/videos/125/452_Orafy_GebaZolm.mp4",
+    poster:"//static.media.islamway.net//videos/125/452_Orafy_GebaZolm-l.jpg"
+  },
+  {
+    id: 18,
+    title:"لا تحزن ، فربما كان خيراً لك",
+    url:"https://media.islamway.net/videos/125/452_Orafy_NoHozn.mp4",
+    poster:"//static.media.islamway.net//videos/125/452_Orafy_NoHozn-l.jpg"
+  },
+  {
+    id: 19,
+    title:"‫وأي نصرٍ بعد نصر الله سبحانه ؟",
+    url:"https://media.islamway.net/videos/125/452_Orafy_NasrAfterAllah.mp4",
+    poster:"//static.media.islamway.net//videos/125/452_Orafy_NasrAfterAllah-l.jpg"
+  },
+  {
+    id: 20,
+    title:"‫قطوف من السيرة : بماذا أوصى النبي صلى الله عليه وسلم ابن عباس ؟",
+    url:"https://media.islamway.net/videos/125/452_Orafy_NabyIbn3bas.mp4",
+    poster:"//static.media.islamway.net//videos/125/452_Orafy_NabyIbn3bas-l.jpg"
+  },
 ]
 //   export const nameSheik = [
 //     {
@@ -1313,7 +1414,106 @@ export const eyadElqenaby =[
     saeedElkamly,
     aymanElsweed,
     zakerNike,
-    aliElqurny
+    aliElqurny,
+    mohamedElarefy
  }
-
  export default namesOfSheikes
+
+ export const dataOfAllSheikhs = [
+    {
+      id: 1,
+      name: "الشيخ سمير مصطفي",
+      ImgSrc: "https://pbs.twimg.com/media/FveL68HXwAUV3Yc.jpg",
+      arrayVideo: mohmedSharaye,
+    },
+    {
+      id: 2,
+      name: "الشيخ سعيد الكملي",
+      ImgSrc: "https://i1.sndcdn.com/artworks-2OihbfmCHJ2YqVhl-nuF70g-t500x500.jpg",
+      arrayVideo: saeedElkamly,
+    },
+    {
+      id: 3,
+      name: "الشيخ أحمد عبدالمنعم ",
+      ImgSrc: "https://i.ytimg.com/vi/xxesTJixwOM/maxresdefault.jpg",
+      arrayVideo: ahmedAbdelmoniem,
+    },
+    {
+      id: 4,
+      name: "أبو إسحاق الحويني",
+      ImgSrc: "https://i1.sndcdn.com/artworks-000318203850-wvduss-t500x500.jpg",
+      arrayVideo: aboEshak,
+    },
+    {
+      id: 5,
+      name: "محمد متولي الشعراوي",
+      ImgSrc: "https://1.bp.blogspot.com/-hEp5l8EuxTU/YQlHtsBBrEI/AAAAAAACNwc/KtslO1Yc44gNavEkC6dRCWsemL0fyigrwCLcBGAsYHQ/s450/%25D8%25A7%25D8%25AD%25D8%25A7%25D8%25AB-%25D8%25A7%25D9%2584%25D8%25B4%25D9%258A%25D8%25AE-%25D8%25A7%25D9%2584%25D8%25B4%25D8%25B9%25D8%25B1%25D8%25A7%25D9%2588%25D9%258A.jpg",
+      arrayVideo: mohmedSharaye,
+    },
+    {
+      id: 6,
+      name: "إياد قنيبي",
+      ImgSrc: "https://liveislam.info/wp-content/uploads/2021/01/dr-eyad.jpg",
+      arrayVideo: eyadElqenaby,
+    },
+    {
+      id: 7,
+      name: "أيمن عبدالرحيم",
+      ImgSrc: "https://static1.tgstat.ru/channels/_0/b0/b0f8e905b97170e08db29b92ef162e1a.jpg",
+      arrayVideo: aymanAbdelrheem,
+    },
+    {
+      id: 8,
+      name: "محمد خيري",
+      ImgSrc: "https://i1.sndcdn.com/artworks-Paw2swpARCFTPRZA-hx4UqQ-t500x500.jpg",
+      arrayVideo: mohamedKhirey,
+    },
+    {
+      id: 9,
+      name: "أحمد السيد",
+      ImgSrc: "https://i1.sndcdn.com/artworks-rnJqKTXouOsb3va3-1C8G5A-t500x500.jpg",
+      arrayVideo: ahmedSayed,
+    },
+    {
+      id: 10,
+      name: "عثمان الخميس",
+      ImgSrc: "https://mustansiriyah.net/wp-content/uploads/2019/10/40893814_472113786619791_5876197533662838784_n.jpg",
+      arrayVideo: osmanElhames,
+    },
+    {
+      id: 11,
+      name: "خالد الراشد",
+      ImgSrc: "https://pbs.twimg.com/media/FhwqYJGXoAAPT1C.png",
+      arrayVideo: khaledElrashed,
+    },
+    {
+      id: 12,
+      name: "عبدالعزيز الطريفي",
+      ImgSrc: "https://pbs.twimg.com/media/E3J_SceXIAM0H8r.jpg",
+      arrayVideo: abdelazezEltrafy,
+    },
+    {
+      id: 13,
+      name: "أيمن السويد",
+      ImgSrc: "https://images.gr-assets.com/authors/1514098245p8/3353597.jpg",
+      arrayVideo: aymanElsweed,
+    },
+    {
+      id: 14,
+      name: "ذاكر نايك",
+      ImgSrc: "https://palsawa.com/uploads/images/2022/11/USUMd.jpg",
+      arrayVideo: zakerNike,
+    },
+    {
+      id: 15,
+      name: "علي القرني",
+      ImgSrc: "https://i.ytimg.com/vi/0AtKYp8SB7s/hqdefault.jpg",
+      arrayVideo: aliElqurny,
+    },
+    {
+      id: 16,
+      name: "محمد العريفي",
+      ImgSrc: "https://i1.sndcdn.com/artworks-000122186129-ltl97z-t500x500.jpg",
+      arrayVideo: mohamedElarefy,
+    },
+  ];

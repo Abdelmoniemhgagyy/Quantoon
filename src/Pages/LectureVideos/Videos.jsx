@@ -16,9 +16,15 @@ function Videos() {
         {leactureVideoes.map((video) => {
           return (
             <div
-              className="custom-width  border border-white rounded-lg p-1 md:p-2 pt-3 lg:mt-5  sm:bg-transparent ]"
+              className="custom-width relative  border border-white rounded-lg p-1 md:p-2 pt-3 lg:mt-5  sm:bg-transparent ]"
               key={video.id}
             >
+            {/* download video  */}
+            <a href={video.url} target="_blank" className="absolute left-1 top-1 pt-1  pl-2 rounded-lg cursor-pointer" rel="noreferrer" >
+             <i class="bi bi-download text-white text-lg block transform hover:scale-105"></i>
+             
+            </a>
+            {/* End download video  */}
               {/* name sheah  */}
               <div className="flex gap-[10px] items-center mb-3 md:mb-5 ">
                 <img
