@@ -410,6 +410,95 @@
       url:"https://media.islamway.net/videos/4363/922_Elmnem_Elaqsa.mp4",
       poster:"//static.media.islamway.net//videos/4363/922_Elmnem_Elaqsa-l.jpg"
     },
+  { id: 6,
+      title:"",
+      url:"",
+      poster:""
+    },
+{
+    id: 7,
+    title:"",
+    url:"",
+    poster:""
+  },
+  {
+    id: 8,
+    title:"",
+    url:"",
+    poster:""
+  },
+  {
+    id: 9,
+    title:"",
+    url:"",
+    poster:""
+  },
+  {
+    id: 10,
+    title:"",
+    url:"",
+    poster:""
+  },
+  {
+    id: 11,
+    title:"",
+    url:"",
+    poster:""
+  },
+  {
+    id: 12,
+    title:"",
+    url:"",
+    poster:""
+  },
+  {
+    id: 13,
+    title:"",
+    url:"",
+    poster:""
+  },
+  {
+    id: 14,
+    title:"",
+    url:"",
+    poster:""
+  },
+  {
+    id: 15,
+    title:"",
+    url:"",
+    poster:""
+  },
+  {
+    id: 16,
+    title:"",
+    url:"",
+    poster:""
+  },
+  {
+    id: 17,
+    title:"",
+    url:"",
+    poster:""
+  },
+  {
+    id: 18,
+    title:"",
+    url:"",
+    poster:""
+  },
+  {
+    id: 19,
+    title:"",
+    url:"",
+    poster:""
+  },
+  {
+    id: 20,
+    title:"",
+    url:"",
+    poster:""
+  },
 ]
   export const saeedElkamly = [
       {
@@ -491,7 +580,7 @@
       poster:"//static.media.islamway.net//videos/1426/922_Elqnebe_Allh-l.jpg"
     },
 ]
-
+// ايمن عبدالرحيم 
   export const aymanAbdelrheem = [
     {
       id: 1,
@@ -523,6 +612,96 @@
       url: "https://ia803104.us.archive.org/19/items/20210624_20210624_0619/%D8%A7%D9%84%D8%AA%D9%85%D9%80%D8%A7%D8%B1%D9%8A%D9%86%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D9%80%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B3%D9%80%D9%86%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D9%80%D8%A9%20%20%D9%85.%20%D8%A7%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85.mp4",
       poster:"https://www.stjegypt.com/uploads/189673790785.jpg"
     },
+    {
+      id: 6,
+      title:"الهندسة باللغة العبرية الفصحى - م. أيمن عبد الرحيم",
+      url:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9%20%D8%A8%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A8%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%81%D8%B5%D8%AD%D9%89%20-%20%D9%85.%20%D8%A3%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85.mp4",
+      poster:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/20210315_20210315_1044.thumbs/%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D8%A9%20%D8%A8%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A8%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%81%D8%B5%D8%AD%D9%89%20-%20%D9%85.%20%D8%A3%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85_000503.jpg"
+    },
+{
+    id: 7,
+    title:"هندسة اللغة..ضرورة أم رفاهية؟",
+    url:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/%D9%87%D9%86%D8%AF%D8%B3%D8%A9%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9..%D8%B6%D8%B1%D9%88%D8%B1%D8%A9%20%D8%A3%D9%85%20%D8%B1%D9%81%D8%A7%D9%87%D9%8A%D8%A9%D8%9F%20-%20%D9%85.%D8%A3%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85.mp4",
+    poster:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/20210315_20210315_1044.thumbs/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9%201_000732.jpg"
+  },
+  {
+    id: 8,
+    title:"مدخل إلي علم اللغة - المحاضرة الاولي 2 ",
+    url:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A7%D9%88%D9%84%D9%8A%202.mp4",
+    poster:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/20210315_20210315_1044.thumbs/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A7%D8%AE%D9%8A%D8%B1%D8%A9%202_000959.jpg"
+  },
+  {
+    id: 9,
+    title:"مدخل إلي علم اللغة - المحاضرة الثانية 1 ",
+    url:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9%201.mp4",
+    poster:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/20210315_20210315_1044.thumbs/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A7%D8%AE%D9%8A%D8%B1%D8%A9%202_000880.jpg"
+  },
+  {
+    id: 10,
+    title:"مدخل إلي علم اللغة - المحاضرة الثانية 2 ",
+    url:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9%202.mp4",
+    poster:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/20210315_20210315_1044.thumbs/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A7%D9%88%D9%84%D9%8A%201_002273.jpg"
+  },
+  {
+    id: 11,
+    title:"مدخل إلي علم اللغة - المحاضرة الثانية 3 ",
+    url:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9%203.mp4",
+    poster:"https://archive.org/download/20210309_20210309_1932/20210309_20210309_1932.thumbs/%D8%A7%D9%84%D9%88%D8%B9%D9%8A%20%D8%A7%D9%84%D9%84%D8%BA%D9%88%D9%8A%20-%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89%20-%20%D8%B9%D9%84%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D9%87%D9%88%D9%8A%D8%A9%20%D8%A8%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D9%85.%D8%A3%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85_000114.jpg"
+  },
+  {
+    id: 12,
+    title:"مدخل إلي علم اللغة - محاضرة الصرف 1 ",
+    url:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B5%D8%B1%D9%81%201.mp4",
+    poster:"https://i1.sndcdn.com/artworks-aFaBl5Om12OpDzHz-5Qu4Cw-t500x500.jpg"
+  },
+  {
+    id: 13,
+    title:"مدخل إلي علم اللغة - محاضرة الصرف 2 ",
+    url:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B5%D8%B1%D9%81%202.mp4",
+    poster:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/20210315_20210315_1044.thumbs/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9%202_000655.jpg"
+  },
+  {
+    id: 14,
+    title:"مدخل إلي علم اللغة - المحاضرة الاولي 1  ",
+    url:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A7%D9%88%D9%84%D9%8A%201.mp4",
+    poster:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/20210315_20210315_1044.thumbs/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9%202_001195.jpg"
+  },
+  {
+    id: 15,
+    title:"مدخل إلي علم اللغة - المحاضرة الأخيرة 1 ",
+    url:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A7%D8%AE%D9%8A%D8%B1%D8%A9%201.mp4",
+    poster:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/20210315_20210315_1044.thumbs/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9%202_001195.jpg"
+  },
+  {
+    id: 16,
+    title:"مدخل إلي علم اللغة - المحاضرة الأخيرة 2 ",
+    url:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A7%D8%AE%D9%8A%D8%B1%D8%A9%202.mp4",
+    poster:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/20210315_20210315_1044.thumbs/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9%203_001495.jpg"
+  },
+  // {
+  //   id: 17,
+  //   title:"",
+  //   url:"",
+  //   poster:""
+  // },
+  // {
+  //   id: 18,
+  //   title:"",
+  //   url:"",
+  //   poster:""
+  // },
+  // {
+  //   id: 19,
+  //   title:"",
+  //   url:"",
+  //   poster:""
+  // },
+  // {
+  //   id: 20,
+  //   title:"",
+  //   url:"",
+  //   poster:""
+  // },
 ]
 
   export const mohamedKhirey = [
@@ -1424,7 +1603,7 @@
       id: 1,
       name: "الشيخ سمير مصطفي",
       ImgSrc: "https://pbs.twimg.com/media/FveL68HXwAUV3Yc.jpg",
-      arrayVideo: mohmedSharaye,
+      arrayVideo: sameerMostfa,
     },
     {
       id: 2,
