@@ -410,94 +410,94 @@
       url:"https://media.islamway.net/videos/4363/922_Elmnem_Elaqsa.mp4",
       poster:"//static.media.islamway.net//videos/4363/922_Elmnem_Elaqsa-l.jpg"
     },
-  { id: 6,
-      title:"",
-      url:"",
-      poster:""
+    { id: 6,
+      title:"وصدق بالحسنى",
+      url:"https://media.islamway.net/videos/4363/922_Elmnem_Elataa~1.mp4",
+      poster:"https://static.media.islamway.net//videos/4363/922_Elmnem_Elataa~1-l.jpg"
     },
 {
     id: 7,
-    title:"",
-    url:"",
-    poster:""
+    title:"سر ترتيب آيات مطلع سورة الإسراء",
+    url:"https://media.islamway.net/videos/4363/922_Elmnem_Elasraa.mp4",
+    poster:"https://static.media.islamway.net//videos/4363/922_Elmnem_Elasraa-l.jpg"
   },
   {
     id: 8,
-    title:"",
-    url:"",
-    poster:""
+    title:"ولكنكم تستعجلون",
+    url:"https://media.islamway.net/lessons/4363/922_Elmnem_Elsbat.mp4",
+    poster:"https://static.media.islamway.net//lessons/4363/922_Elmnem_Elsbat-l.jpg"
   },
   {
     id: 9,
-    title:"",
-    url:"",
-    poster:""
+    title:"ولا تهِنوا ولا تحزنُوا وأنتُم الأعلَون",
+    url:"https://media.islamway.net/lessons/4363/922_Elmnem_Elwae.mp4",
+    poster:"https://static.media.islamway.net//lessons/4363/922_Elmnem_Elwae-l.jpg"
   },
   {
     id: 10,
-    title:"",
-    url:"",
-    poster:""
+    title:"لا تأمن على نفسك الفتنة",
+    url:"https://media.islamway.net/videos/4363/922_Elmnem_Elftna.mp4",
+    poster:"https://static.media.islamway.net//videos/4363/922_Elmnem_Elftna-l.jpg"
   },
   {
     id: 11,
-    title:"",
-    url:"",
-    poster:""
+    title:"خطة بسيطة لرمضان",
+    url:"https://media.islamway.net/videos/4363/922_Elmnam_khata~1.mp4",
+    poster:"https://static.media.islamway.net//videos/4363/922_Elmnam_khata~1-l.jpg"
   },
   {
     id: 12,
-    title:"",
-    url:"",
-    poster:""
+    title:"سطوة القرآن على النفس",
+    url:"https://media.islamway.net/videos/4363/922_Elmnem_Elqaran.mp4",
+    poster:"https://static.media.islamway.net//videos/4363/922_Elmnem_Elqaran-l.jpg"
   },
   {
     id: 13,
-    title:"",
-    url:"",
-    poster:""
+    title:"كيف تقرأ كتابا بذكاء؟",
+    url:"https://media.islamway.net/videos/4363/922_Elmn3m_Elmzkra.mp4",
+    poster:"https://static.media.islamway.net//videos/4363/922_Elmn3m_Elmzkra-l.jpg"
   },
   {
     id: 14,
-    title:"",
-    url:"",
-    poster:""
+    title:"خطاب التحدي في القرآن",
+    url:"https://media.islamway.net/videos/4363/922_Elmn3m_Elgr2an.mp4",
+    poster:"https://static.media.islamway.net//videos/4363/922_Elmn3m_Elgr2an-l.jpg"
   },
   {
     id: 15,
-    title:"",
-    url:"",
-    poster:""
+    title:"القرآن خطاب يقيني",
+    url:"https://media.islamway.net/videos/4363/922_Elmn3m_Elqr2an.mp4",
+    poster:"https://static.media.islamway.net//videos/4363/922_Elmn3m_Elqr2an-l.jpg"
   },
   {
     id: 16,
-    title:"",
-    url:"",
-    poster:""
+    title:"تلبيس أهل الباطل",
+    url:"https://media.islamway.net/videos/4363/922_Elmn3m_Eltlbes.mp4",
+    poster:"https://static.media.islamway.net//videos/4363/922_Elmn3m_Eltlbes-l.jpg"
   },
   {
     id: 17,
-    title:"",
-    url:"",
-    poster:""
+    title:"كيف تكون حياتي كلها لله ؟",
+    url:"https://media.islamway.net/videos/4363/922_Elmn3m_Allh.mp4",
+    poster:"https://static.media.islamway.net//videos/4363/922_Elmn3m_Allh-l.jpg"
   },
   {
     id: 18,
-    title:"",
-    url:"",
-    poster:""
+    title:"الهشاشة النفسية عند الجيل الصاعد",
+    url:"https://media.islamway.net/videos/4363/922_Elmn3m_ELsbatt.mp4",
+    poster:"https://static.media.islamway.net//videos/4363/922_Elmn3m_ELsbatt-l.jpg"
   },
   {
     id: 19,
-    title:"",
-    url:"",
-    poster:""
+    title:"لا تطفئ فتيل الإيمان بداخلك",
+    url:"https://media.islamway.net/videos/4363/Elmn3m_Eleman.mp4",
+    poster:"https://static.media.islamway.net//videos/4363/Elmn3m_Eleman-l.jpg"
   },
   {
     id: 20,
-    title:"",
-    url:"",
-    poster:""
+    title:"ظاهرة الشذوذ الجنسي (اللواط)",
+    url:"https://media.islamway.net/videos/4363/Elmn3m_Elshzooz.mp4",
+    poster:"https://static.media.islamway.net//videos/4363/Elmn3m_Elshzooz-l.jpg"
   },
 ]
   export const saeedElkamly = [
