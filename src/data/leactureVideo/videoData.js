@@ -534,12 +534,97 @@
         nameSheikh: "الشيخ سعيد الكملي",
         
       },
-    // {
-    //   id: ,
-    //   title: "",
-    //   url: "",
-    //   poster:""
-    // },
+    {
+      id:6 ,
+      title: "هذا الذي تعرف البطحاء وطأته - الشيخ سعيد الكملي",
+      url: "https://rr3---sn-hgn7rn7y.googlevideo.com/videoplayback?expire=1705804424&ei=KC6sZcHrBKKmp-oPr6uwoAM&ip=156.207.95.122&id=o-ANpny2cUeYM07OlIBE2CzMkn8y6h3dwl_A9eZUUWr3w5&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&spc=UWF9f0N9hMx4fvesrUn6aQydZjCBwyu1NGKi&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=301.000&lmt=1610016811539923&fexp=24007246&c=ANDROID&txp=5432432&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIhAKOMWpUM_J00v7lruehPSl9M65L1Lc0_PiKj-SIB4Y8vAiBddHI7_oSru4Ua4wAzY8X5_ZY8yerYG28u_5n8IbPyig%3D%3D&redirect_counter=1&cm2rm=sn-uxaxjvhxbt2u-amge7z&req_id=3dd3bd803a68a3ee&cms_redirect=yes&cmsv=e&mh=cN&mm=29&mn=sn-hgn7rn7y&ms=rdu&mt=1705782531&mv=m&mvi=3&pl=19&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AAO5W4owRAIgd2-TRTfflv-32ia7hWeuCZn2U382FXjruWsW4e9wO9cCIHZBJtKXIHYi7oDbiAPUOrPZQsXTR1NqqmEmOqLHhNCL",
+      poster:"https://pbs.twimg.com/profile_images/965915896182116352/_PnCjA3I_400x400.jpg"
+    },
+    {
+    id: 7,
+    title:"أثـرتَ هِـزَبْـرَ الـشّـرَى إذ ربـض !! - الشيخ سعيد الكملي",
+    url:"https://2u.pw/6biA0WI",
+    poster:"https://i.ytimg.com/vi/5flnBgxtvbE/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA7vUuGRV2LHlAXqOeALfxJQv18uA"
+  },
+  {
+    id: 8,
+    title:"رجل ليس ككل الرجال !! (رائعة) - الشيخ سعيد الكملي",
+    url:"https://rr5---sn-hpa7znz6.googlevideo.com/videoplayback?expire=1705804768&ei=gC-sZdzeNpXSi9oPzKeTgA0&ip=156.207.95.122&id=o-AOnKarRAuhlCTTILWVvg-D3gbCEAHzsRBGKhfmLBSHJn&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=UY&mm=31%2C29&mn=sn-hpa7znz6%2Csn-hgn7rnls&ms=au%2Crdu&mv=m&mvi=5&pl=19&initcwndbps=321250&spc=UWF9f67YJ-E7rpW-eku2xWC9-wVBpzjKTfK2&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=1636.263&lmt=1665468567446427&mt=1705782783&fvip=2&fexp=24007246&c=ANDROID&txp=5538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIgZOlpE5ju8sCz8eJORykz1JpM8aFJNoRxt6WRjHdJgy8CIQCFWp-Z2fc4WHnpbFNx6zTk1f_40Jy07YcO8vahrDc3hg%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRAIgP5Czy9J8RObZsY1qi1W1C9qEp5hwFEkiN-ARPqDg128CIDvDmMwubUx1UiXp0zlBy2pOnYH6X3e8hVHBx6IhSFlk",
+    poster:"https://upload.wikimedia.org/wikipedia/ar/thumb/8/8b/%D8%B3%D8%B9%D9%8A%D8%AF_%D8%A7%D9%84%D9%83%D9%85%D9%84%D9%8A_2014.jpg/280px-%D8%B3%D8%B9%D9%8A%D8%AF_%D8%A7%D9%84%D9%83%D9%85%D9%84%D9%8A_2014.jpg"
+  },
+  {
+    id: 9,
+    title:"قصة غزوة تبوك (غزوة العسرة) - الشيخ سعيد الكملي",
+    url:"https://rr2---sn-4g5ednd7.googlevideo.com/videoplayback?expire=1705804989&ei=XTCsZbWVC8Gli9oPnviFsAg&ip=156.207.95.122&id=o-APlTSkQs2BykGSW33dCKzaQTKtRPi4QcCwPLeJwselYl&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&spc=UWF9f-56kFCzKF_-MutR0hL2DEpCQhzaRUDE&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=1967.728&lmt=1538180260040695&fexp=24007246&c=ANDROID&txp=5531432&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRgIhALWhcaTsURg0qUbuvvxkPRR7MRkRNIZJQprHpzqR03GHAiEA-Gejrsbf1B8ntGUg3GCvnGA9UXpdnnvSxLpEEBVF3oM%3D&redirect_counter=1&rm=sn-hpads7l&req_id=edb71589a38ea3ee&cms_redirect=yes&cmsv=e&mh=YD&mm=34&mn=sn-4g5ednd7&ms=ltu&mt=1705783232&mv=m&mvi=2&pl=19&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AAO5W4owRAIgNP7DLCnsyLzeCcnN1HnWUtoRtDJSqCs9vsMgGWItRKECIAQwDuHq8DDpi66nLKFa7hGy1ceRdxJVz5vrhoHBu4bv",
+    poster:"https://www.moroccomedianews.ma/wp-content/uploads/2019/03/kamali-780x405.jpg"
+  },
+  {
+    id: 10,
+    title:"قصة موسى عليه السلام و فتاه في طلب العلم | مع فضيلة الشيخ الدكتور سعيد الكملي",
+    url:"https://rr3---sn-hpa7znzy.googlevideo.com/videoplayback?expire=1705805146&ei=-jCsZbyfH9fGi9oPhaGmwAs&ip=156.207.95.122&id=o-AKDn_1CkXe_M6-Bn_ljn6UztMbwLjCKPEbI5LYJu_JD-&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=BJ&mm=31%2C29&mn=sn-hpa7znzy%2Csn-hgn7rn7y&ms=au%2Crdu&mv=m&mvi=3&pl=19&initcwndbps=341250&spc=UWF9f2yZglI5Hui3q2VI3IX-4o9knRKME6NN&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=7267.822&lmt=1690518223267274&mt=1705783500&fvip=4&fexp=24007246&c=ANDROID&txp=5532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIgX47SLAaU_Pp6CRRT37fGqpQyjmLBnTMzWANeJvzIE6ACIQCWX-dmf3aq64w6YNCAkRvEVvG2dxAeaXJO9tk5O0GxDA%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRgIhAK8GKfBUUkTOx16hZQJ1wFuoOyWlS1mIjNUtZw-KK0SnAiEAi2Lc5MFtjuvZ7T-zYJ5dl68ZBeFPq4XArJHdmtIdo2Y%3D",
+    poster:"https://i.ytimg.com/vi/G3oX5N2Jnmo/hqdefault.jpg?sqp=-oaymwE1CKgBEF5IVfKriqkDKAgBFQAAiEIYAXABwAEG8AEB-AH-CYAC0AWKAgwIABABGH8gSygpMA8=&rs=AOn4CLCMmHevovy1j0b5lBg23m2o8oOKxQ"
+  },
+  // {
+  //   id: 11,
+  //   title:"",
+  //   url:"",
+  //   poster:""
+  // },
+  // {
+  //   id: 12,
+  //   title:"",
+  //   url:"",
+  //   poster:""
+  // },
+  // {
+  //   id: 13,
+  //   title:"",
+  //   url:"",
+  //   poster:""
+  // },
+  // {
+  //   id: 14,
+  //   title:"",
+  //   url:"",
+  //   poster:""
+  // },
+  // {
+  //   id: 15,
+  //   title:"",
+  //   url:"",
+  //   poster:""
+  // },
+  // {
+  //   id: 16,
+  //   title:"",
+  //   url:"",
+  //   poster:""
+  // },
+  // {
+  //   id: 17,
+  //   title:"",
+  //   url:"",
+  //   poster:""
+  // },
+  // {
+  //   id: 18,
+  //   title:"",
+  //   url:"",
+  //   poster:""
+  // },
+  // {
+  //   id: 19,
+  //   title:"",
+  //   url:"",
+  //   poster:""
+  // },
+  // {
+  //   id: 20,
+  //   title:"",
+  //   url:"",
+  //   poster:""
+  // },
+
 ]
 
   export const eyadElqenaby =[
@@ -678,18 +763,18 @@
     url:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A7%D8%AE%D9%8A%D8%B1%D8%A9%202.mp4",
     poster:"https://ia903401.us.archive.org/11/items/20210315_20210315_1044/20210315_20210315_1044.thumbs/%D9%85%D8%AF%D8%AE%D9%84%20%D8%A5%D9%84%D9%8A%20%D8%B9%D9%84%D9%88%D9%85%20%D8%A7%D9%84%D9%84%D8%BA%D8%A9%20-%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9%203_001495.jpg"
   },
-  // {
-  //   id: 17,
-  //   title:"",
-  //   url:"",
-  //   poster:""
-  // },
-  // {
-  //   id: 18,
-  //   title:"",
-  //   url:"",
-  //   poster:""
-  // },
+  {
+    id: 17,
+    title:"إدمان الإباحية 🔞| م. أيمن عبدالرحيم",
+    url:"https://2u.pw/2hE5L7X",
+    poster:"https://2u.pw/awGMYpJ"
+  },
+  {
+    id: 18,
+    title:"مهندس أيمن عبد الرحيم........ القرآن وعلم النفس ندوة 2017",
+    url:"https://2u.pw/BNd6f8S",
+    poster:"https://i.ytimg.com/vi/yBmUTj6iacE/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCPMmyn_Eax2OFm9xvll_3SSV2mWA"
+  },
   // {
   //   id: 19,
   //   title:"",
@@ -1454,6 +1539,128 @@
     poster:"//static.media.islamway.net//videos/125/452_Orafy_NabyIbn3bas-l.jpg"
   },
 ]
+  export const baderElmoshary= [
+    {
+      id: 1,
+      title:"قصة حياة عمر بن الخطاب كاملة - قوته الخارقة ومواقف اغرب من الخيال مع الشيخ بدر المشاري",
+      url:"https://rr3---sn-uxaxjvhxbt2u-amge.googlevideo.com/videoplayback?expire=1705805727&ei=PzOsZcqzFs6Ci9oPyMyqyAE&ip=156.207.95.122&id=o-ABZaxtBOh6ynVtx95pITzc1iBufQUfRREbEKJY-m4LjX&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=if&mm=31%2C29&mn=sn-uxaxjvhxbt2u-amge%2Csn-hgn7rnee&ms=au%2Crdu&mv=m&mvi=3&pl=19&initcwndbps=348750&spc=UWF9f3UI8ZYOJiLbICWV3PcoQg-HmAUMPaQN&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=13920.896&lmt=1630126896579739&mt=1705783738&fvip=1&fexp=24007246&c=ANDROID&txp=5532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRgIhAIvDxoDhD7e7taU5j1ABAyiOUFi2bVis52QQjAElK8BCAiEA68d-KhSZ39-kjMxQDAY2Jv0twuGiuMyZ2vCqHLQj0pc%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRQIhAMV75Z6ma2cMvaRRbsdYIFhy7E3A3zJNfByYICXG5maoAiA22e19nIzary4qMxSDRxu3RAWrPODrF4OxPT_z30Ni6Q%3D%3D",
+      poster:"https://i.ytimg.com/vi/GuuXGrq-hYM/hqdefault.jpg"
+    },
+    {
+      id: 2,
+      title:"من اعجب قصص القران - قصة موسي و الخضر واين تقابلوا واغرب ما حدث - الشيخ بدر المشاري",
+      url:"https://rr5---sn-hgn7ynek.googlevideo.com/videoplayback?expire=1705805803&ei=izOsZY6kGrOgi9oP1sCqwAg&ip=156.207.95.122&id=o-AJQjjoGcvaagGGroue3D6b_7ZXw-gWVrsVLdhTFLgplV&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=K4&mm=31%2C29&mn=sn-hgn7ynek%2Csn-hgn7rnls&ms=au%2Crdu&mv=m&mvi=5&pl=19&initcwndbps=215000&spc=UWF9f00CveEVzDfDOoOnE0Mwd2PxYUdpWiLW&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=4443.463&lmt=1702105991623451&mt=1705783995&fvip=2&fexp=24007246&c=ANDROID&txp=5532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRAIgMQ0tgDkm3UfqHOQu4RBgu_NY47ASEXPOlY3msiFB6MYCIECC0k0-5he8EBpqsm82PN6L5o_rzRlC6tUhzlMtGIWQ&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRQIgZMO6gMaEvTGyXcJdkJGPrPo09ZY2lQVODdJViy4HsmcCIQDYDmfjdvbRKrexVun9unJvS033j59-XE4_nf6Sfisl0g%3D%3D",
+      poster:"https://i.ytimg.com/vi/-yzPDw2t8cs/sddefault.jpg"
+    },
+    {
+      id: 3,
+      title:"ماذا رأى النبي ﷺ عند سدرة المنتهى؟ قصة أعظم رحلة في التاريخ! حتماً ستبكى .. يرويها الشيخ بدر المشاري",
+      url:"https://rr2---sn-uxaxjvhxbt2u-amge.googlevideo.com/videoplayback?expire=1705805903&ei=7zOsZbjuEqWovdIP3JKo8Ao&ip=156.207.95.122&id=o-AJgjpdaBtdtVIP3IiWf08X2lXFcTGwnVw0XrLsCV0iOs&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=Pz&mm=31%2C29&mn=sn-uxaxjvhxbt2u-amge%2Csn-hgn7rnll&ms=au%2Crdu&mv=m&mvi=2&pl=19&initcwndbps=387500&spc=UWF9fyH6xCp28IVaTFCA9GpMBU-ZQRuPcHCC&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=3157.867&lmt=1695081545654091&mt=1705783995&fvip=3&fexp=24007246&c=ANDROID&txp=5532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRgIhAJv3eP87mD0CWf5QrBsit8a0PjGDyzk4Hxlr8khJ3KdNAiEAn-cVMJzzxNC1jx6fScMtO-Oz0rtthOSXJg5u1Q_-Cyo%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRQIhAMB0UQ7T3PKMosiHC9PKY-hP1aCiFdIskL5L_ESkCLz0AiBHvSlD1sTwSIugPFkXxM4v2rcYNzrKLpSKKZzVvMzc1w%3D%3D",
+      poster:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdaNhKh00N2qK2LxwiJj9bA0b0goygmbbO3g&usqp=CAU"
+    },
+    {
+      id: 4,
+      title:"من اغرب قصص القران قصة فتية اصحاب الكهف مع الشيخ بدر المشاري - قصة عجيبة",
+      url:"https://rr2---sn-hgn7yn7z.googlevideo.com/videoplayback?expire=1705806023&ei=ZzSsZZCBBeGOxN8PybCOsAc&ip=156.207.95.122&id=o-AP7H3ffvCTSqTWcyik9xKwCRJDPw9S3XkTCytameL2kJ&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=gl&mm=31%2C26&mn=sn-hgn7yn7z%2Csn-hpa7knl7&ms=au%2Conr&mv=m&mvi=2&pl=19&initcwndbps=215000&spc=UWF9f_OeNLmy6rbl8nRMWpWIZczcnt1fitvc&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=3961.393&lmt=1701408195908516&mt=1705783995&fvip=3&fexp=24007246&c=ANDROID&txp=5532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIgc8YU247JqfncxpQvjK5JzoEuc415u2BGr4pwN7K3lIsCIQDxSGRcIKAKfuyHdct3q74zh1mUOTb_nVKEUJK9G0a_rg%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRQIgSDM0cu8oQCT9ehgL7JGCYnHBKCMFjCc063tZ7vPUZ_ECIQCksPw2NZTXrB2t7zgtd7XZIGXLpNxV27YkJQXHPMooFg%3D%3D",
+      poster:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmKWYeKjLIfdOyqziqlQnhpCaXg2lM2n4QyGSFwYoYkkHRB5ydXh5JsUhQsEPfYGPF_vU&usqp=CAU"
+    },
+//     {
+//       id: 5,
+//       title:"",
+//       url:"",
+//       poster:""
+//     },
+//     {
+//       id: 6,
+//       title:"",
+//       url:"",
+//       poster:""
+//     },
+// {
+//     id: 7,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 8,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 9,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 10,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 11,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 12,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 13,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 14,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 15,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 16,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 17,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 18,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 19,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+//   {
+//     id: 20,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
+]
 //   export const nameSheik = [
 //     {
 //       id: 1,
@@ -1594,7 +1801,8 @@
     aymanElsweed,
     zakerNike,
     aliElqurny,
-    mohamedElarefy
+    mohamedElarefy,
+    baderElmoshary
  }
  export default namesOfSheikes
 
@@ -1695,4 +1903,16 @@
       ImgSrc: "https://i1.sndcdn.com/artworks-000122186129-ltl97z-t500x500.jpg",
       arrayVideo: mohamedElarefy,
     },
+    {
+      id: 17,
+      name: "بدر المشاري",
+      ImgSrc:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxFQexCoHEzqznnJlN-GWlSE3pJMMCUES6h-acOD1oK0YVkYzI4Ev24P4vZozVQUa_a6c&usqp=CAU",
+      arrayVideo:baderElmoshary ,
+    },
+    // {
+    //   id: 17,
+    //   name: "",
+    //   ImgSrc: "",
+    //   arrayVideo: ,
+    // },
   ];

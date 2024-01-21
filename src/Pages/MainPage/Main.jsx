@@ -9,7 +9,7 @@ function Main() {
   <div className='container '>
      
      <div className='main-page-content'>
-
+    
                 {/* <div className='main-page-item'>
                         <div className='img-container'>
                                 <img src={Quran} alt="quran" />

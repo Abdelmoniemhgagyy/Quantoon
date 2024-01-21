@@ -17,7 +17,6 @@ function Moshaf() {
 // }, []);
   return (
     <>
-
     <OneMoshaf Src={`https://app.quranflash.com/book/Medina3/epub/EPUB/imgs/`} 
     name="المصحف الجوامعي"
     typeImg={`.png`}
