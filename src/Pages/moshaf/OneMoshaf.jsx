@@ -63,42 +63,70 @@ return (
          src={`${Src}${numberOfzerosUrl}${numberOfPage}${typeImg}`} alt="moshaf" 
          onClick={()=>setOpenModel(!openModel)}/>
       
-        <i class="bi bi-arrow-left-circle sm:text-3xl text-xl cursor-pointer"  onClick={nextPage}></i>
+        <i class="bi bi-arrow-left-circle  sm:text-3xl text-xl cursor-pointer"  onClick={nextPage}></i>
       </div>
       <p className='md:text-xl text-white text-center md:mr-8'>{name}</p>
 
     </div>
 
+
  {/* model  */}
-    {openModel&&<div className='absolute top-0 left-0 min-w-full min-h-full bg-[#777] z-[99999999]' onClick={()=>setOpenModel(false)}>
+    {openModel&&<div className='absolute top-0 left-0 min-w-full min-h-full bg-[#000] z-[99999999]' onClick={()=>setOpenModel(false)}>
        
-       
-          <div className='relative mt-[120px] mt-[55px] flex gap-[2px] md:gap-[10px] items-center 
-          justify-center text-white pb-[3px]'
+    <div className='hidden md:block text-center pt-[5px]'>
+     <input type="number" min={1} placeholder='رقم الصفحة' className=' text-center border border-blue-400 p-2 w-[60%] md:w-auto rounded-lg  outline-none'
+          value={numberOfPage}
+          onChange={changeInputValue}
+          onClick={(e)=>e.stopPropagation()} />
+     </div>
+
+          <div className='relative  flex gap-[2px] md:gap-[10px] items-center 
+          md:justify-center justify-end text-white pb-[3px]'
           >
-
-             <i onClick={()=>setOpenModel(!openModel)}
-             class="bi bi-x-circle text-2xl md:text-3xl text-[white] hover:text-red-500 
-             absolute top-[-35px] left-[0x] md:left-[49%] md:top-[-50px] text-2xl cursor-pointer"></i>
-
-             
-
-             <i class="bi bi-arrow-right-circle sm:text-3xl text-xl cursor-pointer"   
-                onClick={(e)=>{
-                e.stopPropagation();
-                prevPage()}}></i>
-
-             <img className='w-[80%]  md:w-[60%] xl:w-[40%] md:h-[600px] rounded-[2px]'
+            <i class="hidden md:block text-white  bi bi-arrow-right-square-fill text-4xl"
+             onClick={(e)=>{
+              e.stopPropagation();
+              prevPage()}}
+            
+            ></i>
+             <img className='w-[100%] h-[83vh] md:h-[600px] md:w-[60%] xl:w-[40%] md:h-[600px] rounded-[2px]'
              src={`${Src}${numberOfzerosUrl}${numberOfPage}${typeImg}`} alt="moshaf"
               onClick={(e)=>e.stopPropagation()} />
           
-            <i class="bi bi-arrow-left-circle sm:text-3xl text-xl cursor-pointer"  
+          <i 
+              onClick={(e)=>{
+                e.stopPropagation();
+                nextPage()}}
+             class="hidden md:block text-white bi bi-arrow-left-square-fill text-4xl"></i>
+           
+          </div>
+
+           <div className='flex md:hidden justify-center gap-[14px] my-2'>
+           <button 
+             onClick={(e)=>{
+                e.stopPropagation();
+                prevPage()}}
+            className='p-2 rounded-lg bg-blue-900 text-white'>الصفحة السابقة
+            </button>
+
+            <button
              onClick={(e)=>{
               e.stopPropagation();
-               nextPage()}}></i>
+               nextPage()}}
+            className='p-2 rounded-lg bg-blue-900 text-white'>الصفحة التالية
+            </button>
+          
+         
           </div>
-     <div className='text-center pb-[40px]'>
-     <input type="number" min={1} placeholder='رقم الصفحة' className=' p-2 w-[60%] md:w-auto rounded-lg border-none outline-none'
+          {/* <i 
+             onClick={()=>setOpenModel(!openModel)}
+             className="bi bi-x-circle text-2xl md:text-3xl text-[white] hover:text-red-500 
+             absolute top-[-35px] left-[0x] md:left-[49%] md:top-[-50px] text-2xl cursor-pointer"
+             ></i>
+           */}
+             
+     <div className='md:hidden text-center pb-[40px]'>
+     <input type="number" min={1} placeholder='رقم الصفحة' className=' text-center border border-blue-400 p-2 w-[60%] md:w-auto rounded-lg  outline-none'
           value={numberOfPage}
           onChange={changeInputValue}
           onClick={(e)=>e.stopPropagation()} />
