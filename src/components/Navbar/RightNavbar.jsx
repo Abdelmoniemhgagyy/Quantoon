@@ -11,6 +11,7 @@ import NamesOfAllah from "../../assest/listImg/allah.png"
 import Rosary from "../../assest/listImg/beads.png"
 import moshaf from "../../assest/listImg/quran.png"
 import Video from "../../assest/listImg/video.png"
+import Boy from "../../assest/listImg/boy.png"
 
 
 
@@ -36,7 +37,7 @@ function RightNavbar() {
 
     {/* List icon  */}
         <div className={`RightNavEle Navlist`}
-              style={{padding:openNav ?"8px 10px":"20px 20px 0 0"}}
+              style={{padding:openNav ?"8px 10px":"10px 20px 0 0"}}
                 dir='rtl'
                 onClick={()=>setOpenNav(!openNav)} >
                   
@@ -57,6 +58,7 @@ function RightNavbar() {
         <NavItem ImgSrc={Adkar} openNav={openNav} setOpenNav={setOpenNav} path="/adkar" title="الأذكار"/>
         <NavItem ImgSrc={Video} openNav={openNav} setOpenNav={setOpenNav} path="/videos" title="مرئيات"/>
         <NavItem ImgSrc={ Rosary} openNav={openNav} setOpenNav={setOpenNav} path="/rosary" title="السبحة"/>
+        <NavItem ImgSrc={ Boy} openNav={openNav} setOpenNav={setOpenNav} path="/boymuslim" title="الطفل المسلم"/>
        
     {/* End Nav items  */}
     </div>

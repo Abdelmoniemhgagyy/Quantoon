@@ -80,7 +80,7 @@ return (
           onClick={(e)=>e.stopPropagation()} />
      </div>
 
-          <div className='relative  flex gap-[2px] md:gap-[10px] items-center 
+          <div className='relative  flex gap-[2px] md:gap-[1px] items-center 
           md:justify-center justify-end text-white pb-[3px]'
           >
             <i class="hidden md:block text-white  bi bi-arrow-right-square-fill text-4xl"
