@@ -1542,46 +1542,46 @@
   export const baderElmoshary= [
     {
       id: 1,
-      title:"قصة حياة عمر بن الخطاب كاملة - قوته الخارقة ومواقف اغرب من الخيال مع الشيخ بدر المشاري",
-      url:"https://rr3---sn-uxaxjvhxbt2u-amge.googlevideo.com/videoplayback?expire=1705805727&ei=PzOsZcqzFs6Ci9oPyMyqyAE&ip=156.207.95.122&id=o-ABZaxtBOh6ynVtx95pITzc1iBufQUfRREbEKJY-m4LjX&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=if&mm=31%2C29&mn=sn-uxaxjvhxbt2u-amge%2Csn-hgn7rnee&ms=au%2Crdu&mv=m&mvi=3&pl=19&initcwndbps=348750&spc=UWF9f3UI8ZYOJiLbICWV3PcoQg-HmAUMPaQN&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=13920.896&lmt=1630126896579739&mt=1705783738&fvip=1&fexp=24007246&c=ANDROID&txp=5532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRgIhAIvDxoDhD7e7taU5j1ABAyiOUFi2bVis52QQjAElK8BCAiEA68d-KhSZ39-kjMxQDAY2Jv0twuGiuMyZ2vCqHLQj0pc%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRQIhAMV75Z6ma2cMvaRRbsdYIFhy7E3A3zJNfByYICXG5maoAiA22e19nIzary4qMxSDRxu3RAWrPODrF4OxPT_z30Ni6Q%3D%3D",
-      poster:"https://i.ytimg.com/vi/GuuXGrq-hYM/hqdefault.jpg"
+      title:"من الذي يناديك كل يوم؟",
+      url:"https://ia801600.us.archive.org/28/items/007._20230524/007.%20%D9%85%D9%86%20%D8%A7%D9%84%D8%B0%D9%8A%20%D9%8A%D9%86%D8%A7%D8%AF%D9%8A%D9%83%20%D9%83%D9%84%20%D9%8A%D9%88%D9%85%D8%9F%20%D8%A7%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A8%D8%AF%D8%B1%20%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A.mp4",
+     poster:"https://i.ytimg.com/vi/GuuXGrq-hYM/hqdefault.jpg"
     },
     {
       id: 2,
-      title:"من اعجب قصص القران - قصة موسي و الخضر واين تقابلوا واغرب ما حدث - الشيخ بدر المشاري",
-      url:"https://rr5---sn-hgn7ynek.googlevideo.com/videoplayback?expire=1705805803&ei=izOsZY6kGrOgi9oP1sCqwAg&ip=156.207.95.122&id=o-AJQjjoGcvaagGGroue3D6b_7ZXw-gWVrsVLdhTFLgplV&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=K4&mm=31%2C29&mn=sn-hgn7ynek%2Csn-hgn7rnls&ms=au%2Crdu&mv=m&mvi=5&pl=19&initcwndbps=215000&spc=UWF9f00CveEVzDfDOoOnE0Mwd2PxYUdpWiLW&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=4443.463&lmt=1702105991623451&mt=1705783995&fvip=2&fexp=24007246&c=ANDROID&txp=5532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRAIgMQ0tgDkm3UfqHOQu4RBgu_NY47ASEXPOlY3msiFB6MYCIECC0k0-5he8EBpqsm82PN6L5o_rzRlC6tUhzlMtGIWQ&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRQIgZMO6gMaEvTGyXcJdkJGPrPo09ZY2lQVODdJViy4HsmcCIQDYDmfjdvbRKrexVun9unJvS033j59-XE4_nf6Sfisl0g%3D%3D",
-      poster:"https://i.ytimg.com/vi/-yzPDw2t8cs/sddefault.jpg"
+      title:"سير أعلام النبلاء - حفصة بنت عمر رضي الله عنها 1",
+      url:"https://ia902708.us.archive.org/15/items/www.forsanhaq.com_7477/Bader28-05-2015.mp4",
+      poster:"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzOT4UM_ldYkejWfN8YQ4q6CH9BX_JO_ncdfyjfOJLw5i6tNUd"
     },
     {
       id: 3,
-      title:"ماذا رأى النبي ﷺ عند سدرة المنتهى؟ قصة أعظم رحلة في التاريخ! حتماً ستبكى .. يرويها الشيخ بدر المشاري",
-      url:"https://rr2---sn-uxaxjvhxbt2u-amge.googlevideo.com/videoplayback?expire=1705805903&ei=7zOsZbjuEqWovdIP3JKo8Ao&ip=156.207.95.122&id=o-AJgjpdaBtdtVIP3IiWf08X2lXFcTGwnVw0XrLsCV0iOs&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=Pz&mm=31%2C29&mn=sn-uxaxjvhxbt2u-amge%2Csn-hgn7rnll&ms=au%2Crdu&mv=m&mvi=2&pl=19&initcwndbps=387500&spc=UWF9fyH6xCp28IVaTFCA9GpMBU-ZQRuPcHCC&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=3157.867&lmt=1695081545654091&mt=1705783995&fvip=3&fexp=24007246&c=ANDROID&txp=5532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRgIhAJv3eP87mD0CWf5QrBsit8a0PjGDyzk4Hxlr8khJ3KdNAiEAn-cVMJzzxNC1jx6fScMtO-Oz0rtthOSXJg5u1Q_-Cyo%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRQIhAMB0UQ7T3PKMosiHC9PKY-hP1aCiFdIskL5L_ESkCLz0AiBHvSlD1sTwSIugPFkXxM4v2rcYNzrKLpSKKZzVvMzc1w%3D%3D",
+      title:"الذي لا يصلي ؟",
+      url:"https://ia903000.us.archive.org/19/items/1087P/1087%20p__%20%D8%A7%D9%84%D8%B0%D9%8A%20%D9%84%D8%A7%20%D9%8A%D8%B5%D9%84%D9%8A%20%D8%9F%20%D8%A8%D8%AF%D8%B1%20%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A.mp4",
       poster:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdaNhKh00N2qK2LxwiJj9bA0b0goygmbbO3g&usqp=CAU"
     },
     {
       id: 4,
       title:"من اغرب قصص القران قصة فتية اصحاب الكهف مع الشيخ بدر المشاري - قصة عجيبة",
-      url:"https://rr2---sn-hgn7yn7z.googlevideo.com/videoplayback?expire=1705806023&ei=ZzSsZZCBBeGOxN8PybCOsAc&ip=156.207.95.122&id=o-AP7H3ffvCTSqTWcyik9xKwCRJDPw9S3XkTCytameL2kJ&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=gl&mm=31%2C26&mn=sn-hgn7yn7z%2Csn-hpa7knl7&ms=au%2Conr&mv=m&mvi=2&pl=19&initcwndbps=215000&spc=UWF9f_OeNLmy6rbl8nRMWpWIZczcnt1fitvc&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=3961.393&lmt=1701408195908516&mt=1705783995&fvip=3&fexp=24007246&c=ANDROID&txp=5532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIgc8YU247JqfncxpQvjK5JzoEuc415u2BGr4pwN7K3lIsCIQDxSGRcIKAKfuyHdct3q74zh1mUOTb_nVKEUJK9G0a_rg%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRQIgSDM0cu8oQCT9ehgL7JGCYnHBKCMFjCc063tZ7vPUZ_ECIQCksPw2NZTXrB2t7zgtd7XZIGXLpNxV27YkJQXHPMooFg%3D%3D",
+      url:"https://ia601000.us.archive.org/14/items/2535k/2535%20%20k__%D9%85%D9%86%20%D8%A7%D8%BA%D8%B1%D8%A8%20%D9%82%D8%B5%D8%B5%20%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D9%86%20%D9%82%D8%B5%D8%A9%20%D9%81%D8%AA%D9%8A%D8%A9%20%D8%A7%D8%B5%D8%AD%D8%A7%D8%A8%20%D8%A7%D9%84%D9%83%D9%87%D9%81%20%D9%85%D8%B9%20%D8%A7%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A8%D8%AF%D8%B1%20%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%20-%20%D9%82%D8%B5%D8%A9%20%D8%B9%D8%AC%D9%8A%D8%A8%D8%A9.mp4",
       poster:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmKWYeKjLIfdOyqziqlQnhpCaXg2lM2n4QyGSFwYoYkkHRB5ydXh5JsUhQsEPfYGPF_vU&usqp=CAU"
     },
     {
       id: 5,
-      title:" حتى يحبك الله! | الشيخ بدر المشاري",
-      url:"https://rr4---sn-uxaxjvhxbt2u-amge.googlevideo.com/videoplayback?expire=1705892402&ei=0oWtZdqiHPeF6dsP3tqP6Ao&ip=156.207.65.228&id=o-AP7jAGSL2XkjqWA9pT4vUevoswXhDH_z7dxcno52Gnc0&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=Wu&mm=31%2C29&mn=sn-uxaxjvhxbt2u-amge%2Csn-hpa7knl7&ms=au%2Crdu&mv=m&mvi=4&pl=19&initcwndbps=352500&spc=UWF9f-BKzaLJnpis6epoQlWu73doXXNi1yCu&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=57.562&lmt=1673638972964329&mt=1705870626&fvip=4&fexp=24007246&c=ANDROID&txp=5432434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRAIgU5oPPTwMsVsGqCm43U33r1rqp3NX4V4Lqk_kyyIOLzECIFOU6Xo-bRdKCyky8OFYC6uFcWNyBVlUOBa3gyCAjKKM&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRgIhAMPb37_pj2Gy-3QWFKY0-pcW6bXL73uE94JMbK2-QjHLAiEA5f22w-T_enfWkJEpJ3-h3cwekNv6vPfS2Oj6HiqbXso%3D",
+      title:"اجمل 3 قصص رواها الشيخ بدر المشاري عن اسد الحرب خالد",
+      url:"https://ia903004.us.archive.org/15/items/0199k3/0199%20%20k__%D8%A7%D8%AC%D9%85%D9%84%203%20%D9%82%D8%B5%D8%B5%20%D8%B1%D9%88%D8%A7%D9%87%D8%A7%20%D8%A7%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A8%D8%AF%D8%B1%20%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%20%D8%B9%D9%86%20%D8%A7%D8%B3%D8%AF%20%D8%A7%D9%84%D8%AD%D8%B1%D8%A8%20%D8%AE%D8%A7%D9%84%D8%AF%20%D8%A8%D9%86%20%D8%A7%D9%84%D9%88%D9%84%D9%8A%D8%AF.mp4",
       poster:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd73sif1a3-Sg3Z9hXS9troXlsGyHn0Ro6NA&usqp=CAU"
     },
     {
       id: 6,
-      title:"من سيرة الحبيب صلى الله عليه وسلم: للشيخ بدر المشاري ",
-      url:"https://rr4---sn-hpa7znzy.googlevideo.com/videoplayback?expire=1705892675&ei=44atZYWlBtaDi9oP7qqDgA4&ip=156.207.65.228&id=o-AGM6tisMF04X_N1JoTY62lUWh9I_6Oa1kDpwQsaOBgJC&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=jT&mm=31%2C29&mn=sn-hpa7znzy%2Csn-hpa7knll&ms=au%2Crdu&mv=m&mvi=4&pl=19&initcwndbps=320000&spc=UWF9f8fI82lXPx_c0d8Dkeuu_T-E8sTDS_kY&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=855.051&lmt=1682379513226793&mt=1705870626&fvip=2&fexp=24007246&c=ANDROID&txp=5538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRAIgBPLbRkUcAGPf8pFZ3KgGxze7aYTMQwAnW6wSqntlyb4CIG9w-P4rDk0Kq_RtQHY2rowbxJvVuzwkpYL5DAXNHbfm&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRQIhAIxLUGuiuYr2RY5LT6E99Nx-p-GaIiG7ofjCvBbw-c4HAiBkMTrxUEEWnGh8925KKSSSeczSOEk_2WpL05ZXb9A-aw%3D%3D",
+      title:" اقوى 10 قصص رواها الشيخ بدر المشاري عن الفاروق عمر بن الخطاب",
+      url:"https://ia801001.us.archive.org/2/items/0696k10/0696%20%20k__%D8%A7%D9%82%D9%88%D9%89%2010%20%D9%82%D8%B5%D8%B5%20%D8%B1%D9%88%D8%A7%D9%87%D8%A7%20%D8%A7%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A8%D8%AF%D8%B1%20%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%81%D8%A7%D8%B1%D9%88%D9%82%20%D8%B9%D9%85%D8%B1%20%D8%A8%D9%86%20%D8%A7%D9%84%D8%AE%D8%B7%D8%A7%D8%A8.mp4",
       poster:"https://i.ytimg.com/vi/uhpXg9pvBGU/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC6AKKAgwIABABGGsgayhrMA8=&rs=AOn4CLCdRhBEFTf-MK0vXYmnNbAQ3BC7GQ"
     },
 {
     id: 7,
-    title:"قصة حياة الامام علي بن ابي طالب - من ميلاده الى وفـ ـاته مع الشيخ بدر المشاري",
-    url:"https://rr1---sn-hpa7kn7d.googlevideo.com/videoplayback?expire=1705893584&ei=cIqtZfj2Mtqii9oPmoKWiA4&ip=156.207.65.228&id=o-AEdwpPE_a4lB4BQLjN-X99f4NAxzp2r18gYn51xkC4G0&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=_1&mm=31&mn=sn-hpa7kn7d&ms=au&mv=m&mvi=1&pl=19&initcwndbps=293750&spc=UWF9f-ngiP7uApRB5i7Z0xLjnJ2gx1irKmT4&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=12933.073&lmt=1679531874440535&mt=1705871574&fexp=24007246&c=ANDROID&txp=5532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIhAKFpZciqpGm8vTeIs_NSIIemSoJRxfw9QQi23gbdGY8hAiBDGO5gGldctaNyuzxUc2Nc49NbmtBT_IM0k_bfBE3Ktw%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRQIgJdH3x6PufwS1NtyLvNyw3tIJyjqTDia46ZKEYHr95FcCIQCezjUz_OC-A-lbLya6kBhq5nATuXRX2u3AbOUleY_vkw%3D%3D",
-    poster:"https://i.ytimg.com/vi/NCzVPqlrq74/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgWyhIMA8=&rs=AOn4CLABuzy2zbmijX7xBnenrs9eYyzmOQ"
-  },
+    title:"اخر الكلمات التي قالها النبي محمد قبل موته",
+    url:"https://ia601004.us.archive.org/17/items/0474k/0474%20%20k__%D8%A7%D8%B3%D9%85%D8%B9%20%D8%A7%D8%AE%D8%B1%20%D8%A7%D9%84%D9%83%D9%84%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%8A%20%D9%82%D8%A7%D9%84%D9%87%D8%A7%20%D8%A7%D9%84%D9%86%D8%A8%D9%8A%20%D9%85%D8%AD%D9%85%D8%AF%20%D9%82%D8%A8%D9%84%20%D9%85%D9%88%D8%AA%D9%87%20%D9%88%D8%A7%D8%A8%D9%83%D8%AA%20%D9%83%D9%84%20%D9%85%D9%86%20%D8%AD%D9%88%D9%84%D9%87%20%D9%85%D8%B9%20%D8%A7%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A8%D8%AF%D8%B1%20%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A.mp4",
+    poster:"https://www.mslslat.info/wp-content/uploads/2022/12/image-846.png"
+},
 //   {
 //     id: 8,
 //     title:"",
