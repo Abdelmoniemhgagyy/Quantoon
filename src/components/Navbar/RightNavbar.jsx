@@ -25,7 +25,7 @@ function RightNavbar() {
 
     <div className={`constentRightNav`} style={{width:openNav ?"280px":"60px"}}>
       {/* logo */}
-      <Link to="/" className='logo-container'  style={{gap:openNav?"18px":"0px"}} >
+      <Link to="/" className='logo-container mt-[30px] mb-[20px]'  style={{gap:openNav?"18px":"0px"}} >
           {
             openNav  ?  <h3 className='titleNavEle'>قانتون</h3>
                      : <img src={Logo} alt="logo" />

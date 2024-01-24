@@ -1,10 +1,10 @@
   export const prayerVideo = [
-    {
-      id: 1,
-      title:" تعليم الوضوء للاطفال",
-      url:"https://ia801001.us.archive.org/17/items/KidsWudu720/Kids%20Wudu%20720.mp4",
-      poster:"https://i.ytimg.com/vi/rkj7wpVUYjM/maxresdefault.jpg"
-    },
+    // {
+    //   id: 1,
+    //   title:" تعليم الوضوء للاطفال",
+    //   url:"https://ia801001.us.archive.org/17/items/KidsWudu720/Kids%20Wudu%20720.mp4",
+    //   poster:"https://i.ytimg.com/vi/rkj7wpVUYjM/maxresdefault.jpg"
+    // },
     {
       id: 2,
       title:"تعلم كيفية الصلاة مع زكريا | تعليم الصلاة للاطفال بطريقة سهلة - كارتون تعليم الصلاة للاطفال",
