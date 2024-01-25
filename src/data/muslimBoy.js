@@ -1,4 +1,4 @@
-  export const prayerVideo = [
+  export const ahkam = [
 
     {
       id: 2,
@@ -878,7 +878,7 @@ export const data = [
     id: 1,
     name: "فقه الطفل المسلم",
     ImgSrc:"https://w7.pngwing.com/pngs/808/751/png-transparent-man-praying-prayer-muslim-islam-salah-islam-child-hand-cartoon-thumbnail.png",
-    arrayVideo: prayerVideo,
+    arrayVideo: ahkam,
   },
   {
     id: 2,
@@ -921,7 +921,7 @@ export const data = [
 
 ]
 
-// export const prayerVideo = [
+// export const ahkam = [
 // //     {
 // //       id: 1,
 // //       title:"",
