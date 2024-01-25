@@ -492,8 +492,6 @@
 //   },
 ]
 
-
-
 // قصص من حياة الرسول صلي الله عليه وسلم 
 const storiesMassenger=[
   {
@@ -641,6 +639,237 @@ const storiesScholars=[
 //   },
 ]
 
+// المصحف المعلم 
+const moshafMoslem = [
+     {
+      id: 1,
+      title:"الفاتحة",
+      url:"https://ia902500.us.archive.org/18/items/002_20220621/001.mp4",
+      poster:"https://i.ytimg.com/vi/5rJ71-YRMog/hqdefault.jpg"
+    },
+    {
+      id: 2,
+      title:"سورة النبأ",
+      url:"https://ia902500.us.archive.org/18/items/002_20220621/77.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D8%A3%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+      poster:"https://i.ytimg.com/vi/dFEtH223s8I/maxresdefault.jpg"
+    },
+    {
+      id: 3,
+      title:"النازعات",
+      url:"https://ia902500.us.archive.org/18/items/002_20220621/78.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D9%86%D8%A7%D8%B2%D8%B9%D8%A7%D8%AA%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+      poster:"https://i.ytimg.com/vi/VZ5d59FkQfM/maxresdefault.jpg"
+    },
+    {
+      id: 4,
+      title:"عبس",
+      url:"https://ia802500.us.archive.org/18/items/002_20220621/79.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%B9%D8%A8%D8%B3%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+      poster:"https://i.ytimg.com/vi/ySbMQv8Ofro/maxresdefault.jpg"
+    },
+    {
+      id: 5,
+      title:"التكوير",
+      url:"https://ia902500.us.archive.org/18/items/002_20220621/80.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AA%D9%83%D9%88%D9%8A%D8%B1%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+      poster:"https://i.ytimg.com/vi/pA6rr8iwfGQ/sddefault.jpg"
+    },
+    {
+      id: 6,
+      title:"الإنفطار",
+      url:"https://ia802500.us.archive.org/18/items/002_20220621/81.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A5%D9%86%D9%81%D8%B7%D8%A7%D8%B1%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+      poster:"https://i.ytimg.com/vi/lvo3cXLJrvo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD1aEpBvyXSjWN0dFkVxyw8scnhhA"
+    },
+{
+    id: 7,
+    title:"المطففين",
+    url:"https://ia802500.us.archive.org/18/items/002_20220621/82.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%B7%D9%81%D9%81%D9%8A%D9%86%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/NCXOOI4PSr8/hqdefault.jpg?v=61f66fd5"
+  },
+  {
+      id: 83,
+      title:"الانشقاق",
+      url:"https://ia802500.us.archive.org/18/items/002_20220621/083.mp4",
+      poster:"https://i.ytimg.com/vi/Swl7oik2Bac/maxresdefault.jpg"
+  },
+  {
+    id: 8,
+    title:"البروج",
+    url:"https://ia902500.us.archive.org/18/items/002_20220621/84.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A8%D8%B1%D9%88%D8%AC%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/rCqMDztp61I/maxresdefault.jpg"
+  },
+  {
+    id: 9,
+    title:"الطارق",
+    url:"https://ia802500.us.archive.org/18/items/002_20220621/85.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B7%D8%A7%D8%B1%D9%82%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/Y4-kTxoX6Zg/maxresdefault.jpg"
+  },
+  {
+    id: 10,
+    title:"الأعلي",
+    url:"https://ia802500.us.archive.org/18/items/002_20220621/86.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A3%D8%B9%D9%84%D9%89%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/5tV8vMUWVQI/mqdefault.jpg"
+  },
+  {
+    id: 11,
+    title:"الغاشية",
+    url:"https://ia902500.us.archive.org/18/items/002_20220621/87.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%BA%D8%A7%D8%B4%D9%8A%D8%A9%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/QCmnse0NrlI/maxresdefault.jpg"
+  },
+  {
+    id: 12,
+    title:"الفجر",
+    url:"https://ia902500.us.archive.org/18/items/002_20220621/88.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D9%81%D8%AC%D8%B1%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/PEvL_dJynLo/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgXShVMA8=&rs=AOn4CLDlatl4tgrp8XHtxlkmqpnBEz_G5w"
+  },
+  {
+    id: 13,
+    title:"البلد",
+    url:"https://ia802500.us.archive.org/18/items/002_20220621/89.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A8%D9%84%D8%AF%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/DZhIOlhubCU/maxresdefault.jpg"
+  },
+  {
+    id: 14,
+    title:"الشمس",
+    url:"https://ia802500.us.archive.org/18/items/002_20220621/90.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B4%D9%85%D8%B3%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/VV5wdTR-uEs/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC6AKKAgwIABABGGUgXShPMA8=&rs=AOn4CLAvweXMFeXX2km0lueNeuddVph4ag"
+  },
+  {
+    id: 15,
+    title:"الليل",
+    url:"https://ia802500.us.archive.org/18/items/002_20220621/91.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D9%84%D9%8A%D9%84%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/77o75hr4xrg/maxresdefault.jpg"
+  },
+  {
+    id: 16,
+    title:"الضحي",
+    url:"https://ia802500.us.archive.org/18/items/002_20220621/92.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B6%D8%AD%D9%89%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/QFd87Ub00qw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBU-A3ZiPY3L-WdhYv2xoxQ7knnag"
+  },
+  {
+    id: 17,
+    title:"الشرح",
+    url:"https://ia902500.us.archive.org/18/items/002_20220621/93.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D8%AD%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/0S10BRpQrnQ/maxresdefault.jpg"
+  },
+  {
+    id: 18,
+    title:"التين",
+    url:"https://ia902500.us.archive.org/18/items/002_20220621/94.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AA%D9%8A%D9%86%20%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/_fvANIcW4gk/maxresdefault.jpg"
+  },
+  {
+    id: 19,
+    title:"العلق",
+    url:"https://ia802500.us.archive.org/18/items/002_20220621/95.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D9%82%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/MOwrwhRld6o/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC6AKKAgwIABABGGUgYShPMA8=&rs=AOn4CLDGbbAruOZG5tVLccyTu6ZBIi0IPg"
+  },
+  {
+    id: 20,
+    title:"القدر",
+    url:"https://ia802500.us.archive.org/18/items/002_20220621/96.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D9%82%D8%AF%D8%B1%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/DrKsdm6I6B8/maxresdefault.jpg"
+  },
+  {
+    id: 21,
+    title:"البينة",
+    url:"https://ia802500.us.archive.org/18/items/002_20220621/97.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A8%D9%8A%D9%86%D8%A9%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/1Xuq3frvUu0/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGGUgYihbMA8=&rs=AOn4CLAtJ7txvfNPpZFGfJ-hkV28cTdjjQ"
+  },
+    {
+      id: 98,
+      title:"الزلزلة",
+      url:"https://ia902500.us.archive.org/18/items/002_20220621/098.mp4",
+      poster:"https://i.ytimg.com/vi/pT3GmXVh5Us/hqdefault.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAYcIDIn9dhraej2-47umKrLSBBIA"
+    },
+  {
+    id: 22,
+    title:"العاديات",
+    url:"https://dn802605.us.archive.org/0/items/salafy.2011--03/al3adeyaat.mp4",
+    poster:"https://i.ytimg.com/vi/AoAl0Hc6GZY/hqdefault.jpg"
+  },
+  {
+    id: 23,
+    title:"القارعة",
+    url:"https://ia902500.us.archive.org/18/items/002_20220621/100.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D8%B9%D8%A9%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/Uxp5OwV7ovQ/maxresdefault.jpg"
+  },
+  {
+    id: 24,
+    title:"التكاثر",
+    url:"https://ia802500.us.archive.org/18/items/002_20220621/101.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AA%D9%83%D8%A7%D8%AB%D8%B1%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://s2.dmcdn.net/v/VQe6P1bMyDUlRYOX6/x1080"
+  },
+  {
+    id: 25,
+    title:"العصر",
+    url:"https://dn802605.us.archive.org/0/items/salafy.2011--03/al3asr.mp4",
+    poster:"https://i.ytimg.com/vi/n9vdhqjRfyk/maxresdefault.jpg"
+  },
+  {
+    id: 26,
+    title:"الهمزة",
+    url:"https://ia802500.us.archive.org/18/items/002_20220621/103.mp4",
+    poster:"https://i.ytimg.com/vi/2ohtJ9Eq3rE/hqdefault.jpg"
+  },
+  {
+    id: 27,
+    title:"الفيل",
+    url:"https://dn802605.us.archive.org/0/items/salafy.2011--03/alfeil.mp4",
+    poster:"https://i.ytimg.com/vi/Q7-QZRHtfk4/mqdefault.jpg"
+  },
+  {
+    id: 28,
+    title:"قريش",
+    url:"https://ia902500.us.archive.org/18/items/002_20220621/105.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D9%82%D8%B1%D9%8A%D8%B4%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.vimeocdn.com/video/1003929175-b24210626fa715007483bb41bb7fc4fd7a114fb09dc6ee64d257de6e44f64dd2-d?f=webp"
+  },
+  {
+    id: 29,
+    title:"الماعون",
+    url:"https://ia802500.us.archive.org/18/items/002_20220621/106.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%A7%D8%B9%D9%88%D9%86%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/mLoJ1LUm8ys/mqdefault.jpg"
+  },
+  {
+    id: 30,
+    title:"الكوثر",
+    url:"https://ia802500.us.archive.org/18/items/002_20220621/107.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D9%83%D9%88%D8%AB%D8%B1%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/IRBgdexQtlY/maxresdefault.jpg"
+  },
+  {
+    id: 33,
+    title:"الكافرون",
+    url:"https://ia802500.us.archive.org/18/items/002_20220621/108.mp4",
+    poster:"https://i.ytimg.com/vi/a2ZmpEwrwo0/hqdefault.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLD1Ay7B_2oslecQdRCgo-5TZ0PWrQ"
+  },
+  {
+    id: 34,
+    title:"النصر",
+    url:"https://ia802500.us.archive.org/18/items/002_20220621/109.mp4",
+    poster:"https://s1.dmcdn.net/v/VI-eU1bFHd_HCi4jJ/x240"
+  },
+  {
+    id: 35,
+    title:"المسد",
+    url:"https://ia902500.us.archive.org/18/items/002_20220621/110.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%B3%D8%AF%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/9cb_jEwKGH4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCMiawiZuyemcWqGcf71-wUkhLKKQ"
+  },
+  {
+    id: 36,
+    title:"الإخلاص",
+    url:"https://dn802605.us.archive.org/0/items/salafy.2011--03/alekhlas.mp4",
+    poster:"https://i.ytimg.com/vi/JG8TEsOy0xk/maxresdefault.jpg"
+  },
+  {
+    id: 37,
+    title:"الفلق",
+    url:"https://dn802605.us.archive.org/0/items/salafy.2011--03/alfalaq.mp4",
+    poster:"https://i.ytimg.com/vi/Pv9hGCTYc9k/maxresdefault.jpg"
+  },
+  {
+    id: 38,
+    title:"الناس",
+    url:"https://ia902500.us.archive.org/18/items/002_20220621/113.%D8%A7%D9%84%D9%85%D8%B5%D8%AD%D9%81%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85%20%D9%84%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A7%D9%84%D9%82%D8%A7%D8%B1%D9%89%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%AF%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A7%D9%88%D9%89%20%D8%B3%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D9%86%D8%A7%D8%B3%20%D9%83%D8%A7%D9%85%D9%84%D8%A9%20%D8%AC%D9%88%D8%AF%D8%A9%20%D8%B9%D8%A7%D9%84%D9%8A%D8%A9.mp4",
+    poster:"https://i.ytimg.com/vi/dpbNY-eDHHM/maxresdefault.jpg"
+  },
+]
 export const data = [
   {
     id: 1,
@@ -680,9 +909,14 @@ export const data = [
     ImgSrc:"https://i.ytimg.com/vi/zzkqck6DYOk/maxresdefault.jpg",
     arrayVideo:storiesScholars ,
   },
+  {
+    id: 5,
+    name:"المصحف المعلم",
+    ImgSrc:"https://i.ytimg.com/vi/GXtQNvrjFWU/hqdefault.jpg",
+    arrayVideo:moshafMoslem ,
+  },
 
 ]
-
 
 // export const prayerVideo = [
 // //     {
@@ -794,12 +1028,12 @@ export const data = [
 // //     url:"",
 // //     poster:""
 // //   },
-// //   {
-// //     id: 19,
-// //     title:"",
-// //     url:"",
-// //     poster:""
-// //   },
+//   {
+//     id: 19,
+//     title:"",
+//     url:"",
+//     poster:""
+//   },
 // //   {
 // //     id: 20,
 // //     title:"",
