@@ -59,7 +59,7 @@ function RightNavbar() {
         <NavItem ImgSrc={Video} openNav={openNav} setOpenNav={setOpenNav} path="/videos" title="مرئيات"/>
         <NavItem ImgSrc={ Boy} openNav={openNav} setOpenNav={setOpenNav} path="/boymuslim" title="الطفل المسلم"/>
         <NavItem ImgSrc={ Rosary} openNav={openNav} setOpenNav={setOpenNav} path="/rosary" title="السبحة"/>
-       
+
     {/* End Nav items  */}
     </div>
 

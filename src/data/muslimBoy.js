@@ -1,10 +1,5 @@
   export const prayerVideo = [
-    // {
-    //   id: 1,
-    //   title:" تعليم الوضوء للاطفال",
-    //   url:"https://ia801001.us.archive.org/17/items/KidsWudu720/Kids%20Wudu%20720.mp4",
-    //   poster:"https://i.ytimg.com/vi/rkj7wpVUYjM/maxresdefault.jpg"
-    // },
+
     {
       id: 2,
       title:"تعلم كيفية الصلاة مع زكريا | تعليم الصلاة للاطفال بطريقة سهلة - كارتون تعليم الصلاة للاطفال",
@@ -12,97 +7,86 @@
       poster:"https://i.ytimg.com/vi/edL3W38ODd4/maxresdefault.jpg"
     },
     {
+      id: 1,
+      title:"أحكام الزكاة",
+      url:"https://ia801609.us.archive.org/15/items/Cartoon_Ahkam_Al_Quran-2_uP_bY_mUSLEm/001--.mp4",
+      poster:"https://i.ytimg.com/vi/cEZ-SSglms8/hqdefault.jpg"
+    },
+    {
       id: 3,
       title:"تعلم الصلاة مع محبوب",
       url:"https://ia600401.us.archive.org/27/items/alaqsa_20160519/%D8%AA%D8%B9%D9%84%D9%91%D9%8E%D9%85%20%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9%20%D9%85%D8%B9%20%D9%85%D8%AD%D8%A8%D9%88%D8%A8.mp4",
       poster:"https://ia600401.us.archive.org/27/items/alaqsa_20160519/__ia_thumb.jpg"
     },
+    {
+      id: 16,
+      title:"أحكام الصيام",
+      url:"https://ia801609.us.archive.org/15/items/Cartoon_Ahkam_Al_Quran-2_uP_bY_mUSLEm/002--.mp4",
+      poster:"https://i.ytimg.com/vi/9dDVyJUIXwY/sddefault.jpg"
+    },
+    {
+      id: 4,
+      title:"حكم المسح علي الخفين",
+      url:"https://ia601302.us.archive.org/29/items/aa_09/%D9%83%D8%B1%D8%AA%D9%88%D9%86%20%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20-%D8%A7%D9%84%D9%88%D8%B6%D9%88%D8%A1-%20%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9%2008.mp4",
+      poster:"https://i.ytimg.com/vi/URN-bsQrezo/hqdefault.jpg"
+    },
+    {
+      id: 11,
+      title:"الغيبة",
+      url:"https://ia601302.us.archive.org/29/items/aa_09/%D9%83%D8%B1%D8%AA%D9%88%D9%86%20%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20-%D9%85%D8%AF%D8%B1%D8%B3%D8%A9%20%D8%A7%D9%84%D9%81%D8%AC%D8%B1-01%20-%20%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9%2015.mp4",
+      poster:"https://i.ytimg.com/vi/NyZb3TTPTAw/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC2yV3f4ykdpjHleFUttCAmkwOrcg"
+    },
+    {
+      id: 17,
+      title:"الإسراف والتبذير",
+      url:"https://ia801609.us.archive.org/15/items/Cartoon_Ahkam_Al_Quran-2_uP_bY_mUSLEm/004--.mp4",
+      poster:"https://i.ytimg.com/vi/SFP_swu172s/mqdefault.jpg"
+    },
+  {
+    id: 5,
+    title:"قصر الصلاة",
+    url:"https://ia601302.us.archive.org/29/items/aa_09/%D9%83%D8%B1%D8%AA%D9%88%D9%86%20%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20-%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9-%20%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9%2014.mp4",
+    poster:"https://i.pinimg.com/736x/a8/41/63/a841636f4c9336303de8feb3f93b294f.jpg"
+  },
+  {
+    id: 9,
+    title:"حكم شرب الخمر",
+    url:"https://ia801302.us.archive.org/29/items/aa_09/%D9%83%D8%B1%D8%AA%D9%88%D9%86%20%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20-%D8%B4%D8%B1%D8%A8%20%D8%A7%D9%84%D8%AE%D9%85%D8%B1-%20%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9%2013.mp4",
+    poster:"https://i.ytimg.com/vi/WTrmEK7C_M4/maxresdefault.jpg"
+  },
+  {
+    id: 10,
+    title:"اليمين",
+    url:"https://ia601302.us.archive.org/29/items/aa_09/%D9%83%D8%B1%D8%AA%D9%88%D9%86%20%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20-%D8%A7%D9%84%D9%8A%D9%85%D9%8A%D9%86-%20%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9%2009.mp4",
+    poster:"https://i.ytimg.com/vi/QAvh-Hnzgns/hqdefault.jpg"
+  },
 
-    // {
-    //   id: 3,
-    //   title:"تعلم كيفية الصلاة مع رامي | تعليم الصلاة للأطفال | شرح كيفية الصلاة الصحيحة",
-    //   url:"https://rr1---sn-uxaxjvhxbt2u-amge.googlevideo.com/videoplayback?expire=1706058702&ei=bg-wZf3OA9vGi9oPneOq2Ac&ip=156.207.69.231&id=o-ADrGDaGAEv3TxCsN7V828yjCvqwd1hoPXLhS69SkWK_t&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=x_&mm=31%2C29&mn=sn-uxaxjvhxbt2u-amge%2Csn-hpa7knll&ms=au%2Crdu&mv=m&mvi=1&pl=19&initcwndbps=386250&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=624.500&lmt=1557076607447439&mt=1706036711&fvip=4&fexp=24007246&c=ANDROID&txp=5535432&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIhAJ5GFC6To44K06-q3-TflQUhTEUQRYWcdtAabTMf5c0TAiA1upgpKIPNFQA4I6BUoyYbAqUwZHuXWXw23M2OjFLgcw%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRAIgSybX9CRlr8Fh9mX0e6QJIiDlGr6S-jXGZePBt5_N5OECIBTVHiVe59kXsJMRu1YUWGWIJI0mtwCWSy7uIg5pcNXM",
-    //   poster:"https://i.ytimg.com/vi/Fm2RFyK3TEw/hqdefault.jpg"
-    // },
-    // {
-    //   id: 4,
-    //   title:"كيفية صلاة الظهر و العصر مع زكريا | تعليم الصلاة للاطفال بطريقة سهلة - المسلم الصغير",
-    //   url:"https://rr1---sn-uxaxjvhxbt2u-amge.googlevideo.com/videoplayback?expire=1705969413&ei=pbKuZcCaH5PTi9oPl4SH4Aw&ip=156.207.69.231&id=o-AFItAVjS_8OzLeTRM7DJ6gkPxbSzBS4MsC0sBJZCfVT_&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=CC&mm=31%2C29&mn=sn-uxaxjvhxbt2u-amge%2Csn-hgn7rne7&ms=au%2Crdu&mv=m&mvi=1&pl=19&initcwndbps=376250&spc=UWF9f17sMboEZ9AN73ttMZS9RkDdsDnyPy-f&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=644.144&lmt=1610304761258452&mt=1705947419&fvip=4&fexp=24007246&c=ANDROID&txp=5535432&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRAIgPgqCkto00x3VCXKzzHwNJH0XwSSJsB2oIs-UJ6JTXYwCIFcrZG0MvxE-rLhT8YRkj4YdpGxMUlx21X6f7p-sk5jh&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRgIhAO1ZhfsOZXhrN-URAb3VO1HqweXlpfm_wf826XtYoUK3AiEApYOngS0XOGmW29tT7FouF3QE40kY2yTebeXIcrOnpXA%3D",
-    //   poster:"https://i.ytimg.com/vi/L2F_myEd8ag/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB88Pb6gh0ywNvvpxTHRFYVsCqMHw"
-    // },
-    // {
-    //   id: 5,
-    //   title:"كيفية صلاة المغرب مع زكريا | تعليم الصلاة للاطفال بطريقة سهلة - كارتون تعليم الصلاة للاطفال",
-    //   url:"https://rr1---sn-hpa7znzy.googlevideo.com/videoplayback?expire=1705969600&ei=YLOuZZHMH4HIi9oP9ZK-4AM&ip=156.207.69.231&id=o-AL15tVEJFKXDdAp-C7mrm8xGzYFflmvScQi4dAGbdQsG&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=TB&mm=31%2C29&mn=sn-hpa7znzy%2Csn-hgn7yn7z&ms=au%2Crdu&mv=m&mvi=1&pl=19&initcwndbps=367500&spc=UWF9fxhAQs8IMusN4Ux_W2e61Cc8T9AW00l8&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=546.783&lmt=1577612923808365&mt=1705947419&fvip=1&fexp=24007246&c=ANDROID&txp=5535432&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRAIgJU21Bst10t8Li2xbzI2HAxH03mGyF8y3j1zBpfadpWcCIGO5kphF-HHlz6HOcKU02AJ36Ve-aQsyzHygFVxPbuwY&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRgIhAN9cIku-oN4iWZUAizD_p6JCVDbfUdyoswAgcct5_B6cAiEA8os9f1aCgdHYA1XXdRzOuXiwEumiJjo-ZNPMO71chcw%3D",
-    //   poster:""
-    // },
-    // {
-    //   id: 6,
-    //   title:"تعلم كيفية صلاة العشاء مع زكريا | الصلاة للاطفال بطريقة سهلة - كارتون تعليم الصلاة للاطفال ",
-    //   url:"https://rr3---sn-uxaxjvhxbt2u-amge.googlevideo.com/videoplayback?expire=1705969641&ei=ibOuZdbGGfehhcIP7KCh-Ag&ip=156.207.69.231&id=o-ANBRMJYH0Qgk4jWuTxK1fpfu6Z7_l7TR6qW7MinzXj1J&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=Ml&mm=31%2C29&mn=sn-uxaxjvhxbt2u-amge%2Csn-hgn7rn7k&ms=au%2Crdu&mv=m&mvi=3&pl=19&initcwndbps=376250&spc=UWF9f4foa7Wg06RabTnUTh0pCdqwYnVHivaE&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=644.028&lmt=1618338336774440&mt=1705947419&fvip=3&fexp=24007246&c=ANDROID&txp=5535432&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRgIhAMdq5Lzu1tY8p2I-zq-IE-bQBKvQUKpKeQSqdyNDfE9mAiEArS7t04YqlaxoOqjJCXwWRm20FwcrsdB0W6e_W1fZxLE%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRAIgdzTVUQJq5xvB3ylVsGPOGgkGMSFpdWJPGMaSVMjHH3ACIG1hbPgL5cFbRYo3JCnDyu5zqdOf_Q7zGw43O2RsC0YE",
-    //   poster:""
-    // },
+  {
+    id: 12,
+    title:"سوء الظن والتجسس",
+    url:"https://ia601302.us.archive.org/29/items/aa_09/%D9%83%D8%B1%D8%AA%D9%88%D9%86%20%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20-%D9%85%D8%AF%D8%B1%D8%B3%D8%A9%20%D8%A7%D9%84%D9%81%D8%AC%D8%B1-02%20-%20%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9%2016.mp4",
+    poster:"https://i.vimeocdn.com/video/468599184-3f823f292da1aa67aeec537dd4af08c59520ffdabe9d6792413174a443ef4544-d?f=webp"
+  },
+  {
+    id: 13,
+    title:"أحكام الأضحية",
+    url:"https://ia601302.us.archive.org/29/items/aa_09/%D9%83%D8%B1%D8%AA%D9%88%D9%86%20%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20-%20%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D8%A3%D8%B6%D8%AD%D9%8A%D8%A9%20-%20%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9%2001.mp4",
+    poster:"https://images.twinkl.co.uk/tw1n/image/private/t_630/u/ux/cairo-bold-4_ver_1.jpg"
+  },
+  {
+    id: 14,
+    title:"صلاة السفر",
+    url:"https://ia601302.us.archive.org/29/items/aa_09/%D9%83%D8%B1%D8%AA%D9%88%D9%86%20%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20-%20%D8%B5%D9%84%D8%A7%D8%A9%20%D8%A7%D9%84%D8%B3%D9%81%D8%B1%20-%20%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9%2018.mp4",
+    poster:"https://i.ytimg.com/vi/wrnO0uoEnGQ/hqdefault.jpg"
+  },
+  {
+    id: 15,
+    title:"أكل الربا",
+    url:"https://ia801302.us.archive.org/29/items/aa_09/%D9%83%D8%B1%D8%AA%D9%88%D9%86%20%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20-%D8%A3%D9%83%D9%84%20%D8%A7%D9%84%D8%B1%D8%A8%D8%A7-%20%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9%2002.mp4",
+    poster:"https://i.ytimg.com/vi/hI34nIMJliQ/hqdefault.jpg"
+  },
 
-//   {
-//     id: 8,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 9,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 10,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 11,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 12,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 13,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 14,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 15,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 16,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 17,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
+
 //   {
 //     id: 18,
 //     title:"",
@@ -258,29 +242,17 @@
 // سلوكيات
   export const manners = [
     {
-      id: 1,
-      title:"آداب الطعام | تعليم الأطفال | برنامج عمر وإخوته ",
-      url:"https://rr5---sn-hpa7znz6.googlevideo.com/videoplayback?expire=1705970619&ei=W7euZdKGCteni9oPiJex4Ac&ip=156.207.69.231&id=o-AGmewYU-o0m0rd0lPHLarN7LY-umHOBuVIUYzTI40N6c&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=DT&mm=31%2C29&mn=sn-hpa7znz6%2Csn-hgn7yn7l&ms=au%2Crdu&mv=m&mvi=5&pl=19&initcwndbps=355000&spc=UWF9f1yHhfZ-J84KJPN2zcydK3GrvMgZwd55&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=178.166&lmt=1599135337295691&mt=1705948624&fvip=2&fexp=24007246&c=ANDROID&txp=5432432&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIgSw-xz1aAbTAb4lVbXiZjEA36CBrN9fdN_nwqsbkuW0MCIQDaBiExOMpS0MntGi6dvrQXA0bfesgAMQVYMJlnIVhhwQ%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRgIhAI4rUvdfNL5GWD47AVdrThx6YEaDMcMOS_6QXyDMEPBqAiEAw39B5MpgykRXuqPEi5I4-TlCWvzajuzfQvZAeVsTg40%3D",
+      id: 3,
+      title:"أحكام القرآن الصدق نجاة",
+      url:"https://ia801704.us.archive.org/4/items/20201225_20201225_1136/%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20-%20%D8%A7%D9%84%D8%B5%D8%AF%D9%82%20%D9%86%D8%AC%D8%A7%D8%A9.mp4",
       poster:""
     },
     {
-      id: 2,
-      title:"آداب دخول البيت | برنامج عمر وإخوته",
-      url:"https://rr4---sn-uxaxjvhxbt2u-amge.googlevideo.com/videoplayback?expire=1705971027&ei=87iuZZDnFuyip-oPn6WK0AM&ip=156.207.69.231&id=o-APb44JvROT5CT9tL1UDE6JP5iAkUSfPFVgl-e9v64Bxd&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=B8&mm=31%2C29&mn=sn-uxaxjvhxbt2u-amge%2Csn-hgn7yn7l&ms=au%2Crdu&mv=m&mvi=4&pl=19&initcwndbps=372500&spc=UWF9f4bFyGlepxkHXZkMTF2tnog6qXcXYRKk&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=167.926&lmt=1667857948457115&mt=1705949102&fvip=4&fexp=24007246&c=ANDROID&txp=5532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIgVWQ1gC7x_S7QOGvGh6hIJ4ijl_SQCkgE2pWwt9bY5kQCIQC24M1M2VUlfJLDg6287azdHdbONwkaGCsCkilVEKpnwg%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AAO5W4owRQIgch_-VuT12TeE_ym7vyFDKkwh2fuvgKuF1cusKK5f1VkCIQCpyyDidqIoRdjaiFhtHSkeGMCQwQdeJ1zllK2cNSvCdQ%3D%3D",
+      id: 4,
+      title:"أحكام القرآن (الكبر)",
+      url:"https://ia601904.us.archive.org/10/items/aci1dooc7vei2EeKeng7/%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20%20%20%20%28%20%D8%A7%D9%84%D9%83%D8%A8%D8%B1%29-n-DHHznzgH4-nomusic.mpeg4",
       poster:""
     },
-//     {
-//       id: 3,
-//       title:"",
-//       url:"",
-//       poster:""
-//     },
-//     {
-//       id: 4,
-//       title:"",
-//       url:"",
-//       poster:""
-//     },
 //     {
 //       id: 5,
 //       title:"",
@@ -574,6 +546,37 @@ const storiesMassenger=[
     url:"https://ia601903.us.archive.org/0/items/ohoeb3thaoTiJeemie1o/%D8%A3%D8%B7%D9%81%D8%A7%D9%84%20%D9%81%D9%8A%20%D8%B5%D8%AD%D8%A8%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%8A%20%7C%20%D9%82%D8%B5%D8%B5%20%D9%85%D9%86%20%D8%AD%D9%8A%D8%A7%D8%A9%20%D8%A7%D9%84%D9%86%D8%A8%D9%8A%20%7C%20%D8%A8%D9%86%D9%8A%D9%86%20%D9%88%D8%A8%D9%86%D8%A7%D8%AA-ku3rd2u4q3c-nomusic.mp4",
     poster:"https://w7.pngwing.com/pngs/939/313/png-transparent-muslim-students-student-child-reading.png"
   },
+   {
+     id: 13,
+     title:"حادثة الفيل",
+     url:"https://ia600407.us.archive.org/17/items/way2sona_20160428_2220/%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D9%87%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D9%87%2002-%D8%AD%D8%A7%D8%AF%D8%AB%D8%A9%20%D8%A7%D9%84%D9%81%D9%8A%D9%84.mp4",
+     poster:""
+   },
+   {
+     id: 14,
+     title:"الرسول صلي الله عليه وسلم في ديار حليمة",
+     url:"https://ia800407.us.archive.org/17/items/way2sona_20160428_2220/%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D9%87%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D9%87%2003-%D9%81%D9%8A%20%D8%AF%D9%8A%D8%A7%D8%B1%20%D8%AD%D9%84%D9%8A%D9%85%D8%A9.mp4",
+     poster:""
+   },
+   {
+     id: 15,
+     title:"بحيرا الراهب",
+     url:"https://ia800407.us.archive.org/17/items/way2sona_20160428_2220/%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D9%87%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D9%87%2004-%D8%A8%D8%AD%D9%8A%D8%B1%D8%A7.mp4",
+     poster:""
+   },
+   {
+     id: 16,
+     title:"تجارته صلي الله عليه وسلم في مال خديجة",
+     url:"https://ia600407.us.archive.org/17/items/way2sona_20160428_2220/%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D9%87%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D9%87%2005-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9%20%D9%84%D8%AE%D8%AF%D9%8A%D8%AC%D8%A9.mp4",
+     poster:""
+   },
+   {
+     id: 17,
+     title:"بشري من يثرب",
+     url:"https://ia600407.us.archive.org/17/items/way2sona_20160428_2220/%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D9%87%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%D9%87%2018-%D8%A8%D8%B4%D8%B1%D9%89%20%D9%85%D9%86%20%D9%8A%D8%AB%D8%B1%D8%A8.mp4",
+     poster:""
+   },
+
 ]
 //قصص علماء المسلمين
 const storiesScholars=[
