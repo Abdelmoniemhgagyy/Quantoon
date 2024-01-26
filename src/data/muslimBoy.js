@@ -1,5 +1,6 @@
-  export const ahkam = [
-
+ 
+//  أحكام فقهيه 
+ export const ahkam = [
     {
       id: 2,
       title:"تعلم كيفية الصلاة مع زكريا | تعليم الصلاة للاطفال بطريقة سهلة - كارتون تعليم الصلاة للاطفال",
@@ -19,16 +20,22 @@
       poster:"https://ia600401.us.archive.org/27/items/alaqsa_20160519/__ia_thumb.jpg"
     },
     {
+      id: 24,
+      title:"التيمم",
+      url:"https://media.islamway.net/videos/452_Carton_AhkamQuran_27.mp4",
+      poster:"https://s2.dmcdn.net/v/NBRoT1YYUIoWG59YB/x1080"
+    },
+    {
       id: 16,
       title:"أحكام الصيام",
       url:"https://ia801609.us.archive.org/15/items/Cartoon_Ahkam_Al_Quran-2_uP_bY_mUSLEm/002--.mp4",
       poster:"https://i.ytimg.com/vi/9dDVyJUIXwY/sddefault.jpg"
     },
     {
-      id: 4,
-      title:"حكم المسح علي الخفين",
-      url:"https://ia601302.us.archive.org/29/items/aa_09/%D9%83%D8%B1%D8%AA%D9%88%D9%86%20%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20-%D8%A7%D9%84%D9%88%D8%B6%D9%88%D8%A1-%20%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9%2008.mp4",
-      poster:"https://i.ytimg.com/vi/URN-bsQrezo/hqdefault.jpg"
+      id: 20,
+      title:"الأضحية",
+      url:"https://media.islamway.net/videos/452_Carton_AhkamQuran_20.mp4",
+      poster:"https://static.media.islamway.net//videos/452_Carton_AhkamQuran_01-l.jpg"
     },
     {
       id: 11,
@@ -47,6 +54,12 @@
     title:"قصر الصلاة",
     url:"https://ia601302.us.archive.org/29/items/aa_09/%D9%83%D8%B1%D8%AA%D9%88%D9%86%20%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20-%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9-%20%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9%2014.mp4",
     poster:"https://i.pinimg.com/736x/a8/41/63/a841636f4c9336303de8feb3f93b294f.jpg"
+  },
+  {
+    id: 4,
+    title:"حكم المسح علي الخفين",
+    url:"https://ia601302.us.archive.org/29/items/aa_09/%D9%83%D8%B1%D8%AA%D9%88%D9%86%20%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20-%D8%A7%D9%84%D9%88%D8%B6%D9%88%D8%A1-%20%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9%2008.mp4",
+    poster:"https://i.ytimg.com/vi/URN-bsQrezo/hqdefault.jpg"
   },
   {
     id: 9,
@@ -69,7 +82,7 @@
   },
   {
     id: 13,
-    title:"أحكام الأضحية",
+    title:"أحكام الذبيحة",
     url:"https://ia601302.us.archive.org/29/items/aa_09/%D9%83%D8%B1%D8%AA%D9%88%D9%86%20%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20-%20%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D8%A3%D8%B6%D8%AD%D9%8A%D8%A9%20-%20%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9%2001.mp4",
     poster:"https://images.twinkl.co.uk/tw1n/image/private/t_630/u/ux/cairo-bold-4_ver_1.jpg"
   },
@@ -87,18 +100,49 @@
   },
 
 
-//   {
-//     id: 18,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 19,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
+  {
+    id: 16,
+    title:" أحكام القرآن- صلاة الجمعة",
+    url:"https://ia902308.us.archive.org/30/items/salh_aljoumah/Youtube---_512kb.mp4",
+    poster:"https://archive.org/download/iehei9gooth4Iechoh5o/iehei9gooth4Iechoh5o.thumbs/%D9%83%D8%B1%D8%AA%D9%88%D9%86%20%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20%20%20(%D9%81%D8%B6%D8%A7%D8%A6%D9%84%20%D8%B5%D9%84%D8%A7%D8%A9%20%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D8%A9)-PaWBRYCjutY-nomusic_000027.jpg"
+  },
+  {
+    id: 19,
+    title:"الميسر",
+    url:"https://media.islamway.net/videos/452_Carton_AhkamQuran_17.mp4",
+    poster:"https://i.ytimg.com/vi/WyCreMRedlc/hqdefault.jpg"
+  },
+  {
+    id: 21,
+    title:"التبني",
+    url:"https://media.islamway.net/videos/452_Carton_AhkamQuran_06.mp4",
+    poster:"https://i.ytimg.com/vi/iHi2mAvA6dE/hqdefault.jpg"
+  },
+  {
+    id: 22,
+    title:"صلاة الخوف",
+    url:"https://media.islamway.net/videos/452_Carton_AhkamQuran_07.mp4",
+    poster:"https://i.ytimg.com/vi/URN-bsQrezo/hqdefault.jpg"
+  },
+  {
+    id: 23,
+    title:"كتابة الدين",
+    url:"https://media.islamway.net/videos/452_Carton_AhkamQuran_11.mp4",
+    poster:"https://i.ytimg.com/vi/RP0TuqIXDhE/hqdefault.jpg"
+  },
+
+  {
+    id: 25,
+    title:"النجوى",
+    url:"https://media.islamway.net/videos/452_Carton_AhkamQuran_28.mp4",
+    poster:"https://i.ytimg.com/vi/uOVVxOF6NC0/mqdefault.jpg"
+  },
+  {
+    id: 26,
+    title:"أحكام العيدين",
+    url:"https://media.islamway.net/videos/452_Carton_AhkamQuran_31.mp4",
+    poster:"https://i.ytimg.com/vi/WheP-VaiaPQ/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAmWz5FxiM3EWDwl6T_HnzQAAB5tg"
+  },
 //   {
 //     id: 20,
 //     title:"",
@@ -245,62 +289,63 @@
       id: 3,
       title:"أحكام القرآن الصدق نجاة",
       url:"https://ia801704.us.archive.org/4/items/20201225_20201225_1136/%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20-%20%D8%A7%D9%84%D8%B5%D8%AF%D9%82%20%D9%86%D8%AC%D8%A7%D8%A9.mp4",
-      poster:""
+      poster:"https://i.ytimg.com/vi/ZzX9KFtmcQs/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AHeA4AC6AKKAgwIABABGBMgJSh_MA8=&rs=AOn4CLBW9_Tx9cM0Pd97ml6dBcapyqyzLw"
     },
+    {
+      id: 7,
+      title:"بر الوالدين",
+      url:"https://media.islamway.net/videos/452_Carton_AhkamQuran_19.mp4",
+      poster:"https://i.ytimg.com/vi/Ab9UoB-vudY/hqdefault.jpg"
+     },
     {
       id: 4,
       title:"أحكام القرآن (الكبر)",
       url:"https://ia601904.us.archive.org/10/items/aci1dooc7vei2EeKeng7/%D8%A3%D8%AD%D9%83%D8%A7%D9%85%20%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%20%20%20%20%28%20%D8%A7%D9%84%D9%83%D8%A8%D8%B1%29-n-DHHznzgH4-nomusic.mpeg4",
-      poster:""
+      poster:"https://i.ytimg.com/vi/SFP_swu172s/hqdefault.jpg"
     },
-//     {
-//       id: 5,
-//       title:"",
-//       url:"",
-//       poster:""
-//     },
-//     {
-//       id: 6,
-//       title:"",
-//       url:"",
-//       poster:""
-//     },
-// {
-//     id: 7,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 8,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 9,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 10,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 11,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 12,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
+    {
+      id: 5,
+      title:"أحكام القرآن وَإِنْ قِيلَ لَكُمُ ارْجِعُوا فَارْجِعُوا",
+      url:"https://media.islamway.net/videos/452_Carton_AhkamQuran_04.mp4",
+      poster:"https://i.ytimg.com/vi/EYCmcvq0awg/hqdefault.jpg"
+    },
+    {
+      id: 6,
+      title:"أحكام القرآن عليكم أنفسكم",
+      url:"https://media.islamway.net/videos/452_AhkamQuran_16.mp4",
+      poster:"https://i.ytimg.com/vi/LzbGRTb6Az0/hqdefault.jpg"
+    },
+
+  {
+    id: 8,
+    title:"الوفاء بالعهود",
+    url:"https://media.islamway.net/videos/452_Carton_AhkamQuran_24.mp4",
+    poster:"https://i.ytimg.com/vi/RP0TuqIXDhE/hqdefault.jpg"
+  },
+  {
+    id: 9,
+    title:"حفظ الأمانة",
+    url:"https://media.islamway.net/videos/452_Carton_AhkamQuran_25.mp4",
+    poster:"https://i.ytimg.com/vi/SFP_swu172s/hqdefault.jpg"
+  },
+  {
+    id: 10,
+    title:"حق الجار",
+    url:"https://media.islamway.net/videos/452_Carton_AhkamQuran_26.mp4",
+    poster:"https://i.ytimg.com/vi/C1qC9Qg_B1Q/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgWCg_MA8=&rs=AOn4CLA3L_fdSx5A4yV09FCumMZ6TB1HtQ"
+  },
+  {
+    id: 11,
+    title:"التجسس",
+    url:"https://media.islamway.net/videos/452_Carton_AhkamQuran_29.mp4",
+    poster:"https://i.ytimg.com/vi/1qh6iC1KWiw/hqdefault.jpg"
+  },
+  {
+    id: 12,
+    title:"الإحسان إلى اليتيم",
+    url:"https://media.islamway.net/videos/452_Carton_AhkamQuran_03.mp4",
+    poster:"https://i.ytimg.com/vi/5P0QJx3feMM/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCeEZIPxfN1PJKw6ix6wtMbcbEvOg"
+  },
 //   {
 //     id: 13,
 //     title:"",
@@ -886,19 +931,20 @@ export const data = [
     ImgSrc:"https://www.albayan.ae/polopoly_fs/1.1684382.1475896890!/image/image.jpg_gen/derivatives/original_640/image.jpg",
     arrayVideo:storiesMassenger ,
   },
+    {
+    id:9,
+    name: "آداب وفضائل",
+    ImgSrc:"https://www.jarir.com/cdn-cgi/image/fit=contain,width=350,height=auto,quality=85,metadata=none/https://ak-asset.jarir.com/akeneo-prod/asset/m1images/3/5/357160.jpg",
+    arrayVideo:manners ,
+    // https://www.jarir.com/cdn-cgi/image/fit=contain,width=350,height=auto,quality=85,metadata=none/https://ak-asset.jarir.com/akeneo-prod/asset/m1images/3/5/357160.jpg
+  },
   {
     id: 3,
     name: "كرتون بدون موسيقي",
     ImgSrc:"https://i.ytimg.com/vi/AsFYDAWXMuU/hqdefault.jpg",
     arrayVideo:aflamCartoon ,
   },
-  // {
-  //   id:3,
-  //   name: "أداب وسلوكيات",
-  //   ImgSrc:"https://mashreq.com.my/wp-content/uploads/2021/09/%D9%85%D9%86%D9%87%D8%A7%D8%AC-%D8%A7%D9%84%D8%B7%D9%81%D9%84-%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85-%D8%A2%D8%AF%D8%A7%D8%A8-%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85.jpg",
-  //   arrayVideo:manners ,
-  //   // https://www.jarir.com/cdn-cgi/image/fit=contain,width=350,height=auto,quality=85,metadata=none/https://ak-asset.jarir.com/akeneo-prod/asset/m1images/3/5/357160.jpg
-  // },
+
   {
     id: 4,
     name:" قصص الأنبياء ",
@@ -913,7 +959,7 @@ export const data = [
     arrayVideo:storiesScholars ,
   },
   {
-    id: 5,
+    id: 6,
     name:"المصحف المعلم",
     ImgSrc:"https://i.ytimg.com/vi/GXtQNvrjFWU/hqdefault.jpg",
     arrayVideo:moshafMoslem ,
