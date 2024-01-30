@@ -2334,6 +2334,180 @@
       title: "الاجتماع قوة",
       url: "https://bot.altaqwaa.org/media/Lectures/125.mp4",
       poster: ""
+    },
+    {
+      id: 27,
+      title: "تعرف على سلمان الفارسي ، الذي كان يبحث عن الحقيقة.",
+      url: "https://bot.altaqwaa.org/media/Lectures/126.mp4",
+      poster: ""
+    },
+    {
+      id: 28,
+      title: "علي بن أبي طالب رضي الله عنه",
+      url: "https://bot.altaqwaa.org/media/Lectures/127.mp4",
+      poster: ""
+    },
+    {
+      id: 29,
+      title: "لا تحزن ان الله معنا",
+      url: "https://bot.altaqwaa.org/media/Lectures/128.mp4",
+      poster: ""
+    },
+    {
+      id: 30,
+      title: "ما معنى الصلاة على الرسول ؟",
+      url: "https://bot.altaqwaa.org/media/Lectures/129.mp4",
+      poster: ""
+    },
+    {
+      id: 31,
+      title: "لا تغامر",
+      url: "https://bot.altaqwaa.org/media/Lectures/130.mp4",
+      poster: ""
+    },
+    {
+      id: 32,
+      title: "صورة عظيمة من صور شجاعة #النبي ﷺ في #معركة_أحد",
+      url: "https://bot.altaqwaa.org/media/Lectures/131.mp4",
+      poster: ""
+    },
+    {
+      id: 33,
+      title: "",
+      url: "https://bot.altaqwaa.org/media/Lectures/132.mp4",
+      poster: ""
+    },
+    {
+      id: 34,
+      title: "كان كمن اعتق أربعة أنفس !",
+      url: "https://bot.altaqwaa.org/media/Lectures/133.mp4",
+      poster: ""
+    },
+    {
+      id: 35,
+      title: "غذاء القلب !",
+      url: "https://bot.altaqwaa.org/media/Lectures/134.mp4",
+      poster: ""
+    },
+    {
+      id: 36,
+      title: "سعادة المرء في القرآن الكريم",
+      url: "https://bot.altaqwaa.org/media/Lectures/135.mp4",
+      poster: ""
+    },
+    {
+      id: 37,
+      title: "لا تأمن على نفسك !",
+      url: "https://bot.altaqwaa.org/media/Lectures/136.mp4",
+      poster: ""
+    },
+    {
+      id: 38,
+      title: "رضي الله عن أمنا أم المؤمنين عائشة بنت الصديق\nأحب الناس إلى أفضل الخلق صلى الله عليه وسلم\nالطاهرة المطهرة المبرأة من فوق سبع سماوات",
+      url: "https://bot.altaqwaa.org/media/Lectures/137.mp4",
+      poster: ""
+    },
+    {
+      id: 39,
+      title: "ارضاء الناس",
+      url: "https://bot.altaqwaa.org/media/Lectures/138.mp4",
+      poster: ""
+    },
+    {
+      id: 40,
+      title: "من فقه الابتلاء",
+      url: "https://bot.altaqwaa.org/media/Lectures/139.mp4",
+      poster: ""
+    },
+    {
+      id: 41,
+      title: "الصلاة الصلاة",
+      url: "https://bot.altaqwaa.org/media/Lectures/140.mp4",
+      poster: ""
+    },
+    {
+      id: 42,
+      title: "تقربك من حب الله",
+      url: "https://bot.altaqwaa.org/media/Lectures/141.mp4",
+      poster: ""
+    },
+    {
+      id: 43,
+      title: "﴿يَومَ تُبلَى السَّرائِرُ﴾ [الطارق: ٩]",
+      url: "https://bot.altaqwaa.org/media/Lectures/142.mp4",
+      poster: ""
+    },
+    {
+      id: 44,
+      title: "هذا هو رسول الله صلى الله عليه وسلم",
+      url: "https://bot.altaqwaa.org/media/Lectures/143.mp4",
+      poster: ""
+    },
+    {
+      id: 45,
+      title: "منازل اهل الجنه",
+      url: "https://bot.altaqwaa.org/media/Lectures/144.mp4",
+      poster: ""
+    },
+    {
+      id: 46,
+      title: "الرزق مكتوب",
+      url: "https://bot.altaqwaa.org/media/Lectures/145.mp4",
+      poster: ""
+    },
+    {
+      id: 47,
+      title: "حديث مؤثر عن التوفيق",
+      url: "https://bot.altaqwaa.org/media/Lectures/146.mp4",
+      poster: ""
+    },
+    {
+      id: 48,
+      title: "🔰 سنة مهجورة أهملها كثير من الناس اليوم 🔰",
+      url: "https://bot.altaqwaa.org/media/Lectures/147.mp4",
+      poster: ""
+    },
+    {
+      id: 49,
+      title: "لا تعيب احد",
+      url: "https://bot.altaqwaa.org/media/Lectures/148.mp4",
+      poster: ""
+    },
+    {
+      id: 50,
+      title: "نسوا الله.. فنسيهم!",
+      url: "https://bot.altaqwaa.org/media/Lectures/149.mp4",
+      poster: ""
+    },
+    {
+      id: 51,
+      title: "#تعرف على الكنز العظيم ‼️",
+      url: "https://bot.altaqwaa.org/media/Lectures/150.mp4",
+      poster: ""
+    },
+    {
+      id: 52,
+      title: "قسوة القلوب وعلاجها",
+      url: "https://bot.altaqwaa.org/media/Lectures/151.mp4",
+      poster: ""
+    },
+    {
+      id: 53,
+      title: "الربا",
+      url: "https://bot.altaqwaa.org/media/Lectures/152.mp4",
+      poster: ""
+    },
+    {
+      id: 54,
+      title: "ذنوب الخلوات",
+      url: "https://bot.altaqwaa.org/media/Lectures/153.mp4",
+      poster: ""
+    },
+    {
+      id: 55,
+      title: "سيأتيك رزقك",
+      url: "https://bot.altaqwaa.org/media/Lectures/154.mp4",
+      poster: ""
     }
     // {
     //   id: 2,
