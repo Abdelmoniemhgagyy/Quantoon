@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { memo, useCallback, useEffect, useState } from 'react'
 import logo from "../../assest/logo.jpg";
 import { Player } from "video-react";
 import Loading from '../../components/Loading/Loading.jsx'
@@ -6,12 +6,15 @@ import Loading from '../../components/Loading/Loading.jsx'
 function ShortVideosQuran() {
     const [isLoading,setIsLoading]= useState(true)
     const [shortVideosQuran,setShortVideosQuran] = useState([])
-    const fetchData = ()=>{
-        const data = require('../../data/shortVideosQuran.json')
+    const fetchData = useCallback (async()=>{
+        const data = await require('../../data/shortVideosQuran.json')
         setShortVideosQuran(data)
         setIsLoading(false)
-    }
-    useEffect(fetchData,[])
+    },[])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    useEffect(()=>{
+        fetchData()
+    },[])
   return (
     <>
     {isLoading ?<Loading/>
@@ -65,4 +68,4 @@ function ShortVideosQuran() {
   )
 }
 
-export default ShortVideosQuran
+export default memo(ShortVideosQuran);
