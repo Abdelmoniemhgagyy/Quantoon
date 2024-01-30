@@ -14,7 +14,6 @@ function ShortVideosQuran() {
         setIsLoading(false)
     }
     useEffect(fetchData,[])
-
   return (
     <>
     {isLoading ?<Loading mT="20"/>
