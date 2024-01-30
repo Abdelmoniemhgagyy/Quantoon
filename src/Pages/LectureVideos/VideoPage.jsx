@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import Card from "./Card"
 import MainVideos from "./MainVideos" 
-import ShortVideosQuran from "./ShortVideosQuran.jsx"
 import "/node_modules/video-react/dist/video-react.css";
 import {dataOfAllSheikhs} from "../../data/leactureVideo/videoData.js"
+// const ShortVideosQuran = React.lazy(() => import('./ShortVideosQuran.jsx'));
+import ShortVideosQuran from "./ShortVideosQuran.jsx"
 
 function VideoPage() {
 const [state,setState] = useState("videos")

@@ -6,8 +6,8 @@ import Loading from '../../components/Loading/Loading.jsx'
 function ShortVideosQuran() {
     const [isLoading,setIsLoading]= useState(true)
     const [shortVideosQuran,setShortVideosQuran] = useState([])
-    const fetchData = useCallback (async()=>{
-        const data = await require('../../data/shortVideosQuran.json')
+    const fetchData = useCallback (()=>{
+        const data = require('../../data/shortVideosQuran.json')
         setShortVideosQuran(data)
         setIsLoading(false)
     },[])
@@ -15,12 +15,13 @@ function ShortVideosQuran() {
     useEffect(()=>{
         fetchData()
     },[fetchData])
+
   return (
     <>
     {isLoading ?<Loading/>
     :
-    <div className="flex justify-center flex-col items-center gap-[40px] mr-[60px]  ">
-    {shortVideosQuran.map((video,i) => {
+    <div className="flex justify-center flex-col items-center gap-[40px] mr-[60px]">
+     {shortVideosQuran.map((video,i) => {
       return (
         <div
           className="custom-width relative  border border-white rounded-lg p-1 md:p-2 pt-3 lg:mt-5  sm:bg-transparent ]"
