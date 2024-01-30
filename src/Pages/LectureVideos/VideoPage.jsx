@@ -11,7 +11,7 @@ const [state,setState] = useState("videos")
   return (
     <div className='transition duration-300 mt-[40px]'>
       {/* Navbar */}
-      <div className='btn-conntainer my-[20px] md:my-auto mr-[60px] sm:mr-auto'>
+      <div className='btn-conntainer my-[20px]  mr-[60px] sm:mr-auto'>
           <button onClick={()=>setState("videos")} className={`${state==="videos"?`active-btn`:""}`}>الفيديوهات</button>
           <button onClick={()=>setState("sheikhs")} className={`${state==="sheikhs"?`active-btn`:""}`}>الشيوخ</button>
           <button onClick={()=>setState("quran")} className={`${state==="quran"?`active-btn`:""}`}>مقاطع قران قصيرة</button>

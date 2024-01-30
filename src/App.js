@@ -15,11 +15,18 @@ import Juza from "./Pages/Quran/Juza.jsx"
 import JuzaContainer from "./Pages/Quran/JuzaContainer.jsx"
 import NamesOFAllah from "./Pages/theNameOfAllah/NamesOFAllah.jsx"
 import Videos from "./Pages/LectureVideos/Videos.jsx"
-import VideoPage from "./Pages/LectureVideos/VideoPage.jsx"
 import Rosary from "./Pages/Rosary/Rosary.jsx"
 import MuslimBoy from "./Pages/muslimBoy/MuslimBoy.jsx"
 import ScrollTopTop from "./components/ScroolToTop/ScroolToTop.jsx"
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import Loading from './components/Loading/Loading.jsx';
+
+const VideoPage = React.lazy(() => import('./Pages/LectureVideos/VideoPage.jsx'));
+const LazyLoadedVideoPage = () => (
+  <React.Suspense fallback={<Loading />}>
+    <VideoPage />
+  </React.Suspense>
+);
 
 
 
@@ -52,7 +59,10 @@ function App() {
     <Route path='/namesofallah' element={<NamesOFAllah/>}/>
     <Route path='/rosary' element={<Rosary/>}/>
     <Route path='/moshaf' element={<Moshaf/>}/>
-    <Route path='/videos' element={<VideoPage/>}/>
+
+    {/* lazy component  */}
+    <Route path='/videos' element={<LazyLoadedVideoPage/>}/>
+
     <Route path='/video' element={<Videos/>}/>
     <Route path='/boymuslim' element={<MuslimBoy/>}/>
     
