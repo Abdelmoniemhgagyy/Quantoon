@@ -1068,7 +1068,6 @@
       poster:"https://static1.s123-cdn-static-a.com/uploads/145174/800_58448c3c420ac.jpg"
     },
 ]
-
   export const aymanElsweed = [
      {
       id: 1,
@@ -1539,6 +1538,7 @@
     poster:"//static.media.islamway.net//videos/125/452_Orafy_NabyIbn3bas-l.jpg"
   },
 ]
+// بدر المشاري 
   export const baderElmoshary= [
     {
       id: 1,
@@ -1582,84 +1582,765 @@
     url:"https://ia601004.us.archive.org/17/items/0474k/0474%20%20k__%D8%A7%D8%B3%D9%85%D8%B9%20%D8%A7%D8%AE%D8%B1%20%D8%A7%D9%84%D9%83%D9%84%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%8A%20%D9%82%D8%A7%D9%84%D9%87%D8%A7%20%D8%A7%D9%84%D9%86%D8%A8%D9%8A%20%D9%85%D8%AD%D9%85%D8%AF%20%D9%82%D8%A8%D9%84%20%D9%85%D9%88%D8%AA%D9%87%20%D9%88%D8%A7%D8%A8%D9%83%D8%AA%20%D9%83%D9%84%20%D9%85%D9%86%20%D8%AD%D9%88%D9%84%D9%87%20%D9%85%D8%B9%20%D8%A7%D9%84%D8%B4%D9%8A%D8%AE%20%D8%A8%D8%AF%D8%B1%20%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A.mp4",
     poster:"https://www.mslslat.info/wp-content/uploads/2022/12/image-846.png"
 },
+{
+  id: 8,
+  title: "لصاحب الهم",
+  url: "https://bot.altaqwaa.org/media/Lectures/001.mp4",
+  poster: ""
+},
+{
+  id: 9,
+  title: "الرحماء يرحمهم الرحمن 🌹",
+  url: "https://bot.altaqwaa.org/media/Lectures/002.mp4",
+  poster: ""
+},
+{
+  id: 10,
+  title: "الابتلاء",
+  url: "https://bot.altaqwaa.org/media/Lectures/003.mp4",
+  poster: ""
+},
+{
+  id: 11,
+  title: "أيها المتكبر إسمع",
+  url: "https://bot.altaqwaa.org/media/Lectures/004.mp4",
+  poster: ""
+},
+{
+  id: 12,
+  title: "احد علامات الساعة في زماننا",
+  url: "https://bot.altaqwaa.org/media/Lectures/005.mp4",
+  poster: ""
+},
+{
+  id: 13,
+  title: "لا تحقرن من المعروف شيئا !!",
+  url: "https://bot.altaqwaa.org/media/Lectures/006.mp4",
+  poster: ""
+},
+{
+  id: 14,
+  title: "الجمعة",
+  url: "https://bot.altaqwaa.org/media/Lectures/007.mp4",
+  poster: ""
+},
+{
+  id: 15,
+  title: "تأخير الصلاة",
+  url: "https://bot.altaqwaa.org/media/Lectures/008.mp4",
+  poster: ""
+},
+{
+  id: 16,
+  title: "ازرع بذور الخير",
+  url: "https://bot.altaqwaa.org/media/Lectures/009.mp4",
+  poster: ""
+},
+{
+  id: 17,
+  title: "ماذا لو اصابك جوع",
+  url: "https://bot.altaqwaa.org/media/Lectures/10.mp4",
+  poster: ""
+},
+{
+  id: 18,
+  title: "ساعة الإستجابة يوم الجمعة",
+  url: "https://bot.altaqwaa.org/media/Lectures/11.mp4",
+  poster: ""
+},
+{
+  id: 19,
+  title: "الدنيا ملعونة !!!",
+  url: "https://bot.altaqwaa.org/media/Lectures/12.mp4",
+  poster: ""
+},
+{
+  id: 20,
+  title: "عليكم بتقوى الله والصبر على طاعته وترك معاصيه ، ويترتب على ذلك ثمرات",
+  url: "https://bot.altaqwaa.org/media/Lectures/13.mp4",
+  poster: ""
+},
+{
+  id: 21,
+  title: "الله الله في الصلاة ☘️",
+  url: "https://bot.altaqwaa.org/media/Lectures/14.mp4",
+  poster: ""
+},
+{
+  id: 22,
+  title: "قال يا رسول الله أنني أذنبت ذنبا !! \nقم فقد غفر الله لك",
+  url: "https://bot.altaqwaa.org/media/Lectures/15.mp4",
+  poster: ""
+},
+{
+  id: 23,
+  title: "الرزق والبركة 🍃🌾",
+  url: "https://bot.altaqwaa.org/media/Lectures/16.mp4",
+  poster: ""
+},
+{
+  id: 24,
+  title: "يوم الجمعة",
+  url: "https://bot.altaqwaa.org/media/Lectures/17.mp4",
+  poster: ""
+},
+{
+  id: 25,
+  title: "اقتل الشيطان #غيظا",
+  url: "https://bot.altaqwaa.org/media/Lectures/18.mp4",
+  poster: ""
+},
+{
+  id: 26,
+  title: "توكل على الله بكل شيء وثق تمام الثقة أنه ما خاب من توكل على الله",
+  url: "https://bot.altaqwaa.org/media/Lectures/19.mp4",
+  poster: ""
+},
+{
+  id: 27,
+  title: "اخر وصية أوصى بها رسول الله قبل الختام ولعلها الأهم🌼",
+  url: "https://bot.altaqwaa.org/media/Lectures/20.mp4",
+  poster: ""
+},
+{
+  id: 28,
+  title: "آداء الواجب 🌹",
+  url: "https://bot.altaqwaa.org/media/Lectures/21.mp4",
+  poster: ""
+},
+{
+  id: 29,
+  title: "أصحاب الديون و الهموم والمعاصي \n{ تكفى همك ويغفر ذنبك ويقضى دينك ) ",
+  url: "https://bot.altaqwaa.org/media/Lectures/22.mp4",
+  poster: ""
+},
+{
+  id: 30,
+  title: "عندك ليل لا تقومه ؟\nعندك مال لا تتصدق به ؟\nجبنت على عدو ان تقاتله ؟؟!",
+  url: "https://bot.altaqwaa.org/media/Lectures/23.mp4",
+  poster: ""
+},
+{
+  id: 31,
+  title: "فلسطين الغالية",
+  url: "https://bot.altaqwaa.org/media/Lectures/24.mp4",
+  poster: ""
+},
+{
+  id: 32,
+  title: "خل عندك ثقة بالله",
+  url: "https://bot.altaqwaa.org/media/Lectures/25.mp4",
+  poster: ""
+},
+{
+  id: 33,
+  title: "أيها الرجال الأحرار أصحاب النفوس العالية #إحذر ترك عرضك في أماكن الاختلاط",
+  url: "https://bot.altaqwaa.org/media/Lectures/26.mp4",
+  poster: ""
+},
+{
+  id: 34,
+  title: "اصل المرأة عفافها 🌹",
+  url: "https://bot.altaqwaa.org/media/Lectures/27.mp4",
+  poster: ""
+},
+{
+  id: 35,
+  title: "المعصية تضعف القلب وتورث الذل",
+  url: "https://bot.altaqwaa.org/media/Lectures/28.mp4",
+  poster: ""
+},
+{
+  id: 36,
+  title: "احذر ان تكون من الأشقياء المحرومين",
+  url: "https://bot.altaqwaa.org/media/Lectures/29.mp4",
+  poster: ""
+},
+{
+  id: 37,
+  title: "مؤثر ستبكي من أصعب لحظات التاريخ الإسلامي 😔\n\nمقتل علي بن أبي طالب رضي الله عنه ...",
+  url: "https://bot.altaqwaa.org/media/Lectures/30.mp4",
+  poster: ""
+},
+{
+  id: 38,
+  title: "احذروا من ظلم الناس فدعوة المظلوم لا تُرد حتى لو كانت من كافر",
+  url: "https://bot.altaqwaa.org/media/Lectures/31.mp4",
+  poster: ""
+},
+{
+  id: 39,
+  title: "أول من ينشق عنه القبر يوم القيامة هو رسول الله ﷺ\nلماذا؟",
+  url: "https://bot.altaqwaa.org/media/Lectures/32.mp4",
+  poster: ""
+},
+{
+  id: 40,
+  title: "هل تريد التوفيق في دنياك واخرتك ؟",
+  url: "https://bot.altaqwaa.org/media/Lectures/33.mp4",
+  poster: ""
+},
+{
+  id: 41,
+  title: "علموا أولادكم سورة المائدة",
+  url: "https://bot.altaqwaa.org/media/Lectures/34.mp4",
+  poster: ""
+},
+{
+  id: 42,
+  title: "من ضيعها خسران",
+  url: "https://bot.altaqwaa.org/media/Lectures/35.mp4",
+  poster: ""
+},
+{
+  id: 43,
+  title: "غفر له ما تقدم من ذنبه",
+  url: "https://bot.altaqwaa.org/media/Lectures/36.mp4",
+  poster: ""
+},
+{
+  id: 44,
+  title: "عندما يموت المرئ ويرى فضل الصدقة يريد الرجوع الى الدنيا ليصدق",
+  url: "https://bot.altaqwaa.org/media/Lectures/37.mp4",
+  poster: ""
+},
+{
+  id: 45,
+  title: "سجن المؤمن وجنة الكافر فإن كانت دنياك عسيرة فأبشر",
+  url: "https://bot.altaqwaa.org/media/Lectures/38.mp4",
+  poster: ""
+},
+{
+  id: 46,
+  title: "لماذا سجد رسول الله فجأة ( أكثروا الصلاة عليه )",
+  url: "https://bot.altaqwaa.org/media/Lectures/39.mp4",
+  poster: ""
+},
+{
+  id: 47,
+  title: "الخوف من المستقبل",
+  url: "https://bot.altaqwaa.org/media/Lectures/40.mp4",
+  poster: ""
+},
+{
+  id: 48,
+  title: "الصبر على قضاء الله وقدره",
+  url: "https://bot.altaqwaa.org/media/Lectures/41.mp4",
+  poster: ""
+},
+{
+  id: 49,
+  title: "الدَّين في السنة",
+  url: "https://bot.altaqwaa.org/media/Lectures/42.mp4",
+  poster: ""
+},
+{
+  id: 50,
+  title: "الشوق من السنة",
+  url: "https://bot.altaqwaa.org/media/Lectures/43.mp4",
+  poster: ""
+},
+{
+  id: 51,
+  title: "نختلف لكن في حدود",
+  url: "https://bot.altaqwaa.org/media/Lectures/44.mp4",
+  poster: ""
+},
+{
+  id: 52,
+  title: "العتاب لا يتعدى جبر الخواطر",
+  url: "https://bot.altaqwaa.org/media/Lectures/45.mp4",
+  poster: ""
+},
+{
+  id: 53,
+  title: "مفهوم الصبر",
+  url: "https://bot.altaqwaa.org/media/Lectures/46.mp4",
+  poster: ""
+},
+{
+  id: 54,
+  title: "والله ما عانينا بقدر ذرة من معاناتهم",
+  url: "https://bot.altaqwaa.org/media/Lectures/47.mp4",
+  poster: ""
+},
+{
+  id: 55,
+  title: "لن تندم ندما أشد من هذا الندم",
+  url: "https://bot.altaqwaa.org/media/Lectures/48.mp4",
+  poster: ""
+},
+{
+  id: 56,
+  title: "إحذر من تقلب الأحوال واشكر النعمة التي انعمها عليك الله",
+  url: "https://bot.altaqwaa.org/media/Lectures/49.mp4",
+  poster: ""
+},
+{
+  id: 57,
+  title: "التواضع من شيم الأنبياء فتواضعوا اقتداءا بهم",
+  url: "https://bot.altaqwaa.org/media/Lectures/50.mp4",
+  poster: ""
+},
+{
+  id: 58,
+  title: "أثر القرآن في حياتنا لو طبقناه",
+  url: "https://bot.altaqwaa.org/media/Lectures/51.mp4",
+  poster: ""
+},
+{
+  id: 59,
+  title: "تارك الصلاه نحن نعيد نشر موضوع تارك الصلاه كثيرا لخطورته فقد أجمع أن تارك الصلاه كافرا",
+  url: "https://bot.altaqwaa.org/media/Lectures/52.mp4",
+  poster: ""
+},
+{
+  id: 60,
+  title: "إحذر من التثاقل في العبادة فهي أهم سُبل النجاح",
+  url: "https://bot.altaqwaa.org/media/Lectures/53.mp4",
+  poster: ""
+},
+{
+  id: 61,
+  title: "احذر ان تسن سنة محرمة فيبقى لك اثمها ما فعلها الناس",
+  url: "https://bot.altaqwaa.org/media/Lectures/54.mp4",
+  poster: ""
+},
+{
+  id: 62,
+  title: "الله مدبر امورنا فلماذا نلجأ لغير الله",
+  url: "https://bot.altaqwaa.org/media/Lectures/55.mp4",
+  poster: ""
+},
+{
+  id: 63,
+  title: "يوم الجمعة وليلتها",
+  url: "https://bot.altaqwaa.org/media/Lectures/56.mp4",
+  poster: ""
+},
+{
+  id: 64,
+  title: "ناشئة الليل",
+  url: "https://bot.altaqwaa.org/media/Lectures/57.mp4",
+  poster: ""
+},
+{
+  id: 65,
+  title: "حجر يسلم على النبي صلى الله عليه وسلم",
+  url: "https://bot.altaqwaa.org/media/Lectures/58.mp4",
+  poster: ""
+},
+{
+  id: 66,
+  title: "العفاف والستر شيء غالي لا يملكه الا الأغنياء",
+  url: "https://bot.altaqwaa.org/media/Lectures/59.mp4",
+  poster: ""
+},
+{
+  id: 67,
+  title: "خطر العين وضرورة الإكثار من الأذكار",
+  url: "https://bot.altaqwaa.org/media/Lectures/60.mp4",
+  poster: ""
+},
+{
+  id: 68,
+  title: "هل الحب رزق ؟",
+  url: "https://bot.altaqwaa.org/media/Lectures/61.mp4",
+  poster: ""
+},
+{
+  id: 69,
+  title: "تزكية النبي لأمته الذين آمنوا به ولم يروه",
+  url: "https://bot.altaqwaa.org/media/Lectures/62.mp4",
+  poster: ""
+},
+{
+  id: 70,
+  title: "ورحمتي وسعت كل شيء",
+  url: "https://bot.altaqwaa.org/media/Lectures/63.mp4",
+  poster: ""
+},
+{
+  id: 71,
+  title: "فضل النبي على أمته",
+  url: "https://bot.altaqwaa.org/media/Lectures/64.mp4",
+  poster: ""
+},
+{
+  id: 72,
+  title: "صبر الرسول على أذى المشركين",
+  url: "https://bot.altaqwaa.org/media/Lectures/65.mp4",
+  poster: ""
+},
+{
+  id: 73,
+  title: "مهما انحطت بك الدنيا وضعف إيمانك لا تغير في دين الله واياكم والبدع",
+  url: "https://bot.altaqwaa.org/media/Lectures/66.mp4",
+  poster: ""
+},
+{
+  id: 74,
+  title: "بني إسرائيل ويوشع بن نون \n #اليقين بالله يغير موازين الدنيا",
+  url: "https://bot.altaqwaa.org/media/Lectures/67.mp4",
+  poster: ""
+},
+{
+  id: 75,
+  title: "الفرق بين جيل الصحابة وباقي الاجيال",
+  url: "https://bot.altaqwaa.org/media/Lectures/68.mp4",
+  poster: ""
+},
+{
+  id: 76,
+  title: "البر الحقيقي",
+  url: "https://bot.altaqwaa.org/media/Lectures/69.mp4",
+  poster: ""
+},
+{
+  id: 77,
+  title: "قصة الامام الشافعي رحمه الله",
+  url: "https://bot.altaqwaa.org/media/Lectures/70.mp4",
+  poster: ""
+},
+{
+  id: 78,
+  title: "لا تضيعوا فرص شرف الدعوة الى الله",
+  url: "https://bot.altaqwaa.org/media/Lectures/71.mp4",
+  poster: ""
+},
+{
+  id: 79,
+  title: "لا يجتمعا في قلب مؤمن",
+  url: "https://bot.altaqwaa.org/media/Lectures/72.mp4",
+  poster: ""
+},
+{
+  id: 80,
+  title: "لماذا نلجأ لغير الله",
+  url: "https://bot.altaqwaa.org/media/Lectures/73.mp4",
+  poster: ""
+},
+{
+  id: 81,
+  title: "صلاة الضحى",
+  url: "https://bot.altaqwaa.org/media/Lectures/74.mp4",
+  poster: ""
+},
+{
+  id: 82,
+  title: "هل أنت مهمومٌ أوضائقٌ صدرك !؟ اسمع الحل...",
+  url: "https://bot.altaqwaa.org/media/Lectures/75.mp4",
+  poster: ""
+},
+{
+  id: 83,
+  title: "اسمع ما هي عقوبة كثرة وانتشار المعاصي والفواحش ‼️",
+  url: "https://bot.altaqwaa.org/media/Lectures/77.mp4",
+  poster: ""
+},
+{
+  id: 84,
+  title: "#في_الجنة... اللهم اجعلنا من أهلها ...",
+  url: "https://bot.altaqwaa.org/media/Lectures/78.mp4",
+  poster: ""
+},
+{
+  id: 85,
+  title: "من هو ورقة بن نوفل ذاك الذي يعرف الكتب السماوية وبشَّرَ النبي",
+  url: "https://bot.altaqwaa.org/media/Lectures/85.mp4",
+  poster: ""
+},
+{
+  id: 86,
+  title: "الصلاة الصلاة",
+  url: "https://bot.altaqwaa.org/media/Lectures/86.mp4",
+  poster: ""
+},
+{
+  id: 87,
+  title: "#تعرف على الكنز العظيم",
+  url: "https://bot.altaqwaa.org/media/Lectures/87.mp4",
+  poster: ""
+},
+{
+  id: 88,
+  title: "ولادة النبي صلى الله عليه وسلم",
+  url: "https://bot.altaqwaa.org/media/Lectures/88.mp4",
+  poster: ""
+},
+{
+  id: 89,
+  title: "امة محمد وبكاء النبي",
+  url: "https://bot.altaqwaa.org/media/Lectures/89.mp4",
+  poster: ""
+},
+{
+  id: 90,
+  title: "حمزة بن عبد المطلب",
+  url: "https://bot.altaqwaa.org/media/Lectures/90.mp4",
+  poster: ""
+},
+{
+  id: 91,
+  title: "أليس الله بقادر على أن يفرج همك",
+  url: "https://bot.altaqwaa.org/media/Lectures/91.mp4",
+  poster: ""
+},
+{
+  id: 92,
+  title: "كم سنعيش في هذه الحياة",
+  url: "https://bot.altaqwaa.org/media/Lectures/92.mp4",
+  poster: ""
+},
+{
+  id: 93,
+  title: "النصح واجب",
+  url: "https://bot.altaqwaa.org/media/Lectures/93.mp4",
+  poster: ""
+},
+{
+  id: 94,
+  title: "التوكل على الله",
+  url: "https://bot.altaqwaa.org/media/Lectures/94.mp4",
+  poster: ""
+},
+{
+  id: 95,
+  title: "قصة الصحابي عبدالله بن أُنيس",
+  url: "https://bot.altaqwaa.org/media/Lectures/95.mp4",
+  poster: ""
+},
+{
+  id: 96,
+  title: "الصلاة على النبي شي عظيم لا يفوتك",
+  url: "https://bot.altaqwaa.org/media/Lectures/96.mp4",
+  poster: ""
+},
+{
+  id: 97,
+  title: "ما هو شعورك لو كنت بينهم وبشرك الرسول بالجنة",
+  url: "https://bot.altaqwaa.org/media/Lectures/97.mp4",
+  poster: ""
+},
+{
+  id: 98,
+  title: "اذا اتى الموت",
+  url: "https://bot.altaqwaa.org/media/Lectures/98.mp4",
+  poster: ""
+},
+{
+  id: 99,
+  title: "الكلام البذيئ",
+  url: "https://bot.altaqwaa.org/media/Lectures/99.mp4",
+  poster: ""
+},
+{
+  id: 100,
+  title: "قرب الى الله قربانا ليدهشك بعطائه",
+  url: "https://bot.altaqwaa.org/media/Lectures/100.mp4",
+  poster: ""
+}
 //   {
-//     id: 8,
+//     id: 0,
 //     title:"",
 //     url:"",
 //     poster:""
 //   },
-//   {
-//     id: 9,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 10,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 11,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 12,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 13,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 14,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 15,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 16,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 17,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 18,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 19,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
-//   {
-//     id: 20,
-//     title:"",
-//     url:"",
-//     poster:""
-//   },
+]
+  export const mainVideos = [
+    {
+      id: 3,
+      title: "لماذا المؤمن كالنخلة !؟🌴",
+      url: "https://bot.altaqwaa.org/media/Lectures/101.mp4",
+      poster: "https://pbs.twimg.com/media/FjipUuoXoAI_kgj.jpg"
+    },
+    {
+      id: 1,
+      title:"عندك ليل لا تقومه ؟\nعندك مال لا تتصدق به ؟\nجبنت على عدو ان تقاتله ؟؟!",
+      url:"https://bot.altaqwaa.org/media/Lectures/23.mp4",
+      poster:"https://i.ytimg.com/vi/CldX7aVQMBI/hqdefault.jpg",
+    },
+    {
+      id: 43251,
+      title:"أصوات لا يسمعها الأنسان العربي",
+      url:"https://archive.org/download/20210624_20210624_0619/أصوات لا يسمعها الأنسان العربي  م. ايمن عبد الرحيم.mp4",
+      poster:"https://archive.org/download/20210624_20210624_0619/20210624_20210624_0619.thumbs/%D8%A3%D8%B5%D9%88%D8%A7%D8%AA%20%D9%84%D8%A7%20%D9%8A%D8%B3%D9%85%D8%B9%D9%87%D8%A7%20%D8%A7%D9%84%D8%A3%D9%86%D8%B3%D8%A7%D9%86%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%20%20%D9%85.%20%D8%A7%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85_000010.jpg"
+    },
+    {
+      id: 2,
+      title: "سرعة الالتجاء إلى الله",
+      url: "https://media.islamway.net/videos/582/922_SMostafa_Alaah.mp4",
+      poster:"https://media.islamway.net/videos/582/922_SMostafa_Alaah-l.jpg",
+    },
+    {
+      id: 4,
+      title: "نعيـم الـجنة مُحفز",
+      url: "https://bot.altaqwaa.org/media/Lectures/102.mp4",
+      poster: "https://i.ytimg.com/vi/G-DnY6CxMeQ/maxresdefault.jpg"
+    },
+    {
+      id:15545,
+      title:" خواطر الشيخ الشعراوي جزء عم الحلقة الأولي ",
+      url:"https://ia801407.us.archive.org/9/items/Al-Sharawy_Tafssir-Videos_61-Juz_Ama__uP_bY_mUSLEm/01_up_by_muslem.mp4",
+      poster:"https://ketabpedia.com/wp-content/uploads/2019/04/brsf5236.jpg",
+  },
+    {
+      id: 5,
+      title: "الانفاق",
+      url: "https://bot.altaqwaa.org/media/Lectures/104.mp4",
+      poster: "https://cnn-arabic-images.cnn.io/cloudinary/image/upload/w_1100,h_619,c_fill,q_auto,g_center/cnnarabic/2019/09/29/images/136410.jpg"
+    },
+    {
+      id: 23232,
+      title: "إتزان الفطرة البشرية والهدي النبوي ⚖️  م. ايمن عبد الرحيم",
+      url: "https://ia903104.us.archive.org/19/items/20210624_20210624_0619/%D8%A5%D8%AA%D8%B2%D8%A7%D9%86%20%D8%A7%D9%84%D9%81%D8%B7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A8%D8%B4%D8%B1%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D9%87%D8%AF%D9%8A%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%20%E2%9A%96%EF%B8%8F%20%20%D9%85.%20%D8%A7%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85.mp4",
+      poster:"https://archive.org/download/20210624_20210624_0619/20210624_20210624_0619.thumbs/%D8%A3%D8%B5%D9%88%D8%A7%D8%AA%20%D9%84%D8%A7%20%D9%8A%D8%B3%D9%85%D8%B9%D9%87%D8%A7%20%D8%A7%D9%84%D8%A3%D9%86%D8%B3%D8%A7%D9%86%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%20%20%D9%85.%20%D8%A7%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85_000101.jpg"
+    },
+    {
+      id: 6,
+      title: "أعظم آيتين بلاغةً في القرآن الكريم",
+      url: "https://bot.altaqwaa.org/media/Lectures/105.mp4",
+      poster: "https://cp.slaati.com//wp-content/uploads/2017/12/beca11b1-8455-4c18-ae50-1a4bca6072df.jpg"
+    },
+    {
+      id: 8,
+      title: "نعمة العافية وموت الفجأة ؟!!",
+      url: "https://bot.altaqwaa.org/media/Lectures/107.mp4",
+      poster: ""
+    },
+
+    {
+      id: 3545434,
+      title: "إضـاعة الفرائض وأداء النوافـل  م. ايمن عبد الرحيم",
+      url: "https://ia803104.us.archive.org/19/items/20210624_20210624_0619/%D8%A5%D8%B6%D9%80%D8%A7%D8%B9%D8%A9%20%D8%A7%D9%84%D9%81%D8%B1%D8%A7%D8%A6%D8%B6%20%D9%88%D8%A3%D8%AF%D8%A7%D8%A1%20%D8%A7%D9%84%D9%86%D9%88%D8%A7%D9%81%D9%80%D9%84%20%20%D9%85.%20%D8%A7%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85.mp4",
+      poster:"https://archive.org/download/20210624_20210624_0619/20210624_20210624_0619.thumbs/%D8%A5%D8%BA%D9%80%D9%84%D8%A7%D9%82%20%D8%B1%D9%88%D8%A7%D9%81%D9%80%D8%AF%20%D8%A7%D9%84%D9%85%D8%B9%D9%80%D8%A7%D8%B5%D9%8A%20%D9%81%D9%8A%20%D8%B1%D9%85%D8%B6%D8%A7%D9%86%20%D8%A3%D9%88%D9%84%D9%89%20%D9%85%D9%86%20%D8%A7%D9%84%D8%A5%D8%AC%D8%AA%D9%87%D8%A7%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B7%D9%80%D8%A7%D8%B9%D8%A7%D8%AA%20%20%D9%85.%20%D8%A7%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85_000138.jpg"
+    },
+    {
+      id: 4568,
+      title:"بصائر في العوائق المانعة من نصرة الدين",
+      url:"https://media.islamway.net/lessons/4363/922_Elmnem_Tfseer.mp4",
+      poster:"//static.media.islamway.net//lessons/4363/922_Elmnem_Tfseer-l.jpg"
+    },
+    {
+      id: 9,
+      title: "مواعظ تريح القلب الحزين",
+      url: "https://bot.altaqwaa.org/media/Lectures/108.mp4",
+      poster: ""
+    },
+    {
+      id: 4581,
+      title:"من صاحب القرآن سيرى الخير في الدنيا قبل الآخرة",
+      url:"https://media.islamway.net/videos/539/452_Ayman_SahbQuranKher.mp4",
+      poster:"https://pbs.twimg.com/profile_images/1288460490830761986/eu2TejDx_400x400.jpg"
+    },
+    {
+      id: 10,
+      title: "نشر الفواحش",
+      url: "https://bot.altaqwaa.org/media/Lectures/109.mp4",
+      poster: ""
+    },
+    // {
+    //   id: 11,
+    //   title: "وصف الجنة ونعيمها",
+    //   url: "https://bot.altaqwaa.org/media/Lectures/110.mp4",
+    //   poster: ""
+    // },
+    {
+      id: 12,
+      title: "لا تخوفوا الناس من لقاء الله",
+      url: "https://bot.altaqwaa.org/media/Lectures/111.mp4",
+      poster: ""
+    },
+    {
+      id: 13,
+      title: "رسالة لكل من أرهـقـته الذنوب ..مقطع جميل جداً يُداوي الأحْزان ويُريح القلب",
+      url: "https://bot.altaqwaa.org/media/Lectures/112.mp4",
+      poster: ""
+    },
+    {
+      id: 14,
+      title: "إذا أردت النور والشفاء من أمراضك وهمومك وأحزانك _ الشيخ",
+      url: "https://bot.altaqwaa.org/media/Lectures/113.mp4",
+      poster: ""
+    },
+    {
+      id: 15,
+      title: "هل يقرأ المأموم الفاتحة أم يستمع لقراءة إمامه؟",
+      url: "https://bot.altaqwaa.org/media/Lectures/114.mp4",
+      poster: ""
+    },
+    {
+      id: 16,
+      title: "أسباب الشفاء من الأمراض",
+      url: "https://bot.altaqwaa.org/media/Lectures/115.mp4",
+      poster: ""
+    },
+    {
+      id: 17,
+      title: "خالد بن الوليد (رضي الله عنه) | سيف الله المسلول",
+      url: "https://bot.altaqwaa.org/media/Lectures/116.mp4",
+      poster: ""
+    },
+    {
+      id: 18,
+      title: "✦ حكم الكلام أثناء قضاء الحاجة ✦",
+      url: "https://bot.altaqwaa.org/media/Lectures/117.mp4",
+      poster: ""
+    },
+    {
+      id: 19,
+      title: "•• الصلاة سلوك للمؤمن ••",
+      url: "https://bot.altaqwaa.org/media/Lectures/118.mp4",
+      poster: ""
+    },
+    {
+      id: 20,
+      title: "ربنا لما بيفرج بيفرج الكرب كله 🌿🤍",
+      url: "https://bot.altaqwaa.org/media/Lectures/119.mp4",
+      poster: ""
+    },
+    {
+      id: 21,
+      title: "🎙 علاج الغضب 🎙",
+      url: "https://bot.altaqwaa.org/media/Lectures/120.mp4",
+      poster: ""
+    },
+    {
+      id: 22,
+      title: "🍃 حقيقة التوكل على الله 🍃",
+      url: "https://bot.altaqwaa.org/media/Lectures/121.mp4",
+      poster: ""
+    },
+    {
+      id: 23,
+      title: "قال سأتوب غداً ولكن ؟!",
+      url: "https://bot.altaqwaa.org/media/Lectures/122.mp4",
+      poster: ""
+    },
+    {
+      id: 24,
+      title: "كلمات من نور في ذكر فضل النبي ﷺ على أمته ووجوب اتباعه وحرمة الابتداع ومخالفة هديه ﷺ",
+      url: "https://bot.altaqwaa.org/media/Lectures/123.mp4",
+      poster: ""
+    },
+    {
+      id: 25,
+      title: "من هم آل النبي \n'صلى الله عليه وسلم ' \nمعلومة جديدة 🍃",
+      url: "https://bot.altaqwaa.org/media/Lectures/124.mp4",
+      poster: ""
+    },
+    {
+      id: 26,
+      title: "الاجتماع قوة",
+      url: "https://bot.altaqwaa.org/media/Lectures/125.mp4",
+      poster: ""
+    }
+    // {
+    //   id: 2,
+    //   title:"",
+    //   url:"",
+    //   poster:""
+    // },
 ]
 //   export const nameSheik = [
 //     {
@@ -1786,6 +2467,7 @@
 
 
  const namesOfSheikes ={
+    mainVideos,
     mohmedSharaye,
     abdelazezEltrafy,
     khaledElrashed,

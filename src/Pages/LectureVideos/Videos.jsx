@@ -3,6 +3,8 @@ import "/node_modules/video-react/dist/video-react.css";
 import { Player } from "video-react";
 import "./video.css";
 import GloableContext from "../../store/GloableContext";
+import logo from "../../assest/logo.jpg";
+
 
 function Videos() {
   const { leactureVideoes, logoSheuhk, nameSheihk } =
@@ -11,7 +13,7 @@ function Videos() {
     window.scrollTo(0, 0);
  },[])
   return (
-    <div>
+    <>
       <div className="flex justify-center flex-col items-center gap-[40px] mr-[60px] mt-5 ">
         {leactureVideoes.map((video) => {
           return (
@@ -43,7 +45,7 @@ function Videos() {
               <Player
                 playsInline
                 src={video.url}
-                poster={video.poster}
+                poster={video.poster === "" ? logo : video.poster}
                 fluid={false}
                 preload={"none"}
               />
@@ -53,7 +55,7 @@ function Videos() {
           );
         })}
       </div>
-    </div>
+    </>
   );
 }
 
