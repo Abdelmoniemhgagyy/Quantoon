@@ -1,4 +1,4 @@
-[
+const shortVideosQuran = [
     "https://bot.altaqwaa.org/media/video/1.mp4",
     "https://bot.altaqwaa.org/media/video/2.mp4",
     "https://bot.altaqwaa.org/media/video/3.mp4",
@@ -426,3 +426,5 @@
     "https://bot.altaqwaa.org/media/video/411.mp4",
     "https://bot.altaqwaa.org/media/video/412.mp4"
 ]
+
+export default shortVideosQuran

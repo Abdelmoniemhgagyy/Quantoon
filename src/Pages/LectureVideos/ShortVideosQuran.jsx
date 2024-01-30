@@ -1,11 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from "../../assest/logo.jpg";
 import { Player } from "video-react";
-import shortVideosQuran from "../../data/shortVideosQuran.json"
+import shortVideos from "../../data/shortVideosQuran.js"
+import Loading from '../../components/Loading/Loading.jsx';
 
 function ShortVideosQuran() {
+  const [isLoading,setIsLoading]= useState(true)
+  const [shortVideosQuran,setShortVideosQuran] = useState([])
+  
+  useEffect(()=>{
+    const fetchData = ()=>{
+       const data = shortVideos
+       setShortVideosQuran(data)
+       setIsLoading(false)
+    }
+
+   fetchData()
+  },[])
   return (
     <>
+       {isLoading?<Loading/>
+        :
         <div className="flex justify-center flex-col items-center gap-[40px] mr-[60px]">
         {shortVideosQuran.map((video,i) => {
           return (
@@ -20,7 +35,7 @@ function ShortVideosQuran() {
                 className="absolute left-1 top-1 pt-1  pl-2 rounded-lg cursor-pointer"
                 rel="noreferrer"
               >
-                <i class="bi bi-download text-white text-lg block transform hover:scale-105"></i>
+                <i className="bi bi-download text-white text-lg block transform hover:scale-105"></i>
               </a>
               {/* End download video  */}
               {/* name sheah  */}
@@ -49,6 +64,7 @@ function ShortVideosQuran() {
           );
         })}
         </div>
+        }
     </>
   )
 }
