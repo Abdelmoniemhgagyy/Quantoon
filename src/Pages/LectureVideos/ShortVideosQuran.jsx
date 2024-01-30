@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-// import shortVideosQuran from "../../data/shortVideosQuran.json"
 import logo from "../../assest/logo.jpg";
 import { Player } from "video-react";
 import Loading from '../../components/Loading/Loading.jsx'
