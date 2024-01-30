@@ -14,7 +14,7 @@ function ShortVideosQuran() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(()=>{
         fetchData()
-    },[])
+    },[fetchData])
   return (
     <>
     {isLoading ?<Loading/>
