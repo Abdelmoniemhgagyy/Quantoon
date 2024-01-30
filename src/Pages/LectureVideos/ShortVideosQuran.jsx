@@ -4,7 +4,6 @@ import { Player } from "video-react";
 import Loading from '../../components/Loading/Loading.jsx'
 
 function ShortVideosQuran() {
-
     const [isLoading,setIsLoading]= useState(true)
     const [shortVideosQuran,setShortVideosQuran] = useState([])
     const fetchData = ()=>{
@@ -15,7 +14,7 @@ function ShortVideosQuran() {
     useEffect(fetchData,[])
   return (
     <>
-    {isLoading ?<Loading mT="20"/>
+    {isLoading ?<Loading/>
     :
     <div className="flex justify-center flex-col items-center gap-[40px] mr-[60px]  ">
     {shortVideosQuran.map((video,i) => {
@@ -49,7 +48,7 @@ function ShortVideosQuran() {
           <Player
             playsInline
             src={video}
-          //   poster={video.poster === "" ? logo : video.poster}
+            poster="https://1.bp.blogspot.com/-RMhhCQLforU/XhyHYZSiC8I/AAAAAAABu1s/6xJmghCp338vj-1kgsztMNywbdqneYFngCLcBGAsYHQ/s1600/shof_8961afda16842c6.jpg"
             fluid={false}
             preload={"none"}
 

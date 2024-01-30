@@ -8,12 +8,14 @@ import {dataOfAllSheikhs} from "../../data/leactureVideo/videoData.js"
 function VideoPage() {
 const [state,setState] = useState("videos")
   return (
-    <div className='transition duration-300'>
-      <div className='btn-conntainer mt-[40px] mr-[60px] sm:mr-auto'>
-          <button onClick={()=>setState("videos")} className={state==="videos"?"bg-[#311ca8] ":""}>الفيديوهات</button>
-          <button onClick={()=>setState("sheikhs")} className={`${state==="sheikhs"?`bg-[#311ca8] `:""}`}>الشيوخ</button>
-          <button onClick={()=>setState("quran")} className={`${state==="quran"?`bg-[#311ca8] `:""}`}>مقاطع قران قصيرة</button>
+    <div className='transition duration-300 mt-[40px]'>
+      {/* Navbar */}
+      <div className='btn-conntainer my-[20px] md:my-auto mr-[60px] sm:mr-auto'>
+          <button onClick={()=>setState("videos")} className={`${state==="videos"?`active-btn`:""}`}>الفيديوهات</button>
+          <button onClick={()=>setState("sheikhs")} className={`${state==="sheikhs"?`active-btn`:""}`}>الشيوخ</button>
+          <button onClick={()=>setState("quran")} className={`${state==="quran"?`active-btn`:""}`}>مقاطع قران قصيرة</button>
       </div>
+      {/* End Navbar */}
 
         { state ==="videos"
             ?<MainVideos/>
@@ -35,12 +37,6 @@ const [state,setState] = useState("videos")
 
             </div>
         }
-              
-
-            
-
-
-
     </div>
   )
 }

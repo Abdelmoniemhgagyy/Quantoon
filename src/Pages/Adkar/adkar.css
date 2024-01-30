@@ -29,8 +29,10 @@
         color: #fff;
     }
 }
-
-
+.active-btn{
+    background-color: blueviolet !important ;
+    color: rgb(255, 255, 255);
+}
 
 .title-adkar{
     font-family: 'Marhey', sans-serif;
