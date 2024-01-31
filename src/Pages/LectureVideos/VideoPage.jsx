@@ -1,46 +1,43 @@
-import React, { useState } from 'react'
-import Card from "./Card"
-import MainVideos from "./MainVideos" 
+import React, { useEffect, useState } from "react";
 import "/node_modules/video-react/dist/video-react.css";
-import {dataOfAllSheikhs} from "../../data/leactureVideo/videoData.js"
-// const ShortVideosQuran = React.lazy(() => import('./ShortVideosQuran.jsx'));
-import ShortVideosQuran from "./ShortVideosQuran.jsx"
-
+import { Outlet, useNavigate } from "react-router-dom";
 function VideoPage() {
-const [state,setState] = useState("videos")
+  const navigate = useNavigate();
+  // state for active btn
+  const [state, setState] = useState("");
+
+  const handelNavigate = (path) => {
+    navigate(path);
+    setState(path);
+  };
+
   return (
-    <div className='transition duration-300 mt-[40px]'>
+    <div className="transition duration-300 mt-[40px]">
       {/* Navbar */}
-      <div className='btn-conntainer my-[20px]  mr-[60px] sm:mr-auto'>
-          <button onClick={()=>setState("videos")} className={`${state==="videos"?`active-btn`:""}`}>الفيديوهات</button>
-          <button onClick={()=>setState("sheikhs")} className={`${state==="sheikhs"?`active-btn`:""}`}>الشيوخ</button>
-          <button onClick={()=>setState("quran")} className={`${state==="quran"?`active-btn`:""}`}>مقاطع قران قصيرة</button>
+      <div className="btn-conntainer my-[20px]  mr-[60px] sm:mr-auto">
+        <button
+          onClick={() => handelNavigate("")}
+          className={`${state === "" ? `active-btn` : ""}`}
+        >
+          الفيديوهات
+        </button>
+        <button
+          onClick={() => handelNavigate("sheihks")}
+          className={`${state === "sheihks" ? `active-btn` : ""}`}
+        >
+          الشيوخ
+        </button>
+        <button
+          onClick={() => handelNavigate("short-video-quran")}
+          className={`${state === "short-video-quran" ? `active-btn` : ""}`}
+        >
+          مقاطع قران قصيرة
+        </button>
       </div>
       {/* End Navbar */}
-
-        { state ==="videos"
-            ?<MainVideos/>
-            :state==="quran" 
-            ?<ShortVideosQuran/>
-            :<div className='mr-[60px] mt-[20px] flex flex-wrap justify-center gap-[40px]'>
-            {dataOfAllSheikhs.map((sheikhs)=>{
-                return(
-                    <Card key={sheikhs.id}  
-                          name={sheikhs.name}
-                          ImgSrc={sheikhs.ImgSrc}
-                          data={sheikhs.arrayVideo}/>
-                )
-            })}
-                {/* <Card 
-                    SrcImg="" 
-                    name=""
-                    data={namesOfSheikes.}/> */}
-
-            </div>
-        }
+      <Outlet />
     </div>
-  )
+  );
 }
 
-export default VideoPage
-
+export default VideoPage;

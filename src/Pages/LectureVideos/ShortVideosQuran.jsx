@@ -19,7 +19,7 @@ function ShortVideosQuran() {
   },[])
   return (
     <>
-       {isLoading?<Loading/>
+       {isLoading ? <Loading/>
         :
         <div className="flex justify-center flex-col items-center gap-[40px] mr-[60px]">
         {shortVideosQuran.map((video,i) => {

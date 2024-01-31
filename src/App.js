@@ -19,6 +19,9 @@ import MuslimBoy from "./Pages/muslimBoy/MuslimBoy.jsx";
 import ScrollTopTop from "./components/ScroolToTop/ScroolToTop.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loading from "./components/Loading/Loading.jsx";
+import MainVideos from "./Pages/LectureVideos/MainVideos.jsx";
+import ShortVideosQuran from "./Pages/LectureVideos/ShortVideosQuran.jsx";
+import Sheihks from "./Pages/LectureVideos/Sheihks.jsx";
 
 const VideoPage = React.lazy(() =>
   import("./Pages/LectureVideos/VideoPage.jsx")
@@ -55,7 +58,11 @@ function App() {
         <Route path="/moshaf" element={<Moshaf />} />
 
         {/* lazy component  */}
-        <Route path="/videos" element={<LazyLoadedVideoPage />} />
+        <Route path="/videos" element={<LazyLoadedVideoPage />} >
+             <Route index  element={<MainVideos />} />
+             <Route path="sheihks" element={<Sheihks />} />
+             <Route path="short-video-quran" element={<ShortVideosQuran />} />
+        </Route>
 
         <Route path="/video" element={<Videos />} />
         <Route path="/boymuslim" element={<MuslimBoy />} />
