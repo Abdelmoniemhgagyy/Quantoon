@@ -3,7 +3,7 @@ import "./Hadith.css"
 import  Paginations  from "../../components/Pagination/Pagination"
 import  ScrollTopTop from "../../components/ScroolToTop/ScroolToTop"
 import Loading  from '../../components/Loading/Loading'
-import axios from 'axios'
+import call from "../../api/call"
 
 function Hadith() {
 let [data,setData]=useState([])
@@ -17,19 +17,18 @@ const changeBook = (nameOfBook)=>{
   setBook(nameOfBook);
   setNumberOfPage(1)
 }
-
 //fetch data 
 const handleData = useCallback(async()=>{
       setLoading(true)
-      const res =await axios.get(`https://hadis-api-id.vercel.app/hadith/${book}?page=${numberOfPage}&limit=300`)
-      setData(res.data.items)
+        const data = await call.hadithData(book,numberOfPage)
+      setData(data)
       setLoading(false)
 },[book,numberOfPage])
-
 useEffect(() => {
   handleData();
 }, [handleData]);
 //end Fetch data
+window.scroll({top:0})
 
   return (
   <div className='ahadith-container'>
@@ -51,9 +50,8 @@ useEffect(() => {
 
 
   {loading
-
   ?      
-     <Loading mT="40px"/>  
+     <Loading/>  
   :
     //show data
     <div>

@@ -1,27 +1,26 @@
 import React , { useEffect,useState } from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
-
+import call from "../../api/call"
 function SuraContainer() {
   const [data, setData] = useState([]);
   const handelNameSura = async () => {
-    const d = await axios.get("https://api.alquran.cloud/v1/meta");
-    setData(d.data.data.surahs.references);
+    const nameSura = await call.nameSura()
+    setData(nameSura);
   };
 
   useEffect(() => {
     handelNameSura();
-  }, []);
+  },[]);
 
   return (
     <>
       <div className="containerr mr-[60px] md:mx-auto w-[80%]">
         {/* loop Name of  sura  */}
-          {data.map((item) => (
-            <div className="box">
-              <Link to={`${item.number}`}>{item.name}</Link>
+          {data.map((item,i) => (
+            <Link key={i} to={`${item.number}`} className="box">
+              <div className="text-[22px]">{item.name}</div>
               <p>{item.englishName}</p>
-            </div>
+            </Link>
           ))}
 
         {/* End loop Name of  sura  */}

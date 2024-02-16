@@ -27,12 +27,13 @@ const VideoPage = React.lazy(() =>
   import("./Pages/LectureVideos/VideoPage.jsx")
 );
 const LazyLoadedVideoPage = () => (
-  <React.Suspense fallback={<Loading />}>
+  <React.Suspense fallback={<Loading itemsCenter="true"/>}>
     <VideoPage />
   </React.Suspense>
 );
 
 function App() {
+  window.scroll({top:0})
   return (
     <BrowserRouter>
       <RightNavbar />

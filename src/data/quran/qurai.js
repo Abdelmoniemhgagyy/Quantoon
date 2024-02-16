@@ -1120,6 +1120,55 @@ const Qura =[
     img: "",
     rewaya:"الدوري عن أبي عمرو "
   },
+  {
+    id: 156,
+    name: "رامي الدعيس",
+    url_audio: "https://server6.mp3quran.net/rami/",
+    img: "",
+    rewaya:"حفص عن عاصم"
+  },
+  {
+    id: 157,
+    name: "إبراهيم الدوسري",
+    url_audio: "https://server10.mp3quran.net/ibrahim_dosri/Rewayat-Hafs-A-n-Assem/",
+    img: "",
+    rewaya:"حفص عن عاصم"
+  },
+  {
+    id: 158,
+    name:"عبدالرحمن الماجد",
+    url_audio: "https://server10.mp3quran.net/a_majed/",
+    img: "",
+    rewaya:"حفص عن عاصم"
+  },
+  {
+    id: 159,
+    name: "عبدالله الخلف",
+    url_audio: "https://server14.mp3quran.net/khalf/",
+    img: "",
+    rewaya:"حفص عن عاصم"
+  },
+  {
+    id: 160,
+    name: "ناصر الماجد",
+    url_audio: "https://server14.mp3quran.net/nasser_almajed/",
+    img: "",
+    rewaya:"حفص عن عاصم"
+  },
+  {
+    id: 161,
+    name: "أحمد السويلم",
+    url_audio:"https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/",
+    img: "",
+    rewaya:"حفص عن عاصم"
+  },
+  // {
+  //   id: 152,
+  //   name: "",
+  //   url_audio: "",
+  //   img: "",
+  //   rewaya:"حفص عن عاصم"
+  // },
   // {
   //   id: 152,
   //   name: "",

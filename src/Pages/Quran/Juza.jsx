@@ -1,26 +1,25 @@
 import React from "react";
 import { useEffect } from "react";
-import axios from "axios";
 import { useState } from "react";
 import { useParams , Link } from "react-router-dom";
 import Loading from "../../components/Loading/Loading"
+import call from "../../api/call"
+
 function Juza() {
   const[loading,setLoading] = useState(true)
   const [data, setData] = useState([]);
   const {id} = useParams()
- console.log(id)
-  const handelSura = async () => {
-    const d = await axios.get(`https://api.alquran.cloud/v1/juz/${id}`);
-    console.log(d.data.data.ayahs);
-    setData(d.data.data.ayahs);
+
+ const handelSura = async () => {
+    const juza = await call.suraData(id);
+    setData(juza);
     setLoading(false)
   };
 
-
   useEffect(() => {
     handelSura();
-  }, []);
-
+  });
+  window.scroll({top:0})
 
   return (
     <div>

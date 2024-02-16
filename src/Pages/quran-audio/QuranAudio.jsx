@@ -1,10 +1,9 @@
-import Logo from "../../../src/assest/listImg/koran.png"
 import { Link} from "react-router-dom"
 import Qurai from "../../data/quran/qurai"
 import { useState } from "react"
 import { useContext } from "react"
 import GloableContext from "../../store/GloableContext"
-import ScrollToTop from "../../components/ScroolToTop/ScroolToTop"
+
 
 function QuranAudio() {
 const { setNameOfQarui , setUrl , setRewaya } = useContext(GloableContext);
@@ -47,10 +46,8 @@ const dataSearch = Qurai.filter((item)=> item.name.includes(searchVal))
         items-center" dir="rtl">
        {dataSearch.map((item)=>{
         return(
-         <div key={item.id} className=" "> 
-     
-         <Link to="/quran/player" onClick={()=> handelLinkQuari(item.url_audio,item.name,item.rewaya)} 
-     
+         <div key={item.id} > 
+         <Link to="/quran/player" onClick={()=> handelLinkQuari(item.url_audio,item.name,item.rewaya)}     
            className="p-5 text-sm md:text-md block rounded-[20px]
             bg-[#4a69ff] cursor-pointer text-center hover:scale-[1.05]
             transition duration-100">

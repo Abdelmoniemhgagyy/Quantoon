@@ -2149,6 +2149,12 @@
 ]
   export const mainVideos = [
     {
+      id: 56,
+      title:"  مبدعون : عبادات وتصفيات في #شعبان",
+      url:"https://video.twimg.com/ext_tw_video/1758101671664549888/pu/vid/avc1/1280x720/VDSANlo2vverdPf5.mp4?tag=12",
+      poster:"https://pbs.twimg.com/profile_images/1675574037357969408/A45LBYPD_400x400.jpg"
+    },
+    {
       id: 3,
       title: "لماذا المؤمن كالنخلة !؟🌴",
       url: "https://bot.altaqwaa.org/media/Lectures/101.mp4",
@@ -2259,39 +2265,39 @@
     },
     {
       id: 14,
-      title: "إذا أردت النور والشفاء من أمراضك وهمومك وأحزانك _ الشيخ",
+      title: " إذا أردت النور والشفاء من أمراضك وهمومك وأحزانك _ الشيخ سعد العتيق",
       url: "https://bot.altaqwaa.org/media/Lectures/113.mp4",
-      poster: ""
+      poster: "https://i1.sndcdn.com/avatars-000380432477-ojjr3b-t500x500.jpg"
     },
     {
       id: 15,
       title: "هل يقرأ المأموم الفاتحة أم يستمع لقراءة إمامه؟",
       url: "https://bot.altaqwaa.org/media/Lectures/114.mp4",
-      poster: ""
+      poster: "https://i.ytimg.com/vi/awJp7mmplSM/sddefault.jpg"
     },
     {
       id: 16,
       title: "أسباب الشفاء من الأمراض",
       url: "https://bot.altaqwaa.org/media/Lectures/115.mp4",
-      poster: ""
+      poster:"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLvIZbc_zWUOxGoA6xoGaMTxsKqJi97ShO5XyeHgMT-5PUgK-e"
     },
     {
       id: 17,
       title: "خالد بن الوليد (رضي الله عنه) | سيف الله المسلول",
       url: "https://bot.altaqwaa.org/media/Lectures/116.mp4",
-      poster: ""
+      poster: "https://www.islamweb.net/PicStore/Random/1570635409_221269.jpg"
     },
     {
       id: 18,
       title: "✦ حكم الكلام أثناء قضاء الحاجة ✦",
       url: "https://bot.altaqwaa.org/media/Lectures/117.mp4",
-      poster: ""
+      poster: "https://i1.sndcdn.com/artworks-000074729524-td3gbt-t500x500.jpg"
     },
     {
       id: 19,
       title: "•• الصلاة سلوك للمؤمن ••",
       url: "https://bot.altaqwaa.org/media/Lectures/118.mp4",
-      poster: ""
+      poster: "https://www.almrsal.com/wp-content/uploads/2017/03/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D9%88%D9%85%D8%A9-%D8%B9%D9%84%D9%89-%D8%A3%D8%AF%D8%A7%D8%A1-%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9.jpg"
     },
     {
       id: 20,
@@ -2303,7 +2309,7 @@
       id: 21,
       title: "🎙 علاج الغضب 🎙",
       url: "https://bot.altaqwaa.org/media/Lectures/120.mp4",
-      poster: ""
+      poster: "https://i.ytimg.com/vi/aaoF4U12elw/maxresdefault.jpg"
     },
     {
       id: 22,
@@ -2508,7 +2514,28 @@
       title: "سيأتيك رزقك",
       url: "https://bot.altaqwaa.org/media/Lectures/154.mp4",
       poster: ""
-    }
+    },
+
+    {
+      id: 56,
+      title:"مبدعون : حكم بيع الساعات والنظارات والأواني المطلية بـ #الذهب",
+      url:"https://video.twimg.com/ext_tw_video/1755163101308035072/pu/vid/avc1/1280x720/j30s48TbZAU9iahl.mp4?tag=12",
+      poster:"https://pbs.twimg.com/profile_images/1675574037357969408/A45LBYPD_400x400.jpg"
+    },
+
+    // {
+    //   id: 2,
+    //   title:"",
+    //   url:"",
+    //   poster:""
+    // },
+
+    // {
+    //   id: 2,
+    //   title:"",
+    //   url:"",
+    //   poster:""
+    // },
     // {
     //   id: 2,
     //   title:"",

@@ -4,13 +4,9 @@ import data from "../../data/adkar.json"
 import "./adkar.css"
 function Adkar() {
     const [dataa,setDataa] = useState(data['أذكار الصباح'])
-
-   
+    window.scroll({top:0})
   return (
-    <div className='adkar-container'>
-
-
-       
+    <div className='adkar-container'> 
       <div className='m-2 btn '>
         <h1 className='text-[30px] text-[white] title-adkar '>{dataa[0].category}</h1>
       </div>

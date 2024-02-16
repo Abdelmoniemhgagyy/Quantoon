@@ -5,6 +5,7 @@ import { Player } from "video-react";
 import "./video.css";
 
 function MainVideos() {
+  window.scroll({top:0})
   return (
     <>
       {/* viedoes */}
@@ -22,7 +23,7 @@ function MainVideos() {
                   className="absolute left-1 top-1 pt-1  pl-2 rounded-lg cursor-pointer"
                   rel="noreferrer"
                 >
-                  <i class="bi bi-download text-white text-lg block transform hover:scale-105"></i>
+                  <i className="bi bi-download text-white text-lg block transform hover:scale-105"></i>
                 </a>
                 {/* End download video  */}
                 {/* name sheah  */}
@@ -46,7 +47,6 @@ function MainVideos() {
                   poster={video.poster === "" ? logo : video.poster}
                   fluid={false}
                   preload={"none"}
-
                 />
                 
                 {/* end video Title And video player */}

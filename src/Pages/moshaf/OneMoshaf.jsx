@@ -6,14 +6,12 @@ function OneMoshaf({Src,typeImg,name,fahrs}) {
   const [numberOfPage, setNumberOfPage] = useState(1);
   const [openModel,setOpenModel] = useState(false)
   
-  const numberOfzerosUrl = numberOfPage < 10 ? `000`
+  const numberOfzerosUrl = 
+   numberOfPage < 10 ? `000`
   :numberOfPage <100 ? `00` 
   :`0`
 
-console.log(`${Src}`)
-
-
-    const changeInputValue = (e) => {
+   const changeInputValue = (e) => {
       setNumberOfPage(e.target.value);
     };
     // This useEffect is triggered whenever numberOfPage changes
@@ -38,13 +36,12 @@ const nextPage = ()=>{
     setNumberOfPage(1)
   }
 }
+// End arrow icons functions 
 useEffect(()=>{
    window.scroll({
     top:0,
-    behavior:'smooth'
    })
 },[openModel])
-// End arrow icons functions 
 return (
     <>
     <div  className='mt-[15px] mr-[60px] flex items-center justify-center flex-col'>
@@ -83,7 +80,7 @@ return (
           <div className='relative  flex gap-[2px] md:gap-[1px] items-center 
           md:justify-center justify-end text-white pb-[3px]'
           >
-            <i class="hidden md:block text-white  bi bi-arrow-right-square-fill text-4xl"
+            <i className="hidden md:block text-white  bi bi-arrow-right-square-fill text-4xl cursor-pointer"
              onClick={(e)=>{
               e.stopPropagation();
               prevPage()}}
@@ -97,7 +94,7 @@ return (
               onClick={(e)=>{
                 e.stopPropagation();
                 nextPage()}}
-             class="hidden md:block text-white bi bi-arrow-left-square-fill text-4xl"></i>
+             className="hidden md:block text-white bi bi-arrow-left-square-fill text-4xl cursor-pointer"></i>
            
           </div>
 

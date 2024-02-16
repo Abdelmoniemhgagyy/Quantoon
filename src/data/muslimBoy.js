@@ -1125,8 +1125,7 @@ export const data = [
   {
     id: 4,
     name: " قصص الأنبياء ",
-    ImgSrc:
-      "https://katateeb.online/wp-content/uploads/2021/04/cartoon-muslim-kid-holding-quran-book-with-ramadan-vector-36070222.jpg",
+    ImgSrc:"https://www.neelwafurat.com/images/lb/abookstore/covers/normal/326/326492.jpg",
     arrayVideo: stories,
   },
 

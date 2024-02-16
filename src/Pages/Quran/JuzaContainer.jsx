@@ -1,8 +1,5 @@
-import React , { useEffect,useState } from "react";
-import axios from "axios";
+import React from "react";
 import {Link} from "react-router-dom"
-
-
 
 function JuzaContainer() {
   const juzs = [
@@ -37,26 +34,15 @@ function JuzaContainer() {
     { name: "الجزء التاسع و العشرون", page: 29, number: 29 },
     { name: "الجزء الثلاثون", page: 30, number: 30 },
   ];
-
-  const [data, setData] = useState([]);
-  const handelNameSura = async () => {
-    const d = await axios.get("https://api.alquran.cloud/v1/meta");
-          setData(juzs)
-  };
-
-  useEffect(() => {
-    handelNameSura();   
-  }, []);
   return (
     <>
            <div className="containerr mr-[60px] md:mx-auto w-[80%]">
      {/* loop Name of  sura  */}
-     {data.map((item) => (
-       <div className="box" >
-         <Link to={`${item.number}`} >{item.name}</Link> 
-       </div>
+     {juzs.map((item) => (
+       <Link key={item.number} to={`${item.number}`}  className="box" >
+         <div className="text-[22px]">{item.name}</div> 
+       </Link>
      ))}
-
      {/* End loop Name of  sura  */}
 
    </div>

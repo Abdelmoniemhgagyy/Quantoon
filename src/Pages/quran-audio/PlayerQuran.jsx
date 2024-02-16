@@ -15,7 +15,6 @@ function Player1() {
     const[nameOfSura,setNameOfSura] =useState("الفاتحة")
   
 
-
 // السور من 1-9 بضفلهم 00 y
 // السور من 10-99 بضفلهم 0 y 
  const urlAduio = id < 10 ? `${url}00${num}.mp3`: id < 100 ? `${url}0${num}.mp3`:`${url}${num}.mp3`
