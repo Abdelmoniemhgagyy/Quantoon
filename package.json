@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "^10.4.16",
     "axios": "^1.6.0",
+    "framer-motion": "^11.0.8",
     "i18next-browser-languagedetector": "^7.1.0",
     "postcss": "^8.4.33",
     "preline": "^2.0.3",
