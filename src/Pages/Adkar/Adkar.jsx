@@ -2,11 +2,18 @@ import React from 'react'
 import { useState } from 'react';
 import data from "../../data/adkar.json"
 import "./adkar.css"
+import {motion} from "framer-motion"
+
 function Adkar() {
     const [dataa,setDataa] = useState(data['أذكار الصباح'])
     window.scroll({top:0})
   return (
-    <div className='adkar-container'> 
+    <motion.div 
+      initial={{opacity:0,y:"100vh"}}
+      animate={{opacity:1,y:0}}
+      transition={{duration:1}}
+      exit={{y:"-100vh"}}
+      className='adkar-container'> 
       <div className='m-2 btn '>
         <h1 className='text-[30px] text-[white] title-adkar '>{dataa[0].category}</h1>
       </div>
@@ -40,7 +47,8 @@ function Adkar() {
             </div> 
         </div>
       )}
-    </div>
+</motion.div>
+
   )
 }
 

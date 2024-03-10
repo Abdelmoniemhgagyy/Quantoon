@@ -1,6 +1,8 @@
 import React, { useContext} from "react";
 import GloableContext from "../../store/GloableContext";
 import { useNavigate } from "react-router-dom";
+import {motion} from "framer-motion"
+
 function Card({ ImgSrc, name, data }) {
 
   const navigate = useNavigate();
@@ -22,7 +24,10 @@ function Card({ ImgSrc, name, data }) {
   return (
     <>
       {/* Card  */}
-      <div
+      <motion.div
+        initial={{opacity:.5}}
+        animate={{opacity:1}}
+        transition={{duration:1}}
         className="border-white flex flex-col border-[2px]  shadow-sm rounded-xl w-[80%] md:w-[250px] md:h-[250px] bg-[#000] cursor-pointer transition duration-300 transform hover:scale-105"
         onClick={handelData}
       >
@@ -34,7 +39,7 @@ function Card({ ImgSrc, name, data }) {
         <h3 className="text-xl font-[900] pb-1 text-white mt-2 text-center dark:text-white md:w-full whitespace-nowrap">
           {name}
         </h3>
-      </div>
+      </motion.div>
       {/* End Card  */}
     </>
   );

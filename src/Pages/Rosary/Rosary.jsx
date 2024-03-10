@@ -11,8 +11,9 @@ function Rosary() {
             <motion.div 
               initial={{x:100}}
               animate={{x:0}}
-              transition={{duration:1}}
-            key={item.id}>
+              
+              transition={{duration:1}} 
+              key={item.id}>
                 <Counter  daker={item.daker} img={item.img}/>
             </motion.div>
         )

@@ -1,10 +1,16 @@
 import React from 'react'
 import {dataOfAllSheikhs} from "../../data/leactureVideo/videoData.js"
 import Card from "./Card"
+import {motion} from "framer-motion"
+
 
 function Sheihks() {
   return (
-    <div className='mr-[60px] mt-[20px] flex flex-wrap justify-center gap-[40px]'>
+    <motion.div
+      initial={{scale:.5}}
+      animate={{scale:1}}
+      transition={{duration:1}}
+      className='mr-[60px] mt-[20px] flex flex-wrap justify-center gap-[40px]'>
             {dataOfAllSheikhs.map((sheikhs)=>{
                 return(
                     <Card key={sheikhs.id}  
@@ -18,7 +24,7 @@ function Sheihks() {
                     name=""
                     data={namesOfSheikes.}/> */}
 
-             </div>
+             </motion.div>
   )
 }
 

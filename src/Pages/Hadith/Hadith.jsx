@@ -3,6 +3,7 @@ import "./Hadith.css"
 import  Paginations  from "../../components/Pagination/Pagination"
 import  ScrollTopTop from "../../components/ScroolToTop/ScroolToTop"
 import Loading  from '../../components/Loading/Loading'
+import {motion} from "framer-motion"
 import call from "../../api/call"
 
 function Hadith() {
@@ -31,7 +32,13 @@ useEffect(() => {
 window.scroll({top:0})
 
   return (
-  <div className='ahadith-container'>
+  <motion.div        
+  initial={{y:"60vh"}}
+  animate={{y:0}}
+  transition={{duration:.7}}
+  exit={{x:"-100vw"}}
+  
+   className='ahadith-container'>
 
        {/* Navbar  */}
        <nav className='hadith'>
@@ -75,7 +82,7 @@ window.scroll({top:0})
      <ScrollTopTop bottom="30px"/>
     
 
-    </div>
+    </motion.div>
   )
 }
 

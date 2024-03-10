@@ -17,12 +17,12 @@ import Videos from "./Pages/LectureVideos/Videos.jsx";
 import Rosary from "./Pages/Rosary/Rosary.jsx";
 import MuslimBoy from "./Pages/muslimBoy/MuslimBoy.jsx";
 import ScrollTopTop from "./components/ScroolToTop/ScroolToTop.jsx";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Loading from "./components/Loading/Loading.jsx";
 import MainVideos from "./Pages/LectureVideos/MainVideos.jsx";
 import ShortVideosQuran from "./Pages/LectureVideos/ShortVideosQuran.jsx";
 import Sheihks from "./Pages/LectureVideos/Sheihks.jsx";
-
+import {AnimatePresence} from "framer-motion"
 const VideoPage = React.lazy(() =>
   import("./Pages/LectureVideos/VideoPage.jsx")
 );
@@ -38,7 +38,7 @@ function App() {
     <BrowserRouter>
       <RightNavbar />
       <ScrollTopTop />
-
+     <AnimatePresence mode="wait">
       <Routes>
         {/* Start Quran Routes */}
         <Route path="/quran" element={<Quran />} exact>
@@ -68,6 +68,7 @@ function App() {
         <Route path="/video" element={<Videos />} />
         <Route path="/boymuslim" element={<MuslimBoy />} />
       </Routes>
+      </AnimatePresence>
     </BrowserRouter>
   );
 }

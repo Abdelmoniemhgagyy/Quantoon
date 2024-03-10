@@ -1,6 +1,7 @@
 import React from 'react'
 import OneMoshaf from "./OneMoshaf"
 import Moshafs from "../../data/moshaf/moshaf" 
+import {motion} from "framer-motion"
 function Moshaf() {
 
 // const handleKeyDown = (e) => {
@@ -17,7 +18,12 @@ function Moshaf() {
 // }, []);
 
   return (
-    <>
+    <motion.div 
+     initial={{opacity:0,y:"100vh"}}
+     animate={{opacity:1,y:0}}
+     transition={{duration:1}}
+     exit={{y:"-100vh"}}
+      >
     {Moshafs.map((moshaf)=>(
           <OneMoshaf  key={moshaf.id} 
                       Src={moshaf.url} 
@@ -26,7 +32,7 @@ function Moshaf() {
                       fahrs={moshaf.fahrs}
           />
     ))}
-    </>
+    </motion.div>
   )
 }
 

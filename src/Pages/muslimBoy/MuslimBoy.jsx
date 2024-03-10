@@ -7,12 +7,11 @@ function MuslimBoy() {
 
   return (
     <motion.div
-    initial={{y:30}}
-    animate={{y:0}}
-    transition={{duration:1,type:"spring",damping:3}}>
+      initial={{opacity:.5,scale:.5}}
+      animate={{opacity:1,scale:1}}
+      transition={{duration:.8}}>
         <div
-
-          className='mr-[60px] mt-[40px] flex flex-wrap justify-center gap-[40px]'>
+         className='mr-[60px] mt-[40px] flex flex-wrap justify-center gap-[40px]'>
          {data.map((boy)=>{
              return(
                  <Card key={boy.id}  
