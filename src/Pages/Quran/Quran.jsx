@@ -2,9 +2,7 @@ import React from "react";
 import {Link, Outlet} from "react-router-dom"
 import "./quran.css"
 import {motion} from "framer-motion"
-
 function Quran() {
-
   return (
     <>
       <motion.div 
