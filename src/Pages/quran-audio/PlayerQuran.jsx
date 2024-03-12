@@ -73,11 +73,11 @@ window.scroll({
         </div>
        {/* End audio bar  */}
  
-       < ScrollToTop bottom={"85px"} zIndex={0}/>
+       < ScrollToTop bottom={"-15px"} zIndex={0}/>
 
 
      {/* change background color  */}
-      <div className='fixed bottom-[95px] left-1  md:left-4'>
+      <div className='fixed bottom-[0px] left-1  md:left-4'>
                 <div className='flex  bg-blue-900 p-2 rounded-full text-2xl '>
                 <div  title="home" className='p-1   hover:scale-[1.15] transition duration-150 '  onClick={()=>setMainColor("#333")}>
                     <p className="w-[10px] md:w-[15px] h-[10px] md:h-[15px] bg-[#333] rounded-full"></p>

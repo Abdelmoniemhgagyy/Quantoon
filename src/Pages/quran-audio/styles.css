@@ -5,15 +5,16 @@
   line-height: 1;
   font-family: inherit;
   /* width: 99%; */
-  margin-right: 60px;
-  padding: 10px 18px;
   background-color: #fff;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  width: 93%;
+  position: fixed;
+  bottom: -99px;
+  left: 0;
 }
 @media(max-width:560px){
   .rhap_container {
-    width: 100%;
-    padding: 10px 18px;
+    width: 85%;
   }
 }
 .rhap_container:focus:not(:focus-visible) {
