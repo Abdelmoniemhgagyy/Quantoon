@@ -18,7 +18,7 @@ const suraData = async (id)=>{
 }
 //juza 
 const juzaData = async (id)=>{
-    const juza = await axios.get(`https://api.alquran.cloud/v1/surah/${id}`)
+    const juza = await axios.get(`https://api.alquran.cloud/v1/juz/${id}`)
     return juza.data.data.ayahs
 }
 const call = {

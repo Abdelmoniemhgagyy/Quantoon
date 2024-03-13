@@ -11,7 +11,7 @@ function Juza() {
   const {id} = useParams()
 
  const handelSura = async () => {
-    const juza = await call.suraData(id);
+    const juza = await call.juzaData(id);
     setData(juza);
     setLoading(false)
   };
@@ -19,7 +19,6 @@ function Juza() {
   useEffect(() => {
     handelSura();
   });
-  window.scroll({top:0})
 
   return (
     <div>

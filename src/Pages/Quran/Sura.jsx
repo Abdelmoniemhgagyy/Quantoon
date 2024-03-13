@@ -17,8 +17,8 @@ function Quran() {
   
   useEffect(() => {
     handelSura();
+
   });
-  window.scroll({top:0})
   return (
     <div>
       {loading ? <Loading mT="300px"/> 
