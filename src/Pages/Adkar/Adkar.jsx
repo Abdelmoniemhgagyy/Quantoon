@@ -3,6 +3,7 @@ import { useState } from 'react';
 import data from "../../data/adkar.json"
 import "./adkar.css"
 import {motion} from "framer-motion"
+import CopyIcons from "../../components/CopyIcons/CopyIcons"
 
 function Adkar() {
     const [dataa,setDataa] = useState(data['أذكار الصباح'])
@@ -37,14 +38,17 @@ function Adkar() {
         className={`${dataa===data["أدعية الأنبياء"]?`active-btn`:""}`}>أدعية الأنبياء</button>
       </div>
       {dataa.map((item,index)=>
-        <div key={index} className='dakr'>
+        <div key={index} className='dakr relative' >
             
-            <p>{item.content}</p>
+            <p className='pl-[5px]'>{item.content}</p>
 
             <div>
             <p> عدد المرات : {item.count} </p>
              <p >{item.description}</p>
+
             </div> 
+                    <CopyIcons copiedText={item.content}/>
+
         </div>
       )}
 </motion.div>
