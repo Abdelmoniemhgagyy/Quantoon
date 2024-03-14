@@ -40,7 +40,7 @@ window.scroll({
 <div className='mt-2 mb-[100px] mr-[60px]'>
 
 {/* name Of Quari  */}
-              <nav className='   min-w-screen  '>
+              <nav className=' min-w-screen  '>
                 <div className='  text-white p-2 rounded text-2xl '>
                 <div  title="home" className='   text-center transition duration-150 '  >
                     <p className="text-sm p-1 font-[500]"> الشيخ : {localStorage.getItem("nameOfQauri")}</p>
@@ -62,7 +62,7 @@ window.scroll({
 
 
        {/* audio bar  */}
-      <div className='fixed bottom-0 left-0 w-screen'>
+      <div className='fixed bottom-0 left-[-57px] w-screen'>
           <AudioPlayer
                 className='bg-black'
             style={{direction:"ltr"}}
@@ -77,7 +77,7 @@ window.scroll({
 
 
      {/* change background color  */}
-      <div className='fixed bottom-[0px] left-1  md:left-4'>
+      <div className='fixed bottom-[100px] left-1  md:left-4'>
                 <div className='flex  bg-blue-900 p-2 rounded-full text-2xl '>
                 <div  title="home" className='p-1   hover:scale-[1.15] transition duration-150 '  onClick={()=>setMainColor("#333")}>
                     <p className="w-[10px] md:w-[15px] h-[10px] md:h-[15px] bg-[#333] rounded-full"></p>

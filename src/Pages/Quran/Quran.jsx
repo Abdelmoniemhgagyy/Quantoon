@@ -5,11 +5,7 @@ import {motion} from "framer-motion"
 function Quran() {
   return (
     <>
-      <motion.div 
-        initial={{y:"60vh"}}
-        animate={{y:0}}
-        transition={{duration:.8}}
-        exit={{x:"-100vw"}}>
+      <div >
       <div className="header ">
         <h1 className="mr-[60px]">القران الكريم</h1>
         <div className='btn-conntainer mr-[50px] sm:mr-[0]'>
@@ -19,7 +15,7 @@ function Quran() {
         </div>
       </div>
       <Outlet/>
-    </motion.div>
+    </div>
 
     </>
   );
