@@ -23,6 +23,7 @@ import MainVideos from "./Pages/LectureVideos/MainVideos.jsx";
 import ShortVideosQuran from "./Pages/LectureVideos/ShortVideosQuran.jsx";
 import Sheihks from "./Pages/LectureVideos/Sheihks.jsx";
 import {AnimatePresence} from "framer-motion"
+import { ToastContainer } from "react-toastify";
 const VideoPage = React.lazy(() =>
   import("./Pages/LectureVideos/VideoPage.jsx")
 );
@@ -38,7 +39,9 @@ function App() {
     <BrowserRouter>
       <RightNavbar />
       <ScrollTopTop />
+
      <AnimatePresence mode="wait">
+      <ToastContainer/>
       <Routes>
         {/* Start Quran Routes */}
         <Route path="/quran" element={<Quran />} exact>

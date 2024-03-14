@@ -5,9 +5,11 @@ import "./adkar.css"
 import {motion} from "framer-motion"
 import CopyIcons from "../../components/CopyIcons/CopyIcons"
 
+
 function Adkar() {
     const [dataa,setDataa] = useState(data['أذكار الصباح'])
     window.scroll({top:0})
+
   return (
     <motion.div 
       initial={{opacity:0,y:"100vh"}}
@@ -48,7 +50,7 @@ function Adkar() {
 
             </div> 
                     <CopyIcons copiedText={item.content}/>
-
+             
         </div>
       )}
 </motion.div>
