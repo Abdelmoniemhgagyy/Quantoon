@@ -5,6 +5,7 @@ import  ScrollTopTop from "../../components/ScroolToTop/ScroolToTop"
 import Loading  from '../../components/Loading/Loading'
 import {motion} from "framer-motion"
 import call from "../../api/call"
+import CopyIcons from '../../components/CopyIcons/CopyIcons'
 
 function Hadith() {
 let [data,setData]=useState([])
@@ -63,9 +64,10 @@ window.scroll({top:0})
     //show data
     <div>
           {data.map((item, i) => (
-            <div key={i} className='hadith-content '>
-              <p>{item.arab}</p>
+            <div key={i} className='hadith-content relative '>
+              <p className='pl-[8px]'>{item.arab}</p>
               <h6 className='text-center '>{item.number}</h6>
+               <CopyIcons  copiedText={item.arab}/>
             </div>
           ))}
     </div>}
