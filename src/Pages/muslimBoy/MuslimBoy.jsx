@@ -4,7 +4,7 @@ import {data} from "../../data/muslimBoy"
 import {motion} from "framer-motion"
 
 function MuslimBoy() {
-
+     window.scroll({top:0})
   return (
     <motion.div
       initial={{opacity:.5,scale:.5}}

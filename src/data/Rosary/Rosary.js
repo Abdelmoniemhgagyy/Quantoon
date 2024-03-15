@@ -88,7 +88,16 @@ const dataRosary = [
         id: 15,
         daker:" سبحان الله وبحمده عدد خلقه ورضا نفسه وزنة عرشه ومداد كلماته",
         img:"/data/Rosary/1.png"
-
+    },
+    {
+        id: 16,
+        daker:"سبحان الله وبحمده",
+        img:"/data/Rosary/1.png"
+    },
+    {
+        id: 16,
+        daker:"أسْتَغْفِرُ اللهَ وَأتُوبُ إلَيْهِ",
+        img:"/data/Rosary/1.png"
     },
 ]
 

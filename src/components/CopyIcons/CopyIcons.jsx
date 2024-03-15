@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import clipboardCopy from "clipboard-copy";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
