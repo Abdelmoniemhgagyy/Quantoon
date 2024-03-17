@@ -38,7 +38,7 @@ function QuranAudio() {
         {/* download icon */}
         <Link
           to="/quran/download"
-          className="block  mt-3 w-[70%] md:w-[500px] mx-auto text-[12px] md:text-[18px]  bg-blue-400 rounded-full p-3 hover:scale-[1.05] "
+          className="block  mt-3 w-[70%] md:w-[500px] mx-auto text-[12px] md:text-[18px]  border border-[#adff2f] rounded-tl-[22px] rounded-br-[22px]  p-3 hover:scale-[1.05] "
         >
           <div>
             <i className="bi bi-download  hover:text-green-300"></i>
@@ -61,9 +61,9 @@ function QuranAudio() {
                   onClick={() =>
                     handelLinkQuari(item.url_audio, item.name, item.rewaya)
                   }
-                  className="p-5 text-sm md:text-md block rounded-[20px]
-            bg-[#4a69ff] cursor-pointer text-center hover:scale-[1.05]
-            transition duration-100"
+                  className="p-5 text-sm md:text-md block border border-[#adff2f]
+                             cursor-pointer text-center hover:scale-[1.05]
+                              rounded-tl-[22px] rounded-br-[22px] transition duration-100"
                 >
                   {item.name}
                 </Link>

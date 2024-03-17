@@ -37,8 +37,8 @@ function Download() {
    return(
     <div key={item.id} className="" > 
       <Link to={item.url} 
-        className="p-3  block rounded-[20px] relative 
-        bg-blue-500 cursor-pointer text-right text-sm md:text-md hover:scale-[1.05]
+        className="p-3  block border border-[#adff2f] rounded-tl-[22px] rounded-br-[22px]  relative 
+         cursor-pointer text-right text-sm md:text-md hover:scale-[1.05]
         transition duration-100 ">
             {item.name}
             <i className="bi bi-download absolute left-4  md:left-8  hover:text-green-300"></i>

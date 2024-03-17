@@ -21,7 +21,7 @@ function Player1() {
       : id < 100
       ? `${url}0${num}.mp3`
       : `${url}${num}.mp3`;
-  const [mainColor, setMainColor] = useState("#333");
+  const [mainColor, setMainColor] = useState("#adff2f");
 
   // Handel Id and Name Of sura
   const handelIdAndNameSura = (id, name) => {
@@ -63,8 +63,8 @@ function Player1() {
       {/* namesOfsura */}
       {namesOfsura.map((item, index) => (
         <div
-          className="rounded-[10px]"
-          style={{ backgroundColor: mainColor }}
+          className=" border rounded-tl-[22px] rounded-br-[22px] mx-2 my-2 hover:scale-[1.01] hover:border-[#000] "
+          style={{ borderColor: mainColor }}
           onClick={() => {
             handelIdAndNameSura(`${item.id}`, `${item.name}`);
           }}
@@ -79,7 +79,6 @@ function Player1() {
       {/* audio bar  */}
       <div className="fixed z-[2] bottom-0 left-[-57px] w-screen">
         <AudioPlayer
-          className="bg-black"
           style={{ direction: "ltr" }}
           autoPlay
           src={urlAduio}
@@ -93,19 +92,20 @@ function Player1() {
       {/* change background color  */}
       <div className="fixed bottom-[100px] left-1  md:left-4">
         <div className="flex  bg-blue-900 p-2 rounded-full text-2xl ">
+
           <div
             title="home"
             className="p-1   hover:scale-[1.15] transition duration-150 "
-            onClick={() => setMainColor("#333")}
+            onClick={() => setMainColor("#adff2f")}
           >
-            <p className="w-[10px] md:w-[15px] h-[10px] md:h-[15px] bg-[#333] rounded-full"></p>
+            <p className="w-[10px] md:w-[15px] h-[10px] md:h-[15px] bg-[#adff2f] rounded-full"></p>
           </div>
           <div
             title="home"
             className="p-1   hover:scale-[1.15] transition duration-150 "
-            onClick={() => setMainColor("#c344ed")}
+            onClick={() => setMainColor("#fff")}
           >
-            <p className="w-[10px] md:w-[15px] h-[10px] md:h-[15px] bg-[#c344ed] rounded-full"></p>
+            <p className="w-[10px] md:w-[15px] h-[10px] md:h-[15px] bg-[#fff] rounded-full"></p>
           </div>
           <div
             title="home"
