@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import AudioPlayer from "react-h5-audio-player";
 import namesOfsura from "../../data/quran/quran";
 import "react-h5-audio-player/lib/styles.css";
-import "./styles.css";
 import { useContext } from "react";
 import ScrollToTop from "../../components/ScroolToTop/ScroolToTop";
 import GloableContext from "../../store/GloableContext";
+import "./styles.css";
 
 function Player1() {
   const [num, setNum] = useState(1);

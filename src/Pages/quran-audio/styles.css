@@ -4,7 +4,6 @@
   flex-direction: column;
   line-height: 1;
   font-family: inherit;
-  /* width: 99%; */
   background-color: #fff;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
   width: 96%;
@@ -230,7 +229,7 @@
   width: 12px;
   height: 12px;
   margin-left: -6px;
-  left: 0  ;
+  left:98% ;
   top: -4px;
   background: #868686;
   opacity: 0.9;

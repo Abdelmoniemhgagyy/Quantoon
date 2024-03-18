@@ -85,7 +85,7 @@ function Adkar() {
             <p> عدد المرات : {item.count} </p>
             <p>{item.description}</p>
           </div>
-          <Counter data={dataa} />
+          <Counter data={dataa} repeatNumber={item.count} />
           <CopyIcons copiedText={item.content} />
         </div>
       ))}
