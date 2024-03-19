@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .rounded-item {
+    @apply border border-[#adff2f] rounded-tl-[22px] rounded-br-[22px]
+  }
+}
 
 
 *{
@@ -21,3 +26,29 @@ body{
   background-repeat: no-repeat;
 }
 
+
+.btn-conntainer{
+  margin:  10px auto 10px auto ;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn-conntainer>button {
+  border: 1px solid rgb(49, 28, 168);
+  outline: none;
+  padding: 5px;
+  margin-inline: 3px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-family: 'Marhey', sans-serif;
+
+  &:hover{
+      background-color: blueviolet;
+      color: #fff;
+  }
+}
+.active-btn{
+  background-color: blueviolet !important ;
+  color: rgb(255, 255, 255);
+}

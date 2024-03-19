@@ -29,7 +29,7 @@ function QuranAudio() {
             type="text"
             onChange={(e) => setSearchVal(e.target.value)}
             placeholder="بحث"
-            className="p-2 px-4 w-full text-center text-lg border border-[#333] outline-none rounded-full text-black"
+            className="hover:scale-[1.05] placeholder:text-[#fff] p-2 px-4 w-full text-center text-white text-md rounded-item bg-[transparent]  outline-none "
             dir="rtl"
           />
         </div>
@@ -38,7 +38,7 @@ function QuranAudio() {
         {/* download icon */}
         <Link
           to="/quran/download"
-          className="block  mt-3 w-[70%] md:w-[500px] mx-auto text-[12px] md:text-[18px]  border border-[#adff2f] rounded-tl-[22px] rounded-br-[22px]  p-3 hover:scale-[1.05] "
+          className="block  mt-3 w-[70%] md:w-[500px] mx-auto  text-md  rounded-item  p-3 hover:scale-[1.05] "
         >
           <div>
             <i className="bi bi-download  hover:text-green-300"></i>
@@ -61,9 +61,9 @@ function QuranAudio() {
                   onClick={() =>
                     handelLinkQuari(item.url_audio, item.name, item.rewaya)
                   }
-                  className="p-5 text-sm md:text-md block border border-[#adff2f]
+                  className="rounded-item p-5 text-white text-sm md:text-md block 
                              cursor-pointer text-center hover:scale-[1.05]
-                              rounded-tl-[22px] rounded-br-[22px] transition duration-100"
+                               transition duration-100"
                 >
                   {item.name}
                 </Link>
