@@ -7,9 +7,12 @@ function ContextProvider({children}) {
     const[rewaya,setRewaya] =useState(localStorage.getItem("rewaya")||"")
 
 // Leacture Video
-    const [leactureVideoes,setLeactureVideoes] = useState(JSON.parse(localStorage.getItem("leactureVideoes"))||[])
+    const [leactureVideoes,setLeactureVideoes] = useState([])
     const [nameSheihk,setNameSheihk] = useState(localStorage.getItem("nameSheihk")||"")
     const [logoSheuhk,setLogoSheihk ]= useState(localStorage.getItem("logoSheihk")||"")
+
+// audio category 
+const [audioCategory, setAudioCategory] = useState(JSON.parse(localStorage.getItem("audioCategory"))||[]);
 
   return (
      <GloableContext.Provider 
@@ -19,6 +22,9 @@ function ContextProvider({children}) {
      leactureVideoes,setLeactureVideoes,
      nameSheihk,setNameSheihk,
      logoSheuhk,setLogoSheihk,
+     audioCategory,setAudioCategory,
+     // audioCategoryName,setAudioCategoryName,
+     // audioCategoryLogo,setAudioCategoryLogo,
     }}>
         {children}
     </GloableContext.Provider>

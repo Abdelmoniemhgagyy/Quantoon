@@ -12,6 +12,7 @@ import Rosary from "../../assest/listImg/beads.png"
 import moshaf from "../../assest/listImg/quran.png"
 import Video from "../../assest/listImg/video.png"
 import Boy from "../../assest/listImg/boy.png"
+import Audio from "../../assest/listImg/headphones.png"
 
 
 
@@ -21,7 +22,7 @@ function RightNavbar() {
 
   return (
 <div >
- <div className='containerRightNav'>
+ <div className='containerRightNav '>
 
     <div className={`constentRightNav`} style={{width:openNav ?"280px":"60px"}}>
       {/* logo */}
@@ -50,14 +51,15 @@ function RightNavbar() {
                   </div>
         </div>
     {/* End List icon  */}
-        
+      
         <NavItem ImgSrc={NamesOfAllah} openNav={openNav} setOpenNav={setOpenNav} path="/namesofallah" title="أسماء الله الحسني"/>
         <NavItem ImgSrc={Quran} openNav={openNav} setOpenNav={setOpenNav} path="/quran" title="القران الكريم"/>
-        <NavItem ImgSrc={ moshaf} openNav={openNav} setOpenNav={setOpenNav} path="/moshaf" title="المصاحف"/>
         <NavItem ImgSrc={Hadith} openNav={openNav} setOpenNav={setOpenNav} path="/hadith" title=" الأحاديث النبوية"/>
-        <NavItem ImgSrc={Adkar} openNav={openNav} setOpenNav={setOpenNav} path="/adkar" title="الأذكار"/>
-        <NavItem ImgSrc={Video} openNav={openNav} setOpenNav={setOpenNav} path="/videos" title="مرئيات"/>
         <NavItem ImgSrc={ Boy} openNav={openNav} setOpenNav={setOpenNav} path="/boymuslim" title="الطفل المسلم"/>
+        <NavItem ImgSrc={Video} openNav={openNav} setOpenNav={setOpenNav} path="/videos" title="مرئيات"/>
+        <NavItem ImgSrc={Audio} openNav={openNav} setOpenNav={setOpenNav} path="/audio" title="الصوتيات"/>                             
+        <NavItem ImgSrc={Adkar} openNav={openNav} setOpenNav={setOpenNav} path="/adkar" title="الأذكار"/>                             
+        <NavItem ImgSrc={ moshaf} openNav={openNav} setOpenNav={setOpenNav} path="/moshaf" title="المصاحف"/>
         <NavItem ImgSrc={ Rosary} openNav={openNav} setOpenNav={setOpenNav} path="/rosary" title="السبحة"/>
 
     {/* End Nav items  */}

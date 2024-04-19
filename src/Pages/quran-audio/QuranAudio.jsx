@@ -63,7 +63,7 @@ function QuranAudio() {
                   }
                   className="rounded-item p-5 text-white text-sm md:text-md block 
                              cursor-pointer text-center hover:scale-[1.05]
-                               transition duration-100"
+                               transition duration-100 font-[400]"
                 >
                   {item.name}
                 </Link>

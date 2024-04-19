@@ -7,7 +7,10 @@ import Sura from "./Pages/Quran/Sura";
 import SuraContainer from "./Pages/Quran/SuraContainer.jsx";
 import Adkar from "./Pages/Adkar/Adkar.jsx";
 import Moshaf from "./Pages/moshaf/Moshaf.jsx";
-import Books from "./Pages/Books/Books.jsx";
+import BooksAudio from "./Pages/Audius/BooksAudio.jsx";
+import Audio from "./Pages/Audius/Audio.jsx";
+import MainAudio from "./Pages/Audius/MainAudio.jsx";
+
 import RightNavbar from "./components/Navbar/RightNavbar.jsx";
 import Hadith from "./Pages/Hadith/Hadith.jsx";
 import Juza from "./Pages/Quran/Juza.jsx";
@@ -70,6 +73,12 @@ function App() {
 
         <Route path="/video" element={<Videos />} />
         <Route path="/boymuslim" element={<MuslimBoy />} />
+
+        {/* Audio */}
+        <Route path = "/audio" element={<Audio />} >
+          <Route index element={<MainAudio/>} />
+          <Route path="books" element={<BooksAudio/>} />
+        </Route>
       </Routes>
       </AnimatePresence>
     </BrowserRouter>
