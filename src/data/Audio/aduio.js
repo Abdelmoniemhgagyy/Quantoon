@@ -102,7 +102,7 @@ export let motoon =[
         author:"محمد بن عبدالله بن داود الصنهاجي",
         img:"https://upload.wikimedia.org/wikipedia/commons/8/89/Aj%C4%81r%C5%ABm%C4%ABya_book_cover.jpg",
         name_book:"متن الآجرومية في النحو",
-        url_audio:"https://fra1.digitaloceanspaces.com/media.midad.com/resources/ar/audiobooks/52494/matn_ajromya.mp3?response-content-disposition=attachment&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=BKPUJK7ZZK5A2DAO7JVR%2F20240419%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240419T145625Z&X-Amz-SignedHeaders=host&X-Amz-Expires=604800&X-Amz-Signature=9ecf7e5bd12e52658becbb04a35697550f5381174afa3de870730715b9a8007f"
+        url_audio:"https://media.islamway.net/audiobooks/3115/15_AHaddad_Ajurmmiah.mp3"
     },
     {
         id:3,
@@ -118,6 +118,56 @@ export let motoon =[
         name_book:"ذات الشفاء في سيرة النبي ﷺ والخلفاء",
         url_audio:"https://media.islamway.net/audiobooks/3115/15_AHaddad_ThatiShifaNbbiKholafa.mp3"
     },
+    {
+        id:4,
+        author:"أبو عبد الله محمد القحطاني",
+        img:"https://best-kutub.com/wp-content/uploads/2023/08/egb273422-5291167.jpg",
+        name_book:"نونية القحطاني",
+        url_audio:"https://media.islamway.net/audiobooks/3115/15_AHaddad_NooniatQhtani.mp3"
+    },
+    {
+        id:5,
+        author:"عمر بن محمد بن فتوح البيقوني",
+        img:"https://m.media-amazon.com/images/I/51MRhAyQ+jL._AC_UF1000,1000_QL80_.jpg",
+        name_book:"المنظومة البيقونية في مصطلح الحديث",
+        url_audio:"https://media.islamway.net/audiobooks/3115/15_AHaddad_Biqouniah.mp3"
+    },
+    {
+        id:6,
+        author:"القاسم بن فيره بن خلف الشاطبي",
+        img:"https://www.noor-book.com/publice/covers_cache_jpg/16/a/2/0/4bbfed835fa20ca26aedcbe6198e54f1.JPG.jpg",
+        name_book:"متن الشاطبية في القراءات السبع",
+        url_audio:"https://media.islamway.net/audiobooks/3115/15_AHaddad_Shatibiah.mp3"
+    },
+    {
+        id:7,
+        author:"سليمان الجمزوري",
+        img:"https://rjeem.com/wp-content/uploads/2019/08/%D8%AA%D8%AD%D9%81%D8%A9-%D8%A7%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84..jpg",
+        name_book:"متن تحفة الأطفال",
+        url_audio:"https://media.islamway.net/audiobooks/3115/15_AHaddad_TohfftAtfal.mp3"
+    },
+    {
+        id:8,
+        author:"عبد الفتاح بن عبد الغني بن محمد القاضي",
+        img:"https://www.noor-book.com/publice/covers_cache_jpg/18/b/3/c/c0d6472a82b3cf50ea648db36e502a4a.jpg.jpg",
+        name_book:"الفرائد الحسان في عد آي القرآن",
+        url_audio:"https://media.islamway.net/audiobooks/3115/15_AHaddad_FraedHisanAddiQuran.mp3"
+    },
+    {
+        id:9,
+        author:"الشيخ محمد بن أحمد المتولي",
+        img:"https://www.noor-book.com/publice/covers_cache_webp/8/3/7/9/f2dd600ca1379445bcc16c4dfa5e0d12.png.webp",
+        name_book:"الفَوائد المُعتبرة في الأحرف الأربعة الزائدة على العشرة",
+        url_audio:"https://media.islamway.net/audiobooks/3115/15_AHaddad_FwaedMotbarhOhrff.mp3"
+    },
+    // {
+    //     id:3,
+    //     author:"",
+    //     img:"",
+    //     name_book:"",
+    //     url_audio:""
+    // },
+    
 ]
 
 
