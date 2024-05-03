@@ -9,7 +9,6 @@ function MainAudio() {
        {/* <Link
         to="books"
         className="border-white flex flex-col border-[2px]  shadow-sm rounded-xl w-[80%] md:w-[250px] md:h-[250px] bg-[#2b4f85] cursor-pointer transition duration-300 transform hover:scale-105"
-        
       >
         <img
           className="w-full h-[80%]  rounded-t-[8px] border-b-white border-b-[2px]"

@@ -57,7 +57,7 @@ function RightNavbar() {
         <NavItem ImgSrc={Hadith} openNav={openNav} setOpenNav={setOpenNav} path="/hadith" title=" الأحاديث النبوية"/>
         <NavItem ImgSrc={ Boy} openNav={openNav} setOpenNav={setOpenNav} path="/boymuslim" title="الطفل المسلم"/>
         <NavItem ImgSrc={Video} openNav={openNav} setOpenNav={setOpenNav} path="/videos" title="مرئيات"/>
-        <NavItem ImgSrc={Audio} openNav={openNav} setOpenNav={setOpenNav} path="/audio" title="الصوتيات"/>                             
+        <NavItem ImgSrc={Audio} openNav={openNav} setOpenNav={setOpenNav} path="/audio" title="صوتيات"/>                             
         <NavItem ImgSrc={Adkar} openNav={openNav} setOpenNav={setOpenNav} path="/adkar" title="الأذكار"/>                             
         <NavItem ImgSrc={ moshaf} openNav={openNav} setOpenNav={setOpenNav} path="/moshaf" title="المصاحف"/>
         <NavItem ImgSrc={ Rosary} openNav={openNav} setOpenNav={setOpenNav} path="/rosary" title="السبحة"/>

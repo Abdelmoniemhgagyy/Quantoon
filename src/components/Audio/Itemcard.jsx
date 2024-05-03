@@ -8,7 +8,7 @@ function Itemcard({Ele}) {
     const handleAudioCategory = () => {
         localStorage.setItem("audioCategory", JSON.stringify(Ele.array));
         setAudioCategory(JSON.parse(localStorage.getItem("audioCategory")));
-        navigate("books")
+        navigate(Ele.path)
     };
     useEffect(()=>{
 

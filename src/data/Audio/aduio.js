@@ -1,5 +1,4 @@
 
-
 export let books_audio =[
     // {
     //     id:1,
@@ -88,7 +87,217 @@ export let books_audio =[
     //     url_audio:""
     // },
 ]
+// Start Courses 
+// قصص الأنبياء 
+export let prophetsStories = [
+    {
+        id:13,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة محمد صلّ الله عليه و سلم",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/013.mp3"
+    },
+    {
+        id:1,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة سيدنا إبراهيم عليه السلام",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/001.mp3"
+    },
+    {
+        id:2,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة ادريس ونوح عليهما السلام",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/002.mp3"
+    },
+    {
+        id:3,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة آدم عليه السلام",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/003.mp3"
+    },
+    {
+        id:4,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة الخضر عليه السلام",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/004.mp3"
+    },
+    {
+        id:5,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة أيوب عليه السلام",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/005.mp3"
+    },
+    {
+        id:6,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة داوود عليه السلام",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/006.mp3"
+    },
+    {
+        id:7,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة زكريا و يحي عليهما السلام",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/007.mp3"
+    },
+    {
+        id:8,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة سليمان و العزير عليهما السلام",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/008.mp3"
+    },
+    {
+        id:9,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة شعيب عليه السلام",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/009.mp3"
+    },
+    {
+        id:10,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة صالح عليه السلام",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/010.mp3"
+    },
+    {
+        id:11,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة عيسى عليه السلام",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/011.mp3"
+    },
+    {
+        id:12,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة لوط عليه السلام",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/012.mp3"
+    },
+    {
+        id:14,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة مريم بنت عمران عليها السلام",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/014.mp3"
+    },
+    {
+        id:15,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة موسى عليه السلام",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/015.mp3"
+    },
+    {
+        id:16,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة هود عليه السلام",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/016.mp3"
+    },
+    {
+        id:17,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة يوسف عليه السلام",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/017.mp3"
+    },
+    {
+        id:18,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة يوشع بن نون عليه السلام",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/018.mp3"
+    },
+    {
+        id:19,
+        author:"الشيخ نبيل العوضي",
+        img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+        name_course:"قصة يونس عليه السلام ",
+        url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/019.mp3"
+    },
+    // {
+    //     id:20,
+    //     author:"الشيخ نبيل العوضي",
+    //     img:"https://i.scdn.co/image/ab67616d0000b273130a10dbdfb91f7dadc220ac",
+    //     name_course:"",
+    //     url_audio:"https://dn720203.ca.archive.org/0/items/al3awadi-qasas-anbiya/020.mp3"
+    // },
+]
 
+export let muslimMoaser = [
+   {
+        id:1,
+        author:"المهندس أيمن عبدالرحبم",
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFIlre0Fq1NZLC6Lhhwc_czznM-kFl5SVpcrdRsg1RMK9PQCZOQ9G4ruwNGMFSjXTryco&usqp=CAU",
+        name_course:"دورة تأسيس وعي المسلم المعاصر 1",
+        url_audio:"https://dn720406.ca.archive.org/0/items/20210313_20210313_1000/%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D9%A1%20%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3%20%D9%88%D8%B9%D9%8A%20%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85%20-%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B5%D8%B1%20%D9%A2%2B%D8%A3%D9%8A%D9%85%D9%86%2B%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85.mp4"
+    },
+    {
+        id:2,
+        author:"المهندس أيمن عبدالرحبم",
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFIlre0Fq1NZLC6Lhhwc_czznM-kFl5SVpcrdRsg1RMK9PQCZOQ9G4ruwNGMFSjXTryco&usqp=CAU",
+        name_course:"دورة تأسيس وعي المسلم المعاصر 2",
+        url_audio:"https://dn720406.ca.archive.org/0/items/20210313_20210313_1000/%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D9%A2%20%D8%AA%D8%A7%D9%94%D8%B3%D9%8A%D8%B3%20%D9%88%D8%B9%D9%8A%20%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B5%D8%B1%20%D9%A2%20%D8%A7%D9%94%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85.mp4"
+    },
+    {
+        id:3,
+        author:"المهندس أيمن عبدالرحبم",
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFIlre0Fq1NZLC6Lhhwc_czznM-kFl5SVpcrdRsg1RMK9PQCZOQ9G4ruwNGMFSjXTryco&usqp=CAU",
+        name_course:"دورة تأسيس وعي المسلم المعاصر 3",
+        url_audio:"https://ia803401.us.archive.org/14/items/20210313_20210313_1000/%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D9%A3%20%D8%AA%D8%A7%D9%94%D8%B3%D9%8A%D8%B3%20%D9%88%D8%B9%D9%8A%20%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B5%D8%B1%20%D9%A2%20%D8%A7%D9%94%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85.mp4"
+    },
+    {
+        id:4,
+        author:"المهندس أيمن عبدالرحبم",
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFIlre0Fq1NZLC6Lhhwc_czznM-kFl5SVpcrdRsg1RMK9PQCZOQ9G4ruwNGMFSjXTryco&usqp=CAU",
+        name_course:"دورة تأسيس وعي المسلم المعاصر 4",
+        url_audio:"https://dn720406.ca.archive.org/0/items/20210313_20210313_1000/%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D9%A4%20%D8%AA%D8%A7%D9%94%D8%B3%D9%8A%D8%B3%20%D9%88%D8%B9%D9%8A%20%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B5%D8%B1%20%D9%A2%20%D8%A7%D9%94%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85.mp4"
+    },
+    {
+        id:5,
+        author:"المهندس أيمن عبدالرحبم",
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFIlre0Fq1NZLC6Lhhwc_czznM-kFl5SVpcrdRsg1RMK9PQCZOQ9G4ruwNGMFSjXTryco&usqp=CAU",
+        name_course:"دورة تأسيس وعي المسلم المعاصر 5",
+        url_audio:"https://dn720406.ca.archive.org/0/items/20210313_20210313_1000/%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D9%A5%20%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3%20%D9%88%D8%B9%D9%8A%20%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B5%D8%B1%20%D9%A2%20%D8%A3%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85.mp4"
+    },
+    {
+        id:6,
+        author:"المهندس أيمن عبدالرحبم",
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFIlre0Fq1NZLC6Lhhwc_czznM-kFl5SVpcrdRsg1RMK9PQCZOQ9G4ruwNGMFSjXTryco&usqp=CAU",
+        name_course:"دورة تأسيس وعي المسلم المعاصر 6",
+        url_audio:"https://dn720406.ca.archive.org/0/items/20210313_20210313_1000/%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D9%A6%20%D8%AA%D8%A7%D9%94%D8%B3%D9%8A%D8%B3%20%D9%88%D8%B9%D9%8A%20%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B5%D8%B1%20%D9%A2%20%D8%A7%D9%94%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85.mp4"
+    },
+    {
+        id:7,
+        author:"المهندس أيمن عبدالرحبم",
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFIlre0Fq1NZLC6Lhhwc_czznM-kFl5SVpcrdRsg1RMK9PQCZOQ9G4ruwNGMFSjXTryco&usqp=CAU",
+        name_course:"دورة تأسيس وعي المسلم المعاصر 7",
+        url_audio:"https://ia803401.us.archive.org/14/items/20210313_20210313_1000/%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D9%A7%20%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3%20%D9%88%D8%B9%D9%8A%20%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B5%D8%B1%20%D9%A2%20%D8%A3%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85.mp4"
+    },
+    {
+        id:8,
+        author:"المهندس أيمن عبدالرحبم",
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFIlre0Fq1NZLC6Lhhwc_czznM-kFl5SVpcrdRsg1RMK9PQCZOQ9G4ruwNGMFSjXTryco&usqp=CAU",
+        name_course:"دورة تأسيس وعي المسلم المعاصر 8" ,
+        url_audio:"https://dn720406.ca.archive.org/0/items/20210313_20210313_1000/%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D9%A8%20%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3%20%D9%88%D8%B9%D9%8A%20%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B5%D8%B1%20%D9%A2%20%D8%A3%D9%8A%D9%85%D9%86%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85.mp4"
+    },
+    // {
+    //     id:9,
+    //     author:"المهندس أيمن عبدالرحبم",
+    //     img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFIlre0Fq1NZLC6Lhhwc_czznM-kFl5SVpcrdRsg1RMK9PQCZOQ9G4ruwNGMFSjXTryco&usqp=CAU",
+    //     name_course:"دورة تأسيس وعي المسلم المعاصر",
+    //     url_audio:""
+    // },
+]
+// End Courses 
 export let motoon =[
     {
         id:1,
@@ -177,6 +386,22 @@ export let motoon =[
     
 ]
 
+export let courses = [
+    {
+        id:2,
+        title:"دورة تأسيس وعي المسلم المعاصر",
+        img:"https://static7.tgstat.ru/channels/_0/b0/b0f8e905b97170e08db29b92ef162e1a.jpg",
+        path:"course",
+        array:muslimMoaser
+    },
+    {
+        id:3,
+        title:"قصص الأنبياء",
+        img:"https://play-lh.googleusercontent.com/fjRu2XKWoMJsUU9ukXnWUvNeo2VfZoFh7nYQrEnc69vYairg9hwm_iYeLHfkBCDrvRw",
+        path:"course",
+        array:prophetsStories
+    },
+]
 
 export let categories = [
     {
@@ -190,8 +415,15 @@ export let categories = [
         id:2,
         title:"المتون العلمية",
         img:"https://play-lh.googleusercontent.com/QEKX85yBX2BSS1yJc-P9Gmee-3cU-16nflePCWkg9lwXDMHegXtbMr6PSfuxjMF1vEsq",
-        path:"motoon",
+        path:"books",
         array:motoon
+    },
+    {
+        id:3,
+        title:"الدورات الدينية",
+        img:"https://yt3.googleusercontent.com/Oc3btzMimZXnk8IYtlV8_JiYXK4REXk4LgAIiAFFtkbJtB5Nwsdt8CbieOvxtfrsyfDLvH6e=s900-c-k-c0x00ffffff-no-rj",
+        path:"courses",
+        array:courses
     },
     // {
     //     id:1,

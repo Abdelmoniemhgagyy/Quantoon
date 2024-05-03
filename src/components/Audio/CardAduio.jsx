@@ -5,18 +5,16 @@ function CardAduio({ item }) {
     <div className="relative px-1 md:p-4 py-1 text-center border border-[10px] border-t-[#8a63ff] border-l-[#8a63ff]  border-r-[#fff] border-b-[#fff] md:border-[15px] rounded-[30px] text-white">
       <h2 className="font-bold mb-3">{""}</h2>
       <p className="mb-4 text-lg pt-4 md:pt-0">
-        <span className="font-[400] leading-relaxed">الكاتب : </span>
+       { item.name_book && <span className="font-[400] leading-relaxed">الكاتب : </span>}
         <span className="text-[#c5c5c5]"> {item.author}</span>
       </p>
-
       <div className="w-[220px] mx-auto ">
         <img src={item.img} alt="" className="w-full h-[240px] rounded-[17%]" />
       </div>
-
       <p className="my-3 text-lg">
-        <span className=""> {item.name_book} </span>
+        {item.name_book&&<span > {item.name_book} </span>}
+        {item.name_course&&<span > {item.name_course} </span>}
       </p>
-
       {/* download audio  */}
       <a
         href={item.url_audio}
