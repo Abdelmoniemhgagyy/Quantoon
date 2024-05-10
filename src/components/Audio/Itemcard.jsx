@@ -22,7 +22,7 @@ function Itemcard({Ele}) {
         <img
           className="w-full h-[80%]  rounded-t-[8px] border-b-white border-b-[2px]"
           src={Ele.img}
-          alt="sheikhsphoto"
+          alt="..."
         />
         <h3 className="text-xl font-[900] pb-1 text-white mt-2 text-center dark:text-white md:w-full whitespace-nowrap">
          {Ele.title}

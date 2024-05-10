@@ -10,6 +10,9 @@ import Moshaf from "./Pages/moshaf/Moshaf.jsx";
 import BooksAudio from "./Pages/Audius/BooksAudio.jsx";
 import Courses from "./Pages/Audius/Courses.jsx";
 import Course from "./Pages/Audius/Course.jsx";
+import Podcasts from "./Pages/Audius/Podcasts.jsx";
+import Podcast from "./Pages/Audius/Podcast.jsx";
+
 import Audio from "./Pages/Audius/Audio.jsx";
 import MainAudio from "./Pages/Audius/MainAudio.jsx";
 
@@ -86,6 +89,9 @@ function App() {
             <Route path="courses" element={<Courses />}>
             </Route>
               <Route path="courses/course" element={<Course />} />
+            <Route path="podcasts" element={<Podcasts />}>
+            </Route>
+              <Route path="podcasts/podcast" element={<Podcast />} />
           </Route>
         </Routes>
       </AnimatePresence>

@@ -3,7 +3,6 @@ import Itemcard from "../../components/Audio/Itemcard"
 import {courses} from "../../data/Audio/aduio"
 
 function Courses() {
-console.log(courses)
 return (
     <div
       className=' mt-[40px] flex flex-wrap justify-center gap-[40px] lg:mt-[180px]'>

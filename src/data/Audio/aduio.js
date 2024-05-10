@@ -1,4 +1,6 @@
 
+import { v4 as uuid } from 'uuid';
+
 export let books_audio =[
     // {
     //     id:1,
@@ -88,6 +90,7 @@ export let books_audio =[
     // },
 ]
 // Start Courses 
+
 // قصص الأنبياء 
 export let prophetsStories = [
     {
@@ -297,7 +300,52 @@ export let muslimMoaser = [
     //     url_audio:""
     // },
 ]
+export let courses = [
+    {
+        id:2,
+        title:"دورة تأسيس وعي المسلم المعاصر",
+        img:"https://static7.tgstat.ru/channels/_0/b0/b0f8e905b97170e08db29b92ef162e1a.jpg",
+        path:"course",
+        array:muslimMoaser
+    },
+    {
+        id:3,
+        title:"قصص الأنبياء",
+        img:"https://play-lh.googleusercontent.com/fjRu2XKWoMJsUU9ukXnWUvNeo2VfZoFh7nYQrEnc69vYairg9hwm_iYeLHfkBCDrvRw",
+        path:"course",
+        array:prophetsStories
+    },
+    // {
+    //     id:4,
+    //     title:"",
+    //     img:"",
+    //     path:"course",
+    //     array:[]
+    // },
+    // {
+    //     id:5,
+    //     title:"",
+    //     img:"",
+    //     path:"course",
+    //     array:[]
+    // },
+    // {
+    //     id:6,
+    //     title:"",
+    //     img:"",
+    //     path:"course",
+    //     array:[]
+    // },
+    // {
+    //     id:4,
+    //     title:"",
+    //     img:"",
+    //     path:"course",
+    //     array:[]
+    // },
+]
 // End Courses 
+// Start Motoon 
 export let motoon =[
     {
         id:1,
@@ -385,23 +433,209 @@ export let motoon =[
     // },
     
 ]
+// End Motoon  
+// Start Podcast
 
-export let courses = [
+export let ghreebQuran = [
+  // https://ghurayb.podbean.com/ 
+    {
+        id:1,
+        author:" الدكتور عبدالرحمن بن معاضة الشهري",
+        img:"https://i1.sndcdn.com/artworks-bYWbfFmfhuxeziPv-1bZRDQ-t500x500.jpg",
+        name_course:"(الآن حصحص الحق)",
+        url_audio:"https://s301.podbean.com/pb/652d4bbb383212c89b96547ad36a5956/663d441c/data1/fs24/10629012/uploads/Episode_Strange_Quran304.mp3?pbss=73a37dd6-1cd8-57ec-97ab-a0bc9e2f9061"
+    },
     {
         id:2,
-        title:"دورة تأسيس وعي المسلم المعاصر",
-        img:"https://static7.tgstat.ru/channels/_0/b0/b0f8e905b97170e08db29b92ef162e1a.jpg",
-        path:"course",
-        array:muslimMoaser
+        author:" الدكتور عبدالرحمن بن معاضة الشهري",
+        img:"https://i1.sndcdn.com/artworks-bYWbfFmfhuxeziPv-1bZRDQ-t500x500.jpg",
+        name_course:"(وفيه يعصرون) || غريب القرآن",
+        url_audio:"https://s356.podbean.com/pb/1f73ba714f43fdc0641b5f8a050b110f/663d4628/data1/fs24/10629012/uploads/Episode_Strange_Quran303.mp3?pbss=7c3c02c6-cd56-5fb8-b464-f89295e240d1"
     },
     {
         id:3,
-        title:"قصص الأنبياء",
-        img:"https://play-lh.googleusercontent.com/fjRu2XKWoMJsUU9ukXnWUvNeo2VfZoFh7nYQrEnc69vYairg9hwm_iYeLHfkBCDrvRw",
-        path:"course",
-        array:prophetsStories
+        author:" الدكتور عبدالرحمن بن معاضة الشهري",
+        img:"https://i1.sndcdn.com/artworks-bYWbfFmfhuxeziPv-1bZRDQ-t500x500.jpg",
+        name_course:"(إلا قليلاً مما تحصنون) || غريب القرآن",
+        url_audio:"https://s333.podbean.com/pb/af72d7812a93b2ae36b436b0c232c758/663d5776/data1/fs24/10629012/uploads/Episode_Strange_Quran302.mp3?pbss=3c3faffa-436d-5e57-a861-9254ae2db38c"
     },
+    {
+        id:4,
+        author:" الدكتور عبدالرحمن بن معاضة الشهري",
+        img:"https://i1.sndcdn.com/artworks-bYWbfFmfhuxeziPv-1bZRDQ-t500x500.jpg",
+        name_course:"(سبع عجاف) || غريب القرآن",
+        url_audio:"https://s316.podbean.com/pb/0320949c96689829a85ce84e25181ccf/663d59c7/data1/fs24/10629012/uploads/Episode_Strange_Quran298.mp3?pbss=346964d6-397f-5049-a8ac-a9097ce4eb42"
+    },
+    {
+        id:5,
+        author:" الدكتور عبدالرحمن بن معاضة الشهري",
+        img:"https://i1.sndcdn.com/artworks-bYWbfFmfhuxeziPv-1bZRDQ-t500x500.jpg",
+        name_course:"(وادكر بعد أمة) || غريب القرآن",
+        url_audio:"https://s305.podbean.com/pb/8728ae83a2c626f4a8e4f0590ebda05b/663d584a/data1/fs24/10629012/uploads/Episode_Strange_Quran300.mp3?pbss=c6963bc0-2bc5-527a-9a5f-d4989bc82a85"
+    },
+    {
+        id:6,
+        author:" الدكتور عبدالرحمن بن معاضة الشهري",
+        img:"https://i1.sndcdn.com/artworks-bYWbfFmfhuxeziPv-1bZRDQ-t500x500.jpg",
+        name_course:"(أضغاث أحلام) || غريب القرآن",
+        url_audio:"https://mcdn.podbean.com/mf/web/j4bsx4/Episode_Strange_Quran299.mp3"
+    },
+    {
+        id:7,
+        author:" الدكتور عبدالرحمن بن معاضة الشهري",
+        img:"https://i1.sndcdn.com/artworks-bYWbfFmfhuxeziPv-1bZRDQ-t500x500.jpg",
+        name_course:"(اذكرني عند ربك) || غريب القرآن",
+        url_audio:"https://mcdn.podbean.com/mf/web/pgmau6/Episode_Strange_Quran297.mp3"
+    },
+    {
+        id:8,
+        author:" الدكتور عبدالرحمن بن معاضة الشهري",
+        img:"https://i1.sndcdn.com/artworks-bYWbfFmfhuxeziPv-1bZRDQ-t500x500.jpg",
+        name_course:"(فاستعصم) || غريب القرآن",
+        url_audio:"https://mcdn.podbean.com/mf/web/tssnas/Episode_Strange_Quran296.mp3"
+    },
+    {
+        id:9,
+        author:" الدكتور عبدالرحمن بن معاضة الشهري",
+        img:"https://i1.sndcdn.com/artworks-bYWbfFmfhuxeziPv-1bZRDQ-t500x500.jpg",
+        name_course:"(وأعتدت لهن متكئًا) || غريب القرآن",
+        url_audio:"https://mcdn.podbean.com/mf/web/sa26iq/Episode_Strange_Quran295.mp3"
+    },
+    {
+        id:10,
+        author:" الدكتور عبدالرحمن بن معاضة الشهري",
+        img:"https://i1.sndcdn.com/artworks-bYWbfFmfhuxeziPv-1bZRDQ-t500x500.jpg",
+        name_course:"(قد شغفها حبًا) || غريب القرآن",
+        url_audio:"https://s310.podbean.com/pb/1c43dd074e053b3251aeff4a73d29d6d/663d5b20/data1/fs24/10629012/uploads/Episode_Strange_Quran294.mp3?pbss=b6a0fd3b-2263-5a21-8535-c6d321632040"
+    },
+    // {
+    //     id:8,
+    //     author:" الدكتور عبدالرحمن بن معاضة الشهري",
+    //     img:"https://i1.sndcdn.com/artworks-bYWbfFmfhuxeziPv-1bZRDQ-t500x500.jpg",
+    //     name_course:"",
+    //     url_audio:""
+    // },
 ]
+export let way =[
+    {
+        id:1,
+        author:"",
+        img:"https://i.ytimg.com/vi/2Bs2ghPX6Vk/sddefault.jpg",
+        name_course:"وعي  | أحسن القصص | سيدنا يوسف عليه السلام",
+        url_audio:"https://feeds.soundcloud.com/stream/1818231252-waiepodcast-wtx2ubotwea5.mp3"
+    },
+    {
+        id:uuid(),
+        author:"",
+        img:"https://i1.sndcdn.com/artworks-CChezIaBmk0Wgb5V-QsvIRw-t3000x3000.jpg",
+        name_course:"وعي | الاختلاط والتعامل المنضبط بين الولد والبنت",
+        url_audio:"https://feeds.soundcloud.com/stream/1197197353-waiepodcast-ep24.mp3"
+    },
+    {
+        id:uuid(),
+        author:"",
+        img:"https://i1.sndcdn.com/artworks-CChezIaBmk0Wgb5V-QsvIRw-t3000x3000.jpg",
+        name_course:"وعي | سلسلة الأخلاق | صلة الأرحام",
+        url_audio:"https://feeds.soundcloud.com/stream/1506640624-waiepodcast-ep59.mp3"
+    },
+    {
+        id:uuid(),
+        author:"",
+        img:"https://i1.sndcdn.com/artworks-CChezIaBmk0Wgb5V-QsvIRw-t3000x3000.jpg",
+        name_course:"وعي | سلسلة الأخلاق | العفة",
+        url_audio:"https://feeds.soundcloud.com/stream/1494610474-waiepodcast-ep58.mp3"
+    },
+    {
+        id:uuid(),
+        author:"",
+        img:"https://i1.sndcdn.com/artworks-CChezIaBmk0Wgb5V-QsvIRw-t3000x3000.jpg",
+        name_course:"وعي | الدار الآخرة",
+        url_audio:"https://feeds.soundcloud.com/stream/1219850959-waiepodcast-woganqi5cji2.mp3"
+    },
+    {
+        id:uuid(),
+        author:"",
+        img:"https://i1.sndcdn.com/artworks-CChezIaBmk0Wgb5V-QsvIRw-t3000x3000.jpg",
+        name_course:"وعي | وصف يوم القيامة",
+        url_audio:"https://feeds.soundcloud.com/stream/1227040300-waiepodcast-ep39.mp3"
+    },
+    {
+        id:uuid(),
+        author:"",
+        img:"https://i.pinimg.com/736x/e2/f3/4c/e2f34c79880f714ebb3367cfb011f783.jpg",
+        name_course:"وعي | الصلاة",
+        url_audio:"https://feeds.soundcloud.com/stream/1197073237-waiepodcast-ep18.mp3"
+    },
+    {
+        id:uuid(),
+        author:"",
+        img:"https://i1.sndcdn.com/artworks-CChezIaBmk0Wgb5V-QsvIRw-t3000x3000.jpg",
+        name_course:"وعي | عن محبة النبي ﷺ",
+        url_audio:"https://feeds.soundcloud.com/stream/1197453964-waiepodcast-ep28.mp3"
+    },
+    {
+        id:uuid(),
+        author:"",
+        img:"https://i1.sndcdn.com/artworks-CChezIaBmk0Wgb5V-QsvIRw-t3000x3000.jpg",
+        name_course:"وعي | الدعاء والموانع النفسية بينك وبين المداومة عليه",
+        url_audio:"https://feeds.soundcloud.com/stream/1197453946-waiepodcast-ep27.mp3",
+    },
+    {
+        id:uuid(),
+        author:"",
+        img:"https://i1.sndcdn.com/artworks-CChezIaBmk0Wgb5V-QsvIRw-t3000x3000.jpg",
+        name_course:"وعي | ما هو القرآن؟",
+        url_audio:"https://feeds.soundcloud.com/stream/1197251125-waiepodcast-ep26.mp3"
+    },
+
+    // {
+    //     id:uuid(),
+    //     author:"",
+    //     img:"https://i1.sndcdn.com/artworks-CChezIaBmk0Wgb5V-QsvIRw-t3000x3000.jpg",
+    //     name_course:"",
+    //     url_audio:""
+    // },
+    // {
+    //     id:uuid(),
+    //     author:"",
+    //     img:"https://i1.sndcdn.com/artworks-CChezIaBmk0Wgb5V-QsvIRw-t3000x3000.jpg",
+    //     name_course:"",
+    //     url_audio:""
+    // },
+    // {
+    //     id:uuid(),
+    //     author:"",
+    //     img:"",
+    //     name_course:"",
+    //     url_audio:""
+    // },
+]
+    
+export let podcast = [
+   {
+        id:1,
+        title:"غريب القران",
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdBY981r9JB4WUrd9s2ZjnOfSxERCtg0Xhe-QuQqaHB9IiNasoQKqp4J9jFThg3ALHMHY&usqp=CAU",
+        path:"podcast",
+        array:ghreebQuran
+    },
+   {
+        id:1,
+        title:"وعي",
+        img:"https://i1.sndcdn.com/artworks-CChezIaBmk0Wgb5V-QsvIRw-t3000x3000.jpg",
+        path:"podcast",
+        array:way
+    },
+//    {
+//         id:1,
+//         title:"وعي",
+//         img:"",
+//         path:"podcast",
+//         array:way
+//     },
+
+]
+// End Podcast  
 
 export let categories = [
     {
@@ -424,6 +658,13 @@ export let categories = [
         img:"https://yt3.googleusercontent.com/Oc3btzMimZXnk8IYtlV8_JiYXK4REXk4LgAIiAFFtkbJtB5Nwsdt8CbieOvxtfrsyfDLvH6e=s900-c-k-c0x00ffffff-no-rj",
         path:"courses",
         array:courses
+    },
+    {
+        id:1,
+        title:"بودكاست",
+        img:"https://yt3.googleusercontent.com/SlM9zx-9B8PA3oqOrB4Z7ZeYZjugI4i5Ho_TZ8u3YJ1eTEsxTIcFSWSWSaLAbE6ZPshUBIK9=s900-c-k-c0x00ffffff-no-rj",
+        path:"podcasts",
+        array:podcast 
     },
     // {
     //     id:1,
