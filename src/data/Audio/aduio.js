@@ -769,7 +769,81 @@ export let fahm =[
     //         url_audio:""
     //     },
 ]
-    
+export let ayhElmoshkal = [
+    // https://www.podbean.com/media/share/dir-6jzea-1c26b2af?utm_campaign=w_share_ep&utm_medium=dlink&utm_source=w_share
+       {    id:uuid(),
+            author:"",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/3003670/3003670_300x300.jpeg",
+            name_course:" إيه المشكلة في التوبة ؟",
+            url_audio:"https://anchor.fm/s/db806fac/podcast/play/65683674/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-27%2F315030502-48000-2-a78b449a84afcef9.mp3"
+        },
+       {    id:uuid(),
+            author:"",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/3003670/3003670_300x300.jpeg",
+            name_course:"إيه المشكلة في قطع الأرحام ؟",
+            url_audio:"https://anchor.fm/s/db806fac/podcast/play/86327036/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-4-5%2Fc6c200c1-a226-82f8-b188-c6981cfeea7c.mp3"
+        },
+       {    id:uuid(),
+            author:"",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/3003670/3003670_300x300.jpeg",
+            name_course:"إيه المشكلة في علاقتنا بأهلنا ؟ ",
+            url_audio:"https://anchor.fm/s/db806fac/podcast/play/65683686/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-27%2F315030513-48000-2-bfe6ddc9a4cd5196.mp3"
+        },
+       {    id:uuid(),
+            author:"",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/3003670/3003670_300x300.jpeg",
+            name_course:"خطر السوشيال ميديا و ضياع العمر",
+            url_audio:"https://anchor.fm/s/db806fac/podcast/play/65686638/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-27%2F315045828-44100-2-d4e1ca65de12e.m4a"
+        },
+       {    id:uuid(),
+            author:"",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/3003670/3003670_300x300.jpeg",
+            name_course:"إيه المشكلة في الحب و الارتباط ؟",
+            url_audio:"https://anchor.fm/s/db806fac/podcast/play/65686487/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-27%2F315043433-44100-2-d2dd3b874729f.m4a"
+        },
+       {    id:uuid(),
+            author:"",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/3003670/3003670_300x300.jpeg",
+            name_course:"إيه المشكلة في الدين الجديد ؟",
+            url_audio:"https://anchor.fm/s/db806fac/podcast/play/65685898/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-27%2F2827db41-daf8-6391-121a-d4de2bb20649.mp3"
+        },
+       {    id:uuid(),
+            author:"",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/3003670/3003670_300x300.jpeg",
+            name_course:" إيه المشكلة لو مبنصليش ؟",
+            url_audio:"https://anchor.fm/s/db806fac/podcast/play/65683687/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-27%2F315030514-44100-2-7dc160a3b274fcc3.mp3"
+        },
+       {    id:uuid(),
+            author:"",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/3003670/3003670_300x300.jpeg",
+            name_course:" إيه المشكلة في الخطوبة ؟ (الجزء الأول)",
+            url_audio:"https://anchor.fm/s/db806fac/podcast/play/65683675/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-27%2F315030507-44100-2-c944793c485e5b40.mp3"
+        },
+       {    id:uuid(),
+            author:"",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/3003670/3003670_300x300.jpeg",
+            name_course:"إيه المشكلة في الخطوبة ؟ (الجزء الثاني)",
+            url_audio:"https://anchor.fm/s/db806fac/podcast/play/65683679/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-27%2F315030506-48000-2-7734ee2ff5609061.mp3"
+        },
+       {    id:uuid(),
+            author:"",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/3003670/3003670_300x300.jpeg",
+            name_course:"إيه المشكلة لو مش ملتزم ؟ ",
+            url_audio:"https://anchor.fm/s/db806fac/podcast/play/65683676/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-27%2F315030505-44100-2-d9fb0f2af2befc36.mp3"
+        },
+       {    id:uuid(),
+            author:"",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/3003670/3003670_300x300.jpeg",
+            name_course:"إيه المشكلة لو مفيش دين ؟",
+            url_audio:"https://anchor.fm/s/db806fac/podcast/play/65685294/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-1-27%2F8b2b96fb-9d1d-de40-10e4-e65c7bacb0c4.mp3"
+        },
+    //    {    id:uuid(),
+    //         author:"",
+    //         img:"https://pbcdn1.podbean.com/imglogo/dir-logo/3003670/3003670_300x300.jpeg",
+    //         name_course:"",
+    //         url_audio:""
+    //     },
+]
 export let podcast = [
    {
         id:1,
@@ -799,6 +873,13 @@ export let podcast = [
         path:"podcast",
         array:shuffleArray(fahm)
     },
+   {
+        id:uuid(),
+        title:"ايه المشكلة ؟",
+        img:"https://pbcdn1.podbean.com/imglogo/dir-logo/3003670/3003670_300x300.jpeg",
+        path:"podcast",
+        array:shuffleArray(ayhElmoshkal)
+    },
 //    {
 //         id:uuid(),
 //         title:"",
@@ -816,28 +897,28 @@ export let categories = [
         title:"الكتب الصوتيه",
         img:"https://thewriteress.com/wp-content/uploads/2021/03/Channels-for-AudioBooks-in-Arabic.jpg",
         path:"books",
-        array:books_audio
+        array:shuffleArray(books_audio)
     },
     {
         id:2,
         title:"المتون العلمية",
         img:"https://play-lh.googleusercontent.com/QEKX85yBX2BSS1yJc-P9Gmee-3cU-16nflePCWkg9lwXDMHegXtbMr6PSfuxjMF1vEsq",
         path:"books",
-        array:motoon
+        array:shuffleArray(motoon)
     },
     {
         id:3,
         title:"الدورات الدينية",
         img:"https://yt3.googleusercontent.com/Oc3btzMimZXnk8IYtlV8_JiYXK4REXk4LgAIiAFFtkbJtB5Nwsdt8CbieOvxtfrsyfDLvH6e=s900-c-k-c0x00ffffff-no-rj",
         path:"courses",
-        array:courses
+        array:shuffleArray(courses)
     },
     {
         id:1,
         title:"بودكاست",
         img:"https://yt3.googleusercontent.com/SlM9zx-9B8PA3oqOrB4Z7ZeYZjugI4i5Ho_TZ8u3YJ1eTEsxTIcFSWSWSaLAbE6ZPshUBIK9=s900-c-k-c0x00ffffff-no-rj",
         path:"podcasts",
-        array:podcast 
+        array:shuffleArray(podcast)
     },
     // {
     //     id:1,
