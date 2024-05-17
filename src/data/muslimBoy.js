@@ -1,3 +1,5 @@
+import shuffleArray from "../components/shuffleArray"
+
 //  أحكام فقهيه
 export const ahkam = [
   {
@@ -1098,42 +1100,42 @@ export const data = [
     name: "فقه الطفل المسلم",
     ImgSrc:
       "https://w7.pngwing.com/pngs/808/751/png-transparent-man-praying-prayer-muslim-islam-salah-islam-child-hand-cartoon-thumbnail.png",
-    arrayVideo: ahkam,
+    arrayVideo: shuffleArray(ahkam),
   },
   {
     id: 2,
     name: " قصص من حياة الرسول ﷺ ",
     ImgSrc:
       "https://www.albayan.ae/polopoly_fs/1.1684382.1475896890!/image/image.jpg_gen/derivatives/original_640/image.jpg",
-    arrayVideo: storiesMassenger,
+    arrayVideo: shuffleArray(storiesMassenger),
   },
   {
     id: 9,
     name: "آداب وفضائل",
     ImgSrc:
       "https://www.jarir.com/cdn-cgi/image/fit=contain,width=350,height=auto,quality=85,metadata=none/https://ak-asset.jarir.com/akeneo-prod/asset/m1images/3/5/357160.jpg",
-    arrayVideo: manners,
+    arrayVideo: shuffleArray(manners),
     // https://www.jarir.com/cdn-cgi/image/fit=contain,width=350,height=auto,quality=85,metadata=none/https://ak-asset.jarir.com/akeneo-prod/asset/m1images/3/5/357160.jpg
   },
   {
     id: 3,
     name: "كرتون بدون موسيقي",
     ImgSrc: "https://i.ytimg.com/vi/AsFYDAWXMuU/hqdefault.jpg",
-    arrayVideo: aflamCartoon,
+    arrayVideo: shuffleArray(aflamCartoon),
   },
 
   {
     id: 4,
     name: " قصص الأنبياء ",
     ImgSrc:"https://www.neelwafurat.com/images/lb/abookstore/covers/normal/326/326492.jpg",
-    arrayVideo: stories,
+    arrayVideo: shuffleArray(stories),
   },
 
   {
     id: 5,
     name: "كرتون علماء المسلمين",
     ImgSrc: "https://i.ytimg.com/vi/zzkqck6DYOk/maxresdefault.jpg",
-    arrayVideo: storiesScholars,
+    arrayVideo: shuffleArray(storiesScholars),
   },
   {
     id: 6,

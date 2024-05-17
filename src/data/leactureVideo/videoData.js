@@ -1,4 +1,4 @@
-
+import shuffleArray from "../../components/shuffleArray"
   export const mohmedSharaye =[
     {
         id:1,
@@ -1004,7 +1004,6 @@
       poster:"//static.media.islamway.net//videos/179/452_Rashed_StartEndEnsan-l.jpg"
     },
 ]
-
 
   export const abdelazezEltrafy = [
     {
@@ -2147,7 +2146,7 @@
 //     poster:""
 //   },
 ]
-  export const mainVideos = [
+ let mainVideos = [
     {
       id: 56,
       title:"  مبدعون : عبادات وتصفيات في #شعبان",
@@ -2543,6 +2542,12 @@
     //   poster:""
     // },
 ]
+
+shuffleArray(mainVideos);
+
+export { mainVideos };
+
+
 //   export const nameSheik = [
 //     {
 //       id: 1,
@@ -2689,108 +2694,109 @@
  }
  export default namesOfSheikes
 
- export const dataOfAllSheikhs = [
+
+let dataOfAllSheikhs = [
     {
       id: 1,
       name: "الشيخ سمير مصطفي",
       ImgSrc: "https://pbs.twimg.com/media/FveL68HXwAUV3Yc.jpg",
-      arrayVideo: sameerMostfa,
+      arrayVideo: shuffleArray(sameerMostfa),
     },
     {
       id: 2,
       name: "الشيخ سعيد الكملي",
       ImgSrc: "https://i1.sndcdn.com/artworks-2OihbfmCHJ2YqVhl-nuF70g-t500x500.jpg",
-      arrayVideo: saeedElkamly,
+      arrayVideo: shuffleArray(saeedElkamly),
     },
     {
       id: 3,
       name: "الشيخ أحمد عبدالمنعم ",
       ImgSrc: "https://i.ytimg.com/vi/xxesTJixwOM/maxresdefault.jpg",
-      arrayVideo: ahmedAbdelmoniem,
+      arrayVideo: shuffleArray(ahmedAbdelmoniem),
     },
     {
       id: 4,
       name: "أبو إسحاق الحويني",
       ImgSrc: "https://i1.sndcdn.com/artworks-000318203850-wvduss-t500x500.jpg",
-      arrayVideo: aboEshak,
+      arrayVideo: shuffleArray(aboEshak),
     },
     {
       id: 5,
       name: "محمد متولي الشعراوي",
       ImgSrc: "https://1.bp.blogspot.com/-hEp5l8EuxTU/YQlHtsBBrEI/AAAAAAACNwc/KtslO1Yc44gNavEkC6dRCWsemL0fyigrwCLcBGAsYHQ/s450/%25D8%25A7%25D8%25AD%25D8%25A7%25D8%25AB-%25D8%25A7%25D9%2584%25D8%25B4%25D9%258A%25D8%25AE-%25D8%25A7%25D9%2584%25D8%25B4%25D8%25B9%25D8%25B1%25D8%25A7%25D9%2588%25D9%258A.jpg",
-      arrayVideo: mohmedSharaye,
+      arrayVideo: shuffleArray(mohmedSharaye),
     },
     {
       id: 6,
       name: "إياد قنيبي",
       ImgSrc: "https://liveislam.info/wp-content/uploads/2021/01/dr-eyad.jpg",
-      arrayVideo: eyadElqenaby,
+      arrayVideo: shuffleArray(eyadElqenaby),
     },
     {
       id: 7,
       name: "أيمن عبدالرحيم",
       ImgSrc: "https://static1.tgstat.ru/channels/_0/b0/b0f8e905b97170e08db29b92ef162e1a.jpg",
-      arrayVideo: aymanAbdelrheem,
+      arrayVideo: shuffleArray(aymanAbdelrheem),
     },
     {
       id: 8,
       name: "محمد خيري",
       ImgSrc: "https://i1.sndcdn.com/artworks-Paw2swpARCFTPRZA-hx4UqQ-t500x500.jpg",
-      arrayVideo: mohamedKhirey,
+      arrayVideo: shuffleArray(mohamedKhirey),
     },
     {
       id: 9,
       name: "أحمد السيد",
       ImgSrc: "https://i1.sndcdn.com/artworks-rnJqKTXouOsb3va3-1C8G5A-t500x500.jpg",
-      arrayVideo: ahmedSayed,
+      arrayVideo: shuffleArray(ahmedSayed),
     },
     {
       id: 10,
       name: "عثمان الخميس",
       ImgSrc: "https://mustansiriyah.net/wp-content/uploads/2019/10/40893814_472113786619791_5876197533662838784_n.jpg",
-      arrayVideo: osmanElhames,
+      arrayVideo: shuffleArray(osmanElhames),
     },
     {
       id: 11,
       name: "خالد الراشد",
       ImgSrc: "https://pbs.twimg.com/media/FhwqYJGXoAAPT1C.png",
-      arrayVideo: khaledElrashed,
+      arrayVideo: shuffleArray(khaledElrashed),
     },
     {
       id: 12,
       name: "عبدالعزيز الطريفي",
       ImgSrc: "https://pbs.twimg.com/media/E3J_SceXIAM0H8r.jpg",
-      arrayVideo: abdelazezEltrafy,
+      arrayVideo: shuffleArray(abdelazezEltrafy),
     },
     {
       id: 13,
       name: "أيمن السويد",
       ImgSrc: "https://images.gr-assets.com/authors/1514098245p8/3353597.jpg",
-      arrayVideo: aymanElsweed,
+      arrayVideo: shuffleArray(aymanElsweed),
     },
     {
       id: 14,
       name: "ذاكر نايك",
       ImgSrc: "https://palsawa.com/uploads/images/2022/11/USUMd.jpg",
-      arrayVideo: zakerNike,
+      arrayVideo: shuffleArray(zakerNike),
     },
     {
       id: 15,
       name: "علي القرني",
+      arrayVideo: shuffleArray(aliElqurny),
       ImgSrc: "https://i.ytimg.com/vi/0AtKYp8SB7s/hqdefault.jpg",
-      arrayVideo: aliElqurny,
     },
     {
       id: 16,
       name: "محمد العريفي",
+      arrayVideo: shuffleArray(mohamedElarefy),
       ImgSrc: "https://i1.sndcdn.com/artworks-000122186129-ltl97z-t500x500.jpg",
-      arrayVideo: mohamedElarefy,
     },
     {
       id: 17,
       name: "بدر المشاري",
+      arrayVideo:shuffleArray(baderElmoshary) ,
       ImgSrc:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxFQexCoHEzqznnJlN-GWlSE3pJMMCUES6h-acOD1oK0YVkYzI4Ev24P4vZozVQUa_a6c&usqp=CAU",
-      arrayVideo:baderElmoshary ,
     },
     // {
     //   id: 17,
@@ -2799,3 +2805,6 @@
     //   arrayVideo: ,
     // },
   ];
+// shuffleArray(dataOfAllSheikhs)
+
+export { dataOfAllSheikhs }

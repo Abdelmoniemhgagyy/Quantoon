@@ -1,3 +1,5 @@
+import shuffleArray from "../components/shuffleArray"
+
 const shortVideosQuran = [
     "https://bot.altaqwaa.org/media/video/1.mp4",
     "https://bot.altaqwaa.org/media/video/2.mp4",
@@ -426,5 +428,6 @@ const shortVideosQuran = [
     "https://bot.altaqwaa.org/media/video/411.mp4",
     "https://bot.altaqwaa.org/media/video/412.mp4"
 ]
+shuffleArray(shortVideosQuran)
 
 export default shortVideosQuran

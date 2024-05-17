@@ -1,3 +1,4 @@
+import shuffleArray from "../../components/shuffleArray"
 
 import { v4 as uuid } from 'uuid';
 
@@ -516,6 +517,7 @@ export let ghreebQuran = [
     //     url_audio:""
     // },
 ]
+// وعي
 export let way =[
     {
         id:1,
@@ -610,6 +612,163 @@ export let way =[
     //     url_audio:""
     // },
 ]
+// صور من حياة الصحابة 
+export let frindsLive = [
+   {    id:uuid(),
+        author:"",
+        img:"https://i.scdn.co/image/ab6765630000ba8a45a8bd759a534e021e0a766e",
+        name_course:"أنس بن مالك رضي الله عنه",
+        url_audio:"https://download.media.islamway.net/lessons/scho1230/ALsa7abah/218_MD_Anas/01.mp3"
+    },
+   {    id:uuid(),
+        author:"",
+        img:"https://i.scdn.co/image/ab6765630000ba8a45a8bd759a534e021e0a766e",
+        name_course:"سعيد بن عامر الجمحي ـ رضي الله عنه ـ 1",
+        url_audio:"https://download.media.islamway.net/lessons/scho1230/ALsa7abah/435_MD_Sa3eed_ibn_3amer/01.mp3"
+    },
+   {    id:uuid(),
+        author:"",
+        img:"https://i.scdn.co/image/ab6765630000ba8a45a8bd759a534e021e0a766e",
+        name_course:"سعيد بن عامر الجمحي ـ رضي الله عنه ـ – 2",
+        url_audio:"https://download.media.islamway.net/lessons/scho1230/ALsa7abah/435_MD_Sa3eed_ibn_3amer/02.mp3"
+    },
+   {    id:uuid(),
+        author:"",
+        img:"https://i.scdn.co/image/ab6765630000ba8a45a8bd759a534e021e0a766e",
+        name_course:"عبد الله بن حذافة السهمي رضي الله عنه – 1",
+        url_audio:"https://download.media.islamway.net/lessons/scho1230/ALsa7abah/435_MD_Ibn_hozafa/01.mp3"
+    },
+   {    id:uuid(),
+        author:"",
+        img:"https://i.scdn.co/image/ab6765630000ba8a45a8bd759a534e021e0a766e",
+        name_course:"عبد الله بن حذافة السهمي رضي الله عنه – 2",
+        url_audio:"https://download.media.islamway.net/lessons/scho1230/ALsa7abah/435_MD_Ibn_hozafa/02.mp3"
+    },
+   {    id:uuid(),
+        author:"",
+        img:"https://i.scdn.co/image/ab6765630000ba8a45a8bd759a534e021e0a766e",
+        name_course:"عبد الله بن حذافة السهمي رضي الله عنه – 3",
+        url_audio:"https://download.media.islamway.net/lessons/scho1230/ALsa7abah/435_MD_Ibn_hozafa/03.mp3"
+    },
+   {    id:uuid(),
+        author:"",
+        img:"https://i.scdn.co/image/ab6765630000ba8a45a8bd759a534e021e0a766e",
+        name_course:"البراء بن مالك رضي الله عنه – مقومات بطل",
+        url_audio:"https://download.media.islamway.net/lessons/scho1230/ALsa7abah/435_MD_Braa2/01.mp3"
+    },
+   {    id:uuid(),
+        author:"",
+        img:"https://i.scdn.co/image/ab6765630000ba8a45a8bd759a534e021e0a766e",
+        name_course:"البراء بن مالك رضي الله عنه – أهمية الثبات",
+        url_audio:"http://download.media.islamway.net/lessons/scho1230/ALsa7abah/435_MD_Braa2/02.mp3"
+    },
+   {    id:uuid(),
+        author:"",
+        img:"https://i.scdn.co/image/ab6765630000ba8a45a8bd759a534e021e0a766e",
+        name_course:"البراء بن مالك رضي الله عنه – وسائل الثبات على دين الله",
+        url_audio:"https://download.media.islamway.net/lessons/scho1230/ALsa7abah/435_MD_Braa2/03.mp3"
+    },
+   {    id:uuid(),
+        author:"",
+        img:"https://i.scdn.co/image/ab6765630000ba8a45a8bd759a534e021e0a766e",
+        name_course:"البراء بن مالك رضي الله عنه – التعصب",
+        url_audio:"https://download.media.islamway.net/lessons/scho1230/ALsa7abah/435_MD_Braa2/04.mp3"
+    },
+    // https://www.podbean.com/site/EpisodeDownload/DIR70F55B6WIFHX
+//    {    id:uuid(),
+//         author:"",
+//         img:"https://i.scdn.co/image/ab6765630000ba8a45a8bd759a534e021e0a766e",
+//         name_course:"",
+//         url_audio:""
+//     },
+//    {    id:uuid(),
+//         author:"",
+//         img:"https://i.scdn.co/image/ab6765630000ba8a45a8bd759a534e021e0a766e",
+//         name_course:"",
+//         url_audio:""
+//     },
+
+]
+export let fahm =[
+        {    id:uuid(),
+            author:"د. أحمد العربي",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/2696526/2696526_300x300.jpg",
+            name_course:" سلسلة تذوق العبادات - (1) الصلاة",
+            url_audio:"https://anchor.fm/s/b0a5273c/podcast/play/82983673/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-1-21%2Fc2226338-c3aa-d85b-2da4-ac76fe746ad9.mp3"
+        },
+        {    id:uuid(),
+             author:"الشيخ/ هيثم سمير",
+             img:"https://pbcdn1.podbean.com/imglogo/dir-logo/2696526/2696526_300x300.jpg",
+             name_course:" إدارة الشهوات ",
+             url_audio:"https://anchor.fm/s/b0a5273c/podcast/play/82634906/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-1-13%2F8f92a387-46e3-9186-7b8f-90ede58809ed.mp3"
+         },
+       {    id:uuid(),
+            author:"الشيخ/ أحمد عبد السلام",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/2696526/2696526_300x300.jpg",
+            name_course:"مناسك الحج والعمرة",
+            url_audio:"https://d3ctxlq1ktw2nl.cloudfront.net/staging/2024-4-16/7836c358-a44d-4f63-668f-538dd85d1fb5.mp3"
+        },
+       {    id:uuid(),
+            author:"د. محمد علي يوسف",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/2696526/2696526_300x300.jpg",
+            name_course:" بنو إسـرائـيل في القرآن - الجزء 1",
+            url_audio:"https://anchor.fm/s/b0a5273c/podcast/play/85568768/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-3-18%2F4d962a87-7e0c-036f-37c5-d40aad52aa9a.mp3"
+        },
+       {    id:uuid(),
+            author:"د. محمد علي يوسف",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/2696526/2696526_300x300.jpg",
+            name_course:" بنو إسـرائـيل في القرآن - الجزء 2",
+            url_audio:"https://anchor.fm/s/b0a5273c/podcast/play/86067457/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-3-29%2Fcb26fa26-5157-ca3c-8fed-5414f8c818c4.mp3"
+        },
+       {    id:uuid(),
+            author:"د. أحمد العربي",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/2696526/2696526_300x300.jpg",
+            name_course:"سلسلة تذوق العبادات - (2) القرآن",
+            url_audio:"https://anchor.fm/s/b0a5273c/podcast/play/83637699/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-2-6%2F72c5f4dc-324f-1651-2a47-c757648c1538.mp3"
+        },
+       {    id:uuid(),
+            author:"مع أ. أحمد سالم",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/2696526/2696526_300x300.jpg",
+            name_course:" أسرار وأدوار حول معنى الرجولة الحقيقي!",
+            url_audio:"https://anchor.fm/s/b0a5273c/podcast/play/82033736/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-1-1%2Ff4d1609d-50c5-01ff-4e72-85ab279f29c8.mp3"
+        },
+       {    id:uuid(),
+            author:" مع أ. أحمد خليفة",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/2696526/2696526_300x300.jpg",
+            name_course:"كيف يفكر الناجحون ؟ ",
+            url_audio:"https://anchor.fm/s/b0a5273c/podcast/play/81359992/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-0-16%2F78b69c47-60ec-9e1c-9bcc-e0f541b7280d.mp3"
+        },
+       {    id:uuid(),
+            author:"د. أحمد العربي",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/2696526/2696526_300x300.jpg",
+            name_course:" ماذا لو رأى الصحابة أحداث غزة؟",
+            url_audio:"https://anchor.fm/s/b0a5273c/podcast/play/79029932/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-10-23%2Ff6e217d1-506b-ca0d-03e2-d629f53c29f8.mp3"
+        },
+       {    id:uuid(),
+            author:" د. أحمد عبد الفضيل",
+            img:"https://pbcdn1.podbean.com/imglogo/dir-logo/2696526/2696526_300x300.jpg",
+            name_course:"هل في بيتك مدمن ؟ جذور الإدمان وعلاماته",
+            url_audio:"https://anchor.fm/s/b0a5273c/podcast/play/76720876/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2023-9-3%2F349620522-44100-2-74fa67b6d0574.m4a"
+        },
+    //    {    id:uuid(),
+    //         author:"",
+    //         img:"https://pbcdn1.podbean.com/imglogo/dir-logo/2696526/2696526_300x300.jpg",
+    //         name_course:"",
+    //         url_audio:""
+    //     },
+    //    {    id:uuid(),
+    //         author:"",
+    //         img:"https://pbcdn1.podbean.com/imglogo/dir-logo/2696526/2696526_300x300.jpg",
+    //         name_course:"",
+    //         url_audio:""
+    //     },
+    //    {    id:uuid(),
+    //         author:"",
+    //         img:"https://pbcdn1.podbean.com/imglogo/dir-logo/2696526/2696526_300x300.jpg",
+    //         name_course:"",
+    //         url_audio:""
+    //     },
+]
     
 export let podcast = [
    {
@@ -617,21 +776,35 @@ export let podcast = [
         title:"غريب القران",
         img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdBY981r9JB4WUrd9s2ZjnOfSxERCtg0Xhe-QuQqaHB9IiNasoQKqp4J9jFThg3ALHMHY&usqp=CAU",
         path:"podcast",
-        array:ghreebQuran
+        array:shuffleArray(ghreebQuran)
     },
    {
-        id:1,
+        id:uuid(),
         title:"وعي",
         img:"https://i1.sndcdn.com/artworks-CChezIaBmk0Wgb5V-QsvIRw-t3000x3000.jpg",
         path:"podcast",
-        array:way
+        array:shuffleArray(way)
+    },
+   {
+        id:uuid(),
+        title:"صور من حياة الصحابة ",
+        img:"https://i.scdn.co/image/ab6765630000ba8a45a8bd759a534e021e0a766e",
+        path:"podcast",
+        array:shuffleArray(frindsLive)
+    },
+   {
+        id:uuid(),
+        title:"فاهم",
+        img:"https://pbcdn1.podbean.com/imglogo/dir-logo/2696526/2696526_300x300.jpg",
+        path:"podcast",
+        array:shuffleArray(fahm)
     },
 //    {
-//         id:1,
-//         title:"وعي",
+//         id:uuid(),
+//         title:"",
 //         img:"",
 //         path:"podcast",
-//         array:way
+//         array:[]
 //     },
 
 ]
