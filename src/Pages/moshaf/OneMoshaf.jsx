@@ -68,7 +68,7 @@ return (
 
 
  {/* model  */}
-    {openModel&&<div className='absolute top-0 left-0 min-w-full min-h-full bg-[#000] z-[99999999]' onClick={()=>setOpenModel(false)}>
+    {openModel&&<div className='fixed top-0 left-0 min-w-full min-h-full bg-[#000] z-[99999999999]' onClick={()=>setOpenModel(false)}>
        
     <div className='hidden md:block text-center pt-[5px]'>
      <input type="number" min={1} placeholder='رقم الصفحة' className=' text-center border border-blue-400 p-2 w-[60%] md:w-auto rounded-lg  outline-none'
@@ -94,7 +94,7 @@ return (
               onClick={(e)=>{
                 e.stopPropagation();
                 nextPage()}}
-             className="hidden md:block text-white bi bi-arrow-left-square-fill text-4xl cursor-pointer"></i>
+                className="hidden md:block text-white bi bi-arrow-left-square-fill text-4xl cursor-pointer"></i>
            
           </div>
 
