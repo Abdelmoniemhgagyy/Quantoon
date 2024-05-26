@@ -34,7 +34,7 @@ body{
   align-items: center;
   flex-wrap: wrap;
 }
-.btn-conntainer>button {
+.btn-conntainer>button ,.btn-nav {
   border: 1px solid rgb(49, 28, 168);
   outline: none;
   padding: 5px;

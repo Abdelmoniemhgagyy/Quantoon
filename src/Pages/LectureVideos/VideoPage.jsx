@@ -14,22 +14,22 @@ function VideoPage() {
   return (
     <div className="transition duration-300 mt-[40px]">
       {/* Navbar */}
-      <div className="btn-conntainer my-[20px]  mr-[60px] sm:mr-auto">
+      <div  className="my-[20px]  mr-[60px]  flex justify-center items-center flex-wrap  sm:mr-auto">
         <button
           onClick={() => handelNavigate("")}
-          className={`${state === "" ? `active-btn` : ""}`}
+          className={`${state === "" ? `active-btn btn-nav` : "btn-nav"}`}
         >
           الفيديوهات
         </button>
         <button
           onClick={() => handelNavigate("sheihks")}
-          className={`${state === "sheihks" ? `active-btn` : ""}`}
+          className={`${state === "sheihks" ? `active-btn btn-nav` : "btn-nav"}`}
         >
           الشيوخ
         </button>
         <button
           onClick={() => handelNavigate("short-video-quran")}
-          className={`${state === "short-video-quran" ? `active-btn` : ""}`}
+          className={`${state === "short-video-quran" ? `active-btn btn-nav` : "btn-nav"}`}
         >
           مقاطع قران قصيرة
         </button>
