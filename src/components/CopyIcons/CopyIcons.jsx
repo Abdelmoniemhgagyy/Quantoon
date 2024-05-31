@@ -11,7 +11,7 @@ function CopyIcons({ copiedText }) {
   return (
     <>
     <div
-      className="absolute left-[5px] top-[5px] cursor-pointer "
+      className={`absolute left-[5px] top-[5px] cursor-pointer `}
       onClick={() => {
         clipboardCopy(copiedText);
       }}

@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useParams , Link } from "react-router-dom";
 import Loading from "../../components/Loading/Loading"
+import CopyIcons from '../../components/CopyIcons/CopyIcons'
 import call from "../../api/call"
 function Quran() {
   const[loading,setLoading] = useState(true)
@@ -25,8 +26,11 @@ function Quran() {
       :
       <div className="sura">
         {data.map((item) => (
-          <div>
-            <p>{item.text} (<span>{item.numberInSurah}</span>)</p>
+          <div className="relative ">
+          <div className="py-[20px] md:py-[10px]" >
+            <p className="py-[20px]  md:py-[10px]">{item.text} (<span>{item.numberInSurah}</span>)</p>
+          </div>
+            <CopyIcons copiedText={item.text}/>
           </div>
         ))}
 

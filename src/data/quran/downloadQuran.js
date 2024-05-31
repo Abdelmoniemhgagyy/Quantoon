@@ -1,3 +1,4 @@
+import { v4 as uuid } from 'uuid';
 const data = [
     { id: 1, name: " أبو بكر الشاطبي", url: "https://download.tvquran.com/download/recitations/archives/39-mp3.zip" },
     { id: 2, name: "محمد أيوب", url: "https://download.tvquran.com/download/recitations/archives/27-mp3.zip" },
@@ -10,8 +11,8 @@ const data = [
     { id: 9, name: "خالد الجليل", url: "https://download.tvquran.com/download/recitations/archives/252-mp3.zip" },
     { id: 10, name: "عبدالباسط عبدالصمد", url: "https://download.tvquran.com/download/recitations/archives/1-mp3.zip" },
     { id: 11, name: "محمد صديق المنشاوي", url: "https://download.tvquran.com/download/recitations/archives/105-mp3.zip" },
-    { id: 12, name: "أبو بكر الشاطري", url: "https://download.tvquran.com/download/recitations/archives/39-mp3.zip" },
-    // { id: 13, name: "ياسر الدوسري", url: "https://download.tvquran.com/download/recitations/archives/9-mp3.zip" },
+    { id: 12, name: "نورين محمد صديق", url: "https://archive.org/compress/noreen-sedeeq/formats=VBR%20MP3&file=/noreen-sedeeq.zip" },
+    { id: 13, name: "الشحات محمد أنور", url: "https://archive.org/compress/way2sona_20151219_2128/formats=VBR%20MP3&file=/way2sona_20151219_2128.zip" },
     { id: 14, name: "يوسف نوح أحمد", url: "https://download.tvquran.com/download/recitations/archives/100-mp3.zip" },
     { id: 15, name: "ياسر القرشي", url: "https://download.tvquran.com/download/recitations/archives/250-mp3.zip" },
     { id: 16, name: "وديع اليمني", url: "https://download.tvquran.com/download/recitations/archives/218-mp3.zip" },
@@ -26,12 +27,26 @@ const data = [
     { id: 25, name:"عبد المحسن القاسم", url: "//download.tvquran.com/download/recitations/archives/55-mp3.zip" },
     { id: 26, name: "عبد الباري الثبيتي", url: "https://archive.org/compress/www.elahmad.com_22/formats=192KBPS%20MP3&file=/www.elahmad.com_22.zip" },
     { id: 27, name: "عبد الله عواد الجهني", url: "//download.tvquran.com/download/recitations/archives/12-mp3.zip" },
-    // { id: 28, name: "", url: "" },
-    // { id: 29, name: "", url: "" },
-    // { id: 30, name: "", url: "" },
+    { id: 28, name: " مشاري راشد العفاسي", url: "https://archive.org/compress/fm_002_20150413_0654/formats=VBR%20MP3&file=/fm_002_20150413_0654.zip" },
+    { id: 29, name: "أحمد العجمي", url: "https://archive.org/compress/jam3_11/formats=VBR%20MP3&file=/jam3_11.zip" },
+    { id: 30, name: "خالد عبد الكافي", url: "https://archive.org/compress/KhalidAbdulkhafi/formats=VBR%20MP3&file=/KhalidAbdulkhafi.zip" },
+    { id: 31, name: "محمد جبريل", url: "https://ia600405.us.archive.org/28/items/TvQuran.com__JibrelZip/TvQuran.com__Jibrel.zip" },
+    { id: 32, name: "صلاح بو خاطر", url: "https://archive.org/compress/fm_002_20150413_1346/formats=VBR%20MP3&file=/fm_002_20150413_1346.zip" },
+    { id: 33, name: "حسن صالح", url: "https://archive.org/compress/hassan_mohaed_saleh/formats=VBR%20MP3&file=/hassan_mohaed_saleh.zip" },
+    { id: 34, name: "علي جابر", url: "https://archive.org/compress/ali_jaber_2/formats=VBR%20MP3&file=/ali_jaber_2.zip" },
+    { id: 35, name: "علي الحذيفي", url: "https://ia600403.us.archive.org/21/items/TvQuran.com__Ali-AlhuthaifiZip/TvQuran.com__Ali-Alhuthaifi.zip" },
+    { id: 36, name: "محمد المحيسني", url: "https://archive.org/compress/www.elahmad.com_58/formats=VBR%20MP3&file=/www.elahmad.com_58.zip" },
+    { id: 37, name: "عبد العزيز الزهراني", url: "https://archive.org/compress/75450417_0910324752/formats=VBR%20MP3&file=/75450417_0910324752.zip" },
+    { id: 38, name: "خليفة الطنيجي", url: "https://archive.org/compress/fm_002_20150413_1550/formats=VBR%20MP3&file=/fm_002_20150413_1550.zip" },
+    { id: 39, name: "سعود الشريم", url: "https://ia600403.us.archive.org/13/items/TvQuran.com__Al-ShuraimZip/TvQuran.com__Al-Shuraim.zip" },
+    { id: uuid(), name: "ابراهيم الأخضر", url:"https://archive.org/compress/alfirdwsiy143NBVCXCRETYUTIUYIYITYTRE02_201712/formats=VBR%20MP3&file=/alfirdwsiy143NBVCXCRETYUTIUYIYITYTRE02_201712.zip" },
+    // { id: uuid(), name: "غسان الشوربجي", url:"https://archive.org/compress/alfirdwsiy143NBVCXCRETYUTIUYIYITYTRE02_201712/formats=VBR%20MP3&file=/alfirdwsiy143NBVCXCRETYUTIUYIYITYTRE02_201712.zip" },
+    { id: uuid(), name: "بيشه وا قادر", url: "https://archive.org/compress/alfirdwsiy2018_hhhhhhhhhhhhhhhhhhhhhhhh1806/formats=VBR%20MP3&file=/alfirdwsiy2018_hhhhhhhhhhhhhhhhhhhhhhhh1806.zip" },
+    // { id: uuid(), name: "", url: "" },
+    // { id: uuid(), name: "", url: "" },
+    // { id: uuid(), name: "", url: "" },
+    // { id: uuid(), name: "", url: "" },
      
-
-
 ];
-
+// console.log(data.length)
 export default data 

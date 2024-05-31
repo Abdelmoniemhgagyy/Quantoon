@@ -1,3 +1,4 @@
+import { v4 as uuid } from 'uuid';
 const Qura =[
   {
     id:1,
@@ -841,7 +842,7 @@ const Qura =[
     rewaya:"ورش عن نافع"
   },
   {
-    id: 116,
+    id: uuid(),
     name:"مفتاح السلطني (الكسائي)",
     url_audio: "https://server14.mp3quran.net/muftah_sultany/Rewayat-AlDorai-A-n-Al-Kisa-ai/",
     img: "",
@@ -870,7 +871,7 @@ const Qura =[
   },
   {
     id: 120,
-    name:"مفتاح السلطني (بن عامر)",
+    name:"مفتاح السلطني (ابن عامر)",
     url_audio: "https://server14.mp3quran.net/muftah_sultany/Rewayat_Ibn-Thakwan-A-n-Ibn-Amer/",
     img: "",
     rewaya:"ابن ذكوان عن ابن عامر"
@@ -1092,13 +1093,13 @@ const Qura =[
       img: "",
       rewaya:"ابن ذكوان عن ابن عامر"
   },
-  {
-      id: 152,
-      name:"مفتاح السلطني(الكسائي)",
-      url_audio: "https://download.ourquraan.com/Muftah_Alsaltany_(Dori-3n-kisaay)/",
-      img: "",
-      rewaya:"الدوري عن الكسائي"
-  },
+  // {
+  //     id: 152,
+  //     name:"مفتاح السلطني(الكسائي)",
+  //     url_audio: "https://download.ourquraan.com/Muftah_Alsaltany_(Dori-3n-kisaay)/",
+  //     img: "",
+  //     rewaya:"الدوري عن الكسائي"
+  // },
   {
     id: 153,
     name: " ابراهيم جمال القرجاوي",
@@ -1162,15 +1163,43 @@ const Qura =[
     img: "",
     rewaya:"حفص عن عاصم"
   },
+  {
+    id: 162,
+    name:"نورين محمد صديق",
+    url_audio: "https://ia803201.us.archive.org/8/items/noreen-sedeeq/",
+    img: "",
+    rewaya:"الدوري عن أبي عمر"
+  },
+  {
+    id: uuid(),
+    name:"غسان الشوربجي",
+    url_audio: "https://ia800103.us.archive.org/11/items/alfirdwsiy143NBVCXCRETYUTIUYIYITYTRE02_201712/",
+    img: "",
+    rewaya:"حفص عن عاصم"
+  },
+  {
+    id: uuid(),
+    name: "بيشه وا قادر الكردي",
+    url_audio: "https://server16.mp3quran.net/peshawa/Rewayat-Hafs-A-n-Assem/",
+    img: "",
+    rewaya:"حفص عن عاصم"
+  },
   // {
-  //   id: 152,
+  //   id: uuid(),
   //   name: "",
   //   url_audio: "",
   //   img: "",
   //   rewaya:"حفص عن عاصم"
   // },
   // {
-  //   id: 152,
+  //   id: uuid(),
+  //   name: "",
+  //   url_audio: "",
+  //   img: "",
+  //   rewaya:"حفص عن عاصم"
+  // },
+  // {
+  //   id: uuid(),
   //   name: "",
   //   url_audio: "",
   //   img: "",
