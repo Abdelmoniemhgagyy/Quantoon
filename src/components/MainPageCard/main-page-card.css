@@ -1,0 +1,54 @@
+.card {
+    position: relative;
+    width: 220px;
+    height: 320px;
+    /* background: #487ed1; */
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 900;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow:0 0px 10px #516eecd3,0 0px 10px #ffffff;
+  }
+  
+  .card::before,
+  .card::after {
+    position: absolute;
+    content: "";
+    width: 14%;
+    height: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 300;
+    background-color: #2e2e38;
+    transition: all 0.5s;
+  }
+  
+  .card::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  .card:hover::before,
+  .card:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+  
+  .card:hover:after {
+    content: attr(data-text);
+  }

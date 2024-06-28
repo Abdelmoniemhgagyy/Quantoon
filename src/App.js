@@ -1,4 +1,5 @@
 import React from "react";
+import Main from "./Pages/MainPage/Main.jsx"
 import Quran from "./Pages/Quran/Quran";
 import QuranAudio from "./Pages/quran-audio/QuranAudio.jsx";
 import Download from "./Pages/quran-audio/Download.jsx";
@@ -51,6 +52,7 @@ function App() {
       <AnimatePresence mode="wait">
         <ToastContainer />
         <Routes>
+          <Route path="/" element={<Main />} />
           {/* Start Quran Routes */}
           <Route path="/quran" element={<Quran />} exact>
             <Route index element={<SuraContainer />} />
