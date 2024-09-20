@@ -25,6 +25,7 @@ import NamesOFAllah from "./Pages/theNameOfAllah/NamesOFAllah.jsx";
 import Videos from "./Pages/LectureVideos/Videos.jsx";
 import Rosary from "./Pages/Rosary/Rosary.jsx";
 import MuslimBoy from "./Pages/muslimBoy/MuslimBoy.jsx";
+import Info from "./Pages/Info/Info.jsx"
 import ScrollTopTop from "./components/ScroolToTop/ScroolToTop.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loading from "./components/Loading/Loading.jsx";
@@ -95,6 +96,7 @@ function App() {
             </Route>
               <Route path="podcasts/podcast" element={<Podcast />} />
           </Route>
+          <Route path="/info" element={<Info/>}/>
         </Routes>
       </AnimatePresence>
     </BrowserRouter>

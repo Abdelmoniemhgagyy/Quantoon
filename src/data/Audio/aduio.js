@@ -905,7 +905,7 @@ export let categories = [
     {
         id:2,
         title:"المتون العلمية",
-        img:"https://play-lh.googleusercontent.com/QEKX85yBX2BSS1yJc-P9Gmee-3cU-16nflePCWkg9lwXDMHegXtbMr6PSfuxjMF1vEsq",
+        img:"/data/img/motoon.jpg",
         path:"books",
         array:motoon
     },

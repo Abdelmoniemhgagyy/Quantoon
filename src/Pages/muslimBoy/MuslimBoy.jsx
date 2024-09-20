@@ -2,6 +2,7 @@ import React from 'react'
 import Card from "./Card"
 import {data} from "../../data/muslimBoy"
 import {motion} from "framer-motion"
+import SocialIcon from '../../components/SocialIcon'
 
 function MuslimBoy() {
      window.scroll({top:0})
@@ -24,7 +25,7 @@ function MuslimBoy() {
                 SrcImg="" 
                 name=""
                 data={namesOfSheikes.}/> */}
-
+        <SocialIcon/> 
         </div>
     </motion.div>
   )

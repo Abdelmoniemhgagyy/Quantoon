@@ -2,6 +2,7 @@ import React from 'react'
 import MainPageCard from '../../components/MainPageCard/MainPageCard'
 import "./main.css"
 import data from "../../data/mainPage"
+import SocialIcon from '../../components/SocialIcon'
 
 
 function Main() {
@@ -10,6 +11,7 @@ function Main() {
      {data.map((item)=>(
       <MainPageCard title={item.title} subTitle={item.subTitle} url={item.url}/>
      ))}
+     <SocialIcon/> 
   </div>
   )
 }
