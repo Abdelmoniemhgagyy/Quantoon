@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "/node_modules/video-react/dist/video-react.css";
 import { Outlet, useNavigate } from "react-router-dom";
 function VideoPage() {
