@@ -1,4 +1,3 @@
-import React from 'react'
 import "./main-page-card.css"
 import { useNavigate } from 'react-router-dom'
 
