@@ -1,4 +1,4 @@
-import React, { useEffect, useState,useCallback } from 'react'
+import { useEffect, useState,useCallback } from 'react'
 import "./Hadith.css"
 import  Paginations  from "../../components/Pagination/Pagination"
 import  ScrollTopTop from "../../components/ScroolToTop/ScroolToTop"
