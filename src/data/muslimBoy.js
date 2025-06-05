@@ -1112,8 +1112,7 @@ export const data = [
   {
     id: 9,
     name: "آداب وفضائل",
-    ImgSrc:
-      "https://www.jarir.com/cdn-cgi/image/fit=contain,width=350,height=auto,quality=85,metadata=none/https://ak-asset.jarir.com/akeneo-prod/asset/m1images/3/5/357160.jpg",
+    ImgSrc:"/data/boy-muslim/boymuslim.png",
     arrayVideo: shuffleArray(manners),
     // https://www.jarir.com/cdn-cgi/image/fit=contain,width=350,height=auto,quality=85,metadata=none/https://ak-asset.jarir.com/akeneo-prod/asset/m1images/3/5/357160.jpg
   },

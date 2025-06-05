@@ -35,3 +35,8 @@
 .img-container>img{
     width:100%
 }
+.text-gradient {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, #90ede2, #56deff);
+}

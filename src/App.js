@@ -8,11 +8,8 @@ import Sura from "./Pages/Quran/Sura";
 import SuraContainer from "./Pages/Quran/SuraContainer.jsx";
 import Adkar from "./Pages/Adkar/Adkar.jsx";
 import Moshaf from "./Pages/moshaf/Moshaf.jsx";
-import BooksAudio from "./Pages/Audius/BooksAudio.jsx";
-import Courses from "./Pages/Audius/Courses.jsx";
-import Course from "./Pages/Audius/Course.jsx";
-import Podcasts from "./Pages/Audius/Podcasts.jsx";
-import Podcast from "./Pages/Audius/Podcast.jsx";
+import ReciterPage from "./Pages/Audius/ReciterPage.jsx";
+
 
 import Audio from "./Pages/Audius/Audio.jsx";
 import MainAudio from "./Pages/Audius/MainAudio.jsx";
@@ -85,16 +82,7 @@ function App() {
           {/* Audio */}
           <Route path="/audio" element={<Audio />}>
             <Route index element={<MainAudio />} />
-            <Route path="books" element={<BooksAudio />} />
-            {/* <Route path="courses" element={<Courses />}>
-              <Route path="course" element={<Course />} />
-            </Route> */}
-            <Route path="courses" element={<Courses />}>
-            </Route>
-              <Route path="courses/course" element={<Course />} />
-            <Route path="podcasts" element={<Podcasts />}>
-            </Route>
-              <Route path="podcasts/podcast" element={<Podcast />} />
+            <Route path=":reciterId" element={<ReciterPage />} />
           </Route>
           <Route path="/info" element={<Info/>}/>
         </Routes>
