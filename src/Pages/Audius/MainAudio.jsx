@@ -27,7 +27,7 @@ function MainAudio() {
 
   return (
     <div className='mt-[40px] text-center'>
-      <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 text-gray-800">
+      <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 text-white">
         المكتبة <span className="text-gradient"> الصوتية</span>
       </h1>
       <input
