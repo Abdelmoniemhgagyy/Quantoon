@@ -138,183 +138,187 @@ import shuffleArray from "../../components/shuffleArray"
   export const sameerMostfa = [
     {
       id: 1,
-      title: "كيف تحفظ القرآن",
-      url: "https://media.islamway.net/videos/582/922_SMostafa_Elwqt.mp4",
+      title: "قصة همة  2 - الشيخ سمير مصطفى - النبراس",
+      url: "https://archive.org/download/Alnibras-SamerMostafa-27-12-09/Alnibras-SamerMostafa-27-12-09-hi.mp4",
       poster:"https://pbs.twimg.com/media/FveL68HXwAUV3Yc.jpg"
     },
     {
       id: 2,
-      title: "أهمية الوقت",
-      url: "https://media.islamway.net/videos/582/922_SMostafa_Elwqt.mp4",
+      title: "مع الذاكرين - الشيخ سمير مصطفى - جذور الهزيمة 4",
+      url: "https://archive.org/download/Alzakiren-SamerMostafa-24-11-09/Alzakiren-SamerMostafa-24-11-09-hi.mp4",
       poster:"https://i1.sndcdn.com/artworks-000110983668-u9vkru-t500x500.jpg",
 
     },
     {
       id: 3,
-      title: "علاج سوء الظن والوحشة",
-      url: "https://media.islamway.net/videos/582/922_SMostafa_Elwqt.mp4",
+      title: "مع الذاكرين - الشيخ سمير مصطفى - قانون الاستقامة",
+      url: "https://ia801300.us.archive.org/4/items/Alzakiren-SamerMostafa-27-10-09/Alzakiren-SamerMostafa-27-10-09-hi_512kb.mp4",
       poster:"",
-
     },
     {
       id: 4,
-      title: "النزوح إلى الآخرة",
-      url: "https://media.islamway.net/videos/582/922_SMostafa.mp4",
+      title: "الأحاديث الطوال",
+      url: "https://ia801802.us.archive.org/9/items/xboxgamer-4220/ala7adeth-altiwal-26022013.mp4",
       poster:"",
 
     },
-    {
-      id: 5,
-      title: "سرعة الالتجاء إلى الله",
-      url: "https://media.islamway.net/videos/582/922_SMostafa_Alaah.mp4",
-      poster:"",
-
-    },
-    {
-      id: 6,
-      title: "الأنس بالله",
-      url: "https://media.islamway.net/videos/582/922_Mostafa_Elons.mp4",
-      poster:"",
-
-    },
-    {
-      id: 7,
-      title: "إياك أن تضيع عمرك!",
-      url: "https://media.islamway.net/videos/582/922_SMostafa_Eltzkea.mp4",
-      poster:"",
-
-    },
-    {
-      id: 8,
-      title: "استغلال فترة الشباب",
-      url: "https://media.islamway.net/videos/582/SMostafa_Elshabab.mp4",
-      poster:"",
-
-    },
-    {
-      id: 9,
-      title: "عشر ذي الحجة",
-      url: "https://media.islamway.net/lessons/582/SMostafa_ZeElhga.mp4",
-      poster:"",
-
-    },
-    {
-      id: 10,
-      title: "الزاهد حقًا لا تخطر الدنيا بباله!",
-      url: "https://media.islamway.net/videos/582/SMostafa_Elzahd.mp4",
-      poster:"",
-
-    },
-    {
-      id: 11,
-      title: "هل أتاك نبأ النجاشي أصحمة؟",
-      url: "https://media.islamway.net/videos/582/SM_Elngashe.mp4",
-      poster:"", 
-    },
-    {
-      id: 12,
-      title: "نكد المعصية",
-      url: "https://media.islamway.net/videos/582/SMostafa_Elalm.mp4",
-      poster:"",
-    },
-    {
-      id: 13,
-      title: "حكم تداول وتناول المنشطات الجنسية",
-      url: "https://media.islamway.net/videos/582/SMostafa_Elgns.mp4",
-      poster:"",
-    },
-    {
-      id: 14,
-      title: "علاج قسوة القلوب!!",
-      url: "https://media.islamway.net/videos/582/SMostafa_QaswtElQloob.mp4",
-      poster:"",
-    },
-    {
-      id: 15,
-      title: "هل تعرفون حُديــرًا",
-      url: "https://media.islamway.net/videos/582/SMostafa_Hdeer.mp4",
-      poster:"",
-    },
-    {
-      id: 16,
-      title: "قدرك على قدرِ بذلك",
-      url: "https://media.islamway.net/videos/582/Smostafa_Kdrak.mp4",
-      poster:"",
-    },
-    {
-      id: 17,
-      title: "الخلاص من فتنة النظر إلى النساء",
-      url: "https://media.islamway.net/videos/582/SMostafa_Elkhlas.mp4",
-      poster:"",
-    },
-    {
-      id: 18,
-      title: "كلمة لطلاب الثانوية العامة",
-      url: "https://media.islamway.net/videos/582/Smostafa_Elsanwya.mp4",
-      poster:"",
-    },
-    {
-      id: 19,
-      title: "العشر الأوائل من ذي الحجة",
-      url: "https://media.islamway.net/lessons/582/SMosta_ZeeElhaga.mp4",
-      poster:"",
-    },
-    {
-      id: 20,
-      title: "رعونة المفتين",
-      url: "https://media.islamway.net/videos/582/SMostafa_Raw3ana.mp4",
-      poster:"",
-    },
-    {
-      id: 21,
-      title: "وضع الماكياج تحت النقاب",
-      url: "https://media.islamway.net/videos/582/SMostafa_Elnqab.mp4",
-      poster:"",
-    },
-    {
-      id: 22,
-      title: "حكم تبادل عبارات الحب بين الأزواج على الفيسبوك",
-      url: "https://media.islamway.net/videos/582/SMostafa_Facebook.mp4",
-      poster:"",
-    },
-    {
-      id: 23,
-      title: "حول التباغض والتشاحن بين الإخوة",
-      url: "https://media.islamway.net/videos/582/SMostafa_Eltahresh.mp4",
-      poster:"",
-    },
-    {
-      id: 24,
-      title: "كيف يحدث الانتكاس",
-      url: "https://media.islamway.net/videos/582/Mostafa_Elantkas.mp4",
-      poster:"",
-    },
-    {
-      id: 25,
-      title: "معادلة العبودية",
-      url: "https://media.islamway.net/videos/582/SMostafa_El3bodea.mp4",
-      poster:"",
-    },
-    {
-      id: 26,
-      title: "عون السلف لأصحابهم",
-      url: "https://media.islamway.net/videos/582/Elslaf.mp4",
-      poster:"",
-    },
-    {
-      id: 27,
-      title: "يا سارية الجبل الجبل",
-      url: "https://media.islamway.net/videos/582/SMostafa_Sareat.mp4",
-      poster:"",
-    },
-    {
-      id: 28,
-      title: "أصل الهمة عزم القلب",
-      url: "https://media.islamway.net/videos/582/SMostafa_Elhma.mp4",
-      poster:"",
-    },
+      {
+    id: "nobla2-1.mp4",
+    title: "1-اصحاب النبى صلى الله علية وسلم",
+    url: "https://archive.org/download/all-islamic-578/nobla2-1.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-10.mp4",
+    title: "سعيد بن عامر الجمحى-2--10",
+    url: "https://archive.org/download/all-islamic-578/nobla2-10.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-10_512kb.mp4",
+    title: "سعيد بن عامر الجمحى-2--10",
+    url: "https://archive.org/download/all-islamic-578/nobla2-10_512kb.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-11.mp4",
+    title: "سعيد بن عامر الجمحى--3--11",
+    url: "https://archive.org/download/all-islamic-578/nobla2-11.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-11_512kb.mp4",
+    title: "سعيد بن عامر الجمحى--3--11",
+    url: "https://archive.org/download/all-islamic-578/nobla2-11_512kb.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-12.mp4",
+    title: "عمير بن وهب الجمحى--12",
+    url: "https://archive.org/download/all-islamic-578/nobla2-12.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-12_512kb.mp4",
+    title: "عمير بن وهب الجمحى--12",
+    url: "https://archive.org/download/all-islamic-578/nobla2-12_512kb.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-13.mp4",
+    title: "عمير بن وهب الجمحى-2--13",
+    url: "https://archive.org/download/all-islamic-578/nobla2-13.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-13_512kb.mp4",
+    title: "عمير بن وهب الجمحى-2--13",
+    url: "https://archive.org/download/all-islamic-578/nobla2-13_512kb.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-14.mp4",
+    title: "عمرو بن الجموح--14",
+    url: "https://archive.org/download/all-islamic-578/nobla2-14.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-14_512kb.mp4",
+    title: "عمرو بن الجموح--14",
+    url: "https://archive.org/download/all-islamic-578/nobla2-14_512kb.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-1_512kb.mp4",
+    title: "1-اصحاب النبى صلى الله علية وسلم",
+    url: "https://archive.org/download/all-islamic-578/nobla2-1_512kb.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-2.mp4",
+    title: "الصحابة خير الناس--2",
+    url: "https://archive.org/download/all-islamic-578/nobla2-2.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-2_512kb.mp4",
+    title: "الصحابة خير الناس--2",
+    url: "https://archive.org/download/all-islamic-578/nobla2-2_512kb.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-3.mp4",
+    title: "--3--الصحابة خير الناس--2",
+    url: "https://archive.org/download/all-islamic-578/nobla2-3.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-3_512kb.mp4",
+    title: "--3--الصحابة خير الناس--2",
+    url: "https://archive.org/download/all-islamic-578/nobla2-3_512kb.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-5.mp4",
+    title: "عبد الله بن جحش-1--5",
+    url: "https://archive.org/download/all-islamic-578/nobla2-5.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-5_512kb.mp4",
+    title: "عبد الله بن جحش-1--5",
+    url: "https://archive.org/download/all-islamic-578/nobla2-5_512kb.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-6.mp4",
+    title: "عبد الله بن جحش--2--6",
+    url: "https://archive.org/download/all-islamic-578/nobla2-6.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-6_512kb.mp4",
+    title: "عبد الله بن جحش--2--6",
+    url: "https://archive.org/download/all-islamic-578/nobla2-6_512kb.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-7.mp4",
+    title: "عبد الله بن جحش--3--7",
+    url: "https://archive.org/download/all-islamic-578/nobla2-7.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-7_512kb.mp4",
+    title: "عبد الله بن جحش--3--7",
+    url: "https://archive.org/download/all-islamic-578/nobla2-7_512kb.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-8.mp4",
+    title: "ابو سفيان بن الحاث بن عبد المطلب",
+    url: "https://archive.org/download/all-islamic-578/nobla2-8.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-8_512kb.mp4",
+    title: "ابو سفيان بن الحاث بن عبد المطلب",
+    url: "https://archive.org/download/all-islamic-578/nobla2-8_512kb.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-9.mp4",
+    title: "سعيد بن عامر الجمحى-1--9",
+    url: "https://archive.org/download/all-islamic-578/nobla2-9.mp4",
+    poster: ""
+  },
+  {
+    id: "nobla2-9_512kb.mp4",
+    title: "سعيد بن عامر الجمحى-1--9",
+    url: "https://archive.org/download/all-islamic-578/nobla2-9_512kb.mp4",
+    poster: ""
+  }
   ];
-
   export const aboEshak = [
     {
         id:1,

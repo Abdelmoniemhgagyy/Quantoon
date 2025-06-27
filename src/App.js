@@ -9,6 +9,8 @@ import SuraContainer from "./Pages/Quran/SuraContainer.jsx";
 import Adkar from "./Pages/Adkar/Adkar.jsx";
 import Moshaf from "./Pages/moshaf/Moshaf.jsx";
 import ReciterPage from "./Pages/Audius/ReciterPage.jsx";
+import Sermons from "./Pages/hotba/Sermons.jsx";
+import SermonDetailPage from "./Pages/hotba/SermonDetailPage.jsx";
 
 
 import Audio from "./Pages/Audius/Audio.jsx";
@@ -84,6 +86,9 @@ function App() {
             <Route index element={<MainAudio />} />
             <Route path=":reciterId" element={<ReciterPage />} />
           </Route>
+          {/* Hotba */}
+          <Route path="/hotba" element={<Sermons />} />
+          <Route path="/hotba/sermon/:id" element={<SermonDetailPage />} />
           <Route path="/info" element={<Info/>}/>
         </Routes>
       </AnimatePresence>

@@ -1,5 +1,6 @@
 import shuffleArray from "../components/shuffleArray"
-
+import storyImg from "../assest/story.jpg"
+import story_massengers from "../assest/story_massengers.jpg"
 //  أحكام فقهيه
 export const ahkam = [
   {
@@ -1105,8 +1106,7 @@ export const data = [
   {
     id: 2,
     name: " قصص من حياة الرسول ﷺ ",
-    ImgSrc:
-      "https://www.albayan.ae/polopoly_fs/1.1684382.1475896890!/image/image.jpg_gen/derivatives/original_640/image.jpg",
+    ImgSrc:storyImg,
     arrayVideo: shuffleArray(storiesMassenger),
   },
   {
@@ -1126,7 +1126,7 @@ export const data = [
   {
     id: 4,
     name: " قصص الأنبياء ",
-    ImgSrc:"https://www.neelwafurat.com/images/lb/abookstore/covers/normal/326/326492.jpg",
+    ImgSrc:story_massengers,
     arrayVideo: shuffleArray(stories),
   },
 
