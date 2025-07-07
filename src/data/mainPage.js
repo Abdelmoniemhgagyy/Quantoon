@@ -40,7 +40,7 @@ const data = [
     id: uuid(),
     title: "الطفل المسلم",
     subTitle: "كلكم راعٍ",
-    url: "",
+    url: "/boymuslim",
     icon: "👶",
     image: boyImg,
   },
@@ -59,6 +59,14 @@ const data = [
     url: "/audio",
     icon: "🎧",
     image: headphonesImg,
+  },
+    {
+    id: uuid(),
+    title: "الأذكار",
+    subTitle: "أذكر الله",
+    url: "/adkar",
+    icon: "🌙",
+    image: zakerImg,
   },
   {
     id: uuid(),
@@ -99,14 +107,6 @@ const data = [
     url: "/rosary",
     icon: "🔵",
     image: beadsImg,
-  },
-  {
-    id: uuid(),
-    title: "الأذكار",
-    subTitle: "أذكر الله",
-    url: "/adkar",
-    icon: "🌙",
-    image: zakerImg,
   },
   {
     id: uuid(),
