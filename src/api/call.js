@@ -51,10 +51,26 @@ const juzaData = async (id)=>{
     const juza = await axios.get(`https://api.alquran.cloud/v1/juz/${id}`)
     return juza.data.data.ayahs
 }
+
+
+// tafsir
+const tafsirAyah = async (ayahNumber) => {
+  try {
+    const response = await axios.get(
+      `https://api.alquran.cloud/v1/ayah/${ayahNumber}/ar.muyassar`
+    );
+    return response.data.data.text;
+  } catch (error) {
+    console.error("خطأ في جلب التفسير:", error);
+    return "حدث خطأ أثناء جلب التفسير.";
+  }
+};
+
 const call = {
     nameSura,
     suraData,
     juzaData,
+    tafsirAyah,
     hadithData,
 
 }
