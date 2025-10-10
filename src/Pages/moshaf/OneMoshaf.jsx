@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import  { useEffect } from 'react'
 import  { useState } from "react" 
 
 function OneMoshaf({Src,typeImg,name,fahrs}) {

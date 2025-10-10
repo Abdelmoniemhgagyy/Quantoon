@@ -11,6 +11,8 @@ import Moshaf from "./Pages/moshaf/Moshaf.jsx";
 import ReciterPage from "./Pages/Audius/ReciterPage.jsx";
 import Sermons from "./Pages/hotba/Sermons.jsx";
 import SermonDetailPage from "./Pages/hotba/SermonDetailPage.jsx";
+import PrayerTimes from "./Pages/PrayerTimes/PrayerTimes.jsx";
+
 
 
 import Audio from "./Pages/Audius/Audio.jsx";
@@ -81,6 +83,8 @@ function App() {
           <Route path="/video" element={<Videos />} />
           <Route path="/boymuslim" element={<MuslimBoy />} />
 
+          <Route path="/prayer-times" element={<PrayerTimes />} />
+
           {/* Audio */}
           <Route path="/audio" element={<Audio />}>
             <Route index element={<MainAudio />} />
@@ -91,6 +95,7 @@ function App() {
           <Route path="/hotba/sermon/:id" element={<SermonDetailPage />} />
           <Route path="/info" element={<Info/>}/>
         </Routes>
+
       </AnimatePresence>
     </BrowserRouter>
   );

@@ -1,4 +1,3 @@
-import React from 'react'
 import OneMoshaf from "./OneMoshaf"
 import Moshafs from "../../data/moshaf/moshaf" 
 import {motion} from "framer-motion"

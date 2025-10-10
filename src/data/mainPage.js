@@ -10,6 +10,7 @@ import zakerImg from "../assest/listImg/zaker.png";
 import videoImg from "../assest/listImg/video.png";
 import shortVideoImg from "../assest/listImg/quran_short_video.png";
 import downloadImg from "../assest/listImg/downloadquran.png";
+import  PTimesImg from "../assest/listImg/mosque.png";
 
 const data = [
   {
@@ -51,6 +52,14 @@ const data = [
     url: "/namesofallah",
     icon: "🌟",
     image: allahImg,
+  },
+  {
+    id: uuid(),
+    title: "مواقيت الصلاة",
+    subTitle: "🕋",
+    url: "/prayer-times",
+    icon: "🌟",
+    image: PTimesImg,
   },
   {
     id: uuid(),
