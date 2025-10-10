@@ -86,7 +86,7 @@ function App() {
           <Route path="/boymuslim" element={<MuslimBoy />} />
 
           <Route path="/prayer-times" element={<PrayerTimes />} />
-          <Route path="/qibla" element={<Qibla />} />
+          <Route path="/qibla-dir" element={<Qibla />} />
 
 
           {/* Audio */}

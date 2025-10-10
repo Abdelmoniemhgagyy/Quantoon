@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Compass, MapPin, Navigation, Loader } from 'lucide-react';
+import { Compass, MapPin, Navigation, Loader, Smartphone, Monitor } from 'lucide-react';
 
 export default function Qibla() {
   const [qiblaDirection, setQiblaDirection] = useState(null);
@@ -8,9 +8,8 @@ export default function Qibla() {
   const [distance, setDistance] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [permissionDenied, setPermissionDenied] = useState(false);
-  const [hasCompass, setHasCompass] = useState(false);
-  const [manualRotation, setManualRotation] = useState(0);
+  const [hasCompass, setHasCompass] = useState(null);
+  const [compassCheckComplete, setCompassCheckComplete] = useState(false);
 
   // إحداثيات الكعبة المشرفة
   const KAABA_LAT = 21.4225;
@@ -39,7 +38,7 @@ export default function Qibla() {
 
   // حساب المسافة إلى الكعبة
   const calculateDistance = (lat, lng) => {
-    const R = 6371; // نصف قطر الأرض بالكيلومتر
+    const R = 6371;
     const toRad = (deg) => (deg * Math.PI) / 180;
 
     const dLat = toRad(KAABA_LAT - lat);
@@ -55,9 +54,78 @@ export default function Qibla() {
     return distance.toFixed(0);
   };
 
-  // الحصول على الموقع الجغرافي
+  // فحص وجود حساس البوصلة
   useEffect(() => {
-    if ('geolocation' in navigator) {
+    const checkCompassSupport = () => {
+      // فحص إذا كان الجهاز يدعم DeviceOrientationEvent
+      if (!window.DeviceOrientationEvent) {
+        setHasCompass(false);
+        setCompassCheckComplete(true);
+        setLoading(false);
+        return;
+      }
+
+      let compassDetected = false;
+      let timeoutId;
+
+      const handleOrientation = (event) => {
+        // إذا حصلنا على قراءة من البوصلة
+        if (event.alpha !== null || event.webkitCompassHeading !== undefined) {
+          compassDetected = true;
+          setHasCompass(true);
+          clearTimeout(timeoutId);
+          window.removeEventListener('deviceorientation', handleOrientation);
+          setCompassCheckComplete(true);
+        }
+      };
+
+      // للأجهزة iOS التي تحتاج إذن
+      if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+        DeviceOrientationEvent.requestPermission()
+          .then((permissionState) => {
+            if (permissionState === 'granted') {
+              window.addEventListener('deviceorientation', handleOrientation);
+              
+              timeoutId = setTimeout(() => {
+                if (!compassDetected) {
+                  setHasCompass(false);
+                  window.removeEventListener('deviceorientation', handleOrientation);
+                  setCompassCheckComplete(true);
+                  setLoading(false);
+                }
+              }, 3000);
+            } else {
+              setHasCompass(false);
+              setCompassCheckComplete(true);
+              setLoading(false);
+            }
+          })
+          .catch(() => {
+            setHasCompass(false);
+            setCompassCheckComplete(true);
+            setLoading(false);
+          });
+      } else {
+        // للأجهزة الأخرى
+        window.addEventListener('deviceorientation', handleOrientation);
+        
+        timeoutId = setTimeout(() => {
+          if (!compassDetected) {
+            setHasCompass(false);
+            window.removeEventListener('deviceorientation', handleOrientation);
+          }
+          setCompassCheckComplete(true);
+          setLoading(false);
+        }, 2000);
+      }
+    };
+
+    checkCompassSupport();
+  }, []);
+
+  // الحصول على الموقع الجغرافي فقط إذا كان الجهاز يدعم البوصلة
+  useEffect(() => {
+    if (hasCompass === true && 'geolocation' in navigator) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const { latitude, longitude } = position.coords;
@@ -68,18 +136,16 @@ export default function Qibla() {
         },
         (err) => {
           setError('الرجاء السماح بالوصول إلى الموقع الجغرافي');
-          setPermissionDenied(true);
           setLoading(false);
         }
       );
-    } else {
-      setError('المتصفح لا يدعم تحديد الموقع الجغرافي');
-      setLoading(false);
     }
-  }, []);
+  }, [hasCompass]);
 
   // الحصول على اتجاه الجهاز
   useEffect(() => {
+    if (hasCompass !== true) return;
+
     const handleOrientation = (event) => {
       let heading = event.alpha;
       if (event.webkitCompassHeading) {
@@ -87,73 +153,87 @@ export default function Qibla() {
       }
       if (heading !== null) {
         setDeviceHeading(360 - heading);
-        setHasCompass(true);
       }
     };
 
     if (window.DeviceOrientationEvent) {
-      // طلب الإذن على iOS
       if (typeof DeviceOrientationEvent.requestPermission === 'function') {
         DeviceOrientationEvent.requestPermission()
           .then((permissionState) => {
             if (permissionState === 'granted') {
               window.addEventListener('deviceorientation', handleOrientation);
-              setHasCompass(true);
             }
           })
           .catch(console.error);
       } else {
         window.addEventListener('deviceorientation', handleOrientation);
-        // اختبار إذا كان الجهاز يدعم البوصلة
-        setTimeout(() => {
-          if (deviceHeading === 0) {
-            setHasCompass(false);
-          }
-        }, 2000);
       }
-    } else {
-      setHasCompass(false);
     }
 
     return () => {
       window.removeEventListener('deviceorientation', handleOrientation);
     };
-  }, [deviceHeading]);
+  }, [hasCompass]);
 
-  const requestPermission = async () => {
-    if (typeof DeviceOrientationEvent.requestPermission === 'function') {
-      try {
-        const permission = await DeviceOrientationEvent.requestPermission();
-        if (permission === 'granted') {
-          window.location.reload();
-        }
-      } catch (error) {
-        console.error(error);
-      }
-    }
-  };
+  const compassRotation = qiblaDirection !== null ? qiblaDirection - deviceHeading : 0;
 
-  const compassRotation = qiblaDirection !== null 
-    ? (hasCompass ? qiblaDirection - deviceHeading : qiblaDirection + manualRotation)
-    : 0;
+  // إذا لم يكن هناك دعم للبوصلة
+  if (compassCheckComplete && hasCompass === false) {
+    return (
+      <div className="min-h-screen mr-[60px] text-white font-arabic flex items-center justify-center p-4" dir="rtl">
+        <div className="max-w-2xl w-full">
+          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 md:p-12 text-center">
+            <div className="flex justify-center mb-6">
+              <div className="bg-red-500/20 p-6 rounded-full">
+                <Monitor className="w-16 h-16 text-blue-400" />
+              </div>
+            </div>
+            
+            <h1 className="text-3xl md:text-4xl font-bold mb-4 ">
+              عذراً ! هذه الميزة غير متاحة
+            </h1>
+            
+            <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-6 mb-6">
+                            <div className="flex items-center gap-3 mb-2">
+                  <h3 className="text-lg font-semibold text-blue-300">                هذه الميزة تعمل فقط على الأجهزة المحمولة (الهواتف والأجهزة اللوحية) التي تحتوي على حساسات الحركة والبوصلة
+</h3>
+                </div>
+        
+            </div>
 
+            <div className="space-y-4 text-right">
+              <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-4">
+                <div className="flex items-center gap-3 mb-2">
+                  <Smartphone className="w-6 h-6 text-blue-400" />
+                  <h3 className="text-lg font-semibold text-blue-300">للوصول إلى هذه الميزة:</h3>
+                </div>
+                <ul className="space-y-2 text-blue-100 mr-9">
+                  <li>• افتح هذه الصفحة من هاتفك المحمول</li>
+                  <li>• تأكد من تفعيل حساسات الحركة في إعدادات الجهاز</li>
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    );
+  }
   return (
-    <div className="min-h-screen mr-[60px]  text-white font-arabic" dir="rtl">
+    <div className="min-h-screen mr-[60px] bg-gradient-to-br text-white font-arabic" dir="rtl">
       {/* Header */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMSkiLz48L2c+PC9zdmc+')] opacity-20"></div>
         
-        <div className="relative pt-8 pb-12 px-4">
+        <div className="relative  pt-8 pb-12 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-4">
               <div className="bg-white/10 backdrop-blur-sm p-4 rounded-full">
                 <Compass className="w-12 h-12 text-emerald-300" />
               </div>
             </div>
-            <h1 className="text-4xl md:text-3xl font-bold mb-3 bg-gradient-to-r from-emerald-200 to-cyan-200 bg-clip-text text-transparent">
-                        هذه صفحة تجريبة لم يتم إطلاقها بعد</h1>
-
-            <h1 className="text-4xl md:text-3xl font-bold mb-3 bg-gradient-to-r from-emerald-200 to-cyan-200 bg-clip-text text-transparent">
+            <h1 className="text-2xl md:text-3xl font-bold mb-3 bg-gradient-to-r from-emerald-200 to-cyan-200 bg-clip-text text-transparent">
               اتجاه القبلة
             </h1>
             <p className="text-emerald-200 text-lg opacity-90">
@@ -164,9 +244,9 @@ export default function Qibla() {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 pb-12">
+      <div className="max-w-4xl  mx-auto px-4 pb-12">
         {loading ? (
-          <div className="flex flex-col items-center justify-center py-20">
+          <div className="flex  flex-col items-center justify-center py-20">
             <Loader className="w-16 h-16 animate-spin text-emerald-300 mb-4" />
             <p className="text-xl text-emerald-200">جاري تحديد موقعك...</p>
           </div>
@@ -185,7 +265,7 @@ export default function Qibla() {
             </button>
           </div>
         ) : (
-          <div className="space-y-6">
+          <div className="space-y-6 mr-[60px]">
             {/* Info Cards */}
             <div className="grid md:grid-cols-2 gap-4">
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6">
@@ -209,36 +289,6 @@ export default function Qibla() {
 
             {/* Compass */}
             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8">
-              {/* تنبيه للكمبيوتر */}
-              {!hasCompass && (
-                <div className="bg-amber-500/20 backdrop-blur-sm border border-amber-400/30 rounded-xl p-4 mb-6 text-center">
-                  <p className="text-amber-200 font-semibold mb-2">💻 وضع الكمبيوتر</p>
-                  <p className="text-amber-100 text-sm mb-3">
-                    جهازك لا يحتوي على حساس البوصلة. استخدم الأزرار أدناه لتدوير البوصلة يدوياً
-                  </p>
-                  <div className="flex justify-center gap-3">
-                    <button
-                      onClick={() => setManualRotation(prev => prev - 10)}
-                      className="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-lg transition-all transform hover:scale-105"
-                    >
-                      ↺ يسار
-                    </button>
-                    <button
-                      onClick={() => setManualRotation(0)}
-                      className="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-lg transition-all transform hover:scale-105"
-                    >
-                      إعادة ضبط
-                    </button>
-                    <button
-                      onClick={() => setManualRotation(prev => prev + 10)}
-                      className="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-lg transition-all transform hover:scale-105"
-                    >
-                      يمين ↻
-                    </button>
-                  </div>
-                </div>
-              )}
-
               <div className="relative w-full max-w-md mx-auto aspect-square">
                 {/* Compass Base */}
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-emerald-600/30 to-cyan-600/30 backdrop-blur-sm border-4 border-white/30 shadow-2xl">
@@ -300,61 +350,33 @@ export default function Qibla() {
               </div>
 
               <div className="text-center mt-6">
-                {hasCompass ? (
-                  <p className="text-emerald-200 text-lg">
-                    📱 وَجِّهْ جهازك نحو الاتجاه المشار إليه بالسهم ⬆️
-                  </p>
-                ) : (
-                  <p className="text-amber-200 text-lg">
-                    💻 استخدم الأزرار أعلاه لتدوير البوصلة حتى يشير السهم للأعلى
-                  </p>
-                )}
+                <p className="text-emerald-200 text-lg">
+                  📱 وَجِّهْ جهازك نحو الاتجاه المشار إليه بالسهم ⬆️
+                </p>
               </div>
             </div>
 
             {/* Instructions */}
             <div className="bg-gradient-to-r from-cyan-500/20 to-emerald-500/20 backdrop-blur-sm border border-cyan-400/30 rounded-2xl p-6">
               <h3 className="text-xl font-bold mb-4 text-cyan-200">كيفية الاستخدام:</h3>
-              
-              {hasCompass ? (
-                <ul className="space-y-3 text-emerald-100">
-                  <li className="flex items-start gap-3">
-                    <span className="bg-cyan-500/30 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
-                    <span>اسمح للموقع بالوصول إلى موقعك الجغرافي</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="bg-cyan-500/30 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
-                    <span>ضع جهازك على سطح مستوٍ</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="bg-cyan-500/30 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
-                    <span>قم بتدوير نفسك حتى يشير السهم إلى الأعلى</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="bg-cyan-500/30 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">4</span>
-                    <span>هذا هو اتجاه القبلة ✨</span>
-                  </li>
-                </ul>
-              ) : (
-                <ul className="space-y-3 text-emerald-100">
-                  <li className="flex items-start gap-3">
-                    <span className="bg-cyan-500/30 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
-                    <span>اسمح للموقع بالوصول إلى موقعك الجغرافي</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="bg-cyan-500/30 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
-                    <span>استخدم بوصلة حقيقية أو تطبيق بوصلة على هاتفك</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="bg-cyan-500/30 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
-                    <span>قف باتجاه الشمال ثم استخدم زاوية القبلة المعروضة ({qiblaDirection?.toFixed(1)}°)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="bg-cyan-500/30 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">4</span>
-                    <span>أو استخدم الأزرار لتدوير البوصلة على الشاشة حتى تطابق اتجاهك ✨</span>
-                  </li>
-                </ul>
-              )}
+              <ul className="space-y-3 text-emerald-100">
+                <li className="flex items-start gap-3">
+                  <span className="bg-cyan-500/30 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
+                  <span>اسمح للموقع بالوصول إلى موقعك الجغرافي</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="bg-cyan-500/30 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
+                  <span>ضع جهازك على سطح مستوٍ</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="bg-cyan-500/30 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
+                  <span>قم بتدوير نفسك حتى يشير السهم إلى الأعلى</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="bg-cyan-500/30 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">4</span>
+                  <span>هذا هو اتجاه القبلة ✨</span>
+                </li>
+              </ul>
             </div>
 
             {/* Location Info */}
