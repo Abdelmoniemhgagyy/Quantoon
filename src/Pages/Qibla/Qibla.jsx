@@ -265,7 +265,7 @@ export default function Qibla() {
             </button>
           </div>
         ) : (
-          <div className="space-y-6 mr-[60px]">
+          <div className="space-y-6">
             {/* Info Cards */}
             <div className="grid md:grid-cols-2 gap-4">
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6">
