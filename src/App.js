@@ -11,7 +11,9 @@ import Moshaf from "./Pages/moshaf/Moshaf.jsx";
 import ReciterPage from "./Pages/Audius/ReciterPage.jsx";
 import Sermons from "./Pages/hotba/Sermons.jsx";
 import SermonDetailPage from "./Pages/hotba/SermonDetailPage.jsx";
+
 import PrayerTimes from "./Pages/PrayerTimes/PrayerTimes.jsx";
+import Qibla from "./Pages/Qibla/Qibla.jsx";
 
 
 
@@ -84,6 +86,8 @@ function App() {
           <Route path="/boymuslim" element={<MuslimBoy />} />
 
           <Route path="/prayer-times" element={<PrayerTimes />} />
+          <Route path="/qibla" element={<Qibla />} />
+
 
           {/* Audio */}
           <Route path="/audio" element={<Audio />}>

@@ -1,0 +1,83 @@
+.qibla-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 80vh;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.qibla-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1e88e5;
+}
+
+.qibla-error {
+  color: red;
+  font-size: 1.2rem;
+}
+
+.qibla-location {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.qibla-box {
+  margin-top: 2rem;
+}
+
+.qibla-angle {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #00695c;
+}
+
+.qibla-loading {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+/* Compass Styles */
+.compass {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 10px solid #2196f3;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  margin: auto;
+}
+
+.needle {
+  position: absolute;
+  width: 4px;
+  height: 90px;
+  background-color: #d32f2f;
+  top: 10px;
+  left: 50%;
+  transform-origin: bottom center;
+  transition: transform 1s ease;
+}
+
+.needle-head {
+  position: absolute;
+  top: -20px;
+  left: -14px;
+  font-size: 1.8rem;
+}
+
+.compass-center {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background-color: #333;
+  border-radius: 50%;
+}
