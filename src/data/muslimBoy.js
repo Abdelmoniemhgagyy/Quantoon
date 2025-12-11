@@ -3,26 +3,26 @@ import storyImg from "../assest/story.jpg"
 import story_massengers from "../assest/story_massengers.jpg"
 //  أحكام فقهيه
 export const ahkam = [
-  {
-    id: 2,
-    title:
-      "تعلم كيفية الصلاة مع زكريا | تعليم الصلاة للاطفال بطريقة سهلة - كارتون تعليم الصلاة للاطفال",
-    url: "https://ia902500.us.archive.org/1/items/20220318_20220318_2245/%D8%AA%D8%B9%D9%84%D9%85%20%D9%83%D9%8A%D9%81%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9%20%D9%85%D8%B9%20%D8%B2%D9%83%D8%B1%D9%8A%D8%A7%20_%20%D8%AA%D8%B9%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9%20%20%D9%84%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84%20%D8%A8%D8%B7%D8%B1%D9%8A%D9%82%D8%A9%20%D8%B3%D9%87%D9%84%D8%A9%20-%20%D9%83%D8%A7%D8%B1%D8%AA%D9%88%D9%86%20%D8%AA%D8%B9%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9%20%D9%84%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84.mp4",
-    poster: "https://i.ytimg.com/vi/edL3W38ODd4/maxresdefault.jpg",
-  },
+  // {
+  //   id: 2,
+  //   title:
+  //     "تعلم كيفية الصلاة مع زكريا | تعليم الصلاة للاطفال بطريقة سهلة - كارتون تعليم الصلاة للاطفال",
+  //   url: "https://ia902500.us.archive.org/1/items/20220318_20220318_2245/%D8%AA%D8%B9%D9%84%D9%85%20%D9%83%D9%8A%D9%81%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9%20%D9%85%D8%B9%20%D8%B2%D9%83%D8%B1%D9%8A%D8%A7%20_%20%D8%AA%D8%B9%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9%20%20%D9%84%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84%20%D8%A8%D8%B7%D8%B1%D9%8A%D9%82%D8%A9%20%D8%B3%D9%87%D9%84%D8%A9%20-%20%D9%83%D8%A7%D8%B1%D8%AA%D9%88%D9%86%20%D8%AA%D8%B9%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9%20%D9%84%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84.mp4",
+  //   poster: "https://i.ytimg.com/vi/edL3W38ODd4/maxresdefault.jpg",
+  // },
   {
     id: 1,
     title: "أحكام الزكاة",
     url: "https://ia801609.us.archive.org/15/items/Cartoon_Ahkam_Al_Quran-2_uP_bY_mUSLEm/001--.mp4",
     poster: "https://i.ytimg.com/vi/cEZ-SSglms8/hqdefault.jpg",
   },
-  {
-    id: 3,
-    title: "تعلم الصلاة مع محبوب",
-    url: "https://ia600401.us.archive.org/27/items/alaqsa_20160519/%D8%AA%D8%B9%D9%84%D9%91%D9%8E%D9%85%20%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9%20%D9%85%D8%B9%20%D9%85%D8%AD%D8%A8%D9%88%D8%A8.mp4",
-    poster:
-      "https://ia600401.us.archive.org/27/items/alaqsa_20160519/__ia_thumb.jpg",
-  },
+  // {
+  //   id: 3,
+  //   title: "تعلم الصلاة مع محبوب",
+  //   url: "https://ia600401.us.archive.org/27/items/alaqsa_20160519/%D8%AA%D8%B9%D9%84%D9%91%D9%8E%D9%85%20%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9%20%D9%85%D8%B9%20%D9%85%D8%AD%D8%A8%D9%88%D8%A8.mp4",
+  //   poster:
+  //     "https://ia600401.us.archive.org/27/items/alaqsa_20160519/__ia_thumb.jpg",
+  // },
   {
     id: 24,
     title: "التيمم",
