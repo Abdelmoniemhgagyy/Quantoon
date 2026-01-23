@@ -2,7 +2,6 @@ import axios from 'axios'
 //hadith
 const hadithData = async (book, start = 0, end = 50) => {
   let data = [];
-
   switch (book) {
     case 'bukhari':
       data = (await import('../data/books/bukhari.json')).default;
@@ -37,19 +36,19 @@ const hadithData = async (book, start = 0, end = 50) => {
 
 
 //name sura
-const nameSura = async ()=>{
-    const nameSura = await axios.get("https://api.alquran.cloud/v1/meta")
-    return nameSura.data.data.surahs.references
-} 
+const nameSura = async () => {
+  const nameSura = await axios.get("https://api.alquran.cloud/v1/meta")
+  return nameSura.data.data.surahs.references
+}
 //sura 
-const suraData = async (id)=>{
-    const sura = await axios.get(`https://api.alquran.cloud/v1/surah/${id}`)
-    return sura.data.data.ayahs
+const suraData = async (id) => {
+  const sura = await axios.get(`https://api.alquran.cloud/v1/surah/${id}`)
+  return sura.data.data.ayahs
 }
 //juza 
-const juzaData = async (id)=>{
-    const juza = await axios.get(`https://api.alquran.cloud/v1/juz/${id}`)
-    return juza.data.data.ayahs
+const juzaData = async (id) => {
+  const juza = await axios.get(`https://api.alquran.cloud/v1/juz/${id}`)
+  return juza.data.data.ayahs
 }
 
 
@@ -67,11 +66,11 @@ const tafsirAyah = async (ayahNumber) => {
 };
 
 const call = {
-    nameSura,
-    suraData,
-    juzaData,
-    tafsirAyah,
-    hadithData,
+  nameSura,
+  suraData,
+  juzaData,
+  tafsirAyah,
+  hadithData,
 
 }
 
