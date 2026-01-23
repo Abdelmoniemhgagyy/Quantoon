@@ -3,7 +3,6 @@ import storyImg from "../assest/story.jpg"
 import story_massengers from "../assest/story_massengers.jpg"
 //  أحكام فقهيه
 export const ahkam = [
-
   {
     id: 1,
     title: "أحكام الزكاة",
