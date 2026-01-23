@@ -3,18 +3,12 @@ import storyImg from "../assest/story.jpg"
 import story_massengers from "../assest/story_massengers.jpg"
 //  أحكام فقهيه
 export const ahkam = [
+
   {
     id: 1,
     title: "أحكام الزكاة",
     url: "https://ia801609.us.archive.org/15/items/Cartoon_Ahkam_Al_Quran-2_uP_bY_mUSLEm/001--.mp4",
     poster: "https://i.ytimg.com/vi/cEZ-SSglms8/hqdefault.jpg",
-  },
-  {
-    id: 3,
-    title: "تعلم الصلاة مع محبوب",
-    url: "https://ia600401.us.archive.org/27/items/alaqsa_20160519/%D8%AA%D8%B9%D9%84%D9%91%D9%8E%D9%85%20%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9%20%D9%85%D8%B9%20%D9%85%D8%AD%D8%A8%D9%88%D8%A8.mp4",
-    poster:
-      "https://ia600401.us.archive.org/27/items/alaqsa_20160519/__ia_thumb.jpg",
   },
   {
     id: 24,
