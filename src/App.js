@@ -16,7 +16,6 @@ import PrayerTimes from "./Pages/PrayerTimes/PrayerTimes.jsx";
 import Qibla from "./Pages/Qibla/Qibla.jsx";
 
 
-
 import Audio from "./Pages/Audius/Audio.jsx";
 import MainAudio from "./Pages/Audius/MainAudio.jsx";
 
