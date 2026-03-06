@@ -9,32 +9,47 @@
 }
 
 
-*{
-  padding:0;
-  margin:0;
-  box-sizing:border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-body{
-  direction:rtl;
-  background: #144b6d  url("./assest/background.png");
+body {
+  direction: rtl;
+  background: #144b6d url("./assest/background.png");
   background-size: cover;
   background-repeat: no-repeat;
+  transition: background-color 0.5s ease;
+}
+
+html.dark body {
+  background-color: #0f172a;
+  /* Deeper dark blue/slate */
+}
+
+html.light body {
+  background-color: #cbd5e1;
+  /* Slate 300 - darker than before */
+  background-image: none;
+  /* Cleaner look for light mode */
 }
 
 
-.btn-conntainer{
-  margin:  10px auto 10px auto ;
+.btn-conntainer {
+  margin: 10px auto 10px auto;
   display: flex;
-  justify-content:center ;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-.btn-conntainer>button ,.btn-nav {
+
+.btn-conntainer>button,
+.btn-nav {
   border: 1px solid rgb(49, 28, 168);
   outline: none;
   padding: 5px;
@@ -43,12 +58,13 @@ body{
   background-color: #fff;
   font-family: 'Marhey', sans-serif;
 
-  &:hover{
-      background-color: blueviolet;
-      color: #fff;
+  &:hover {
+    background-color: blueviolet;
+    color: #fff;
   }
 }
-.active-btn{
-  background-color: blueviolet !important ;
+
+.active-btn {
+  background-color: blueviolet !important;
   color: rgb(255, 255, 255);
 }

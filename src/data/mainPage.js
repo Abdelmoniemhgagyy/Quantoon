@@ -10,8 +10,8 @@ import zakerImg from "../assest/listImg/zaker.png";
 import videoImg from "../assest/listImg/video.png";
 import shortVideoImg from "../assest/listImg/quran_short_video.png";
 import downloadImg from "../assest/listImg/downloadquran.png";
-import  PTimesImg from "../assest/listImg/mosque.png";
-import  qabaImg from "../assest/listImg/qabaImg.png";
+import PTimesImg from "../assest/listImg/mosque.png";
+import qabaImg from "../assest/listImg/qabaImg.png";
 
 const data = [
   {
@@ -46,7 +46,7 @@ const data = [
     icon: "👶",
     image: boyImg,
   },
-    {
+  {
     id: uuid(),
     title: "صوتيات",
     subTitle: "أستمع",
@@ -54,7 +54,7 @@ const data = [
     icon: "🎧",
     image: headphonesImg,
   },
-    {
+  {
     id: uuid(),
     title: "الأذكار",
     subTitle: "أذكر الله",
@@ -71,13 +71,13 @@ const data = [
     image: PTimesImg,
   },
   {
-  id: uuid(),
-  title: "القِبلة",
-  subTitle: "🕋",
-  url: "/qibla-dir",
-  icon: "🕋",
-  image: qabaImg
-},
+    id: uuid(),
+    title: "القِبلة",
+    subTitle: "🕋",
+    url: "/qibla-dir",
+    icon: "🕋",
+    image: qabaImg
+  },
   {
     id: uuid(),
     title: "خطب",
@@ -110,7 +110,7 @@ const data = [
     icon: "📜",
     image: null,
   },
-    {
+  {
     id: uuid(),
     title: "أسماء الله الحسنى",
     subTitle: "🕋",

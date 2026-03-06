@@ -36,43 +36,51 @@ function SermonDetailPage() {
   }
 
   return (
-    <div className="min-h-screen mr-[60px] dark:from-gray-900 dark:via-slate-800 dark:to-gray-900 flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 selection:bg-emerald-500 selection:text-white">
+    <div className="min-h-screen bg-transparent w-full overflow-x-hidden transition-all duration-300 pr-[75px] sm:pr-[85px] md:pr-[100px] pl-[15px] sm:pl-[25px] flex flex-col items-center pt-[60px] pb-12 selection:bg-cyan-500 selection:text-white">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        className=""
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}
+        className="w-full max-w-4xl"
       >
-        <Card className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg shadow-2xl rounded-xl overflow-hidden border border-emerald-200 dark:border-gray-700">
-          <CardHeader className="bg-gradient-to-br from-emerald-400 to-blue-700 dark:from-emerald-700 dark:to-teal-800 p-6">
-            <div className="flex justify-between items-center">
-              <CardTitle className="text-xl md:text-3xl font-bold text-white leading-tight">
+        <Card className="bg-white/5 backdrop-blur-2xl border border-white/10 shadow-2xl rounded-3xl overflow-hidden">
+          <CardHeader className="bg-gradient-to-br from-cyan-600 to-blue-800 p-8 border-b border-white/10">
+            <div className="flex-grow">
+              <CardTitle className="text-2xl md:text-4xl font-black text-white leading-tight mb-4" style={{ fontFamily: "'Marhey', sans-serif" }}>
                 {sermon.title}
               </CardTitle>
-              <span className='text-white'>
-
-                 <CopyIcons  copiedText={sermon.content+sermon.url}/>
-              </span>
+              <CardDescription className="text-cyan-100/90 text-lg md:text-xl font-medium" style={{ fontFamily: "'Marhey', sans-serif" }}>
+                فضيلة الشيخ: {sermon.shaihk_name}
+              </CardDescription>
             </div>
-            <CardDescription className="text-emerald-200 dark:text-emerald-300 pt-2 text-base">
-              فضيلة الشيخ: {sermon.shaihk_name}
-            </CardDescription>
           </CardHeader>
-          <CardContent className="p-6">
-          <div className="prose prose-lg dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line text-justify">
-              <p className='text-[18px] md:text-[20px]'>{sermon.content}</p>
-          </div>
+
+          <CardContent className="p-8 md:p-10 relative">
+            <div className="text-slate-200 leading-[1.8] text-justify whitespace-pre-line text-lg md:text-2xl font-medium pb-12">
+              {sermon.content}
+            </div>
+
+            {/* Relocated Copy Button as a Floating Action */}
+            <div className="absolute bottom-6 left-8 sm:bottom-8 sm:left-10">
+              <div className="group relative">
+                <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                <div className="relative bg-white/10 backdrop-blur-xl p-3 rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-110 shadow-lg">
+                  <CopyIcons copiedText={`${sermon.title}\n\n${sermon.content}`} />
+                </div>
+              </div>
+            </div>
           </CardContent>
-          <CardFooter className="p-6 bg-gray-50 dark:bg-gray-700/60 border-t border-emerald-100 dark:border-gray-700 flex justify-between items-center">
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              رقم الخطبة: {sermon.id}
+
+          <CardFooter className="p-6 bg-white/5 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p className="text-sm text-slate-400 font-mono">
+              رقم الخطبة: #{sermon.id}
             </p>
-            <Button asChild variant="link" className="text-blue-600 hover:text-blue-700 dark:text-emerald-400 dark:hover:text-emerald-300 p-0">
-              <Link to="/hotba" className="flex items-center text-sm">
+            <Link to="/hotba">
+              <Button variant="ghost" className="text-cyan-400 hover:text-cyan-300 hover:bg-white/5 font-bold flex items-center gap-2 text-lg" style={{ fontFamily: "'Marhey', sans-serif" }}>
                 العودة إلى قائمة الخطب
-                <ArrowRight size={16} className="mr-2 transform -scale-x-100" />
-              </Link>
-            </Button>
+                <ArrowRight size={20} className="transform -scale-x-100" />
+              </Button>
+            </Link>
           </CardFooter>
         </Card>
       </motion.div>

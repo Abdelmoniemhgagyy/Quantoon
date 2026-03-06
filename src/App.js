@@ -20,6 +20,7 @@ import Audio from "./Pages/Audius/Audio.jsx";
 import MainAudio from "./Pages/Audius/MainAudio.jsx";
 
 import RightNavbar from "./components/Navbar/RightNavbar.jsx";
+import ThemeToggle from "./components/ThemeToggle.jsx";
 import Hadith from "./Pages/Hadith/Hadith.jsx";
 import Juza from "./Pages/Quran/Juza.jsx";
 import JuzaContainer from "./Pages/Quran/JuzaContainer.jsx";
@@ -51,6 +52,11 @@ function App() {
     <BrowserRouter>
       <RightNavbar />
       <ScrollTopTop />
+
+      {/* Theme Toggle - Fixed Position Top Left */}
+      <div className="fixed top-4 left-4 z-[10000]">
+        <ThemeToggle />
+      </div>
 
       <AnimatePresence mode="wait">
         <ToastContainer />
@@ -96,7 +102,7 @@ function App() {
           {/* Hotba */}
           <Route path="/hotba" element={<Sermons />} />
           <Route path="/hotba/sermon/:id" element={<SermonDetailPage />} />
-          <Route path="/info" element={<Info/>}/>
+          <Route path="/info" element={<Info />} />
         </Routes>
 
       </AnimatePresence>
