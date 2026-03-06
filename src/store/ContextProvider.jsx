@@ -15,7 +15,7 @@ function ContextProvider({ children }) {
   const [audioCategory, setAudioCategory] = useState(JSON.parse(localStorage.getItem("audioCategory")) || []);
 
   // Theme management
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   useEffect(() => {
     localStorage.setItem("theme", theme);

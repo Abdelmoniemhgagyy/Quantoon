@@ -38,7 +38,7 @@ function Sermons() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-black mb-8 bg-gradient-to-r from-cyan-300 via-white to-blue-400 bg-clip-text text-transparent italic drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]" style={{ fontFamily: "'Marhey', sans-serif" }}>
-            خطب ومحاضرات
+            خطب
           </h1>
 
           <div className="relative group max-w-2xl mx-auto">
