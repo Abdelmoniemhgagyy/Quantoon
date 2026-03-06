@@ -27,9 +27,9 @@ function Card({ ImgSrc, name, data }) {
       className="group relative w-full aspect-[4/5] sm:aspect-square cursor-pointer"
     >
       {/* Glow Effect behind card */}
-      <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-[2rem] blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+      <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-[2rem] blur opacity-10 group-hover:opacity-25 transition duration-500"></div>
 
-      <div className="relative h-full w-full bg-white/10 backdrop-blur-2xl border border-white/20 rounded-[20px] overflow-hidden shadow-xl flex flex-col group-hover:bg-white/15 transition-colors duration-500">
+      <div className="relative h-full w-full bg-white/10 backdrop-blur-md border border-white/20 rounded-[20px] overflow-hidden shadow-xl flex flex-col group-hover:bg-white/15 transition-colors duration-500">
         {/* Image Container */}
         <div className="relative h-[72%] w-full overflow-hidden">
           <img
