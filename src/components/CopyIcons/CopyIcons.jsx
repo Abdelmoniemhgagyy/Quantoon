@@ -3,22 +3,22 @@ import clipboardCopy from "clipboard-copy";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './toastStyles.css'
-function CopyIcons({ copiedText }) {
+function CopyIcons({ copiedText, className }) {
 
-  const handelToastify =()=>{
+  const handelToastify = () => {
     toast.success("تم النسخ ");
   }
   return (
     <>
-    <div
-      className={`absolute left-[5px] top-[5px] cursor-pointer `}
-      onClick={() => {
-        clipboardCopy(copiedText);
-      }}
-    >
+      <div
+        className={className !== undefined ? className : `absolute left-[5px] top-[5px] cursor-pointer `}
+        onClick={() => {
+          clipboardCopy(copiedText);
+        }}
+      >
         <i className="bi bi-copy sm:text-[18px] text-[14px] " onClick={handelToastify}></i>
-    </div>
-    
+      </div>
+
     </>
   );
 }

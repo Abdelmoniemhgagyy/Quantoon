@@ -1,54 +1,73 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
+import { Layers } from "lucide-react";
+import { motion } from "framer-motion";
 
 function JuzaContainer() {
-  const juzs = [
-    { name: "الجزء الأول", page: 1, number: 1 },
-    { name: "الجزء الثاني", page: 2, number: 2 },
-    { name: "الجزء الثالث", page: 3, number: 3 },
-    { name: "الأول الرابع", page: 4, number: 4 },
-    { name: "الجزء الخامس", page: 5, number: 5 },
-    { name: "الجزء السادس", page: 6, number: 6 },
-    { name: "الجزء السابع", page: 7, number: 7 },
-    { name: "الجزء الثامن", page: 8, number: 8 },
-    { name: "الجزء التاسع", page: 9, number: 9 },
-    { name: "الجزء العاشر", page: 10, number: 10 },
-    { name: "الجزء الحادي عشر", page: 11, number: 11 },
-    { name: "الجزء الثاني عشر", page: 12, number: 12 },
-    { name: "الجزء الثالث عشر", page: 13, number: 13 },
-    { name: "الجزء الرابع عشر", page: 14, number: 14 },
-    { name: "الجزء الخامس عشر", page: 15, number: 15 },
-    { name: "الجزء السادس عشر", page: 16, number: 16 },
-    { name: "الجزء السابع عشر", page: 17, number: 17 },
-    { name: "الجزء الثامن عشر", page: 18, number: 18 },
-    { name: "الجزء التاسع عشر", page: 19, number: 19 },
-    { name: "الجزء العشرون", page: 20, number: 20 },
-    { name: "الجزء الحادي و العشرون", page: 21, number: 21 },
-    { name: "الجزء الثاني و العشرون", page: 22, number: 22 },
-    { name: "الجزء الثالث و العشرون", page: 23, number: 23 },
-    { name: "الجزء الرابع و العشرون", page: 24, number: 24 },
-    { name: "الجزء الخامس و العشرون", page: 25, number: 25 },
-    { name: "الجزء السادس و العشرون", page: 26, number: 26 },
-    { name: "الجزء السابع و العشرون", page: 27, number: 27 },
-    { name: "الجزء الثامن و العشرون", page: 28, number: 28 },
-    { name: "الجزء التاسع و العشرون", page: 29, number: 29 },
-    { name: "الجزء الثلاثون", page: 30, number: 30 },
+  // Generate Juza data (1 to 30)
+  const juzs = Array.from({ length: 30 }, (_, i) => ({
+    name: `الجزء ${i + 1}`,
+    number: i + 1,
+  }));
+
+  // Map Arabic numbers to specific string names for better UI display
+  const arabicNames = [
+    "الأول", "الثاني", "الثالث", "الرابع", "الخامس", "السادس", "السابع", "الثامن", "التاسع", "العاشر",
+    "الحادي عشر", "الثاني عشر", "الثالث عشر", "الرابع عشر", "الخامس عشر", "السادس عشر", "السابع عشر", "الثامن عشر", "التاسع عشر", "العشرون",
+    "الحادي والعشرون", "الثاني والعشرون", "الثالث والعشرون", "الرابع والعشرون", "الخامس والعشرون", "السادس والعشرون", "السابع والعشرون", "الثامن والعشرون", "التاسع والعشرون", "الثلاثون"
   ];
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.03
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, scale: 0.95, y: 15 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      transition: { duration: 0.3, ease: "easeOut" }
+    }
+  };
+
   return (
-    <>
-           <div className="containerr mr-[60px] md:mx-auto w-[80%]">
-     {/* loop Name of  sura  */}
-     {juzs.map((item) => (
-       <Link key={item.number} to={`${item.number}`}  className="box" >
-         <div className="text-[22px]">{item.name}</div> 
-       </Link>
-     ))}
-     {/* End loop Name of  sura  */}
+    <div className="w-full p-4 sm:p-6 lg:p-8 bg-transparent">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6"
+      >
+        {juzs.map((item, i) => (
+          <motion.div key={item.number} variants={itemVariants}>
+            <Link
+              to={`${item.number}`}
+              className="group h-full relative overflow-hidden flex flex-col items-center justify-center p-6 sm:p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-teal-400 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+            >
+              <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl"></div>
 
-   </div>
-
-    </>
-  )
+              <div className="relative z-10 w-14 h-14 flex items-center justify-center rounded-full bg-white/10 text-white/50 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300 mb-4 shadow-sm group-hover:shadow-md">
+                <Layers size={28} />
+              </div>
+              <div className="relative z-10 text-xl font-bold text-white mb-1 font-amiri tracking-wide group-hover:text-teal-300 transition-colors">
+                الجزء {arabicNames[i] || item.number}
+              </div>
+              <div className="relative z-10 text-sky-200/70 text-sm font-medium mt-2 group-hover:text-teal-200 transition-colors">
+                الجزء رقم {item.number}
+              </div>
+            </Link>
+          </motion.div>
+        ))}
+      </motion.div>
+    </div>
+  );
 }
 
-export default JuzaContainer
+export default JuzaContainer;

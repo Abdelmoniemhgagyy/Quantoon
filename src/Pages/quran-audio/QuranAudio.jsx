@@ -22,14 +22,14 @@ function QuranAudio() {
   };
   return (
     <>
-      <div className="min-h-screen pb-8 mr-[60px] md:mx-auto w-[80%]  text-white text-center">
+      <div className="min-h-screen pb-8 w-full md:w-[90%] mx-auto text-white text-center">
         {/* Start search  */}
-        <div className="mt-4 w-[70%] md:w-[500px] mx-auto">
+        <div className="mt-8 w-[90%] md:w-[500px] mx-auto relative">
           <input
             type="text"
             onChange={(e) => setSearchVal(e.target.value)}
-            placeholder="بحث"
-            className="hover:scale-[1.05] placeholder:text-[#fff] p-2 px-4 w-full text-center text-white text-md rounded-item bg-[transparent]  outline-none "
+            placeholder="ابحث عن قاريء..."
+            className="w-full p-4 px-6 text-center text-white text-md rounded-2xl bg-white/5 hover:bg-white/10 focus:bg-white/15 outline-none transition-all duration-300 shadow-lg placeholder:text-sky-200/50 font-medium backdrop-blur-sm border-none ring-0"
             dir="rtl"
           />
         </div>
@@ -38,32 +38,26 @@ function QuranAudio() {
         {/* download icon */}
         <Link
           to="/quran/download"
-          className="block  mt-3 w-[70%] md:w-[500px] mx-auto  text-md  rounded-item  p-3 hover:scale-[1.05] "
+          className="flex items-center justify-center gap-2 mt-6 w-[90%] md:w-[500px] mx-auto text-teal-400 bg-white/5 backdrop-blur-sm rounded-2xl p-4 hover:scale-[1.02] hover:bg-white/10 hover:text-teal-300 transition-all duration-300 shadow-lg border-none"
         >
-          <div>
-            <i className="bi bi-download  hover:text-green-300"></i>
-            <span className=" mx-2"> تحميل القران</span>
-          </div>
+          <i className="bi bi-download"></i>
+          <span className="font-bold">تحميل القران</span>
         </Link>
         {/* End download icon */}
         {/* show Data  */}
         <div
-          className=" pt-6 px-2 mx-auto grid grid-cols-1 sm:grid-cols-2 mr-[4px] md:grid-cols-3
-       lg:grid-cols-4  xl:grid-cols-4 gap-[10px]
-        items-center"
+          className="pt-10 px-4 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 items-center"
           dir="rtl"
         >
           {dataSearch.map((item) => {
             return (
-              <div key={item.id}>
+              <div key={item.id} className="h-full">
                 <Link
                   to="/quran/player"
                   onClick={() =>
                     handelLinkQuari(item.url_audio, item.name, item.rewaya)
                   }
-                  className="rounded-item p-5 text-white text-sm md:text-md block 
-                             cursor-pointer text-center hover:scale-[1.05]
-                               transition duration-100 font-[400]"
+                  className="rounded-2xl p-5 text-white bg-white/5 backdrop-blur-sm border border-white/10 block cursor-pointer text-center hover:-translate-y-1 hover:border-teal-400/50 hover:shadow-md hover:text-teal-300 hover:bg-white/10 transition-all duration-300 font-bold text-sm md:text-base h-full flex items-center justify-center min-h-[80px]"
                 >
                   {item.name}
                 </Link>
