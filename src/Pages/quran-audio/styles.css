@@ -1,17 +1,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Scheherazade+New:wght@400;700&display=swap');
 
         :root {
-          --accent: $ {
-            accent.value
-          }
+          --accent: #4FC8CD;
+          --accent-glow: rgba(79,200,205,0.35);
 
-          ;
-
-          --accent-glow: $ {
-            accent.glow
-          }
-
-          ;
           --bg-deep: #0A0C10;
           --bg-card: #111318;
           --bg-card2: #161920;

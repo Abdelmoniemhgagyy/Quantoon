@@ -50,6 +50,10 @@ function Player1() {
       setRewaya(localStorage.getItem("rewaya") || "");
     }
   }, []);
+  useEffect(() => {
+  document.documentElement.style.setProperty("--accent", accent.value);
+  document.documentElement.style.setProperty("--accent-glow", accent.glow);
+}, [accent]);
 
   return (
     <div className="quran-root" dir="rtl">
