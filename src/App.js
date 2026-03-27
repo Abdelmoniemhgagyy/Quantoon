@@ -11,6 +11,9 @@ import Moshaf from "./Pages/moshaf/Moshaf.jsx";
 import ReciterPage from "./Pages/Audius/ReciterPage.jsx";
 import Sermons from "./Pages/hotba/Sermons.jsx";
 import SermonDetailPage from "./Pages/hotba/SermonDetailPage.jsx";
+import Deceased from "./Pages/Deceased/Deceased.jsx";
+import DeceasedDetails from "./Pages/Deceased/DeceasedDetails.jsx";
+
 
 import PrayerTimes from "./Pages/PrayerTimes/PrayerTimes.jsx";
 import Qibla from "./Pages/Qibla/Qibla.jsx";
@@ -30,7 +33,7 @@ import Rosary from "./Pages/Rosary/Rosary.jsx";
 import MuslimBoy from "./Pages/muslimBoy/MuslimBoy.jsx";
 import Info from "./Pages/Info/Info.jsx"
 import ScrollTopTop from "./components/ScroolToTop/ScroolToTop.jsx";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Loading from "./components/Loading/Loading.jsx";
 import MainVideos from "./Pages/LectureVideos/MainVideos.jsx";
 import ShortVideosQuran from "./Pages/LectureVideos/ShortVideosQuran.jsx";
@@ -46,6 +49,60 @@ const LazyLoadedVideoPage = () => (
   </React.Suspense>
 );
 
+const AnimatedRoutes = () => {
+  const location = useLocation();
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Main />} />
+        {/* Start Quran Routes */}
+        <Route path="/quran" element={<Quran />} exact>
+          <Route index element={<SuraContainer />} />
+          <Route path=":id" element={<Sura />} />
+          <Route path="juza" element={<JuzaContainer />} />
+          <Route path="juza/:id" element={<Juza />} />
+          <Route path="audio" element={<QuranAudio />} />
+          <Route path="download" element={<Download />} />
+          <Route path="player" element={<PlayerQuran />} />
+        </Route>
+        {/* End Quran Routes */}
+
+        <Route path="/adkar" element={<Adkar />} />
+        <Route path="/hadith" element={<Hadith />} />
+        <Route path="/namesofallah" element={<NamesOFAllah />} />
+        <Route path="/rosary" element={<Rosary />} />
+        <Route path="/moshaf" element={<Moshaf />} />
+
+        {/* lazy component  */}
+        <Route path="/videos" element={<LazyLoadedVideoPage />}>
+          <Route index element={<MainVideos />} />
+          <Route path="sheihks" element={<Sheihks />} />
+          <Route path="short-video-quran" element={<ShortVideosQuran />} />
+        </Route>
+
+        <Route path="/video" element={<Videos />} />
+        <Route path="/boymuslim" element={<MuslimBoy />} />
+
+        <Route path="/prayer-times" element={<PrayerTimes />} />
+        <Route path="/qibla-dir" element={<Qibla />} />
+
+
+        {/* Audio */}
+        <Route path="/audio" element={<Audio />}>
+          <Route index element={<MainAudio />} />
+          <Route path=":reciterId" element={<ReciterPage />} />
+        </Route>
+        {/* Hotba */}
+        <Route path="/hotba" element={<Sermons />} />
+        <Route path="/hotba/sermon/:id" element={<SermonDetailPage />} />
+        <Route path="/deceased" element={<Deceased />} />
+        <Route path="/deceased/:id" element={<DeceasedDetails />} />
+        <Route path="/info" element={<Info />} />
+      </Routes>
+    </AnimatePresence>
+  );
+};
+
 function App() {
   window.scroll({ top: 0 });
   return (
@@ -58,54 +115,8 @@ function App() {
         <ThemeToggle />
       </div>
 
-      <AnimatePresence mode="wait">
-        <ToastContainer />
-        <Routes>
-          <Route path="/" element={<Main />} />
-          {/* Start Quran Routes */}
-          <Route path="/quran" element={<Quran />} exact>
-            <Route index element={<SuraContainer />} />
-            <Route path=":id" element={<Sura />} />
-            <Route path="juza" element={<JuzaContainer />} />
-            <Route path="juza/:id" element={<Juza />} />
-            <Route path="audio" element={<QuranAudio />} />
-            <Route path="download" element={<Download />} />
-            <Route path="player" element={<PlayerQuran />} />
-          </Route>
-          {/* End Quran Routes */}
-
-          <Route path="/adkar" element={<Adkar />} />
-          <Route path="/hadith" element={<Hadith />} />
-          <Route path="/namesofallah" element={<NamesOFAllah />} />
-          <Route path="/rosary" element={<Rosary />} />
-          <Route path="/moshaf" element={<Moshaf />} />
-
-          {/* lazy component  */}
-          <Route path="/videos" element={<LazyLoadedVideoPage />}>
-            <Route index element={<MainVideos />} />
-            <Route path="sheihks" element={<Sheihks />} />
-            <Route path="short-video-quran" element={<ShortVideosQuran />} />
-          </Route>
-
-          <Route path="/video" element={<Videos />} />
-          <Route path="/boymuslim" element={<MuslimBoy />} />
-
-          <Route path="/prayer-times" element={<PrayerTimes />} />
-          <Route path="/qibla-dir" element={<Qibla />} />
-
-
-          {/* Audio */}
-          <Route path="/audio" element={<Audio />}>
-            <Route index element={<MainAudio />} />
-            <Route path=":reciterId" element={<ReciterPage />} />
-          </Route>
-          {/* Hotba */}
-          <Route path="/hotba" element={<Sermons />} />
-          <Route path="/hotba/sermon/:id" element={<SermonDetailPage />} />
-          <Route path="/info" element={<Info />} />
-        </Routes>
-
-      </AnimatePresence>
+      <ToastContainer />
+      <AnimatedRoutes />
     </BrowserRouter>
   );
 }

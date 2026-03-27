@@ -6,7 +6,9 @@ import headphonesImg from "../assest/listImg/headphones.png";
 import audioQuranImg from "../assest/listImg/audio-quran.png";
 import hotbaImg from "../assest/listImg/hotba.png";
 import moshafImg from "../assest/listImg/quran.png";
-import zakerImg from "../assest/listImg/zaker.png";
+import doaaImg from "../assest/listImg/zaker.png";
+import  zakerImg from "../assest/listImg/prayer.png";
+
 import videoImg from "../assest/listImg/video.png";
 import shortVideoImg from "../assest/listImg/quran_short_video.png";
 import downloadImg from "../assest/listImg/downloadquran.png";
@@ -133,6 +135,14 @@ const data = [
     url: "videos/short-video-quran",
     icon: "▶️",
     image: shortVideoImg,
+  },
+  {
+    id: uuid(),
+    title: "الدعاء للمتوفى",
+    subTitle: "رحمة ودعاء",
+    url: "/deceased",
+    icon: "🕌",
+    image: doaaImg,
   },
 ];
 

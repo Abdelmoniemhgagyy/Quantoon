@@ -1,37 +1,60 @@
+.containerRightNav {
+    right: 0;
+    top: 0;
+    position: fixed;
+    z-index: 9999;
+    background-color: #2e2e38;
 
-.containerRightNav{
-     right: 0;
-      top:0;
-      position: fixed;
-      z-index:9999;
-      background-color: #2e2e38;
-   
 }
 
 .containerRightNav .constentRightNav {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
     width: 60px;
     border-left: 1px solid rgb(197, 197, 197);
-    transition-duration: .5s
-    
+    transition-duration: .5s;
+    padding-bottom: 2rem;
 }
-.logo-container{
+
+/* Custom thin scrollbar for Navbar */
+.containerRightNav .constentRightNav::-webkit-scrollbar {
+    width: 4px;
+}
+
+.containerRightNav .constentRightNav::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.containerRightNav .constentRightNav::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+}
+
+.containerRightNav .constentRightNav::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
+
+.logo-container {
     font-family: 'Marhey', sans-serif;
     margin: 30px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    &>img{
+
+    &>img {
         border-radius: 50%;
         height: 40px;
         width: 40px;
         margin: 5px auto 0;
     }
 }
-.RightNavEle{
+
+.RightNavEle {
     line-height: 2;
     width: 100%;
     color: white;
@@ -42,26 +65,30 @@
     gap: 20px;
     cursor: pointer;
     padding: 2px 0;
-    &:hover{
-             background-color: rgb(197, 197, 197);
+
+    &:hover {
+        background-color: rgb(197, 197, 197);
     }
 }
-.Navlist:hover{
+
+.Navlist:hover {
     background-color: transparent;
 }
-.active{
+
+.active {
     background-color: rgb(197, 197, 197);
 }
-.RightNavEle i{
-       font-size: 28px;
+
+.RightNavEle i {
+    font-size: 28px;
 }
 
-.titleNavEle{
+.titleNavEle {
     transition-duration: .5s;
     height: 30px;
     margin: auto;
     font-size: 30px;
     display: flex;
     align-items: center;
-    
+
 }

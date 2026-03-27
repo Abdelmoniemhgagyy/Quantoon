@@ -12,8 +12,10 @@ import moshaf from "../../assest/listImg/quran.png"
 import Video from "../../assest/listImg/video.png"
 import Boy from "../../assest/listImg/boy.png"
 import Audio from "../../assest/listImg/headphones.png"
+import doaaImg from "../../assest/listImg/zaker.png"
 import Hotba from "../../assest/listImg/hotba.png"
 import ThemeToggle from '../ThemeToggle'
+import Home from "../../assest/listImg/home.png"
 
 
 
@@ -54,6 +56,7 @@ function RightNavbar() {
           {/* End List icon  */}
 
 
+          <NavItem ImgSrc={Home} openNav={openNav} setOpenNav={setOpenNav} path="/" title="الرئيسية" />
           <NavItem ImgSrc={Quran} openNav={openNav} setOpenNav={setOpenNav} path="/quran" title="القران الكريم" />
           <NavItem ImgSrc={Hadith} openNav={openNav} setOpenNav={setOpenNav} path="/hadith" title=" الأحاديث النبوية" />
           <NavItem ImgSrc={Boy} openNav={openNav} setOpenNav={setOpenNav} path="/boymuslim" title="الطفل المسلم" />
@@ -63,6 +66,8 @@ function RightNavbar() {
           <NavItem ImgSrc={Adkar} openNav={openNav} setOpenNav={setOpenNav} path="/adkar" title="الأذكار" />
           <NavItem ImgSrc={moshaf} openNav={openNav} setOpenNav={setOpenNav} path="/moshaf" title="المصاحف" />
           <NavItem ImgSrc={Rosary} openNav={openNav} setOpenNav={setOpenNav} path="/rosary" title="السبحة" />
+          <NavItem ImgSrc={doaaImg} openNav={openNav} setOpenNav={setOpenNav} path="/deceased" title="الدعاء للمتوفى" />
+
 
 
           {/* End Nav items  */}
