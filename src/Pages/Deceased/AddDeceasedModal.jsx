@@ -26,6 +26,24 @@ export default function AddDeceasedModal({ isOpen, onClose, onSuccess }) {
 
         setIsLoading(true);
         try {
+            // Check if person already exists
+            const { data: existingData, error: existingError } = await supabase
+                .from('deceased')
+                .select('*')
+                .eq('name', name.trim())
+                .limit(1);
+
+            if (existingError) throw existingError;
+
+            if (existingData && existingData.length > 0) {
+                toast.info('هذا الاسم موجود بالفعل، سيتم نقلك لصفحته.');
+                if (onSuccess) {
+                    onSuccess(existingData[0]);
+                }
+                onClose();
+                return;
+            }
+
             const { data, error } = await supabase
                 .from('deceased')
                 .insert([{ name: name.trim(), gender }])
