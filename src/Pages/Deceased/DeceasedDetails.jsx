@@ -1,29 +1,11 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { supabase } from '../../api/supabase';
 import { toast } from 'react-toastify';
 import Loading from '../../components/Loading/Loading';
+import AddDeceasedModal from './AddDeceasedModal';
 
-const getStorageKey = (deceasedId, duaId) => `tasbeeh_${deceasedId}_${duaId}`;
-
-function TasbeehItem({ deceasedId, deceasedName, dua }) {
-    const storageKey = getStorageKey(deceasedId, dua.id);
-    const [count, setCount] = useState(() => {
-        const saved = localStorage.getItem(storageKey);
-        return saved ? parseInt(saved, 10) : 0;
-    });
-
-    const handleIncrement = () => {
-        const newCount = count + 1;
-        setCount(newCount);
-        localStorage.setItem(storageKey, newCount);
-    };
-
-    const handleReset = () => {
-        setCount(0);
-        localStorage.setItem(storageKey, 0);
-    };
-
+function TasbeehItem({ deceasedName, dua, count, onIncrement }) {
     const fillPercentage = count === 0 ? 0 : ((count % 10) === 0 ? 100 : (count % 10) * 10);
     const radius = 70;
     const circumference = 2 * Math.PI * radius;
@@ -58,22 +40,13 @@ function TasbeehItem({ deceasedId, deceasedName, dua }) {
                     />
                 </svg>
                 <button
-                    onClick={handleIncrement}
+                    onClick={onIncrement}
                     className="absolute inset-0 m-auto w-36 h-36 rounded-full bg-transparent hover:bg-teal-500/10 active:bg-teal-500/20 transition-all flex flex-col items-center justify-center outline-none select-none z-10"
                     aria-label="تسبيح"
                 >
                     <span className="text-5xl font-bold text-[#144b6d] dark:text-teal-400 tabular-nums">{count}</span>
                 </button>
             </div>
-
-            {/* Reset Button */}
-            <button
-                onClick={handleReset}
-                className="flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-red-50 dark:bg-red-900/30 hover:bg-red-100 dark:hover:bg-red-900/50 text-red-500 dark:text-red-400 text-sm font-medium transition-all mb-4"
-            >
-                <i className="bi bi-arrow-counterclockwise"></i>
-                إعادة تعين
-            </button>
 
             {/* Text */}
             <h3 className="text-2xl mt-2 font-bold text-[#144b6d] dark:text-teal-300 text-center font-['Scheherazade_New',_serif] leading-loose">
@@ -84,41 +57,177 @@ function TasbeehItem({ deceasedId, deceasedName, dua }) {
 }
 
 // ------- Tasbeeh Tab -------
+const DEBOUNCE_DELAY = 2000; // ms of inactivity before saving to Supabase
+
 function TasbeehTab({ deceased }) {
     const [duas, setDuas] = useState([]);
     const [loadingDua, setLoadingDua] = useState(true);
 
-    const fetchTasbeehDuas = useCallback(async () => {
+    // Source-of-truth counts as stored in DB (or last synced value)
+    const [dbCounts, setDbCounts] = useState({});
+    // Fast local counts shown in UI (includes unsaved clicks)
+    const [localCounts, setLocalCounts] = useState({});
+
+    // Refs so callbacks always see latest values without re-subscribing
+    const localCountsRef = useRef({});
+    const dbCountsRef = useRef({});
+    // Per-dua debounce timer handles: { [duaId]: timeoutId }
+    const debounceTimers = useRef({});
+
+    const deceasedId = deceased.id;
+
+    useEffect(() => { localCountsRef.current = localCounts; }, [localCounts]);
+    useEffect(() => { dbCountsRef.current = dbCounts; }, [dbCounts]);
+
+    // -------- Supabase helpers --------
+    const upsertTasbeehCounter = useCallback(async (duaId, count) => {
+        try {
+            const { error } = await supabase
+                .from('deceased_action_counter')
+                .upsert(
+                    { deceased_id: deceasedId, dua_id: duaId, total_count: count },
+                    { onConflict: 'deceased_id,dua_id' }
+                );
+            if (error) console.error('Upsert error:', error);
+        } catch (err) {
+            console.error('Error saving counter:', err);
+        }
+    }, [deceasedId]);
+
+    // Save every dua that has unsaved local changes
+    const flushAll = useCallback(() => {
+        const local = localCountsRef.current;
+        const db = dbCountsRef.current;
+        const timers = debounceTimers.current;
+
+        Object.keys(local).forEach(duaId => {
+            const localVal = local[duaId] ?? 0;
+            const dbVal = db[duaId] ?? 0;
+            if (localVal !== dbVal) {
+                clearTimeout(timers[duaId]);
+                delete timers[duaId];
+                upsertTasbeehCounter(duaId, localVal);
+                // Update dbCounts so future diffs are accurate
+                dbCountsRef.current = { ...dbCountsRef.current, [duaId]: localVal };
+            }
+        });
+    }, [upsertTasbeehCounter]);
+
+    // -------- Initial data load --------
+    const loadTasbeehData = useCallback(async () => {
         setLoadingDua(true);
         try {
-            let { data, error } = await supabase
+            let { data: duasData, error: duasError } = await supabase
                 .from('duas')
                 .select('*')
                 .eq('type', 'tasbeeh')
                 .eq('gender', deceased.gender);
 
-            if (error) throw error;
+            if (duasError) throw duasError;
 
-            if (!data || data.length === 0) {
+            if (!duasData || duasData.length === 0) {
                 const res = await supabase
                     .from('duas')
                     .select('*')
                     .eq('type', 'tasbeeh')
                     .eq('gender', 'general');
                 if (res.error) throw res.error;
-                data = res.data;
+                duasData = res.data;
             }
-            setDuas(data || []);
+            setDuas(duasData || []);
+
+            const { data: countersData, error: countersError } = await supabase
+                .from('deceased_action_counter')
+                .select('dua_id, total_count')
+                .eq('deceased_id', deceasedId);
+
+            if (countersError) throw countersError;
+
+            const countsMap = {};
+            (countersData || []).forEach(row => {
+                countsMap[row.dua_id] = row.total_count;
+            });
+            setDbCounts(countsMap);
+            setLocalCounts(countsMap);
         } catch (err) {
-            console.error(err);
+            console.error('Error loading tasbeeh data:', err);
         } finally {
             setLoadingDua(false);
         }
-    }, [deceased.gender]);
+    }, [deceased.gender, deceasedId]);
 
     useEffect(() => {
-        fetchTasbeehDuas();
-    }, [fetchTasbeehDuas]);
+        loadTasbeehData();
+    }, [loadTasbeehData]);
+
+    // -------- Realtime subscription --------
+    useEffect(() => {
+        if (!deceasedId) return;
+
+        const subscription = supabase
+            .channel(`tasbeeh_rt_${deceasedId}`)
+            .on(
+                'postgres_changes',
+                {
+                    event: '*',
+                    schema: 'public',
+                    table: 'deceased_action_counter',
+                    filter: `deceased_id=eq.${deceasedId}`
+                },
+                (payload) => {
+                    const row = payload.new;
+                    if (!row?.dua_id) return;
+                    // Only update if the incoming value is higher than what we show locally
+                    // to avoid clobbering unsaved clicks from the current session
+                    setDbCounts(prev => ({ ...prev, [row.dua_id]: row.total_count }));
+                    setLocalCounts(prev => {
+                        const current = prev[row.dua_id] ?? 0;
+                        return current < row.total_count
+                            ? { ...prev, [row.dua_id]: row.total_count }
+                            : prev;
+                    });
+                }
+            )
+            .subscribe();
+
+        return () => {
+            flushAll();
+            supabase.removeChannel(subscription);
+        };
+    }, [deceasedId, flushAll]);
+
+    // -------- Save on page hide / unload --------
+    useEffect(() => {
+        const onHide = () => flushAll();
+        document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'hidden') onHide();
+        });
+        window.addEventListener('beforeunload', onHide);
+        return () => {
+            document.removeEventListener('visibilitychange', onHide);
+            window.removeEventListener('beforeunload', onHide);
+        };
+    }, [flushAll]);
+
+    // -------- Increment with debounce --------
+    const incrementTasbeeh = useCallback((duaId) => {
+        // 1. Update UI immediately
+        setLocalCounts(prev => {
+            const next = { ...prev, [duaId]: (prev[duaId] ?? 0) + 1 };
+            localCountsRef.current = next;
+            return next;
+        });
+
+        // 2. Reset debounce timer for this dua
+        const timers = debounceTimers.current;
+        clearTimeout(timers[duaId]);
+        timers[duaId] = setTimeout(() => {
+            const newCount = localCountsRef.current[duaId];
+            upsertTasbeehCounter(duaId, newCount);
+            setDbCounts(prev => ({ ...prev, [duaId]: newCount }));
+            delete timers[duaId];
+        }, DEBOUNCE_DELAY);
+    }, [upsertTasbeehCounter]);
 
     return (
         <div className="py-6">
@@ -129,7 +238,13 @@ function TasbeehTab({ deceased }) {
             ) : duas.length > 0 ? (
                 <div className="flex flex-wrap justify-center gap-6">
                     {duas.map((dua, index) => (
-                        <TasbeehItem key={dua.id || index} deceasedId={deceased.id} deceasedName={deceased.name} dua={dua} />
+                        <TasbeehItem
+                            key={dua.id || index}
+                            deceasedName={deceased.name}
+                            dua={dua}
+                            count={localCounts[dua.id] ?? 0}
+                            onIncrement={() => incrementTasbeeh(dua.id)}
+                        />
                     ))}
                 </div>
             ) : (
@@ -142,12 +257,10 @@ function TasbeehTab({ deceased }) {
     );
 }
 // ------- Dua Item -------
-function DuaItem({ dua, deceasedName }) {
-    const [count, setCount] = useState(0);
-
+function DuaItem({ dua, deceasedName, count, onIncrement }) {
     return (
         <div
-            onClick={() => setCount(prev => prev + 1)}
+            onClick={onIncrement}
             className="cursor-pointer relative overflow-hidden bg-gradient-to-br from-white to-teal-50/30 hover:to-teal-50/60 dark:from-slate-800 dark:to-slate-800/50 dark:hover:from-slate-800/80 dark:hover:to-slate-800/80 rounded-2xl p-6 border border-teal-50 dark:border-slate-700 shadow-sm hover:shadow-teal-500/5 hover:shadow-xl dark:hover:shadow-xl hover:border-teal-200 dark:hover:border-teal-700 transition-all duration-500 transform hover:-translate-y-1 select-none text-center sm:text-right"
         >
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
@@ -158,16 +271,6 @@ function DuaItem({ dua, deceasedName }) {
                     {dua.text?.replace(/{name}/g, deceasedName)}
                 </p>
             </div>
-
-            <button
-                onClick={(e) => {
-                    e.stopPropagation();
-                    setCount(0);
-                }}
-                className="absolute left-0 bottom-[1px] rounded-tl-[20px] w-[35px] py-1 text-black bg-[#fff]"
-            >
-                <i className="bi bi-arrow-counterclockwise text-[#262639]"></i>
-            </button>
         </div>
     );
 }
@@ -179,50 +282,165 @@ function DuasTab({ deceased }) {
     const ITEMS_PER_PAGE = 10;
     const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
 
-    const loadMore = () => {
-        setVisibleCount(prev => prev + ITEMS_PER_PAGE);
-    };
+    const [dbCounts, setDbCounts] = useState({});
+    const [localCounts, setLocalCounts] = useState({});
 
+    const localCountsRef = useRef({});
+    const dbCountsRef = useRef({});
+    const debounceTimers = useRef({});
+
+    const deceasedId = deceased.id;
+
+    useEffect(() => { localCountsRef.current = localCounts; }, [localCounts]);
+    useEffect(() => { dbCountsRef.current = dbCounts; }, [dbCounts]);
+
+    const loadMore = () => setVisibleCount(prev => prev + ITEMS_PER_PAGE);
+
+    // -------- Supabase upsert --------
+    const upsertDuaCounter = useCallback(async (duaId, count) => {
+        try {
+            const { error } = await supabase
+                .from('deceased_action_counter')
+                .upsert(
+                    { deceased_id: deceasedId, dua_id: duaId, total_count: count },
+                    { onConflict: 'deceased_id,dua_id' }
+                );
+            if (error) console.error('Dua upsert error:', error);
+        } catch (err) {
+            console.error('Error saving dua counter:', err);
+        }
+    }, [deceasedId]);
+
+    // Flush all unsaved local changes to Supabase
+    const flushAll = useCallback(() => {
+        const local = localCountsRef.current;
+        const db = dbCountsRef.current;
+        const timers = debounceTimers.current;
+        Object.keys(local).forEach(duaId => {
+            const localVal = local[duaId] ?? 0;
+            const dbVal = db[duaId] ?? 0;
+            if (localVal !== dbVal) {
+                clearTimeout(timers[duaId]);
+                delete timers[duaId];
+                upsertDuaCounter(duaId, localVal);
+                dbCountsRef.current = { ...dbCountsRef.current, [duaId]: localVal };
+            }
+        });
+    }, [upsertDuaCounter]);
+
+    // -------- Initial data load --------
     const fetchDuas = useCallback(async () => {
         setLoading(true);
         try {
-            // Try gender-specific
             let { data, error } = await supabase
                 .from('duas')
                 .select('*')
                 .eq('type', 'dua')
                 .eq('gender', deceased.gender);
-
             if (error) throw error;
 
-            // Fallback: also fetch general duas
             const { data: generalData, error: generalError } = await supabase
                 .from('duas')
                 .select('*')
                 .eq('type', 'dua')
                 .eq('gender', 'general');
-
             if (generalError) throw generalError;
 
-            // Merge gender-specific + general
             const merged = [...(data || []), ...(generalData || [])];
-            // Shuffle initially
             merged.sort(() => Math.random() - 0.5);
             setDuas(merged);
+
+            const duaIds = merged.map(d => d.id);
+            if (duaIds.length > 0) {
+                const { data: countersData, error: countersError } = await supabase
+                    .from('deceased_action_counter')
+                    .select('dua_id, total_count')
+                    .eq('deceased_id', deceasedId)
+                    .in('dua_id', duaIds);
+
+                if (!countersError) {
+                    const countsMap = {};
+                    (countersData || []).forEach(row => {
+                        countsMap[row.dua_id] = row.total_count;
+                    });
+                    setDbCounts(countsMap);
+                    setLocalCounts(countsMap);
+                }
+            }
         } catch (err) {
-            console.error(err);
+            console.error('Error loading duas:', err);
         } finally {
             setLoading(false);
         }
-    }, [deceased.gender]);
+    }, [deceased.gender, deceasedId]);
 
+    useEffect(() => { fetchDuas(); }, [fetchDuas]);
+
+    // -------- Realtime --------
     useEffect(() => {
-        fetchDuas();
-    }, [fetchDuas]);
+        if (!deceasedId) return;
 
-    if (loading) {
-        return <div className="py-12"><Loading /></div>;
-    }
+        const subscription = supabase
+            .channel(`dua_rt_${deceasedId}`)
+            .on(
+                'postgres_changes',
+                {
+                    event: '*',
+                    schema: 'public',
+                    table: 'deceased_action_counter',
+                    filter: `deceased_id=eq.${deceasedId}`
+                },
+                (payload) => {
+                    const row = payload.new;
+                    if (!row?.dua_id) return;
+                    setDbCounts(prev => ({ ...prev, [row.dua_id]: row.total_count }));
+                    setLocalCounts(prev => {
+                        const current = prev[row.dua_id] ?? 0;
+                        return current < row.total_count
+                            ? { ...prev, [row.dua_id]: row.total_count }
+                            : prev;
+                    });
+                }
+            )
+            .subscribe();
+
+        return () => {
+            flushAll();
+            supabase.removeChannel(subscription);
+        };
+    }, [deceasedId, flushAll]);
+
+    // -------- Save on page hide / unload --------
+    useEffect(() => {
+        const onHide = () => flushAll();
+        const onVisibility = () => { if (document.visibilityState === 'hidden') onHide(); };
+        document.addEventListener('visibilitychange', onVisibility);
+        window.addEventListener('beforeunload', onHide);
+        return () => {
+            document.removeEventListener('visibilitychange', onVisibility);
+            window.removeEventListener('beforeunload', onHide);
+        };
+    }, [flushAll]);
+
+    // -------- Increment with debounce --------
+    const incrementDua = useCallback((duaId) => {
+        setLocalCounts(prev => {
+            const next = { ...prev, [duaId]: (prev[duaId] ?? 0) + 1 };
+            localCountsRef.current = next;
+            return next;
+        });
+
+        const timers = debounceTimers.current;
+        clearTimeout(timers[duaId]);
+        timers[duaId] = setTimeout(() => {
+            const newCount = localCountsRef.current[duaId];
+            upsertDuaCounter(duaId, newCount);
+            setDbCounts(prev => ({ ...prev, [duaId]: newCount }));
+            delete timers[duaId];
+        }, DEBOUNCE_DELAY);
+    }, [upsertDuaCounter]);
+
+    if (loading) return <div className="py-12"><Loading /></div>;
 
     if (duas.length === 0) {
         return (
@@ -238,7 +456,13 @@ function DuasTab({ deceased }) {
     return (
         <div className="space-y-4 py-4">
             {visibleDuas.map((dua) => (
-                <DuaItem key={dua.id} dua={dua} deceasedName={deceased.name} />
+                <DuaItem
+                    key={dua.id}
+                    dua={dua}
+                    deceasedName={deceased.name}
+                    count={localCounts[dua.id] ?? 0}
+                    onIncrement={() => incrementDua(dua.id)}
+                />
             ))}
 
             {visibleCount < duas.length && (
@@ -263,6 +487,7 @@ export default function DeceasedDetails() {
     const [deceased, setDeceased] = useState(null);
     const [loading, setLoading] = useState(true);
     const [activeTab, setActiveTab] = useState('tasbeeh');
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
         const fetchDeceased = async () => {
@@ -301,6 +526,11 @@ export default function DeceasedDetails() {
         }
     };
 
+    const handleAddSuccess = (newDeceased) => {
+        setIsModalOpen(false);
+        navigate(`/deceased/${newDeceased.id}`);
+    };
+
     if (loading) {
         return <div className="min-h-screen flex items-center justify-center"><Loading itemsCenter="true" /></div>;
     }
@@ -308,17 +538,27 @@ export default function DeceasedDetails() {
     if (!deceased) return null;
 
     return (
-        <div className="min-h-screen pt-[60px] pb-12 w-full transition-all duration-300 pr-[75px] sm:pr-[85px] md:pr-[100px] pl-[15px] sm:pl-[25px]" dir="rtl">
+        <div className="min-h-screen pt-[68px] pb-12 w-full transition-all duration-300 pr-[75px] sm:pr-[85px] md:pr-[100px] pl-[15px] sm:pl-[25px]" dir="rtl">
             <div className="max-w-[900px] mx-auto">
 
-                {/* Back Button */}
-                <button
-                    onClick={() => navigate(-1)}
-                    className="flex items-center gap-2 text-teal-400 hover:text-teal-600 dark:hover:text-teal-300 transition-colors mb-6 font-bold text-lg w-fit"
-                >
-                    <i className="bi bi-arrow-right"></i>
-                    العودة
-                </button>
+                {/* Header Section */}
+                <div className="flex justify-between items-center mb-6">
+                    <button
+                        onClick={() => navigate(-1)}
+                        className="flex items-center gap-2 text-teal-400 hover:text-teal-600 dark:hover:text-teal-300 transition-colors font-bold text-lg w-fit"
+                    >
+                        <i className="bi bi-arrow-right"></i>
+                        العودة
+                    </button>
+
+                    <button
+                        onClick={() => setIsModalOpen(true)}
+                        className="flex items-center gap-2 bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white px-5 py-2 rounded-full font-bold shadow-lg shadow-teal-500/30 transition-all hover:scale-105 text-sm sm:text-base"
+                    >
+                        <i className="bi bi-plus-lg text-lg"></i>
+                        <span>إضافة حبيب</span>
+                    </button>
+                </div>
 
                 {/* Hero Card */}
                 <div className="relative bg-gradient-to-br from-[#144b6d] to-teal-700 dark:from-slate-800 dark:to-[#0f3a52] rounded-3xl p-8 sm:p-10 mb-8 shadow-2xl overflow-hidden text-center">
@@ -385,6 +625,12 @@ export default function DeceasedDetails() {
                 </div>
 
             </div>
+
+            <AddDeceasedModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                onSuccess={handleAddSuccess}
+            />
         </div>
     );
 }
