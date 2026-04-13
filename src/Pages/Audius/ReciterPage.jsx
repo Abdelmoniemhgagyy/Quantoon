@@ -9,14 +9,14 @@ import data from "../../data/Audio/all_lectures_combined.json"
 
 const ReciterPage = () => {
   const { reciterId } = useParams();
-const reciter = data.find(r => r.seriesTitle === decodeURIComponent(reciterId ));
+  const reciter = data.find(r => r.seriesTitle === decodeURIComponent(reciterId));
 
 
-console.log(reciter)
+  console.log(reciter)
   if (!reciter) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-[#144b6d] p-4 text-center">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -25,7 +25,7 @@ console.log(reciter)
           <Button asChild className="bg-teal-500 hover:bg-teal-600">
             <RouterLink to="/audio">
               <ArrowRight className="ml-2 h-4 w-4" />
-            العودة إلى المكتبة الصوتية
+              العودة إلى المكتبة الصوتية
             </RouterLink>
           </Button>
         </motion.div>
@@ -34,14 +34,7 @@ console.log(reciter)
   }
 
   return (
-    <div className=" lg:mr-[60px] md:mx-auto ">
-    <div className=" min-h-screen  from-green-100 via-teal-50 to-cyan-100 hero-pattern flex flex-col items-center justify-center p-4 pt-24 md:pt-28">
-       <div className="absolute top-6 right-6">
-       </div>
-      <AudioPlayer reciter={reciter} />
-    </div>
-    </div>
-
+    <AudioPlayer reciter={reciter} />
   );
 };
 
