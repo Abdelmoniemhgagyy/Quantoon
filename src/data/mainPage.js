@@ -7,7 +7,7 @@ import audioQuranImg from "../assest/listImg/audio-quran.png";
 import hotbaImg from "../assest/listImg/hotba.png";
 import moshafImg from "../assest/listImg/quran.png";
 import doaaImg from "../assest/listImg/zaker.png";
-import  zakerImg from "../assest/listImg/prayer.png";
+import zakerImg from "../assest/listImg/prayer.png";
 
 import videoImg from "../assest/listImg/video.png";
 import shortVideoImg from "../assest/listImg/quran_short_video.png";
@@ -138,12 +138,21 @@ const data = [
   },
   {
     id: uuid(),
+    title: "ابني جنتك",
+    subTitle: "🌴 قصور وتسابيح",
+    url: "/build-jannah",
+    icon: "🕌",
+    image: "/images/jannah/treasure.png",
+  },
+  {
+    id: uuid(),
     title: "الدعاء للمتوفى",
     subTitle: "رحمة ودعاء",
     url: "/deceased",
     icon: "🕌",
     image: doaaImg,
   },
+
 ];
 
 export default data;

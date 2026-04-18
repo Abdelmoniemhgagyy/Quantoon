@@ -32,6 +32,7 @@ import Videos from "./Pages/LectureVideos/Videos.jsx";
 import Rosary from "./Pages/Rosary/Rosary.jsx";
 import MuslimBoy from "./Pages/muslimBoy/MuslimBoy.jsx";
 import Info from "./Pages/Info/Info.jsx"
+import BuildJannah from "./Pages/BuildJannah/BuildJannah.jsx";
 import ScrollTopTop from "./components/ScroolToTop/ScroolToTop.jsx";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Loading from "./components/Loading/Loading.jsx";
@@ -98,6 +99,7 @@ const AnimatedRoutes = () => {
         <Route path="/deceased" element={<Deceased />} />
         <Route path="/deceased/:id" element={<DeceasedDetails />} />
         <Route path="/info" element={<Info />} />
+        <Route path="/build-jannah" element={<BuildJannah />} />
       </Routes>
     </AnimatePresence>
   );

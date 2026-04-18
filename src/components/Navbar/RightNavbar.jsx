@@ -16,6 +16,7 @@ import doaaImg from "../../assest/listImg/zaker.png"
 import Hotba from "../../assest/listImg/hotba.png"
 import ThemeToggle from '../ThemeToggle'
 import Home from "../../assest/listImg/home.png"
+const Jannah = "/images/jannah/treasure.png"
 
 
 
@@ -67,6 +68,7 @@ function RightNavbar() {
           <NavItem ImgSrc={moshaf} openNav={openNav} setOpenNav={setOpenNav} path="/moshaf" title="المصاحف" />
           <NavItem ImgSrc={Rosary} openNav={openNav} setOpenNav={setOpenNav} path="/rosary" title="السبحة" />
           <NavItem ImgSrc={doaaImg} openNav={openNav} setOpenNav={setOpenNav} path="/deceased" title="الدعاء للمتوفى" />
+          <NavItem ImgSrc={Jannah} openNav={openNav} setOpenNav={setOpenNav} path="/build-jannah" title="ابني جنتك" />
 
 
 
