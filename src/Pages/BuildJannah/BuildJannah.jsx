@@ -55,7 +55,7 @@ export default function BuildJannah() {
       <FeedbackView>
         <div className="flex flex-col items-center">
           <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-teal-500 mb-4"></div>
-          <p className="text-teal-600 dark:text-teal-400 font-bold font-['Marhey'] text-xl">جاري تحميل الجنة...</p>
+          <p className="text-teal-600 dark:text-teal-400 font-bold font-['Marhey'] text-xl">جاري التحميل...</p>
         </div>
       </FeedbackView>
     );
