@@ -138,7 +138,7 @@ const data = [
   },
   {
     id: uuid(),
-    title: "ابني جنتك",
+    title: "ابنِ جنتك",
     subTitle: "🌴 قصور وتسابيح",
     url: "/build-jannah",
     icon: "🕌",
