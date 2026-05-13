@@ -1,4 +1,3 @@
-import React from "react";
 import Main from "./Pages/MainPage/Main.jsx"
 import Quran from "./Pages/Quran/Quran";
 import QuranAudio from "./Pages/quran-audio/QuranAudio.jsx";
@@ -8,7 +7,7 @@ import Sura from "./Pages/Quran/Sura";
 import SuraContainer from "./Pages/Quran/SuraContainer.jsx";
 import Adkar from "./Pages/Adkar/Adkar.jsx";
 import Moshaf from "./Pages/moshaf/Moshaf.jsx";
-import ReciterPage from "./Pages/Audius/ReciterPage.jsx";
+// import ReciterPage from "./Pages/Audius/ReciterPage.jsx";
 import Sermons from "./Pages/hotba/Sermons.jsx";
 import SermonDetailPage from "./Pages/hotba/SermonDetailPage.jsx";
 import Deceased from "./Pages/Deceased/Deceased.jsx";
@@ -19,8 +18,8 @@ import PrayerTimes from "./Pages/PrayerTimes/PrayerTimes.jsx";
 import Qibla from "./Pages/Qibla/Qibla.jsx";
 
 
-import Audio from "./Pages/Audius/Audio.jsx";
-import MainAudio from "./Pages/Audius/MainAudio.jsx";
+// import Audio from "./Pages/Audius/Audio.jsx";
+// import MainAudio from "./Pages/Audius/MainAudio.jsx";
 
 import RightNavbar from "./components/Navbar/RightNavbar.jsx";
 import ThemeToggle from "./components/ThemeToggle.jsx";
@@ -28,27 +27,29 @@ import Hadith from "./Pages/Hadith/Hadith.jsx";
 import Juza from "./Pages/Quran/Juza.jsx";
 import JuzaContainer from "./Pages/Quran/JuzaContainer.jsx";
 import NamesOFAllah from "./Pages/theNameOfAllah/NamesOFAllah.jsx";
-import Videos from "./Pages/LectureVideos/Videos.jsx";
 import Rosary from "./Pages/Rosary/Rosary.jsx";
-import MuslimBoy from "./Pages/muslimBoy/MuslimBoy.jsx";
+// import MuslimBoy from "./Pages/muslimBoy/MuslimBoy.jsx";
 import Info from "./Pages/Info/Info.jsx"
 import BuildJannah from "./Pages/BuildJannah/BuildJannah.jsx";
+import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy.jsx";
 import ScrollTopTop from "./components/ScroolToTop/ScroolToTop.jsx";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import Loading from "./components/Loading/Loading.jsx";
-import MainVideos from "./Pages/LectureVideos/MainVideos.jsx";
-import ShortVideosQuran from "./Pages/LectureVideos/ShortVideosQuran.jsx";
-import Sheihks from "./Pages/LectureVideos/Sheihks.jsx";
+// import React from "react";
+// import Videos from "./Pages/LectureVideos/Videos.jsx";
+// import Loading from "./components/Loading/Loading.jsx";
+// import MainVideos from "./Pages/LectureVideos/MainVideos.jsx";
+// import ShortVideosQuran from "./Pages/LectureVideos/ShortVideosQuran.jsx";
+// import Sheihks from "./Pages/LectureVideos/Sheihks.jsx";
 import { AnimatePresence } from "framer-motion";
 import { ToastContainer } from "react-toastify";
-const VideoPage = React.lazy(() =>
-  import("./Pages/LectureVideos/VideoPage.jsx")
-);
-const LazyLoadedVideoPage = () => (
-  <React.Suspense fallback={<Loading itemsCenter="true" />}>
-    <VideoPage />
-  </React.Suspense>
-);
+// const VideoPage = React.lazy(() =>
+//   import("./Pages/LectureVideos/VideoPage.jsx")
+// );
+// const LazyLoadedVideoPage = () => (
+//   <React.Suspense fallback={<Loading itemsCenter="true" />}>
+//     <VideoPage />
+//   </React.Suspense>
+// );
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -74,25 +75,16 @@ const AnimatedRoutes = () => {
         <Route path="/rosary" element={<Rosary />} />
         <Route path="/moshaf" element={<Moshaf />} />
 
-        {/* lazy component  */}
-        <Route path="/videos" element={<LazyLoadedVideoPage />}>
-          <Route index element={<MainVideos />} />
-          <Route path="sheihks" element={<Sheihks />} />
-          <Route path="short-video-quran" element={<ShortVideosQuran />} />
-        </Route>
-
-        <Route path="/video" element={<Videos />} />
-        <Route path="/boymuslim" element={<MuslimBoy />} />
+        {/* <Route path="/boymuslim" element={<MuslimBoy />} /> */}
 
         <Route path="/prayer-times" element={<PrayerTimes />} />
         <Route path="/qibla-dir" element={<Qibla />} />
 
-
         {/* Audio */}
-        <Route path="/audio" element={<Audio />}>
+        {/* <Route path="/audio" element={<Audio />}>
           <Route index element={<MainAudio />} />
           <Route path=":reciterId" element={<ReciterPage />} />
-        </Route>
+        </Route> */}
         {/* Hotba */}
         <Route path="/hotba" element={<Sermons />} />
         <Route path="/hotba/sermon/:id" element={<SermonDetailPage />} />
@@ -100,6 +92,7 @@ const AnimatedRoutes = () => {
         <Route path="/deceased/:id" element={<DeceasedDetails />} />
         <Route path="/info" element={<Info />} />
         <Route path="/build-jannah" element={<BuildJannah />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
     </AnimatePresence>
   );

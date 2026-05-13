@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import NavItem from "./NavItem"
 import { Link } from 'react-router-dom'
+import { ShieldCheck } from 'lucide-react'
 import "./RightNavbar.css"
 import Logo from "../../assest/logo.jpg"
 
@@ -9,12 +10,9 @@ import Hadith from "../../assest/listImg/ramadan.png"
 import Adkar from "../../assest/listImg/prayer.png"
 import Rosary from "../../assest/listImg/beads.png"
 import moshaf from "../../assest/listImg/quran.png"
-import Video from "../../assest/listImg/video.png"
-import Boy from "../../assest/listImg/boy.png"
-import Audio from "../../assest/listImg/headphones.png"
+// import Boy from "../../assest/listImg/boy.png"
 import doaaImg from "../../assest/listImg/zaker.png"
 import Hotba from "../../assest/listImg/hotba.png"
-import ThemeToggle from '../ThemeToggle'
 import Home from "../../assest/listImg/home.png"
 const Jannah = "/images/jannah/treasure.png"
 
@@ -60,15 +58,14 @@ function RightNavbar() {
           <NavItem ImgSrc={Home} openNav={openNav} setOpenNav={setOpenNav} path="/" title="الرئيسية" />
           <NavItem ImgSrc={Quran} openNav={openNav} setOpenNav={setOpenNav} path="/quran" title="القران الكريم" />
           <NavItem ImgSrc={Hadith} openNav={openNav} setOpenNav={setOpenNav} path="/hadith" title=" الأحاديث النبوية" />
-          <NavItem ImgSrc={Boy} openNav={openNav} setOpenNav={setOpenNav} path="/boymuslim" title="الطفل المسلم" />
-          <NavItem ImgSrc={Video} openNav={openNav} setOpenNav={setOpenNav} path="/videos" title="مرئيات" />
-          <NavItem ImgSrc={Audio} openNav={openNav} setOpenNav={setOpenNav} path="/audio" title="صوتيات" />
+          {/* <NavItem ImgSrc={Boy} openNav={openNav} setOpenNav={setOpenNav} path="/boymuslim" title="الطفل المسلم" /> */}
           <NavItem ImgSrc={Hotba} openNav={openNav} setOpenNav={setOpenNav} path="/hotba" title="خطب" />
           <NavItem ImgSrc={Adkar} openNav={openNav} setOpenNav={setOpenNav} path="/adkar" title="الأذكار" />
           <NavItem ImgSrc={moshaf} openNav={openNav} setOpenNav={setOpenNav} path="/moshaf" title="المصاحف" />
           <NavItem ImgSrc={Rosary} openNav={openNav} setOpenNav={setOpenNav} path="/rosary" title="السبحة" />
           <NavItem ImgSrc={doaaImg} openNav={openNav} setOpenNav={setOpenNav} path="/deceased" title="الدعاء للمتوفى" />
           <NavItem ImgSrc={Jannah} openNav={openNav} setOpenNav={setOpenNav} path="/build-jannah" title="ابني جنتك" />
+          <NavItem Icon={ShieldCheck} openNav={openNav} setOpenNav={setOpenNav} path="/privacy-policy" title="سياسة الخصوصية" />
 
 
 

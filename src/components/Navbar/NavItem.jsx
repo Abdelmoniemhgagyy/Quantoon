@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 
-function NavItem({openNav,setOpenNav,title,path,ImgSrc}) {
+function NavItem({openNav,setOpenNav,title,path,ImgSrc,Icon}) {
   return (
   
       
@@ -9,7 +9,11 @@ function NavItem({openNav,setOpenNav,title,path,ImgSrc}) {
          dir='rtl'
          onClick={()=>setOpenNav(false)} >
           <div >
-              <img src={ImgSrc} alt="listIcon" style={{width:"30px",marginRight:openNav?"":"5px"}} />
+              {Icon ? (
+                <Icon size={30} strokeWidth={1.8} style={{ marginRight: openNav ? "" : "5px" }} />
+              ) : (
+                <img src={ImgSrc} alt="listIcon" style={{width:"30px",marginRight:openNav?"":"5px"}} />
+              )}
           </div>
           <div className='grow'>
                <p style={{fontSize:openNav?"18px":"0px"}} className='titleNavEle'>{title}</p>

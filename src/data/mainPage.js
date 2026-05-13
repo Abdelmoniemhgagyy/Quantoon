@@ -1,17 +1,17 @@
 import { v4 as uuid } from "uuid";
-import boyImg from "../assest/listImg/boy.png";
+// import boyImg from "../assest/listImg/boy.png";
 import allahImg from "../assest/listImg/allah.png";
 import beadsImg from "../assest/listImg/beads.png";
-import headphonesImg from "../assest/listImg/headphones.png";
-import audioQuranImg from "../assest/listImg/audio-quran.png";
+// import headphonesImg from "../assest/listImg/headphones.png";
+// import audioQuranImg from "../assest/listImg/audio-quran.png";
 import hotbaImg from "../assest/listImg/hotba.png";
 import moshafImg from "../assest/listImg/quran.png";
 import doaaImg from "../assest/listImg/zaker.png";
 import zakerImg from "../assest/listImg/prayer.png";
 
-import videoImg from "../assest/listImg/video.png";
-import shortVideoImg from "../assest/listImg/quran_short_video.png";
-import downloadImg from "../assest/listImg/downloadquran.png";
+// import videoImg from "../assest/listImg/video.png";
+// import shortVideoImg from "../assest/listImg/quran_short_video.png";
+// import downloadImg from "../assest/listImg/downloadquran.png";
 import PTimesImg from "../assest/listImg/mosque.png";
 import qabaImg from "../assest/listImg/qabaImg.png";
 
@@ -24,38 +24,38 @@ const data = [
     icon: "📖",
     image: moshafImg,
   },
-  {
-    id: uuid(),
-    title: "تحميل القرآن",
-    subTitle: "صوتي",
-    url: "/quran/download",
-    icon: "⬇️",
-    image: downloadImg,
-  },
-  {
-    id: uuid(),
-    title: "مرئيات",
-    subTitle: "مقاطع دينيه",
-    url: "/videos",
-    icon: "🎥",
-    image: videoImg,
-  },
-  {
-    id: uuid(),
-    title: "الطفل المسلم",
-    subTitle: "كلكم راعٍ",
-    url: "/boymuslim",
-    icon: "👶",
-    image: boyImg,
-  },
-  {
-    id: uuid(),
-    title: "صوتيات",
-    subTitle: "أستمع",
-    url: "/audio",
-    icon: "🎧",
-    image: headphonesImg,
-  },
+  // {
+  //   id: uuid(),
+  //   title: "تحميل القرآن",
+  //   subTitle: "صوتي",
+  //   url: "/quran/download",
+  //   icon: "⬇️",
+  //   image: downloadImg,
+  // },
+  // {
+  //   id: uuid(),
+  //   title: "مرئيات",
+  //   subTitle: "مقاطع دينيه",
+  //   url: "/videos",
+  //   icon: "🎥",
+  //   image: videoImg,
+  // },
+  // {
+  //   id: uuid(),
+  //   title: "الطفل المسلم",
+  //   subTitle: "كلكم راعٍ",
+  //   url: "/boymuslim",
+  //   icon: "👶",
+  //   image: boyImg,
+  // },
+  // {
+  //   id: uuid(),
+  //   title: "صوتيات",
+  //   subTitle: "أستمع",
+  //   url: "/audio",
+  //   icon: "🎧",
+  //   image: headphonesImg,
+  // },
   {
     id: uuid(),
     title: "الأذكار",
@@ -96,14 +96,14 @@ const data = [
     icon: "📚",
     image: null,
   },
-  {
-    id: uuid(),
-    title: "القرآن صوتي",
-    subTitle: "أستمع للقران",
-    url: "/quran/audio",
-    icon: "🔊",
-    image: audioQuranImg,
-  },
+  // {
+  //   id: uuid(),
+  //   title: "القرآن صوتي",
+  //   subTitle: "أستمع للقران",
+  //   url: "/quran/audio",
+  //   icon: "🔊",
+  //   image: audioQuranImg,
+  // },
   {
     id: uuid(),
     title: "الأحاديث",
@@ -128,14 +128,14 @@ const data = [
     icon: "🔵",
     image: beadsImg,
   },
-  {
-    id: uuid(),
-    title: "مقاطع قران قصيرة",
-    subTitle: "▶️",
-    url: "videos/short-video-quran",
-    icon: "▶️",
-    image: shortVideoImg,
-  },
+  // {
+  //   id: uuid(),
+  //   title: "مقاطع قران قصيرة",
+  //   subTitle: "▶️",
+  //   url: "videos/short-video-quran",
+  //   icon: "▶️",
+  //   image: shortVideoImg,
+  // },
   {
     id: uuid(),
     title: "ابني جنتك",
