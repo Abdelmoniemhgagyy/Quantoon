@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, useContext } from "react";
+import { useEffect, useMemo, useState, useRef, useContext } from "react";
 import "./styles.css";
 import AudioPlayer from "react-h5-audio-player";
 import namesOfsura from "../../data/quran/quran";
@@ -17,7 +17,7 @@ function Player1() {
   const [num, setNum] = useState(1);
   const { url } = useContext(GloableContext);
 
-  const [id, setId] = useState(0);
+  const [id, setId] = useState(1);
   const [nameOfSura, setNameOfSura] = useState("الفاتحة");
 
   const [accent, setAccent] = useState(ACCENT_COLORS[0]);
@@ -25,15 +25,25 @@ function Player1() {
 
   const [readerName, setReaderName] = useState("");
   const [rewaya, setRewaya] = useState("");
+  const [availableSuraIds, setAvailableSuraIds] = useState([]);
 
   const listRef = useRef(null);
+  const currentUrl = url || localStorage.getItem("currentUrl") || "";
+  const baseAudioUrl = currentUrl.endsWith("/") ? currentUrl : `${currentUrl}/`;
+  const availableSuras = useMemo(
+    () =>
+      availableSuraIds.length
+        ? namesOfsura.filter((item) => availableSuraIds.includes(item.id))
+        : namesOfsura,
+    [availableSuraIds]
+  );
 
   const urlAudio =
     id < 10
-      ? `${url}00${num}.mp3`
+      ? `${baseAudioUrl}00${num}.mp3`
       : id < 100
-      ? `${url}0${num}.mp3`
-      : `${url}${num}.mp3`;
+      ? `${baseAudioUrl}0${num}.mp3`
+      : `${baseAudioUrl}${num}.mp3`;
 
   const handelIdAndNameSura = (suraId, name) => {
     setNum(suraId);
@@ -48,8 +58,30 @@ function Player1() {
     if (typeof window !== "undefined") {
       setReaderName(localStorage.getItem("nameOfQauri") || "");
       setRewaya(localStorage.getItem("rewaya") || "");
+
+      const savedSuras = (localStorage.getItem("quranAudioSuras") || "")
+        .split(",")
+        .map((sura) => Number(sura))
+        .filter(Boolean);
+
+      setAvailableSuraIds(savedSuras);
     }
   }, []);
+
+  useEffect(() => {
+    if (!availableSuras.length) return;
+
+    const firstSura = availableSuras[0];
+    const currentSuraIsAvailable = availableSuras.some((item) => item.id === id);
+
+    if (!currentSuraIsAvailable) {
+      setNum(firstSura.id);
+      setId(firstSura.id);
+      setActiveSura(firstSura.id);
+      setNameOfSura(firstSura.name);
+    }
+  }, [availableSuras, id]);
+
   useEffect(() => {
   document.documentElement.style.setProperty("--accent", accent.value);
   document.documentElement.style.setProperty("--accent-glow", accent.glow);
@@ -78,7 +110,7 @@ function Player1() {
 
       {/* Surah List */}
       <div className="q-list" ref={listRef}>
-        {namesOfsura.map((item) => (
+        {availableSuras.map((item) => (
           <div
             key={item.id}
             className={`q-sura-item${
