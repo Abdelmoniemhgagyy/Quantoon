@@ -13,18 +13,6 @@ function Juza() {
   const [tafsirLoading, setTafsirLoading] = useState(false);
   const { id } = useParams();
 
-  const handelSura = async () => {
-    setLoading(true);
-    try {
-      const juza = await call.juzaData(id);
-      setData(juza);
-    } catch (error) {
-      console.error("Error fetching juza:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   const handleAyahClick = async (ayahNumber) => {
     if (activeAyah === ayahNumber) {
       // Toggle off if clicking the same one
@@ -47,6 +35,18 @@ function Juza() {
   };
 
   useEffect(() => {
+    const handelSura = async () => {
+      setLoading(true);
+      try {
+        const juza = await call.juzaData(id);
+        setData(juza);
+      } catch (error) {
+        console.error("Error fetching juza:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
     handelSura();
   }, [id]);
 

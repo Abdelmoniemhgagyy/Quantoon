@@ -17,7 +17,6 @@ import {
   Share2,
 } from 'lucide-react';
 import { Link as RouterLink } from 'react-router-dom';
-import { Button } from './ui/button';
 import { Slider } from './ui/slider';
 
 const AudioPlayer = ({ reciter }) => {
@@ -32,10 +31,15 @@ const AudioPlayer = ({ reciter }) => {
   const [repeatMode, setRepeatMode] = useState('none'); // none, one, all
   const [isLiked, setIsLiked] = useState(false);
   const audioRef = useRef(null);
+  const isPlayingRef = useRef(false);
 
   const lectures = reciter.lectures || [];
   const currentLecture = lectures[currentLectureIndex];
   const audioSrc = currentLecture ? currentLecture.url : '';
+
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -44,7 +48,7 @@ const AudioPlayer = ({ reciter }) => {
     audio.src = audioSrc;
     audio.load();
 
-    if (isPlaying) {
+    if (isPlayingRef.current) {
       audio.play().catch(error => {
         if (error.name !== 'AbortError') {
           console.error('Error playing audio:', error);

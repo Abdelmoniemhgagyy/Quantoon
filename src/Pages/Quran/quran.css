@@ -132,11 +132,11 @@ body::-webkit-scrollbar-thumb{
     top:-40px;
     right:69px;
     font-size: 30px;
-    &:hover{
-        color:red;
-        cursor: pointer;
-        
-    }
+}
+
+.bi-backspace:hover{
+    color:red;
+    cursor: pointer;
 }
 
 @media(max-width:590px){

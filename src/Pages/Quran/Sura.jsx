@@ -13,18 +13,6 @@ function Sura() {
   const [tafsirLoading, setTafsirLoading] = useState(false);
   const { id } = useParams();
 
-  const handelSura = async () => {
-    setLoading(true);
-    try {
-      const sura = await call.suraData(id);
-      setData(sura);
-    } catch (error) {
-      console.error("Error fetching sura:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   const handleAyahClick = async (ayahNumber) => {
     if (activeAyah === ayahNumber) {
       // Toggle off if clicking the same one
@@ -47,6 +35,18 @@ function Sura() {
   };
 
   useEffect(() => {
+    const handelSura = async () => {
+      setLoading(true);
+      try {
+        const sura = await call.suraData(id);
+        setData(sura);
+      } catch (error) {
+        console.error("Error fetching sura:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
     handelSura();
   }, [id]);
 

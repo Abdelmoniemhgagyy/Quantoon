@@ -45,13 +45,13 @@
     justify-content: center;
     align-items: center;
     color: white;
+}
 
-    &>img {
-        border-radius: 50%;
-        height: 40px;
-        width: 40px;
-        margin: 5px auto 0;
-    }
+.logo-container>img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 5px auto 0;
 }
 
 .RightNavEle {
@@ -65,10 +65,10 @@
     gap: 20px;
     cursor: pointer;
     padding: 2px 0;
+}
 
-    &:hover {
-        background-color: rgb(197, 197, 197);
-    }
+.RightNavEle:hover {
+    background-color: rgb(197, 197, 197);
 }
 
 .Navlist:hover {

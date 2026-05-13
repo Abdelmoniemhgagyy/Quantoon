@@ -6,12 +6,9 @@ import Book from './Book';
 const Books = () => {
 
     const [books, setBooks] = React.useState(null)
-    const [loading, setLoading] = React.useState(true);
-
     async function getBooks() {
         const { data } = await axios.get('https://api3.islamhouse.com/v3/paV29H2gm56kvLPy/main/books/ar/ar/1/25/json')
         setBooks(data.data)
-        setLoading(false)
     }
 
     React.useEffect(() => {

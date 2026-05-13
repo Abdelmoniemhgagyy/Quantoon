@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useMemo, useState, useRef } from 'react'
 
 function OneMoshaf({ Src, typeImg, name, fahrs }) {
 
@@ -13,7 +13,10 @@ function OneMoshaf({ Src, typeImg, name, fahrs }) {
         : `0`;
 
   const totalPages = fahrs + 2;
-  const pagesArray = Array.from({ length: totalPages }, (_, i) => i + 1);
+  const pagesArray = useMemo(
+    () => Array.from({ length: totalPages }, (_, i) => i + 1),
+    [totalPages]
+  );
 
   const changeInputValue = (e) => {
     setNumberOfPage(e.target.value);
@@ -70,7 +73,7 @@ function OneMoshaf({ Src, typeImg, name, fahrs }) {
     return () => {
       if (observerRef.current) observerRef.current.disconnect();
     };
-  }, [openModel, name, pagesArray.length]);
+  }, [openModel, name, pagesArray]);
 
   useEffect(() => {
     if (openModel) {
