@@ -3,6 +3,7 @@ import boyImg from "../assest/listImg/boy.png";
 import allahImg from "../assest/listImg/allah.png";
 import beadsImg from "../assest/listImg/beads.png";
 import headphonesImg from "../assest/listImg/headphones.png";
+import radioImg from "../assest/listImg/radio.png";
 import audioQuranImg from "../assest/listImg/audio-quran.png";
 import hotbaImg from "../assest/listImg/hotba.png";
 import moshafImg from "../assest/listImg/quran.png";
@@ -55,6 +56,14 @@ const data = [
     url: "/audio",
     icon: "🎧",
     image: headphonesImg,
+  },
+  {
+    id: uuid(),
+    title: "راديو",
+    subTitle: "بث مباشر",
+    url: "/radio",
+    icon: "📻",
+    image: radioImg,
   },
   {
     id: uuid(),

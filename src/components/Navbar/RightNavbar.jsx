@@ -12,6 +12,7 @@ import moshaf from "../../assest/listImg/quran.png"
 import Video from "../../assest/listImg/video.png"
 import Boy from "../../assest/listImg/boy.png"
 import Audio from "../../assest/listImg/headphones.png"
+import Radio from "../../assest/listImg/radio.png"
 import doaaImg from "../../assest/listImg/zaker.png"
 import Hotba from "../../assest/listImg/hotba.png"
 import ThemeToggle from '../ThemeToggle'
@@ -63,6 +64,7 @@ function RightNavbar() {
           <NavItem ImgSrc={Boy} openNav={openNav} setOpenNav={setOpenNav} path="/boymuslim" title="الطفل المسلم" />
           <NavItem ImgSrc={Video} openNav={openNav} setOpenNav={setOpenNav} path="/videos" title="مرئيات" />
           <NavItem ImgSrc={Audio} openNav={openNav} setOpenNav={setOpenNav} path="/audio" title="صوتيات" />
+          <NavItem ImgSrc={Radio} openNav={openNav} setOpenNav={setOpenNav} path="/radio" title="راديو" />
           <NavItem ImgSrc={Hotba} openNav={openNav} setOpenNav={setOpenNav} path="/hotba" title="خطب" />
           <NavItem ImgSrc={Adkar} openNav={openNav} setOpenNav={setOpenNav} path="/adkar" title="الأذكار" />
           <NavItem ImgSrc={moshaf} openNav={openNav} setOpenNav={setOpenNav} path="/moshaf" title="المصاحف" />

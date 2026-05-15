@@ -21,6 +21,7 @@ import Qibla from "./Pages/Qibla/Qibla.jsx";
 
 import Audio from "./Pages/Audius/Audio.jsx";
 import MainAudio from "./Pages/Audius/MainAudio.jsx";
+import Radio from "./Pages/Radio/Radio.jsx";
 
 import RightNavbar from "./components/Navbar/RightNavbar.jsx";
 import ThemeToggle from "./components/ThemeToggle.jsx";
@@ -93,6 +94,7 @@ const AnimatedRoutes = () => {
           <Route index element={<MainAudio />} />
           <Route path=":reciterId" element={<ReciterPage />} />
         </Route>
+        <Route path="/radio" element={<Radio />} />
         {/* Hotba */}
         <Route path="/hotba" element={<Sermons />} />
         <Route path="/hotba/sermon/:id" element={<SermonDetailPage />} />
