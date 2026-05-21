@@ -14,6 +14,7 @@ import moshaf from "../../assest/listImg/quran.png"
 import doaaImg from "../../assest/listImg/zaker.png"
 import Hotba from "../../assest/listImg/hotba.png"
 import Home from "../../assest/listImg/home.png"
+import Radio from "../../assest/listImg/radio.png"
 const Jannah = "/images/jannah/treasure.png"
 
 
@@ -58,6 +59,7 @@ function RightNavbar() {
           <NavItem ImgSrc={Home} openNav={openNav} setOpenNav={setOpenNav} path="/" title="الرئيسية" />
           <NavItem ImgSrc={Quran} openNav={openNav} setOpenNav={setOpenNav} path="/quran" title="القران الكريم" />
           <NavItem ImgSrc={Hadith} openNav={openNav} setOpenNav={setOpenNav} path="/hadith" title=" الأحاديث النبوية" />
+          <NavItem ImgSrc={Radio} openNav={openNav} setOpenNav={setOpenNav} path="/radio" title="الراديو" />
           {/* <NavItem ImgSrc={Boy} openNav={openNav} setOpenNav={setOpenNav} path="/boymuslim" title="الطفل المسلم" /> */}
           <NavItem ImgSrc={Hotba} openNav={openNav} setOpenNav={setOpenNav} path="/hotba" title="خطب" />
           <NavItem ImgSrc={Adkar} openNav={openNav} setOpenNav={setOpenNav} path="/adkar" title="الأذكار" />

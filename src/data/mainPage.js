@@ -59,14 +59,6 @@ const data = [
   // },
   {
     id: uuid(),
-    title: "راديو",
-    subTitle: "بث مباشر",
-    url: "/radio",
-    icon: "📻",
-    image: radioImg,
-  },
-  {
-    id: uuid(),
     title: "الأذكار",
     subTitle: "أذكر الله",
     url: "/adkar",
@@ -88,6 +80,14 @@ const data = [
     url: "/qibla-dir",
     icon: "🕋",
     image: qabaImg
+  },
+  {
+    id: uuid(),
+    title: "راديو",
+    subTitle: "بث مباشر",
+    url: "/radio",
+    icon: "📻",
+    image: radioImg,
   },
   {
     id: uuid(),
