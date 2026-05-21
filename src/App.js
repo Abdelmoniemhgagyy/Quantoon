@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import Main from "./Pages/MainPage/Main.jsx"
 import Quran from "./Pages/Quran/Quran";
 import QuranAudio from "./Pages/quran-audio/QuranAudio.jsx";
@@ -53,6 +54,11 @@ import { ToastContainer } from "react-toastify";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
+
+  useEffect(() => {
+    window.scroll({ top: 0 });
+  }, [location.pathname]);
+
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
@@ -99,7 +105,6 @@ const AnimatedRoutes = () => {
 };
 
 function App() {
-  window.scroll({ top: 0 });
   return (
     <BrowserRouter>
       <RightNavbar />

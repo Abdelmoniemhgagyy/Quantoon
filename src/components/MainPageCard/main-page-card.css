@@ -49,6 +49,50 @@
     transition: all 0.5s;
   }
   
-  .card:hover:after {
+.card:hover:after {
     content: attr(data-text);
   }
+
+.home-page {
+  touch-action: pan-y;
+}
+
+.main-page-card {
+  contain: layout paint;
+}
+
+@media (max-width: 640px) {
+  .home-page {
+    transition: none;
+  }
+
+  .main-page-card,
+  .main-page-card-icon,
+  .home-social-shell,
+  .home-social-shell a > div {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+
+  .main-page-card {
+    border-radius: 18px;
+    box-shadow: none !important;
+    transition: transform 0.18s ease, background-color 0.18s ease, border-color 0.18s ease !important;
+  }
+
+  .main-page-card:hover {
+    transform: none !important;
+  }
+
+  .main-page-card-glow {
+    display: none;
+  }
+
+  .main-page-card img {
+    filter: none;
+  }
+
+  .home-social-shell {
+    box-shadow: none !important;
+  }
+}
