@@ -19,19 +19,12 @@ a {
   text-decoration: none;
 }
 
-html {
-  overscroll-behavior-y: none;
-  scroll-behavior: auto;
-}
-
 body {
   direction: rtl;
   background: #144b6d url("./assest/background.png");
   background-size: cover;
   background-repeat: no-repeat;
   transition: background-color 0.5s ease;
-  overscroll-behavior-y: none;
-  -webkit-overflow-scrolling: touch;
 }
 
 html.dark body {
