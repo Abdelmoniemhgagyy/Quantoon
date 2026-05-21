@@ -54,6 +54,7 @@
   }
 
 .home-page {
+  overscroll-behavior-y: contain;
   touch-action: pan-y;
 }
 
@@ -81,6 +82,11 @@
   }
 
   .main-page-card:hover {
+    transform: none !important;
+  }
+
+  .main-page-card:active,
+  .main-page-card-icon:active {
     transform: none !important;
   }
 
