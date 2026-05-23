@@ -45,7 +45,7 @@ function Sermons() {
             <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl blur opacity-20 group-focus-within:opacity-40 transition duration-500"></div>
             <input
               type="text"
-              placeholder="ابحث بأسم الخطبة أو الشيخ..."
+              placeholder="ابحث باسم الخطبة أو الشيخ..."
               value={searchTerm}
               onChange={(e) => {
                 setSearchTerm(e.target.value);
