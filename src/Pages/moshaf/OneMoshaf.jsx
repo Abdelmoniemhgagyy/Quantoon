@@ -1,8 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useCallback, useEffect, useMemo, useState, useRef } from 'react'
 
-function OneMoshaf({ Src, typeImg, name, fahrs }) {
+function OneMoshaf({ id, Src, typeImg, name, fahrs }) {
 
   const [numberOfPage, setNumberOfPage] = useState(1);
+  const [pageInputValue, setPageInputValue] = useState('1');
+  const [isPageInputFocused, setIsPageInputFocused] = useState(false);
   const [openModel, setOpenModel] = useState(false);
   const scrollContainerRef = useRef(null);
   const observerRef = useRef(null);
@@ -13,28 +15,79 @@ function OneMoshaf({ Src, typeImg, name, fahrs }) {
         : `0`;
 
   const totalPages = fahrs + 2;
-  const pagesArray = Array.from({ length: totalPages }, (_, i) => i + 1);
+  const pagesArray = useMemo(
+    () => Array.from({ length: totalPages }, (_, i) => i + 1),
+    [totalPages]
+  );
+  const pageIdPrefix = useMemo(
+    () => `moshaf-${id ?? name.replace(/\s+/g, '-')}`,
+    [id, name]
+  );
+  const getPageId = useCallback(
+    (page) => `${pageIdPrefix}-page-${page}`,
+    [pageIdPrefix]
+  );
+
+  useEffect(() => {
+    if (!isPageInputFocused) {
+      setPageInputValue(String(numberOfPage));
+    }
+  }, [isPageInputFocused, numberOfPage]);
+
+  const isValidPage = useCallback(
+    (page) => Number.isInteger(page) && page >= 1 && page <= totalPages,
+    [totalPages]
+  );
+
+  const goToPage = useCallback((page, shouldScroll = false) => {
+    if (!isValidPage(page)) return;
+
+    setNumberOfPage(page);
+    setPageInputValue(String(page));
+
+    if (shouldScroll) {
+      requestAnimationFrame(() => {
+        const el = document.getElementById(getPageId(page));
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
+  }, [getPageId, isValidPage]);
+
+  const handlePageInputBlur = () => {
+    setIsPageInputFocused(false);
+    setPageInputValue(String(numberOfPage));
+  };
 
   const changeInputValue = (e) => {
-    setNumberOfPage(e.target.value);
+    const value = e.target.value;
+    setPageInputValue(value);
+
+    if (value === '') return;
+
+    const val = Number(value);
+    if (isValidPage(val)) {
+      goToPage(val);
+    }
   };
 
   // arrow icons functions 
   const prevPage = () => {
     if (numberOfPage > 1) {
-      setNumberOfPage(+numberOfPage - 1)
+      goToPage(+numberOfPage - 1)
     }
     else {
-      setNumberOfPage(fahrs + 2)
+      goToPage(totalPages)
     }
   }
 
   const nextPage = () => {
-    if (numberOfPage < fahrs + 2) {
-      setNumberOfPage(+numberOfPage + 1)
+    if (numberOfPage < totalPages) {
+      goToPage(+numberOfPage + 1)
     }
     else {
-      setNumberOfPage(1)
+      goToPage(1)
     }
   }
 
@@ -50,7 +103,11 @@ function OneMoshaf({ Src, typeImg, name, fahrs }) {
         if (entry.isIntersecting) {
           const pageIndex = entry.target.getAttribute('data-page');
           if (pageIndex) {
-            setNumberOfPage(Number(pageIndex));
+            const pageNumber = Number(pageIndex);
+            setNumberOfPage(pageNumber);
+            if (!isPageInputFocused) {
+              setPageInputValue(String(pageNumber));
+            }
           }
         }
       });
@@ -61,7 +118,7 @@ function OneMoshaf({ Src, typeImg, name, fahrs }) {
     });
 
     pagesArray.forEach((pageNum) => {
-      const el = document.getElementById(`moshaf-${name.replace(/\s+/g, '-')}-page-${pageNum}`);
+      const el = document.getElementById(getPageId(pageNum));
       if (el) {
         observerRef.current.observe(el);
       }
@@ -70,28 +127,29 @@ function OneMoshaf({ Src, typeImg, name, fahrs }) {
     return () => {
       if (observerRef.current) observerRef.current.disconnect();
     };
-  }, [openModel, name, pagesArray.length]);
+  }, [getPageId, isPageInputFocused, openModel, pagesArray]);
 
   useEffect(() => {
     if (openModel) {
       setTimeout(() => {
-        const el = document.getElementById(`moshaf-${name.replace(/\s+/g, '-')}-page-${numberOfPage}`);
+        const el = document.getElementById(getPageId(numberOfPage));
         if (el) {
           el.scrollIntoView({ behavior: 'auto', block: 'start' });
         }
       }, 100);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [openModel]); // Run only when the modal opens, not on every page change
+  }, [getPageId, openModel]); // Run only when the modal opens, not on every page change
 
   const handleModalInputChange = (e) => {
-    const val = Number(e.target.value);
-    setNumberOfPage(val);
-    if (val >= 1 && val <= totalPages) {
-      const el = document.getElementById(`moshaf-${name.replace(/\s+/g, '-')}-page-${val}`);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+    const value = e.target.value;
+    setPageInputValue(value);
+
+    if (value === '') return;
+
+    const val = Number(value);
+    if (isValidPage(val)) {
+      goToPage(val, true);
     }
   };
 
@@ -108,10 +166,12 @@ function OneMoshaf({ Src, typeImg, name, fahrs }) {
       <div className='mt-[15px] mr-[60px] flex items-center justify-center flex-col'>
         <div className='my-4 md:my-2  md:mr-[42px] flex justify-center'>
           <input type="number" min={1} max={totalPages} placeholder='رقم الصفحة' className='p-2 w-[60%] md:w-auto rounded-lg border-none outline-none text-black'
-            value={numberOfPage}
+            value={pageInputValue}
+            onFocus={() => setIsPageInputFocused(true)}
+            onBlur={handlePageInputBlur}
             onChange={changeInputValue} />
 
-          <button className='md:mr-2 p-2 bg-blue-800 rounded-lg sm:rounded-l-lg text-white font-bold' onClick={() => setNumberOfPage(fahrs)}>الفهرس</button>
+          <button className='md:mr-2 p-2 bg-blue-800 rounded-lg sm:rounded-l-lg text-white font-bold' onClick={() => goToPage(fahrs)}>الفهرس</button>
         </div>
 
         <div className='md:h-[600px] sm:w-[400px] flex gap-[3px] md:gap-[8px] items-center text-white'>
@@ -143,9 +203,7 @@ function OneMoshaf({ Src, typeImg, name, fahrs }) {
             <button
               className='p-2 px-4 bg-blue-800 hover:bg-blue-700 rounded-lg text-white font-bold whitespace-nowrap transition-colors'
               onClick={() => {
-                setNumberOfPage(fahrs);
-                const el = document.getElementById(`moshaf-${name.replace(/\s+/g, '-')}-page-${fahrs}`);
-                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                goToPage(fahrs, true);
               }}
             >
               الفهرس
@@ -156,7 +214,9 @@ function OneMoshaf({ Src, typeImg, name, fahrs }) {
               <input
                 type="number" min={1} max={totalPages} placeholder='رقم الصفحة'
                 className='text-center border border-blue-400 p-2 w-[100px] md:w-[120px] rounded-lg outline-none text-black font-bold'
-                value={numberOfPage}
+                value={pageInputValue}
+                onFocus={() => setIsPageInputFocused(true)}
+                onBlur={handlePageInputBlur}
                 onChange={handleModalInputChange}
               />
             </div>
@@ -172,7 +232,7 @@ function OneMoshaf({ Src, typeImg, name, fahrs }) {
             {pagesArray.map((pageNum) => (
               <img
                 key={pageNum}
-                id={`moshaf-${name.replace(/\s+/g, '-')}-page-${pageNum}`}
+                id={getPageId(pageNum)}
                 data-page={pageNum}
                 className='w-[100%] md:w-[60%] xl:w-[40%] rounded-[2px] bg-[#111]'
                 style={{ aspectRatio: '0.67' }}
