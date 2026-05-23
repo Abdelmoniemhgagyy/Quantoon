@@ -13,7 +13,7 @@ const categoryLabels = {
 };
 
 const getAdkarKey = (category, item, index) =>
-  `${category}-${item.content?.slice(0, 24) || index}`;
+  `${category}-${index}-${item.content?.slice(0, 24) || "adkar"}`;
 
 const categoryTabs = categories.map((category) => ({
   value: category,
@@ -73,24 +73,26 @@ function Adkar() {
           </button>
         ))}
       </div>
-      {selectedAdkar.map((item, index) => (
-        <article
-          key={getAdkarKey(selectedCategory, item, index)}
-          className="dakr relative"
-        >
-          <p className="adkar-content">{item.content}</p>
-          {item.description && (
-            <div className="adkar-meta">
-              <p className="adkar-description">{item.description}</p>
-            </div>
-          )}
-          <Counter
-            repeatNumber={item.count}
-            resetKey={getAdkarKey(selectedCategory, item, index)}
-          />
-          <CopyIcons copiedText={item.content} className="adkar-copy" />
-        </article>
-      ))}
+      {selectedAdkar.map((item, index) => {
+        const adkarKey = getAdkarKey(selectedCategory, item, index);
+
+        return (
+          <article key={adkarKey} className="dakr relative">
+            <p className="adkar-content">{item.content}</p>
+            {item.description && (
+              <div className="adkar-meta">
+                <p className="adkar-description">{item.description}</p>
+              </div>
+            )}
+            <Counter
+              key={adkarKey}
+              repeatNumber={item.count}
+              resetKey={adkarKey}
+            />
+            <CopyIcons copiedText={item.content} className="adkar-copy" />
+          </article>
+        );
+      })}
     </motion.div>
   );
 }
