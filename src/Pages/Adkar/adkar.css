@@ -136,10 +136,29 @@
     text-align: center;
 }
 
-.adkar-description {
+.adkar-description,
+.adkar-reference {
     flex: 1 1 100%;
+    margin: 0;
     font-size: 15px;
     text-align: center;
+}
+.adkar-reference {
+    color: #8a6a00;
+    font-size: 13px;
+}
+.adkar-empty {
+    width: min(90%, 760px);
+    margin: 18px auto;
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.68);
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: 'Marhey', sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+    background: rgba(15, 23, 42, 0.16);
+    backdrop-filter: blur(8px);
 }
 .adkar-copy {
     position: absolute;
@@ -237,6 +256,14 @@ html.dark .adkar-content {
 }
 html.dark .adkar-meta {
     color: #f5cb5c;
+}
+html.dark .adkar-reference {
+    color: #fde68a;
+}
+html.dark .adkar-empty {
+    border-color: rgba(245, 203, 92, 0.28);
+    color: #fffdf4;
+    background: rgba(17, 19, 31, 0.76);
 }
 html.dark .adkar-copy,
 html.dark .adkar-counter-reset {
@@ -348,7 +375,8 @@ html.dark .adkar-container .btn-conntainer > button.active-btn {
         text-align: center;
     }
 
-    .adkar-description {
+    .adkar-description,
+    .adkar-reference {
         flex-basis: 100%;
     }
 }
