@@ -1,14 +1,51 @@
-import React from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import data from "../../data/adkar.json";
 import "./adkar.css";
 import { motion } from "framer-motion";
 import CopyIcons from "../../components/CopyIcons/CopyIcons";
 import Counter from "./Counter";
 
+const categories = Object.keys(data);
+
+const categoryLabels = {
+  "أذكار بعد السلام من الصلاة المفروضة": "أذكار بعد السلام من الصلاة",
+  "أذكار الاستيقاظ": "أذكار الأستيقاظ",
+};
+
+const getAdkarKey = (category, item, index) =>
+  `${category}-${item.content?.slice(0, 24) || index}`;
+
+const categoryTabs = categories.map((category) => ({
+  value: category,
+  label: categoryLabels[category] || category,
+}));
+
+const fallbackCategories = [
+  "أذكار الصباح",
+  "أذكار المساء",
+  "أذكار بعد السلام من الصلاة المفروضة",
+  "تسابيح",
+  "أذكار النوم",
+  "أذكار الاستيقاظ",
+  "أدعية قرآنية",
+  "أدعية الأنبياء",
+];
+
 function Adkar() {
-  const [dataa, setDataa] = useState(data["أذكار الصباح"]);
-  window.scroll({ top: 0 });
+  const visibleCategories = categoryTabs.length
+    ? categoryTabs
+    : fallbackCategories.map((category) => ({
+        value: category,
+        label: categoryLabels[category] || category,
+      }));
+  const [selectedCategory, setSelectedCategory] = useState(
+    visibleCategories[0]?.value || ""
+  );
+  const selectedAdkar = data[selectedCategory] || [];
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [selectedCategory]);
 
   return (
     <motion.div
@@ -20,74 +57,39 @@ function Adkar() {
     >
       <div className="m-2 btn ">
         <h1 className="text-[30px] text-[white] title-adkar ">
-          {dataa[0].category}
+          {selectedAdkar[0]?.category || selectedCategory}
         </h1>
       </div>
-      <div className="btn-conntainer">
-        <button
-          onClick={() => setDataa(data["أذكار الصباح"])}
-          //className to add class active to btn
-          className={`${dataa === data["أذكار الصباح"] ? `active-btn` : ""}`}
-        >
-          أذكار الصباح
-        </button>
-        <button
-          onClick={() => setDataa(data["أذكار المساء"])}
-          className={`${dataa === data["أذكار المساء"] ? `active-btn` : ""}`}
-        >
-          أذكار المساء
-        </button>
-        <button
-          onClick={() => setDataa(data["أذكار بعد السلام من الصلاة المفروضة"])}
-          className={`${
-            dataa === data["أذكار بعد السلام من الصلاة المفروضة"]
-              ? `active-btn`
-              : ""
-          }`}
-        >
-          أذكار بعد السلام من الصلاة
-        </button>
-        <button
-          onClick={() => setDataa(data["تسابيح"])}
-          className={`${dataa === data["تسابيح"] ? `active-btn` : ""}`}
-        >
-          تسابيح
-        </button>
-        <button
-          onClick={() => setDataa(data["أذكار النوم"])}
-          className={`${dataa === data["أذكار النوم"] ? `active-btn` : ""}`}
-        >
-          أذكار النوم
-        </button>
-        <button
-          onClick={() => setDataa(data["أذكار الاستيقاظ"])}
-          className={`${dataa === data["أذكار الاستيقاظ"] ? `active-btn` : ""}`}
-        >
-          أذكار الأستيقاظ
-        </button>
-        <button
-          onClick={() => setDataa(data["أدعية قرآنية"])}
-          className={`${dataa === data["أدعية قرآنية"] ? `active-btn` : ""}`}
-        >
-          أدعية قرآنية
-        </button>
-        <button
-          onClick={() => setDataa(data["أدعية الأنبياء"])}
-          className={`${dataa === data["أدعية الأنبياء"] ? `active-btn` : ""}`}
-        >
-          أدعية الأنبياء
-        </button>
+      <div className="btn-conntainer" aria-label="أقسام الأذكار">
+        {visibleCategories.map(({ value, label }) => (
+          <button
+            key={value}
+            type="button"
+            aria-pressed={selectedCategory === value}
+            onClick={() => setSelectedCategory(value)}
+            className={selectedCategory === value ? "active-btn" : ""}
+          >
+            {label}
+          </button>
+        ))}
       </div>
-      {dataa.map((item, index) => (
-        <div key={index} className="dakr pt-[20px] relative ">
-          <p className="p-[15px]">{item.content}</p>
-          <div className="px-[15px] pb-5">
-            <p> عدد المرات : {item.count} </p>
-            <p>{item.description}</p>
-          </div>
-          <Counter data={dataa} repeatNumber={item.count} />
-          <CopyIcons copiedText={item.content} />
-        </div>
+      {selectedAdkar.map((item, index) => (
+        <article
+          key={getAdkarKey(selectedCategory, item, index)}
+          className="dakr relative"
+        >
+          <p className="adkar-content">{item.content}</p>
+          {item.description && (
+            <div className="adkar-meta">
+              <p className="adkar-description">{item.description}</p>
+            </div>
+          )}
+          <Counter
+            repeatNumber={item.count}
+            resetKey={getAdkarKey(selectedCategory, item, index)}
+          />
+          <CopyIcons copiedText={item.content} className="adkar-copy" />
+        </article>
       ))}
     </motion.div>
   );

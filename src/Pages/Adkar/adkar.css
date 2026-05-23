@@ -1,42 +1,350 @@
-@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300;400;500;600&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Marhey:wght@300;400;500;600&family=Roboto:ital,wght@0,400;1,300;1,400&family=Scheherazade+New:wght@400;700&display=swap');
 
-.adkar-container{
+.adkar-container {
     margin: 20px 60px 40px 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }
 
-.title-adkar{
+.adkar-container > .btn {
+    width: min(90%, 760px);
+    margin: 0 auto 12px;
+    padding: 18px 16px 10px;
+}
+
+.title-adkar {
     font-family: 'Marhey', sans-serif;
-    font-size: 30px;
-    
+    font-size: clamp(24px, 4vw, 36px);
+    color: #ffffff;
+    line-height: 1.5;
+    text-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
 }
-.adkar-container .dakr{
-    
-    border: white 2px solid;
-    color: #fff;
-    margin: 5px;
-    /* padding:20px 20px 5px 20px; */
-    border-radius: 5px 20px 2px 2px;
-    font-size: 20px;
-    width: 90%;
-    line-height: 1.8;
-    text-align: right;
 
+.adkar-container .btn-conntainer {
+    width: min(90%, 760px);
+    margin: 0 auto 18px;
+    padding: 8px;
+    gap: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.72);
+    border-right-color: rgba(255, 255, 255, 0.28);
+    border-left-color: rgba(255, 255, 255, 0.28);
+    border-radius: 8px;
+    background: transparent;
+    box-shadow:
+        inset 0 0 0 1px rgba(13, 143, 131, 0.08),
+        0 12px 28px rgba(15, 23, 42, 0.12);
+    backdrop-filter: blur(10px);
 }
-.adkar-container .dakr>div {
+.adkar-container .btn-conntainer > button {
+    min-height: 34px;
+    margin: 0;
+    padding: 6px 12px;
+    border: 1px solid rgba(13, 143, 131, 0.24);
+    border-radius: 6px;
+    background: #ffffff;
+    color: #15343a;
+    font-family: 'Marhey', sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    box-shadow: 0 5px 14px rgba(15, 23, 42, 0.08);
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+.adkar-container .btn-conntainer > button:hover {
+    transform: translateY(-1px);
+    border-color: #0d8f83;
+    background: #edfdfa;
+    color: #0f766e;
+    box-shadow: 0 8px 18px rgba(13, 143, 131, 0.14);
+}
+.adkar-container .btn-conntainer > button.active-btn {
+    border-color: #0d8f83;
+    background: #0d8f83 !important;
+    color: #ffffff;
+    box-shadow: 0 10px 22px rgba(13, 143, 131, 0.22);
+}
+
+.adkar-container .dakr {
+    width: min(90%, 760px);
+    margin: 10px 5px 18px;
+    padding: 34px 28px 58px;
+    color: #111827;
+    background:
+        linear-gradient(315deg, transparent 0 14px, rgba(230, 190, 79, 0.75) 14px 17px, transparent 17px) right bottom / 34px 34px no-repeat,
+        #fffef9;
+    border: 1.5px solid #0d8f83;
+    border-right-width: 5px;
+    border-right-color: rgba(255, 255, 255, 0.86);
+    border-radius: 2px 7px 2px 2px;
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
+    font-size: 20px;
+    line-height: 1.9;
+    text-align: center;
+    overflow: hidden;
+    transition: background-color 0.35s ease, border-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.adkar-container .dakr::before,
+.adkar-container .dakr::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 10px;
+    height: 10px;
+    border-color: #0d8f83;
+    border-style: solid;
+    transition: border-color 0.35s ease;
+}
+.adkar-container .dakr::before {
+    top: 6px;
+    right: 6px;
+    border-width: 2px 2px 0 0;
+}
+.adkar-container .dakr::after {
+    bottom: 6px;
+    left: 6px;
+    border-width: 0 0 2px 2px;
+}
+.adkar-content {
+    position: relative;
+    z-index: 1;
+    padding: 0 4px 14px;
+    margin: 0 auto;
+    max-width: 680px;
+    color: #101827;
+    font-family: 'Amiri Quran', 'Scheherazade New', serif;
+    font-size: clamp(18px, 2.4vw, 25px);
+    font-weight: 600;
+    line-height: 2.2;
+    text-align: center;
+}
+.adkar-meta {
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 8px 18px;
     align-items: center;
-    font-size: 14px;
+    padding: 8px 2px 0;
+    color: #b58a00;
+    font-family: 'Marhey', sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+    text-align: center;
 }
-@media(max-width:590px){
-    .adkar-container .dakr>div{
-        font-size: 10px;      
+
+.adkar-description {
+    flex: 1 1 100%;
+    font-size: 15px;
+    text-align: center;
+}
+.adkar-copy {
+    position: absolute;
+    left: 12px;
+    bottom: 16px;
+    z-index: 3;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1f2937;
+    cursor: pointer;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+.adkar-copy:hover {
+    color: #0d8f83;
+    transform: translateY(-1px);
+}
+.adkar-counter {
+    position: absolute;
+    left: 50%;
+    bottom: 12px;
+    z-index: 2;
+    width: 34px;
+    height: 34px;
+    transform: translateX(-50%);
+    border: 1px solid #d8b34d;
+    border-radius: 999px;
+    background: #fffef9;
+    color: #b58a00;
+    font-family: 'Marhey', sans-serif;
+    font-size: 13px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(181, 138, 0, 0.14);
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+.adkar-counter:hover {
+    transform: translateX(-50%) translateY(-1px);
+}
+.adkar-counter-done {
+    background: #0d8f83;
+    border-color: #0d8f83;
+    color: #ffffff;
+}
+.adkar-counter-reset {
+    position: absolute;
+    right: 12px;
+    bottom: 16px;
+    z-index: 3;
+    width: 28px;
+    height: 28px;
+    color: #1f2937;
+    background: transparent;
+    border: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+.adkar-counter-reset:hover {
+    color: #0d8f83;
+    transform: rotate(-28deg);
+}
+
+html.dark .adkar-container .dakr {
+    color: #f8fafc;
+    background:
+        linear-gradient(315deg, transparent 0 14px, rgba(245, 203, 92, 0.85) 14px 17px, transparent 17px) right bottom / 34px 34px no-repeat,
+        linear-gradient(180deg, rgba(255, 255, 255, 0.045), transparent 42%),
+        #11131f;
+    border-color: rgba(255, 255, 255, 0.78);
+    border-right-color: rgba(255, 255, 255, 0.86);
+    box-shadow:
+        inset 0 0 0 1px rgba(52, 211, 153, 0.16),
+        0 18px 42px rgba(0, 0, 0, 0.38);
+}
+
+html.dark .adkar-container .dakr::before,
+html.dark .adkar-container .dakr::after {
+    border-color: #f5cb5c;
+}
+
+html.dark .adkar-content {
+    color: #fffdf4;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+}
+html.dark .adkar-meta {
+    color: #f5cb5c;
+}
+html.dark .adkar-copy,
+html.dark .adkar-counter-reset {
+    color: #f8fafc;
+}
+html.dark .adkar-copy:hover,
+html.dark .adkar-counter-reset:hover {
+    color: #2dd4bf;
+}
+html.dark .adkar-counter {
+    background: #171a28;
+    border-color: #f5cb5c;
+    color: #f5cb5c;
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.06),
+        0 6px 16px rgba(0, 0, 0, 0.35);
+}
+html.dark .adkar-counter-done {
+    background: #2dd4bf;
+    border-color: #2dd4bf;
+    color: #081a18;
+}
+
+html.dark .title-adkar {
+    color: #fffdf4;
+    text-shadow: 0 10px 26px rgba(0, 0, 0, 0.5);
+}
+
+html.dark .adkar-container .btn-conntainer {
+    border-color: rgba(245, 203, 92, 0.28);
+    background: rgba(17, 19, 31, 0.76);
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.04),
+        0 16px 34px rgba(0, 0, 0, 0.3);
+}
+
+html.dark .adkar-container .btn-conntainer > button {
+    border-color: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.08);
+    color: #f8fafc;
+    box-shadow: none;
+}
+
+html.dark .adkar-container .btn-conntainer > button:hover {
+    border-color: #f5cb5c;
+    background: rgba(245, 203, 92, 0.14);
+    color: #f5cb5c;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+html.dark .adkar-container .btn-conntainer > button.active-btn {
+    border-color: #f5cb5c;
+    background: #f5cb5c !important;
+    color: #12131f;
+    box-shadow: 0 10px 22px rgba(245, 203, 92, 0.2);
+}
+
+@media(max-width: 590px) {
+    .adkar-container {
+        margin: 16px 60px 34px 0;
+        padding: 0 10px;
     }
 
+    .adkar-container > .btn,
+    .adkar-container .btn-conntainer {
+        width: 100%;
+    }
+
+    .adkar-container > .btn {
+        padding: 10px 6px 8px;
+        margin-bottom: 8px;
+    }
+
+    .title-adkar {
+        font-size: 24px;
+    }
+
+    .adkar-container .btn-conntainer {
+        justify-content: flex-start;
+        gap: 6px;
+        margin-bottom: 14px;
+        padding: 7px;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+    }
+
+    .adkar-container .btn-conntainer::-webkit-scrollbar {
+        display: none;
+    }
+
+    .adkar-container .btn-conntainer > button {
+        flex: 0 0 auto;
+        min-height: 32px;
+        padding: 5px 10px;
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    .adkar-container .dakr {
+        width: 100%;
+        padding: 30px 18px 58px;
+        font-size: 18px;
+    }
+
+    .adkar-meta {
+        font-size: 12px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .adkar-description {
+        flex-basis: 100%;
+    }
 }

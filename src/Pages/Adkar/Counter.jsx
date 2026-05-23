@@ -1,24 +1,32 @@
 import React, { useEffect, useState } from "react";
 
-function Counter({data,repeatNumber}) {
-  const [count, setCount] = useState(0);
-useEffect(()=>{
-    setCount(0)
-},[data])
+function Counter({ repeatNumber, resetKey }) {
+  const initialCount = Number(repeatNumber) || 0;
+  const [count, setCount] = useState(initialCount);
+  const isDone = count === 0;
+
+  useEffect(() => {
+    setCount(initialCount);
+  }, [initialCount, resetKey]);
+
   return (
     <>
-        <button
-        onClick={() => setCount(count + 1)}
-        className={`rounded-tl-[20px] py-1 px-0 text-center w-full text-white border border-b-none  ${+repeatNumber === count ?`bg-[#2cd7e1cc]`:`bg-[#354261]`}`}
-        >
-        {count}
-        </button>
-        <button
-        onClick={() => setCount(0)}
-        className="absolute left-0 bottom-[1px] rounded-tl-[20px] w-[35px]  py-1 text-black bg-[#fff]"
-        >
-            <i className="bi bi-arrow-counterclockwise text-[#262639]"></i>
-        </button>
+      <button
+        type="button"
+        onClick={() => setCount((currentCount) => Math.max(currentCount - 1, 0))}
+        aria-label={isDone ? "تم إكمال الذكر" : `باقي ${count}`}
+        className={`adkar-counter ${isDone ? "adkar-counter-done" : "adkar-counter-active"}`}
+      >
+        {isDone ? <i className="bi bi-check-lg"></i> : count}
+      </button>
+      <button
+        type="button"
+        onClick={() => setCount(initialCount)}
+        aria-label="إعادة ضبط العداد"
+        className="adkar-counter-reset"
+      >
+        <i className="bi bi-arrow-counterclockwise"></i>
+      </button>
     </>
   );
 }
