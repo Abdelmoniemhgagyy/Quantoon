@@ -24,6 +24,7 @@ function Moshaf() {
       >
     {Moshafs.map((moshaf)=>(
           <OneMoshaf  key={moshaf.id} 
+                      id={moshaf.id}
                       Src={moshaf.url} 
                       name={moshaf.name}
                       typeImg={moshaf.typeImg}
