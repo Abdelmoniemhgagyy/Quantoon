@@ -188,6 +188,10 @@
     border-color: #0d8f83;
     color: #ffffff;
 }
+
+.adkar-counter-done i {
+    color: #0d8f83;
+}
 .adkar-counter-reset {
     position: absolute;
     right: 12px;
