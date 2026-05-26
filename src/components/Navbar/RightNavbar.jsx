@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import NavItem from "./NavItem"
 import { Link } from 'react-router-dom'
+import { BookOpen } from 'lucide-react'
 import "./RightNavbar.css"
 import Logo from "../../assest/logo.jpg"
 
@@ -71,6 +72,7 @@ function RightNavbar() {
           <NavItem ImgSrc={Rosary} openNav={openNav} setOpenNav={setOpenNav} path="/rosary" title="السبحة" />
           <NavItem ImgSrc={doaaImg} openNav={openNav} setOpenNav={setOpenNav} path="/deceased" title="الدعاء للمتوفى" />
           <NavItem ImgSrc={Jannah} openNav={openNav} setOpenNav={setOpenNav} path="/build-jannah" title="ابني جنتك" />
+          <NavItem Icon={BookOpen} openNav={openNav} setOpenNav={setOpenNav} path="/books" title="كتب" />
 
 
 

@@ -18,6 +18,7 @@ function Main() {
             url={item.url}
             icon={item.icon}
             image={item.image}
+            Icon={item.Icon}
           />
         ))}
       </div>

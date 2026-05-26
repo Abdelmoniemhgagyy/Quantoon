@@ -42,6 +42,7 @@ import ShortVideosQuran from "./Pages/LectureVideos/ShortVideosQuran.jsx";
 import Sheihks from "./Pages/LectureVideos/Sheihks.jsx";
 import { AnimatePresence } from "framer-motion";
 import { ToastContainer } from "react-toastify";
+const Books = React.lazy(() => import("./Pages/Books/Books.jsx"));
 const VideoPage = React.lazy(() =>
   import("./Pages/LectureVideos/VideoPage.jsx")
 );
@@ -100,6 +101,14 @@ const AnimatedRoutes = () => {
           <Route path=":reciterId" element={<ReciterPage />} />
         </Route>
         <Route path="/radio" element={<Radio />} />
+        <Route
+          path="/books"
+          element={
+            <React.Suspense fallback={<Loading itemsCenter="true" />}>
+              <Books />
+            </React.Suspense>
+          }
+        />
         {/* Hotba */}
         <Route path="/hotba" element={<Sermons />} />
         <Route path="/hotba/sermon/:id" element={<SermonDetailPage />} />

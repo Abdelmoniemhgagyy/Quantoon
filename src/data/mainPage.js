@@ -1,4 +1,5 @@
 import { v4 as uuid } from "uuid";
+import { BookOpen } from "lucide-react";
 import boyImg from "../assest/listImg/boy.png";
 import allahImg from "../assest/listImg/allah.png";
 import beadsImg from "../assest/listImg/beads.png";
@@ -119,6 +120,14 @@ const data = [
     subTitle: "ﷺ",
     url: "/hadith",
     icon: "📜",
+    image: null,
+  },
+  {
+    id: uuid(),
+    title: "كتب",
+    subTitle: "مكتبة",
+    url: "/books",
+    Icon: BookOpen,
     image: null,
   },
   {
