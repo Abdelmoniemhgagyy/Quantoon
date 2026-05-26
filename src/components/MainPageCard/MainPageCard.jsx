@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-function MainPageCard({ title, url, icon, image }) {
+function MainPageCard({ title, url, icon, image, Icon }) {
   const navigate = useNavigate();
 
   return (
@@ -17,6 +17,10 @@ function MainPageCard({ title, url, icon, image }) {
         {image ? (
           <div className="main-page-card-icon w-16 h-16 sm:w-20 sm:h-20 mb-3 bg-white/5 dark:bg-white/5 light:bg-white/40 rounded-full flex items-center justify-center p-3 sm:p-4 shadow-inner group-hover:scale-110 transition-transform duration-500 border border-white/5 group-hover:border-teal-400/30 backdrop-blur-sm">
             <img src={image} alt={title} className="w-full h-full object-contain drop-shadow-lg" />
+          </div>
+        ) : Icon ? (
+          <div className="main-page-card-icon w-16 h-16 sm:w-20 sm:h-20 mb-3 bg-white/5 dark:bg-white/5 light:bg-white/40 rounded-full flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform duration-500 border border-white/5 group-hover:border-teal-400/30 backdrop-blur-sm">
+            <Icon size={44} strokeWidth={1.8} />
           </div>
         ) : (
           <div className="main-page-card-icon w-16 h-16 sm:w-20 sm:h-20 mb-3 bg-white/5 dark:bg-white/5 light:bg-white/40 rounded-full flex items-center justify-center text-4xl shadow-inner group-hover:scale-110 transition-transform duration-500 border border-white/5 group-hover:border-teal-400/30 backdrop-blur-sm">

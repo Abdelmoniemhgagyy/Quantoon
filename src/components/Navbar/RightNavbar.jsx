@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import NavItem from "./NavItem"
 import { Link } from 'react-router-dom'
-import { ShieldCheck } from 'lucide-react'
+import { BookOpen, ShieldCheck } from 'lucide-react'
 import "./RightNavbar.css"
 import Logo from "../../assest/logo.jpg"
 
@@ -59,14 +59,15 @@ function RightNavbar() {
           <NavItem ImgSrc={Home} openNav={openNav} setOpenNav={setOpenNav} path="/" title="الرئيسية" />
           <NavItem ImgSrc={Quran} openNav={openNav} setOpenNav={setOpenNav} path="/quran" title="القران الكريم" />
           <NavItem ImgSrc={Hadith} openNav={openNav} setOpenNav={setOpenNav} path="/hadith" title=" الأحاديث النبوية" />
-          <NavItem ImgSrc={Radio} openNav={openNav} setOpenNav={setOpenNav} path="/radio" title="الراديو" />
           {/* <NavItem ImgSrc={Boy} openNav={openNav} setOpenNav={setOpenNav} path="/boymuslim" title="الطفل المسلم" /> */}
-          <NavItem ImgSrc={Hotba} openNav={openNav} setOpenNav={setOpenNav} path="/hotba" title="خطب" />
           <NavItem ImgSrc={Adkar} openNav={openNav} setOpenNav={setOpenNav} path="/adkar" title="الأذكار" />
           <NavItem ImgSrc={moshaf} openNav={openNav} setOpenNav={setOpenNav} path="/moshaf" title="المصاحف" />
           <NavItem ImgSrc={Rosary} openNav={openNav} setOpenNav={setOpenNav} path="/rosary" title="السبحة" />
-          <NavItem ImgSrc={doaaImg} openNav={openNav} setOpenNav={setOpenNav} path="/deceased" title="الدعاء للمتوفى" />
           <NavItem ImgSrc={Jannah} openNav={openNav} setOpenNav={setOpenNav} path="/build-jannah" title="ابني جنتك" />
+          <NavItem Icon={BookOpen} openNav={openNav} setOpenNav={setOpenNav} path="/books" title="كتب" />
+          <NavItem ImgSrc={Hotba} openNav={openNav} setOpenNav={setOpenNav} path="/hotba" title="خطب" />
+          <NavItem ImgSrc={Radio} openNav={openNav} setOpenNav={setOpenNav} path="/radio" title="الراديو" />
+          <NavItem ImgSrc={doaaImg} openNav={openNav} setOpenNav={setOpenNav} path="/deceased" title="الدعاء للمتوفى" />
           <NavItem Icon={ShieldCheck} openNav={openNav} setOpenNav={setOpenNav} path="/privacy-policy" title="سياسة الخصوصية" />
 
 

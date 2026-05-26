@@ -1,4 +1,5 @@
 import { v4 as uuid } from "uuid";
+import { BookOpen } from "lucide-react";
 // import boyImg from "../assest/listImg/boy.png";
 import allahImg from "../assest/listImg/allah.png";
 import beadsImg from "../assest/listImg/beads.png";
@@ -91,14 +92,6 @@ const data = [
   },
   {
     id: uuid(),
-    title: "خطب",
-    subTitle: "🕌",
-    url: "/hotba",
-    icon: "📢",
-    image: hotbaImg,
-  },
-  {
-    id: uuid(),
     title: "المصاحف",
     subTitle: "📖",
     url: "/moshaf",
@@ -123,6 +116,22 @@ const data = [
   },
   {
     id: uuid(),
+    title: "كتب",
+    subTitle: "مكتبة",
+    url: "/books",
+    Icon: BookOpen,
+    image: null,
+  },
+  {
+    id: uuid(),
+    title: "خطب",
+    subTitle: "🕌",
+    url: "/hotba",
+    icon: "📢",
+    image: hotbaImg,
+  },
+  {
+    id: uuid(),
     title: "أسماء الله الحسنى",
     subTitle: "🕋",
     url: "/namesofallah",
@@ -137,14 +146,6 @@ const data = [
     icon: "🔵",
     image: beadsImg,
   },
-  // {
-  //   id: uuid(),
-  //   title: "مقاطع قران قصيرة",
-  //   subTitle: "▶️",
-  //   url: "videos/short-video-quran",
-  //   icon: "▶️",
-  //   image: shortVideoImg,
-  // },
   {
     id: uuid(),
     title: "ابني جنتك",
@@ -161,6 +162,15 @@ const data = [
     icon: "🕌",
     image: doaaImg,
   },
+
+  // {
+  //   id: uuid(),
+  //   title: "مقاطع قران قصيرة",
+  //   subTitle: "▶️",
+  //   url: "videos/short-video-quran",
+  //   icon: "▶️",
+  //   image: shortVideoImg,
+  // },
 
 ];
 

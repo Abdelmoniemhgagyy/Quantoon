@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { Suspense, useEffect } from "react";
 import Main from "./Pages/MainPage/Main.jsx"
 import Quran from "./Pages/Quran/Quran";
 import QuranAudio from "./Pages/quran-audio/QuranAudio.jsx";
@@ -35,6 +35,7 @@ import Info from "./Pages/Info/Info.jsx"
 import BuildJannah from "./Pages/BuildJannah/BuildJannah.jsx";
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy.jsx";
 import ScrollTopTop from "./components/ScroolToTop/ScroolToTop.jsx";
+import Loading from "./components/Loading/Loading.jsx";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 // import React from "react";
 // import Videos from "./Pages/LectureVideos/Videos.jsx";
@@ -44,6 +45,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 // import Sheihks from "./Pages/LectureVideos/Sheihks.jsx";
 import { AnimatePresence } from "framer-motion";
 import { ToastContainer } from "react-toastify";
+const Books = React.lazy(() => import("./Pages/Books/Books.jsx"));
 // const VideoPage = React.lazy(() =>
 //   import("./Pages/LectureVideos/VideoPage.jsx")
 // );
@@ -93,6 +95,14 @@ const AnimatedRoutes = () => {
           <Route path=":reciterId" element={<ReciterPage />} />
         </Route> */}
         <Route path="/radio" element={<Radio />} />
+        <Route
+          path="/books"
+          element={
+            <Suspense fallback={<Loading itemsCenter="true" />}>
+              <Books />
+            </Suspense>
+          }
+        />
         {/* Hotba */}
         <Route path="/hotba" element={<Sermons />} />
         <Route path="/hotba/sermon/:id" element={<SermonDetailPage />} />
